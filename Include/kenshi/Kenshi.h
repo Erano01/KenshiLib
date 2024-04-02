@@ -120,13 +120,6 @@ namespace Kenshi
     // This function creates the "Kenshi has crashed" window
     void* GetCrashReporterFunction();
 
-    // On 1.0.55 + 1.0.59 Kenshi doesn't initailize MyGUI with this properly
-    // TODO remove after dropping support for old versions
-    float& GetCurrentFontSize();
-    // this is an OptionsWindow member function - probably a MyGUI OnClick delegate or something
-    // it takes arguments, but doesn't read them, so we can just pretend it's a void(void) function
-    void* GetUpdateFonts();
-
     // Static var separate to GameWorld
     // GlobalConstants con;
     GlobalConstants* GetCon();
