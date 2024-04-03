@@ -157,6 +157,25 @@ Kenshi::BinaryVersion Kenshi::GetKenshiVersion()
     return kenshiVersion;
 }
 
+// force override - used for hash mismatches, which can occur if the user has modified the executable
+// there are a few mods on Nexus that need this
+bool Kenshi::OverrideKenshiVersion(BinaryVersion newVersion)
+{
+    StaticMap<std::string, Kenshi::BinaryVersion>::iterator entryIter = HashToVersionMap.begin();
+    while (entryIter != HashToVersionMap.end())
+    {
+        // if the new version is in our list of supported versions, accept it
+        if (entryIter->second == newVersion)
+        {
+            kenshiVersion = entryIter->second;
+            return true;
+        }
+        ++entryIter;
+    }
+    // version isn't in supported versions
+    return false;
+}
+
 void* Kenshi::GetModLoadFunction()
 {
     Kenshi::BinaryVersion kenshiVersion = GetKenshiVersion();

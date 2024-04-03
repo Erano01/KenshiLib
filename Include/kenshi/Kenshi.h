@@ -99,6 +99,8 @@ namespace Kenshi
     };
 
     BinaryVersion GetKenshiVersion();
+    // returns true on success
+    bool OverrideKenshiVersion(BinaryVersion newVersion);
 
     // GameWorld looks to be an object of all game state, whether its loaded or not.
     // Has things like a list of loaded mods and all the GameData loaded in, probably saves too.
