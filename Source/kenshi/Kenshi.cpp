@@ -154,9 +154,6 @@ StaticMap<Kenshi::BinaryVersion, offset_t> TabModsUpdateModsListFunction = Stati
     .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.65"), 0x00124900)
     .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.68"), 0x00124920);
 
-StaticMap<Kenshi::BinaryVersion, offset_t> TabModsOnCheckListChangeFunction = StaticMap<Kenshi::BinaryVersion, offset_t>()
-    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::STEAM, "1.0.65"), 0x00125980);
-
 // read at 0x006C1325 Steam 1.0.64
 // the numbers check out
 // GlobalConstants con; // 0x001ACA1E0
@@ -219,14 +216,6 @@ void* Kenshi::GetTabModsUpdateModsListFunction()
     Kenshi::BinaryVersion kenshiVersion = GetKenshiVersion();
     offset_t tabModsUpdateModsListFunction = TabModsUpdateModsListFunction.at(kenshiVersion);
     static RVAPtr<void> c_inst(tabModsUpdateModsListFunction);
-    return c_inst.GetPtr();
-}
-
-void* Kenshi::GetTabModsOnCheckListChangeFunction()
-{
-    Kenshi::BinaryVersion kenshiVersion = GetKenshiVersion();
-    offset_t tabModsOnCheckListChangeFunction = TabModsOnCheckListChangeFunction.at(kenshiVersion);
-    static RVAPtr<void> c_inst(tabModsOnCheckListChangeFunction);
     return c_inst.GetPtr();
 }
 
