@@ -120,9 +120,15 @@ namespace Kenshi
     // (this function sets up GameWorld::loadedMods)
     void* GetModLoadFunction();
     // This function creates the "Kenshi has crashed" window
+    // void showErrorMessage()
     void* GetCrashReporterFunction();
     // this function causes the mods list to scroll to the top when edited
     void* GetTabModsUpdateModsListFunction();
+    // rand calls in this function need to be patched for the RNG fix
+    void* GetBuildingSelectPartsFunction();
+    void* GetGetFoliageRotationFunction();
+    void* GetUtilityTRandomIntFunction();
+    void* GetUtilityTRandomFunction();
 
     // Static var separate to GameWorld
     // GlobalConstants con;

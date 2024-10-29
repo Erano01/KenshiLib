@@ -134,6 +134,33 @@ StaticMap<Kenshi::BinaryVersion, offset_t> TabModsUpdateModsListFunction = Stati
     .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.65"), 0x00124900)
     .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.68"), 0x00124920);
 
+// AoB: 48 8B C4 55 56 57 41 54 41 55 41 56 41 57 48 8D 68 A1 48 81 EC B0 00 00 00 48 C7 45 A7 FE FF FF FF
+StaticMap<Kenshi::BinaryVersion, offset_t> BuildingSelectPartsFunction = StaticMap<Kenshi::BinaryVersion, offset_t>()
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::STEAM, "1.0.65"), 0x005590F0)
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::STEAM, "1.0.68"), 0x00559B80)
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.65"), 0x00559400)
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.68"), 0x00559520);
+// AoB: 40 53 48 81 EC 80 00 00 00 80 79 1C 00
+StaticMap<Kenshi::BinaryVersion, offset_t> GetFoliageRotationFunction = StaticMap<Kenshi::BinaryVersion, offset_t>()
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::STEAM, "1.0.65"), 0x006CBF90)
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::STEAM, "1.0.68"), 0x006CC2E0)
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.65"), 0x006CB8A0)
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.68"), 0x006CBC80);
+
+// AoB: 48 89 5C 24 20 57 48 83 EC 20 8B DA
+StaticMap<Kenshi::BinaryVersion, offset_t> UtilityTRandomIntFunction = StaticMap<Kenshi::BinaryVersion, offset_t>()
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::STEAM, "1.0.65"), 0x009B2C70)
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::STEAM, "1.0.68"), 0x009B3B40)
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.65"), 0x009B2390)
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.68"), 0x009B3280);
+
+// AoB: 48 83 EC 48 0F 29 74 24 30 0F 29 7C 24 20 0F 28 F8 0F 28 F1 FF 15
+StaticMap<Kenshi::BinaryVersion, offset_t> UtilityTRandomFunction = StaticMap<Kenshi::BinaryVersion, offset_t>()
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::STEAM, "1.0.65"), 0x009B0DB0)
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::STEAM, "1.0.68"), 0x009B1C80)
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.65"), 0x009B04D0)
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.68"), 0x009B13C0);
+
 // read at 0x006C1325 Steam 1.0.64
 // the numbers check out
 // GlobalConstants con; // 0x001ACA1E0
@@ -194,6 +221,38 @@ void* Kenshi::GetTabModsUpdateModsListFunction()
     Kenshi::BinaryVersion kenshiVersion = GetKenshiVersion();
     offset_t tabModsUpdateModsListFunction = TabModsUpdateModsListFunction.at(kenshiVersion);
     static RVAPtr<void> c_inst(tabModsUpdateModsListFunction);
+    return c_inst.GetPtr();
+}
+
+void* Kenshi::GetBuildingSelectPartsFunction()
+{
+    Kenshi::BinaryVersion kenshiVersion = GetKenshiVersion();
+    offset_t buildingSelectPartsFunction = BuildingSelectPartsFunction.at(kenshiVersion);
+    static RVAPtr<void> c_inst(buildingSelectPartsFunction);
+    return c_inst.GetPtr();
+}
+
+void* Kenshi::GetGetFoliageRotationFunction()
+{
+    Kenshi::BinaryVersion kenshiVersion = GetKenshiVersion();
+    offset_t getFoliageRotationFunction = GetFoliageRotationFunction.at(kenshiVersion);
+    static RVAPtr<void> c_inst(getFoliageRotationFunction);
+    return c_inst.GetPtr();
+}
+
+void* Kenshi::GetUtilityTRandomIntFunction()
+{
+    Kenshi::BinaryVersion kenshiVersion = GetKenshiVersion();
+    offset_t utilityTRandomIntFunction = UtilityTRandomIntFunction.at(kenshiVersion);
+    static RVAPtr<void> c_inst(utilityTRandomIntFunction);
+    return c_inst.GetPtr();
+}
+
+void* Kenshi::GetUtilityTRandomFunction()
+{
+    Kenshi::BinaryVersion kenshiVersion = GetKenshiVersion();
+    offset_t utilityTRandomFunction = UtilityTRandomFunction.at(kenshiVersion);
+    static RVAPtr<void> c_inst(utilityTRandomFunction);
     return c_inst.GetPtr();
 }
 

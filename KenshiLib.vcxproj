@@ -81,6 +81,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include="Include\kenshi\util\iVector2.h" />
     <None Include="Include\ogre\animation\OgreBone.inl" />
     <None Include="Include\ogre\math\array\c\OgreArrayAabb.inl" />
     <None Include="Include\ogre\math\array\c\OgreArrayMatrix4.inl" />
@@ -154,6 +155,7 @@
     <ClInclude Include="Include\kenshi\util\hand.h" />
     <ClInclude Include="Include\kenshi\util\lektor.h" />
     <ClInclude Include="Include\kenshi\util\StringPair.h" />
+    <ClInclude Include="Include\kenshi\util\UtilityT.h" />
     <ClInclude Include="Include\kenshi\util\YesNoMaybe.h" />
     <ClInclude Include="Include\kenshi\View.h" />
     <ClInclude Include="Include\kenshi\Zone.h" />
