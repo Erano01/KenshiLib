@@ -1367,27 +1367,6 @@
     <ClInclude Include="Include\ogre\OgreTimer.h">
       <Filter>Header Files\ogre</Filter>
     </ClInclude>
-    <ClInclude Include="Include\ogre\emscripten\OgreTimerImp.h">
-      <Filter>Header Files\ogre</Filter>
-    </ClInclude>
-    <ClInclude Include="Include\ogre\glx\OgreTimerImp.h">
-      <Filter>Header Files\ogre</Filter>
-    </ClInclude>
-    <ClInclude Include="Include\ogre\nacl\OgreTimerImp.h">
-      <Filter>Header Files\ogre</Filter>
-    </ClInclude>
-    <ClInclude Include="Include\ogre\osx\OgreTimerImp.h">
-      <Filter>Header Files\ogre</Filter>
-    </ClInclude>
-    <ClInclude Include="Include\ogre\android\OgreTimerImp.h">
-      <Filter>Header Files\ogre</Filter>
-    </ClInclude>
-    <ClInclude Include="Include\ogre\ios\OgreTimerImp.h">
-      <Filter>Header Files\ogre</Filter>
-    </ClInclude>
-    <ClInclude Include="Include\ogre\win32\OgreTimerImp.h">
-      <Filter>Header Files\ogre</Filter>
-    </ClInclude>
     <ClInclude Include="Include\ogre\math\array\OgreTransform.h">
       <Filter>Header Files\ogre</Filter>
     </ClInclude>
@@ -2203,6 +2182,9 @@
     </ClInclude>
     <ClInclude Include="Include\kenshi\util\UtilityT.h">
       <Filter>Header Files\kenshi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ogre\WIN32\OgreTimerImp.h">
+      <Filter>Header Files\ogre</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
