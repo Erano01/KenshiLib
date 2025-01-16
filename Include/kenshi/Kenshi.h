@@ -25,6 +25,7 @@ namespace Kenshi
     class SaveManager;
     class SaveFileSystem;
     class GlobalConstants;
+    class OptionsHolder;
     typedef bool SaveGameFunc(SaveManager* thisptr, std::string savesDirectory, std::string saveName);
 
     MyGUI::WidgetPtr FindWidget(MyGUI::EnumeratorWidgetPtr enumerator, std::string name);
@@ -133,6 +134,9 @@ namespace Kenshi
     // Static var separate to GameWorld
     // GlobalConstants con;
     GlobalConstants* GetCon();
+
+    // OptionsHolder options;
+    OptionsHolder* GetOptions();
 
     SaveManager* GetSaveManager();
     SaveGameFunc* GetSaveManagerSaveGameFunction();

@@ -145,6 +145,7 @@
     <ClInclude Include="Include\kenshi\Logger.h" />
     <ClInclude Include="Include\kenshi\MedicalSystem.h" />
     <ClInclude Include="Include\kenshi\ModInfo.h" />
+    <ClInclude Include="Include\kenshi\OptionsHolder.h" />
     <ClInclude Include="Include\kenshi\Platoon.h" />
     <ClInclude Include="Include\kenshi\PlayerInterface.h" />
     <ClInclude Include="Include\kenshi\RootObject.h" />

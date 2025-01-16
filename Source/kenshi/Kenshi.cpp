@@ -173,6 +173,12 @@ StaticMap<Kenshi::BinaryVersion, offset_t> GlobalConOffset = StaticMap<Kenshi::B
     .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.65"), 0x02130CE0)
     .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.68"), 0x02132D00);
 
+StaticMap<Kenshi::BinaryVersion, offset_t> GlobalOptionsOffset = StaticMap<Kenshi::BinaryVersion, offset_t>()
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::STEAM, "1.0.65"), 0x02132440)
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::STEAM, "1.0.68"), 0x02133490)
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.65"), 0x02132440)
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.68"), 0x021323C0);
+
 std::string kenshiHash = GetEXEHash();
 Kenshi::BinaryVersion kenshiVersion = HashToVersionMap.count(kenshiHash) > 0 ? HashToVersionMap.at(kenshiHash) : Kenshi::BinaryVersion(Kenshi::BinaryVersion::UNKNOWN, "UNKNOWN");
 
@@ -269,6 +275,14 @@ Kenshi::GlobalConstants* Kenshi::GetCon()
     Kenshi::BinaryVersion kenshiVersion = GetKenshiVersion();
     offset_t conOffset = GlobalConOffset.at(kenshiVersion);
     static RVAPtr<GlobalConstants> c_inst(conOffset);
+    return c_inst.GetPtr();
+}
+
+Kenshi::OptionsHolder* Kenshi::GetOptions()
+{
+    Kenshi::BinaryVersion kenshiVersion = GetKenshiVersion();
+    offset_t optionsOffset = GlobalOptionsOffset.at(kenshiVersion);
+    static RVAPtr<OptionsHolder> c_inst(optionsOffset);
     return c_inst.GetPtr();
 }
 
