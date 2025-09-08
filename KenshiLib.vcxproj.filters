@@ -2189,6 +2189,15 @@
     <ClInclude Include="Include\kenshi\OptionsHolder.h">
       <Filter>Header Files\kenshi</Filter>
     </ClInclude>
+    <ClInclude Include="Include\kenshi\PhysicsActual.h">
+      <Filter>Header Files\kenshi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\ThreadClass.h">
+      <Filter>Header Files\kenshi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\util\OgreUnordered.h">
+      <Filter>Header Files\kenshi</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Library Include="Libraries\mygui\MyGUIEngine_x64.lib">

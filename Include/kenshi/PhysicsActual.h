@@ -10,6 +10,7 @@
 #include <kenshi/util/lektor.h>
 #include <kenshi/util/OgreUnordered.h>
 #include <kenshi/util/hand.h>
+#include "ThreadClass.h"
 
 // TODO move?
 class NxVec3;

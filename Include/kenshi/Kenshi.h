@@ -131,6 +131,9 @@ namespace Kenshi
     void* GetUtilityTRandomIntFunction();
     void* GetUtilityTRandomFunction();
 
+    void* GetLoadPhysXResourceFunction();
+    void* GetScaleCopyCollectionFunction();
+
     // Static var separate to GameWorld
     // GlobalConstants con;
     GlobalConstants* GetCon();

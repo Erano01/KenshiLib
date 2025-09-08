@@ -161,6 +161,20 @@ StaticMap<Kenshi::BinaryVersion, offset_t> UtilityTRandomFunction = StaticMap<Ke
     .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.65"), 0x009B04D0)
     .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.68"), 0x009B13C0);
 
+// AoB: 4C 8B DC 56 57 41 54 48 81 EC 80 00 00 00 48 C7 44 24 48 FE
+StaticMap<Kenshi::BinaryVersion, offset_t> LoadPhysXResourceFunction = StaticMap<Kenshi::BinaryVersion, offset_t>()
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.65"), 0x007E4190)
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.68"), 0x007E4D50)
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::STEAM, "1.0.65"), 0x007E4850)
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::STEAM, "1.0.68"), 0x007E53F0);
+
+// AoB: 4C 89 4C 24 20 4C 89 44 24 18 55 56 57 41 54 41 55 41 56 41 57 48 83 EC 40 48 C7 44 24 30
+StaticMap<Kenshi::BinaryVersion, offset_t> ScaleCopyCollectionFunction = StaticMap<Kenshi::BinaryVersion, offset_t>()
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.65"), 0x0020B3B0)
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.68"), 0x0020B200)
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::STEAM, "1.0.65"), 0x0020B820)
+    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::STEAM, "1.0.68"), 0x0020B860);
+
 // read at 0x006C1325 Steam 1.0.64
 // the numbers check out
 // GlobalConstants con; // 0x001ACA1E0
@@ -259,6 +273,22 @@ void* Kenshi::GetUtilityTRandomFunction()
     Kenshi::BinaryVersion kenshiVersion = GetKenshiVersion();
     offset_t utilityTRandomFunction = UtilityTRandomFunction.at(kenshiVersion);
     static RVAPtr<void> c_inst(utilityTRandomFunction);
+    return c_inst.GetPtr();
+}
+
+void* Kenshi::GetLoadPhysXResourceFunction()
+{
+    Kenshi::BinaryVersion kenshiVersion = GetKenshiVersion();
+    offset_t loadPhysXResourceFunction = LoadPhysXResourceFunction.at(kenshiVersion);
+    static RVAPtr<void> c_inst(loadPhysXResourceFunction);
+    return c_inst.GetPtr();
+}
+
+void* Kenshi::GetScaleCopyCollectionFunction()
+{
+    Kenshi::BinaryVersion kenshiVersion = GetKenshiVersion();
+    offset_t scaleCopyCollectionFunction = ScaleCopyCollectionFunction.at(kenshiVersion);
+    static RVAPtr<void> c_inst(scaleCopyCollectionFunction);
     return c_inst.GetPtr();
 }
 
