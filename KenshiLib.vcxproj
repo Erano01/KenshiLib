@@ -50,7 +50,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>Include;$(VC_IncludePath);$(WindowsSDK_IncludePath);$(BOOST_INCLUDE_PATH);$(IncludePath)</IncludePath>
+    <IncludePath>Include;Include/ogre;$(VC_IncludePath);$(WindowsSDK_IncludePath);$(BOOST_INCLUDE_PATH);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -82,6 +82,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include="Include\kenshi\util\iVector2.h" />
     <None Include="Include\ogre\animation\OgreBone.inl" />
     <None Include="Include\ogre\math\array\c\OgreArrayAabb.inl" />
     <None Include="Include\ogre\math\array\c\OgreArrayMatrix4.inl" />
@@ -143,6 +144,7 @@
     <ClInclude Include="Include\kenshi\GameData.h" />
     <ClInclude Include="Include\kenshi\GameDataManager.h" />
     <ClInclude Include="Include\kenshi\GameSaveState.h" />
+    <ClInclude Include="Include\kenshi\GameLauncher.h" />
     <ClInclude Include="Include\kenshi\GameWorld.h" />
     <ClInclude Include="Include\kenshi\GlobalConstants.h" />
     <ClInclude Include="Include\kenshi\Globals.h" />
@@ -154,6 +156,9 @@
     <ClInclude Include="Include\kenshi\Logger.h" />
     <ClInclude Include="Include\kenshi\MedicalSystem.h" />
     <ClInclude Include="Include\kenshi\ModInfo.h" />
+    <ClInclude Include="Include\kenshi\OptionsHolder.h" />
+    <ClInclude Include="Include\kenshi\PhysicsActual.h" />
+    <ClInclude Include="Include\kenshi\PhysicsCollection.h" />
     <ClInclude Include="Include\kenshi\Platoon.h" />
     <ClInclude Include="Include\kenshi\PlayerInterface.h" />
     <ClInclude Include="Include\kenshi\RootObject.h" />
@@ -162,6 +167,8 @@
     <ClInclude Include="Include\kenshi\SaveManager.h" />
     <ClInclude Include="Include\kenshi\Tasks.h" />
     <ClInclude Include="Include\kenshi\TradeCulture.h" />
+    <ClInclude Include="Include\kenshi\ThreadClass.h" />
+    <ClInclude Include="Include\kenshi\TimeOfDay.h" />
     <ClInclude Include="Include\kenshi\util\Array2d.h" />
     <ClInclude Include="Include\kenshi\util\functions.h" />
     <ClInclude Include="Include\kenshi\util\hand.h" />
@@ -170,6 +177,7 @@
     <ClInclude Include="Include\kenshi\util\PerfTimer.h" />
     <ClInclude Include="Include\kenshi\util\StringPair.h" />
     <ClInclude Include="Include\kenshi\util\TimeOfDay.h" />
+    <ClInclude Include="Include\kenshi\util\UtilityT.h" />
     <ClInclude Include="Include\kenshi\util\YesNoMaybe.h" />
     <ClInclude Include="Include\kenshi\View.h" />
     <ClInclude Include="Include\kenshi\Zone.h" />
@@ -351,7 +359,6 @@
     <ClInclude Include="Include\ogre\android\OgreAPKZipArchive.h" />
     <ClInclude Include="Include\ogre\android\OgreConfigDialogImp.h" />
     <ClInclude Include="Include\ogre\android\OgreErrorDialogImp.h" />
-    <ClInclude Include="Include\ogre\android\OgreTimerImp.h" />
     <ClInclude Include="Include\ogre\animation\OgreBone.h" />
     <ClInclude Include="Include\ogre\animation\OgreSkeletonAnimation.h" />
     <ClInclude Include="Include\ogre\animation\OgreSkeletonAnimationDef.h" />
@@ -421,10 +428,8 @@
     <ClInclude Include="Include\ogre\deprecated\OgreTextureManager.h" />
     <ClInclude Include="Include\ogre\emscripten\OgreConfigDialogImp.h" />
     <ClInclude Include="Include\ogre\emscripten\OgreErrorDialogImp.h" />
-    <ClInclude Include="Include\ogre\emscripten\OgreTimerImp.h" />
     <ClInclude Include="Include\ogre\glx\OgreConfigDialogImp.h" />
     <ClInclude Include="Include\ogre\glx\OgreErrorDialogImp.h" />
-    <ClInclude Include="Include\ogre\glx\OgreTimerImp.h" />
     <ClInclude Include="Include\ogre\gtk\OgreConfigDialogImp.h" />
     <ClInclude Include="Include\ogre\gtk\OgreErrorDialogImp.h" />
     <ClInclude Include="Include\ogre\hash\MurmurHash3.h" />
@@ -432,7 +437,6 @@
     <ClInclude Include="Include\ogre\ios\OgreConfigDialogImp.h" />
     <ClInclude Include="Include\ogre\ios\OgreErrorDialogImp.h" />
     <ClInclude Include="Include\ogre\ios\OgreOSXCocoaTouchView.h" />
-    <ClInclude Include="Include\ogre\ios\OgreTimerImp.h" />
     <ClInclude Include="Include\ogre\math\array\c\OgreArrayAabb.h" />
     <ClInclude Include="Include\ogre\math\array\c\OgreArrayMatrix4.h" />
     <ClInclude Include="Include\ogre\math\array\c\OgreArrayMatrixAf4x3.h" />
@@ -483,7 +487,6 @@
     <ClInclude Include="Include\ogre\math\simple\OgreAabb.h" />
     <ClInclude Include="Include\ogre\nacl\OgreConfigDialogImp.h" />
     <ClInclude Include="Include\ogre\nacl\OgreErrorDialogImp.h" />
-    <ClInclude Include="Include\ogre\nacl\OgreTimerImp.h" />
     <ClInclude Include="Include\ogre\Ogre.h" />
     <ClInclude Include="Include\ogre\OgreAlignedAllocator.h" />
     <ClInclude Include="Include\ogre\OgreAnimable.h" />
@@ -785,7 +788,6 @@
     <ClInclude Include="Include\ogre\osx\macUtils.h" />
     <ClInclude Include="Include\ogre\osx\OgreConfigDialogImp.h" />
     <ClInclude Include="Include\ogre\osx\OgreErrorDialogImp.h" />
-    <ClInclude Include="Include\ogre\osx\OgreTimerImp.h" />
     <ClInclude Include="Include\ogre\threading\OgreBarrier.h" />
     <ClInclude Include="Include\ogre\threading\OgreDefaultWorkQueue.h" />
     <ClInclude Include="Include\ogre\threading\OgreDefaultWorkQueueStandard.h" />
@@ -827,7 +829,7 @@
     <ClInclude Include="Include\ogre\win32\OgreErrorDialogImp.h" />
     <ClInclude Include="Include\ogre\win32\OgreErrorDialogImpWinRT.h" />
     <ClInclude Include="Include\ogre\win32\OgreMinGWSupport.h" />
-    <ClInclude Include="Include\ogre\win32\OgreTimerImp.h" />
+    <ClInclude Include="Include\ogre\WIN32\OgreTimerImp.h" />
     <ClInclude Include="Include\ois\OIS.h" />
     <ClInclude Include="Include\ois\OISConfig.h" />
     <ClInclude Include="Include\ois\OISEffect.h" />

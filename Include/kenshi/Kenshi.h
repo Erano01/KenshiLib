@@ -1,26 +1,12 @@
 #pragma once
 
 #include "mygui/MyGUI_Gui.h"
-
 class GameWorld;
-class PlayerInterface;
-class Character;
-class Building;
-class Renderer;
-class PhysicsActual;
-class ModInfo;
-class Character;
-class Building;
-class ZoneManager;
-class AudioSystemGlobal;
-class Alarm;
-class PlayerInterface;
-class ResearchManager;
-class ResearchItem;
 class InputHandler;
+class GlobalConstants;
+class OptionsHolder;
 class SaveManager;
 class SaveFileSystem;
-class GlobalConstants;
 
 namespace Kenshi 
 {
@@ -98,6 +84,8 @@ namespace Kenshi
     void Init();
 
     BinaryVersion GetKenshiVersion();
+    // returns true on success
+    bool OverrideKenshiVersion(BinaryVersion newVersion);
 
     // GameWorld looks to be an object of all game state, whether its loaded or not.
     // Has things like a list of loaded mods and all the GameData loaded in, probably saves too.
@@ -115,6 +103,9 @@ namespace Kenshi
     // Static var separate to GameWorld
     // GlobalConstants con;
     GlobalConstants* GetCon();
+
+    // OptionsHolder options;
+    OptionsHolder* GetOptions();
 
     SaveManager* GetSaveManager();
     SaveFileSystem* GetSaveFileSystem();

@@ -9,6 +9,7 @@
 #include <ogre/OgreVector3.h>
 #include <string>
 #include <ogre/OgreQuaternion.h>
+#include <kenshi/Enums.h>
 
 class GameData;
 class CampaignInstance;
@@ -145,19 +146,6 @@ enum MoveSpeed
 enum CharacterMessage
 {
     ATTACKING_MELEE
-};
-
-enum GroundType
-{
-    GROUND_SAND,
-    GROUND_GRASS,
-    GROUND_CONCRETE,
-    GROUND_WOOD,
-    GROUND_METAL,
-    GROUND_WATER,
-    GROUND_MUD,
-    GROUND_SNOW,
-    GROUND_DIRT
 };
 
 struct AkVector

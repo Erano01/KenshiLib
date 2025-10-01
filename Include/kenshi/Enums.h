@@ -841,3 +841,34 @@ enum ComparisonEnum
     CE_LESS_THAN,
     CE_MORE_THAN
 };
+
+enum GroundType
+{
+    GROUND_SAND,
+    GROUND_GRASS,
+    GROUND_CONCRETE,
+    GROUND_WOOD,
+    GROUND_METAL,
+    GROUND_WATER,
+    GROUND_MUD,
+    GROUND_SNOW,
+    GROUND_DIRT
+};
+
+namespace EffectType
+{
+    enum Enum
+    {
+        NONE,
+        CAMERA,
+        POINT,
+        WANDERING,
+        GLOBAL,
+        CAMERA_RAIN,
+        CAMERA_ACID_RAIN,
+        POINT_LIGHTING,
+        WANDERING_STORM,
+        WANDERING_GAS,
+        GLOBAL_POINT
+    };
+}

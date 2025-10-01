@@ -1370,27 +1370,6 @@
     <ClInclude Include="Include\ogre\OgreTimer.h">
       <Filter>Header Files\ogre</Filter>
     </ClInclude>
-    <ClInclude Include="Include\ogre\emscripten\OgreTimerImp.h">
-      <Filter>Header Files\ogre</Filter>
-    </ClInclude>
-    <ClInclude Include="Include\ogre\glx\OgreTimerImp.h">
-      <Filter>Header Files\ogre</Filter>
-    </ClInclude>
-    <ClInclude Include="Include\ogre\nacl\OgreTimerImp.h">
-      <Filter>Header Files\ogre</Filter>
-    </ClInclude>
-    <ClInclude Include="Include\ogre\osx\OgreTimerImp.h">
-      <Filter>Header Files\ogre</Filter>
-    </ClInclude>
-    <ClInclude Include="Include\ogre\android\OgreTimerImp.h">
-      <Filter>Header Files\ogre</Filter>
-    </ClInclude>
-    <ClInclude Include="Include\ogre\ios\OgreTimerImp.h">
-      <Filter>Header Files\ogre</Filter>
-    </ClInclude>
-    <ClInclude Include="Include\ogre\win32\OgreTimerImp.h">
-      <Filter>Header Files\ogre</Filter>
-    </ClInclude>
     <ClInclude Include="Include\ogre\math\array\OgreTransform.h">
       <Filter>Header Files\ogre</Filter>
     </ClInclude>
@@ -2249,6 +2228,33 @@
     <ClInclude Include="Include\kenshi\TradeCulture.h">
       <Filter>Header Files\kenshi</Filter>
     </ClInclude>
+    <ClInclude Include="Include\kenshi\GameLauncher.h">
+      <Filter>Header Files\kenshi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\util\UtilityT.h">
+      <Filter>Header Files\kenshi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\ogre\WIN32\OgreTimerImp.h">
+      <Filter>Header Files\ogre</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\OptionsHolder.h">
+      <Filter>Header Files\kenshi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\PhysicsActual.h">
+      <Filter>Header Files\kenshi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\ThreadClass.h">
+      <Filter>Header Files\kenshi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\util\OgreUnordered.h">
+      <Filter>Header Files\kenshi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\TimeOfDay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\PhysicsCollection.h">
+      <Filter>Header Files\kenshi</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Library Include="Libraries\mygui\MyGUIEngine_x64.lib">
@@ -2348,6 +2354,9 @@
     </None>
     <None Include="Include\ogre\OgreMovableObject.inl">
       <Filter>Header Files\ogre</Filter>
+    </None>
+    <None Include="Include\kenshi\util\iVector2.h">
+      <Filter>Header Files\kenshi</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

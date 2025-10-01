@@ -16,25 +16,6 @@ class PlatoonAI;
 class RootObjectContainer;
 class Inventory;
 
-// TODO move?
-namespace EffectType
-{
-    enum Enum
-    {
-        NONE,
-        CAMERA,
-        POINT,
-        WANDERING,
-        GLOBAL,
-        CAMERA_RAIN,
-        CAMERA_ACID_RAIN,
-        POINT_LIGHTING,
-        WANDERING_STORM,
-        WANDERING_GAS,
-        GLOBAL_POINT
-    };
-}
-
 class RootObject : public RootObjectBase
 {
 public:

@@ -4,6 +4,9 @@
 #include <sstream>
 #include <fstream>
 #include <ctime>
+#define WIN32_LEAN_AND_MEAN
+#define NOMINMAX
+#include <Windows.h>
 
 std::stringstream debugLog;
 std::ofstream debugFile("RE_Kenshi_log.txt");
@@ -45,3 +48,32 @@ std::string GetDebugLog()
 	return debugLog.str();
 }
 
+// stolen from https://www.codeproject.com/tips/479880/getlasterror-as-std-string
+// Create a string with last error message
+std::string GetLastErrorStdStr()
+{
+	DWORD error = GetLastError();
+	if (error)
+	{
+		LPVOID lpMsgBuf;
+		DWORD bufLen = FormatMessageA(
+			FORMAT_MESSAGE_ALLOCATE_BUFFER |
+			FORMAT_MESSAGE_FROM_SYSTEM |
+			FORMAT_MESSAGE_IGNORE_INSERTS,
+			NULL,
+			error,
+			MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT),
+			(LPSTR)&lpMsgBuf,
+			0, NULL);
+		if (bufLen)
+		{
+			LPCSTR lpMsgStr = (LPCSTR)lpMsgBuf;
+			std::string result(lpMsgStr, lpMsgStr + bufLen);
+
+			LocalFree(lpMsgBuf);
+
+			return result;
+		}
+	}
+	return std::string();
+}
