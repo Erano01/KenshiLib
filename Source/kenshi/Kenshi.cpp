@@ -5,7 +5,7 @@
 #include <kenshi/GameWorld.h>
 #include <kenshi/PlayerInterface.h>
 #include <kenshi/GlobalConstants.h>
-#include <kenshi/util/functions.h>
+#include <core/Functions.h>
 
 #include <core/RVA.h>
 
@@ -135,26 +135,7 @@ Kenshi::BinaryVersion kenshiVersion = HashToVersionMap.count(kenshiHash) > 0 ? H
 
 void Kenshi::Init()
 {
-    assert_release(FUNCTION_ERROR == 0);
-
-    // binary RVA path
-    std::string RVAFilePath = "RE_Kenshi/RVAs/" + kenshiVersion.GetPlatformStr() + "_" + kenshiVersion.GetVersion() + ".br";
-    std::ifstream rvaFile(RVAFilePath, std::ios::ate | std::ios::binary);
-    if (!rvaFile.is_open())
-        ErrorLog("Unable to open RVA file at " + RVAFilePath);
-    assert_release(rvaFile.is_open());
-    size_t end = rvaFile.tellg();
-    assert_release(end == (FUNCTION_BUFF_LENGTH * sizeof(intptr_t) / 2));
-    rvaFile.seekg(0);
-
-    for (int i = 0; i < FUNCTION_BUFF_LENGTH; ++i)
-    {
-        int offset;
-        rvaFile.read((char*)(&offset), 4);
-        RVAPtr<void> c_inst(offset);
-        function_pointers[i] = (intptr_t)c_inst.GetPtr();
-    }
-    DebugLog("RVAs loaded");
+    InitRVAs();
 }
 // force override - used for hash mismatches, which can occur if the user has modified the executable
 // there are a few mods on Nexus that need this
@@ -242,25 +223,4 @@ SaveFileSystem* Kenshi::GetSaveFileSystem()
     offset_t saveFileSystemPtrOffset = SaveFileSystemOffset.at(kenshiVersion);
     static RVAPtr<SaveFileSystem*> c_inst(saveFileSystemPtrOffset);
     return *c_inst.GetPtr();
-}
-
-// TODO templateize
-// Kenshi prefixes it's widgets with a bunch of non-usefull stuff
-MyGUI::WidgetPtr Kenshi::FindWidget(MyGUI::EnumeratorWidgetPtr enumerator, std::string name)
-{
-    while (enumerator.next())
-    {
-        std::string widgetName = enumerator.current()->getName();
-        size_t splitPos = widgetName.find('_');
-
-        if (splitPos != std::string::npos && widgetName.substr(splitPos + 1) == name)
-            return enumerator.current();
-        if (enumerator.current()->getChildCount() > 0)
-        {
-            MyGUI::WidgetPtr childFoundWidget = Kenshi::FindWidget(enumerator.current()->getEnumerator(), name);
-            if (childFoundWidget != nullptr)
-                return childFoundWidget;
-        }
-    }
-    return nullptr;
 }

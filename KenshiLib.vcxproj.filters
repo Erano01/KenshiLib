@@ -63,6 +63,9 @@
     <ClCompile Include="Source\kenshi\Inventory.cpp">
       <Filter>Source Files\kenshi</Filter>
     </ClCompile>
+    <ClCompile Include="Source\core\Functions.cpp">
+      <Filter>Source Files\kenshi</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\ogre\math\array\neon\single\neon_mathfun.h">
@@ -2171,9 +2174,6 @@
     <ClInclude Include="Include\kenshi\util\Array2d.h">
       <Filter>Header Files\kenshi\util</Filter>
     </ClInclude>
-    <ClInclude Include="Include\kenshi\util\functions.h">
-      <Filter>Header Files\kenshi\util</Filter>
-    </ClInclude>
     <ClInclude Include="Include\kenshi\util\hand.h">
       <Filter>Header Files\kenshi\util</Filter>
     </ClInclude>
@@ -2251,6 +2251,9 @@
     </ClInclude>
     <ClInclude Include="Include\Defines.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\core\Functions.h">
+      <Filter>Header Files\core</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

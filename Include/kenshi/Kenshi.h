@@ -12,8 +12,6 @@ class SaveFileSystem;
 
 namespace Kenshi 
 {
-    KLIB_EXPORT MyGUI::WidgetPtr FindWidget(MyGUI::EnumeratorWidgetPtr enumerator, std::string name);
-
     class KLIB_EXPORT BinaryVersion
     {
     public:

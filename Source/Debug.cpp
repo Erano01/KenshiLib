@@ -12,7 +12,7 @@ std::stringstream debugLog;
 std::ofstream debugFile("RE_Kenshi_log.txt");
 clock_t startTime = -1;
 
-void DebugLog(std::string message)
+void DebugLog(const std::string& message)
 {
 	if (startTime == -1)
 		startTime = clock();
@@ -28,7 +28,12 @@ void DebugLog(std::string message)
 	debugLog << timeStr << ": " << message << std::endl;
 }
 
-void ErrorLog(std::string message)
+void DebugLog(const char* message)
+{
+	DebugLog(std::string(message));
+}
+
+void ErrorLog(const std::string& message)
 {
 	if (startTime == -1)
 		startTime = clock();
@@ -41,6 +46,11 @@ void ErrorLog(std::string message)
 
 	debugFile << "Error " << timeStr << ": " << message << std::endl << std::flush;
 	debugLog << "Error " << timeStr << ": " << message << std::endl;
+}
+
+void ErrorLog(const char* message)
+{
+	ErrorLog(std::string(message));
 }
 
 std::string GetDebugLog()
