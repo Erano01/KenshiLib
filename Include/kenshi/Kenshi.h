@@ -1,5 +1,7 @@
 #pragma once
 
+#include <Defines.h>
+
 #include "mygui/MyGUI_Gui.h"
 class GameWorld;
 class InputHandler;
@@ -10,9 +12,9 @@ class SaveFileSystem;
 
 namespace Kenshi 
 {
-    MyGUI::WidgetPtr FindWidget(MyGUI::EnumeratorWidgetPtr enumerator, std::string name);
+    KLIB_EXPORT MyGUI::WidgetPtr FindWidget(MyGUI::EnumeratorWidgetPtr enumerator, std::string name);
 
-    class BinaryVersion
+    class KLIB_EXPORT BinaryVersion
     {
     public:
         enum KenshiPlatform
@@ -81,32 +83,32 @@ namespace Kenshi
         std::string version;
     };
 
-    void Init();
+    KLIB_EXPORT void Init();
 
-    BinaryVersion GetKenshiVersion();
+    KLIB_EXPORT BinaryVersion GetKenshiVersion();
     // returns true on success
-    bool OverrideKenshiVersion(BinaryVersion newVersion);
+    KLIB_EXPORT bool OverrideKenshiVersion(BinaryVersion newVersion);
 
     // GameWorld looks to be an object of all game state, whether its loaded or not.
     // Has things like a list of loaded mods and all the GameData loaded in, probably saves too.
     // GameWorld ou;
-    GameWorld& GetGameWorld();
+    KLIB_EXPORT GameWorld& GetGameWorld();
 
     // default 2000
-    float& GetMaxCameraDistance();
+    KLIB_EXPORT float& GetMaxCameraDistance();
     // default 10
-    float& GetMinCameraDistance();
+    KLIB_EXPORT float& GetMinCameraDistance();
 
     // Not 100% sure what this is called
-    InputHandler& GetInputHandler();
+    KLIB_EXPORT InputHandler& GetInputHandler();
 
     // Static var separate to GameWorld
     // GlobalConstants con;
-    GlobalConstants* GetCon();
+    KLIB_EXPORT GlobalConstants* GetCon();
 
     // OptionsHolder options;
-    OptionsHolder* GetOptions();
+    KLIB_EXPORT OptionsHolder* GetOptions();
 
-    SaveManager* GetSaveManager();
-    SaveFileSystem* GetSaveFileSystem();
+    KLIB_EXPORT SaveManager* GetSaveManager();
+    KLIB_EXPORT SaveFileSystem* GetSaveFileSystem();
 }

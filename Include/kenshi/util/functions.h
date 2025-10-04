@@ -55,18 +55,27 @@ intptr_t GetShimAddress(T fun)
 	return (intptr_t&)fun; // the cast has to be to a ref to work with member functions in VC++
 }
 
+KLIB_EXPORT intptr_t GetRealAddress(void* fun)
+#ifdef KENSHILIB_EXPORT
+{
+	assert_release((intptr_t&)fun >= (intptr_t)&FUNC_BEGIN && (intptr_t&)fun <= (intptr_t)&FUNC_END);
+	return function_pointers[GetFunctionSlot(fun)]; // the cast has to be to a ref to work with member functions in VC++
+}
+#else
+;
+#endif
+
 // usage: GetRealAddress(&Class::function)
 // NOTE: doesn't work with virtual functions
 template<typename T>
 intptr_t GetRealAddress(T fun)
 {
-	assert_release((intptr_t&)fun >= (intptr_t)&FUNC_BEGIN && (intptr_t&)fun <= (intptr_t)&FUNC_END);
-	return function_pointers[GetFunctionSlot((void*&)fun)]; // the cast has to be to a ref to work with member functions in VC++
+	return GetRealAddress((void*&)fun);
 }
 
 // NOTE: doesn't work with virtual functions
 template<typename T>
-T GetRealFunction(T fun)
+inline T GetRealFunction(T fun)
 {
 	return (T)GetRealAddress(fun);
 }

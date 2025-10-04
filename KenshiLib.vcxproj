@@ -25,7 +25,7 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>Windows7.1SDK</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -70,7 +70,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;OGRE_DEBUG_MODE=OGRE_DEBUG_LEVEL_RELEASE;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;OGRE_DEBUG_MODE=OGRE_DEBUG_LEVEL_RELEASE;_CONSOLE;KENSHILIB_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
     </ClCompile>
@@ -129,6 +129,7 @@
     <ClInclude Include="Include\core\RVA.h" />
     <ClInclude Include="Include\core\Scanner.h" />
     <ClInclude Include="Include\Debug.h" />
+    <ClInclude Include="Include\Defines.h" />
     <ClInclude Include="Include\kenshi\Bounty.h" />
     <ClInclude Include="Include\kenshi\BountyManager.h" />
     <ClInclude Include="Include\kenshi\Building.h" />
@@ -168,7 +169,6 @@
     <ClInclude Include="Include\kenshi\Tasks.h" />
     <ClInclude Include="Include\kenshi\TradeCulture.h" />
     <ClInclude Include="Include\kenshi\ThreadClass.h" />
-    <ClInclude Include="Include\kenshi\TimeOfDay.h" />
     <ClInclude Include="Include\kenshi\util\Array2d.h" />
     <ClInclude Include="Include\kenshi\util\functions.h" />
     <ClInclude Include="Include\kenshi\util\hand.h" />
@@ -850,7 +850,6 @@
     <ClInclude Include="Include\ois\win32\Win32KeyBoard.h" />
     <ClInclude Include="Include\ois\win32\Win32Mouse.h" />
     <ClInclude Include="Include\ois\win32\Win32Prereqs.h" />
-    <ClInclude Include="Include\reclaimer\Reclaimer.h" />
     <ClInclude Include="Include\Release_Assert.h" />
     <ClInclude Include="Include\stdafx.h" />
   </ItemGroup>

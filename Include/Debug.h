@@ -1,10 +1,12 @@
 #pragma once
 
+#include "Defines.h"
+
 #include <string>
 
-void DebugLog(std::string message);
-void ErrorLog(std::string message);
-std::string GetDebugLog();
+KLIB_EXPORT void DebugLog(std::string message);
+KLIB_EXPORT void ErrorLog(std::string message);
+KLIB_EXPORT std::string GetDebugLog();
 
 // returns string containing WINAPI GetLastError()
-std::string GetLastErrorStdStr();
+KLIB_EXPORT std::string GetLastErrorStdStr();

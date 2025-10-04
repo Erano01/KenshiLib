@@ -2009,9 +2009,6 @@
     <ClInclude Include="Include\ogre\debugbreak\debugbreak.h">
       <Filter>Header Files\ogre</Filter>
     </ClInclude>
-    <ClInclude Include="Include\reclaimer\Reclaimer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Include\kenshi\Building.h">
       <Filter>Header Files\kenshi</Filter>
     </ClInclude>
@@ -2249,18 +2246,18 @@
     <ClInclude Include="Include\kenshi\util\OgreUnordered.h">
       <Filter>Header Files\kenshi</Filter>
     </ClInclude>
-    <ClInclude Include="Include\kenshi\TimeOfDay.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Include\kenshi\PhysicsCollection.h">
       <Filter>Header Files\kenshi</Filter>
     </ClInclude>
+    <ClInclude Include="Include\Defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Library Include="Libraries\mygui\MyGUIEngine_x64.lib">
+    <Library Include="Libraries\ogre\OgreMain_x64.lib">
       <Filter>Libraries</Filter>
     </Library>
-    <Library Include="Libraries\ogre\OgreMain_x64.lib">
+    <Library Include="Libraries\mygui\MyGUIEngine_x64.lib">
       <Filter>Libraries</Filter>
     </Library>
   </ItemGroup>
