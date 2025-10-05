@@ -5329,119 +5329,161 @@ jmp function_pointers[839*8]
 jmp function_pointers[840*8]
 ?dropItem@CharacterAnimal@@UEAAXPEAVRootObject@@@Z endp
 
+?_CONSTRUCTOR@Damages@@QEAAXAEBV1@@Z proc EXPORT
+?_CONSTRUCTOR@Damages@@QEAAXAEBV1@@Z endp
+
+; Damages::Damages(const class Damages &);
+??0Damages@@QEAA@AEBV0@@Z proc EXPORT
+jmp function_pointers[841*8]
+??0Damages@@QEAA@AEBV0@@Z endp
+
+?_CONSTRUCTOR@Damages@@QEAAXMMMMM@Z proc EXPORT
+?_CONSTRUCTOR@Damages@@QEAAXMMMMM@Z endp
+
+; Damages::Damages(float, float, float, float, float);
+??0Damages@@QEAA@MMMMM@Z proc EXPORT
+jmp function_pointers[842*8]
+??0Damages@@QEAA@MMMMM@Z endp
+
+?_CONSTRUCTOR@Damages@@QEAAXXZ proc EXPORT
+?_CONSTRUCTOR@Damages@@QEAAXXZ endp
+
+; Damages::Damages();
+??0Damages@@QEAA@XZ proc EXPORT
+jmp function_pointers[843*8]
+??0Damages@@QEAA@XZ endp
+
+; Damages::multiply(float);
+?multiply@Damages@@QEAAXM@Z proc EXPORT
+jmp function_pointers[844*8]
+?multiply@Damages@@QEAAXM@Z endp
+
+; Damages::total();
+?total@Damages@@QEBAMXZ proc EXPORT
+jmp function_pointers[845*8]
+?total@Damages@@QEBAMXZ endp
+
+?_DESTRUCTOR@Damages@@QEAAXXZ proc EXPORT
+?_DESTRUCTOR@Damages@@QEAAXXZ endp
+
+; Damages::~Damages();
+??1Damages@@QEAA@XZ proc EXPORT
+jmp function_pointers[846*8]
+??1Damages@@QEAA@XZ endp
+
 ; SaveManager::getSingleton();
 ?getSingleton@SaveManager@@SAPEAV1@XZ proc EXPORT
-jmp function_pointers[841*8]
+jmp function_pointers[847*8]
 ?getSingleton@SaveManager@@SAPEAV1@XZ endp
 
 ; SaveManager::isVisible();
 ?isVisible@SaveManager@@QEAAHXZ proc EXPORT
-jmp function_pointers[842*8]
+jmp function_pointers[848*8]
 ?isVisible@SaveManager@@QEAAHXZ endp
 
 ; SaveManager::showSave();
 ?showSave@SaveManager@@QEAAXXZ proc EXPORT
-jmp function_pointers[843*8]
+jmp function_pointers[849*8]
 ?showSave@SaveManager@@QEAAXXZ endp
 
 ; SaveManager::showLoad();
 ?showLoad@SaveManager@@QEAAXXZ proc EXPORT
-jmp function_pointers[844*8]
+jmp function_pointers[850*8]
 ?showLoad@SaveManager@@QEAAXXZ endp
 
 ; SaveManager::showImport();
 ?showImport@SaveManager@@QEAAXXZ proc EXPORT
-jmp function_pointers[845*8]
+jmp function_pointers[851*8]
 ?showImport@SaveManager@@QEAAXXZ endp
 
 ; SaveManager::hide();
 ?hide@SaveManager@@QEAAXXZ proc EXPORT
-jmp function_pointers[846*8]
+jmp function_pointers[852*8]
 ?hide@SaveManager@@QEAAXXZ endp
 
 ; SaveManager::newGame(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?newGame@SaveManager@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[847*8]
+jmp function_pointers[853*8]
 ?newGame@SaveManager@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; SaveManager::save(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, bool);
 ?save@SaveManager@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@Z proc EXPORT
-jmp function_pointers[848*8]
+jmp function_pointers[854*8]
 ?save@SaveManager@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@Z endp
 
 ; SaveManager::load(const struct SaveInfo &, bool);
 ?load@SaveManager@@QEAAXAEBUSaveInfo@@_N@Z proc EXPORT
-jmp function_pointers[849*8]
+jmp function_pointers[855*8]
 ?load@SaveManager@@QEAAXAEBUSaveInfo@@_N@Z endp
 
 ; SaveManager::load(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?load@SaveManager@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[850*8]
+jmp function_pointers[856*8]
 ?load@SaveManager@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; SaveManager::import(const struct SaveInfo &, int);
 ?import@SaveManager@@QEAAXAEBUSaveInfo@@H@Z proc EXPORT
-jmp function_pointers[851*8]
+jmp function_pointers[857*8]
 ?import@SaveManager@@QEAAXAEBUSaveInfo@@H@Z endp
 
 ; SaveManager::savesExist();
 ?savesExist@SaveManager@@QEAA_NXZ proc EXPORT
-jmp function_pointers[852*8]
+jmp function_pointers[858*8]
 ?savesExist@SaveManager@@QEAA_NXZ endp
 
 ; SaveManager::saveExists(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?saveExists@SaveManager@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z proc EXPORT
-jmp function_pointers[853*8]
+jmp function_pointers[859*8]
 ?saveExists@SaveManager@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z endp
 
 ; SaveManager::scanGames(class lektor<SaveInfo> &, bool);
 ?scanGames@SaveManager@@QEAAHAEAV?$lektor@USaveInfo@@@@_N@Z proc EXPORT
-jmp function_pointers[854*8]
+jmp function_pointers[860*8]
 ?scanGames@SaveManager@@QEAAHAEAV?$lektor@USaveInfo@@@@_N@Z endp
 
 ; SaveManager::scanGames(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, class lektor<SaveInfo> &, bool);
 ?scanGames@SaveManager@@QEAAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAV?$lektor@USaveInfo@@@@_N@Z proc EXPORT
-jmp function_pointers[855*8]
+jmp function_pointers[861*8]
 ?scanGames@SaveManager@@QEAAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAV?$lektor@USaveInfo@@@@_N@Z endp
 
 ; SaveManager::loadInfo(struct SaveInfo &);
 ?loadInfo@SaveManager@@QEAA_NAEAUSaveInfo@@@Z proc EXPORT
-jmp function_pointers[856*8]
+jmp function_pointers[862*8]
 ?loadInfo@SaveManager@@QEAA_NAEAUSaveInfo@@@Z endp
 
 ; SaveManager::checkVersion(const struct SaveInfo &);
 ?checkVersion@SaveManager@@QEAA_NAEBUSaveInfo@@@Z proc EXPORT
-jmp function_pointers[857*8]
+jmp function_pointers[863*8]
 ?checkVersion@SaveManager@@QEAA_NAEBUSaveInfo@@@Z endp
 
 ; SaveManager::execute();
 ?execute@SaveManager@@QEAAXXZ proc EXPORT
-jmp function_pointers[858*8]
+jmp function_pointers[864*8]
 ?execute@SaveManager@@QEAAXXZ endp
 
 ; SaveManager::getCurrentGame();
 ?getCurrentGame@SaveManager@@QEAAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ proc EXPORT
-jmp function_pointers[859*8]
+jmp function_pointers[865*8]
 ?getCurrentGame@SaveManager@@QEAAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ endp
 
 ; SaveManager::versionCode(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?versionCode@SaveManager@@QEAAIAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[860*8]
+jmp function_pointers[866*8]
 ?versionCode@SaveManager@@QEAAIAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; SaveManager::updateAutoSave();
 ?updateAutoSave@SaveManager@@QEAAXXZ proc EXPORT
-jmp function_pointers[861*8]
+jmp function_pointers[867*8]
 ?updateAutoSave@SaveManager@@QEAAXXZ endp
 
 ; SaveManager::getSavePath();
 ?getSavePath@SaveManager@@QEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ proc EXPORT
-jmp function_pointers[862*8]
+jmp function_pointers[868*8]
 ?getSavePath@SaveManager@@QEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ endp
 
 ; SaveManager::initialisePaths();
 ?initialisePaths@SaveManager@@QEAAXXZ proc EXPORT
-jmp function_pointers[863*8]
+jmp function_pointers[869*8]
 ?initialisePaths@SaveManager@@QEAAXXZ endp
 
 ?_CONSTRUCTOR@SaveManager@@QEAAXXZ proc EXPORT
@@ -5449,7 +5491,7 @@ jmp function_pointers[863*8]
 
 ; SaveManager::SaveManager();
 ??0SaveManager@@QEAA@XZ proc EXPORT
-jmp function_pointers[864*8]
+jmp function_pointers[870*8]
 ??0SaveManager@@QEAA@XZ endp
 
 ?_DESTRUCTOR@SaveManager@@QEAAXXZ proc EXPORT
@@ -5457,37 +5499,37 @@ jmp function_pointers[864*8]
 
 ; SaveManager::~SaveManager();
 ??1SaveManager@@QEAA@XZ proc EXPORT
-jmp function_pointers[865*8]
+jmp function_pointers[871*8]
 ??1SaveManager@@QEAA@XZ endp
 
 ; SaveManager::saveGame(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?saveGame@SaveManager@@QEAAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z proc EXPORT
-jmp function_pointers[866*8]
+jmp function_pointers[872*8]
 ?saveGame@SaveManager@@QEAAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z endp
 
 ; SaveManager::loadGame(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?loadGame@SaveManager@@QEAAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z proc EXPORT
-jmp function_pointers[867*8]
+jmp function_pointers[873*8]
 ?loadGame@SaveManager@@QEAAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z endp
 
 ; SaveManager::importGame(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, int);
 ?importGame@SaveManager@@QEAAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0H@Z proc EXPORT
-jmp function_pointers[868*8]
+jmp function_pointers[874*8]
 ?importGame@SaveManager@@QEAAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0H@Z endp
 
 ; SaveManager::importPlayerBuildings(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?importPlayerBuildings@SaveManager@@QEAAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z proc EXPORT
-jmp function_pointers[869*8]
+jmp function_pointers[875*8]
 ?importPlayerBuildings@SaveManager@@QEAAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z endp
 
 ; SaveManager::importOldPlayerBuildings(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?importOldPlayerBuildings@SaveManager@@QEAAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z proc EXPORT
-jmp function_pointers[870*8]
+jmp function_pointers[876*8]
 ?importOldPlayerBuildings@SaveManager@@QEAAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z endp
 
 ; SaveFileSystem::getSingleton();
 ?getSingleton@SaveFileSystem@@SAPEAV1@XZ proc EXPORT
-jmp function_pointers[871*8]
+jmp function_pointers[877*8]
 ?getSingleton@SaveFileSystem@@SAPEAV1@XZ endp
 
 ?_CONSTRUCTOR@SaveFileSystem@@QEAAXXZ proc EXPORT
@@ -5495,7 +5537,7 @@ jmp function_pointers[871*8]
 
 ; SaveFileSystem::SaveFileSystem();
 ??0SaveFileSystem@@QEAA@XZ proc EXPORT
-jmp function_pointers[872*8]
+jmp function_pointers[878*8]
 ??0SaveFileSystem@@QEAA@XZ endp
 
 ?_DESTRUCTOR@SaveFileSystem@@QEAAXXZ proc EXPORT
@@ -5503,92 +5545,92 @@ jmp function_pointers[872*8]
 
 ; SaveFileSystem::~SaveFileSystem();
 ??1SaveFileSystem@@UEAA@XZ proc EXPORT
-jmp function_pointers[873*8]
+jmp function_pointers[879*8]
 ??1SaveFileSystem@@UEAA@XZ endp
 
 ; SaveFileSystem::log(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, enum Logger::Severity);
 ?log@SaveFileSystem@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@W4Severity@Logger@@@Z proc EXPORT
-jmp function_pointers[874*8]
+jmp function_pointers[880*8]
 ?log@SaveFileSystem@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@W4Severity@Logger@@@Z endp
 
 ; SaveFileSystem::setTemporaryPath(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?setTemporaryPath@SaveFileSystem@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[875*8]
+jmp function_pointers[881*8]
 ?setTemporaryPath@SaveFileSystem@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; SaveFileSystem::fileExists(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?fileExists@SaveFileSystem@@QEBA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[876*8]
+jmp function_pointers[882*8]
 ?fileExists@SaveFileSystem@@QEBA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; SaveFileSystem::readFile(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?readFile@SaveFileSystem@@QEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@@Z proc EXPORT
-jmp function_pointers[877*8]
+jmp function_pointers[883*8]
 ?readFile@SaveFileSystem@@QEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@@Z endp
 
 ; SaveFileSystem::writeFile(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?writeFile@SaveFileSystem@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@@Z proc EXPORT
-jmp function_pointers[878*8]
+jmp function_pointers[884*8]
 ?writeFile@SaveFileSystem@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@@Z endp
 
 ; SaveFileSystem::deleteFile(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?deleteFile@SaveFileSystem@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[879*8]
+jmp function_pointers[885*8]
 ?deleteFile@SaveFileSystem@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; SaveFileSystem::newGame();
 ?newGame@SaveFileSystem@@QEAAXXZ proc EXPORT
-jmp function_pointers[880*8]
+jmp function_pointers[886*8]
 ?newGame@SaveFileSystem@@QEAAXXZ endp
 
 ; SaveFileSystem::loadGame(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?loadGame@SaveFileSystem@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[881*8]
+jmp function_pointers[887*8]
 ?loadGame@SaveFileSystem@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; SaveFileSystem::saveGame(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?saveGame@SaveFileSystem@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[882*8]
+jmp function_pointers[888*8]
 ?saveGame@SaveFileSystem@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; SaveFileSystem::sync();
 ?sync@SaveFileSystem@@QEAAXXZ proc EXPORT
-jmp function_pointers[883*8]
+jmp function_pointers[889*8]
 ?sync@SaveFileSystem@@QEAAXXZ endp
 
 ; SaveFileSystem::analyse();
 ?analyse@SaveFileSystem@@QEAAXXZ proc EXPORT
-jmp function_pointers[884*8]
+jmp function_pointers[890*8]
 ?analyse@SaveFileSystem@@QEAAXXZ endp
 
 ; SaveFileSystem::cleanup(bool);
 ?cleanup@SaveFileSystem@@QEAAX_N@Z proc EXPORT
-jmp function_pointers[885*8]
+jmp function_pointers[891*8]
 ?cleanup@SaveFileSystem@@QEAAX_N@Z endp
 
 ; SaveFileSystem::scanForResidualTempFolders();
 ?scanForResidualTempFolders@SaveFileSystem@@QEAAXXZ proc EXPORT
-jmp function_pointers[886*8]
+jmp function_pointers[892*8]
 ?scanForResidualTempFolders@SaveFileSystem@@QEAAXXZ endp
 
 ; SaveFileSystem::isTempFolder(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?isTempFolder@SaveFileSystem@@QEBA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[887*8]
+jmp function_pointers[893*8]
 ?isTempFolder@SaveFileSystem@@QEBA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; SaveFileSystem::getActiveSave();
 ?getActiveSave@SaveFileSystem@@QEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ proc EXPORT
-jmp function_pointers[888*8]
+jmp function_pointers[894*8]
 ?getActiveSave@SaveFileSystem@@QEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ endp
 
 ; SaveFileSystem::busy();
 ?busy@SaveFileSystem@@QEBA_NXZ proc EXPORT
-jmp function_pointers[889*8]
+jmp function_pointers[895*8]
 ?busy@SaveFileSystem@@QEBA_NXZ endp
 
 ; SaveFileSystem::createCurrent();
 ?createCurrent@SaveFileSystem@@QEAAXXZ proc EXPORT
-jmp function_pointers[890*8]
+jmp function_pointers[896*8]
 ?createCurrent@SaveFileSystem@@QEAAXXZ endp
 
 ?_NV_threadProc@SaveFileSystem@@QEAAKXZ proc EXPORT
@@ -5596,12 +5638,12 @@ jmp function_pointers[890*8]
 
 ; SaveFileSystem::threadProc();
 ?threadProc@SaveFileSystem@@UEAAKXZ proc EXPORT
-jmp function_pointers[891*8]
+jmp function_pointers[897*8]
 ?threadProc@SaveFileSystem@@UEAAKXZ endp
 
 ; SaveFileSystem::addMessage(enum SaveFileSystem::MessageType, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?addMessage@SaveFileSystem@@QEAAXW4MessageType@1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@1@Z proc EXPORT
-jmp function_pointers[892*8]
+jmp function_pointers[898*8]
 ?addMessage@SaveFileSystem@@QEAAXW4MessageType@1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@1@Z endp
 
 ?_CONSTRUCTOR@FileMessage@SaveFileSystem@@QEAAXXZ proc EXPORT
@@ -5609,7 +5651,7 @@ jmp function_pointers[892*8]
 
 ; SaveFileSystem::FileMessage::FileMessage();
 ??0FileMessage@SaveFileSystem@@QEAA@XZ proc EXPORT
-jmp function_pointers[893*8]
+jmp function_pointers[899*8]
 ??0FileMessage@SaveFileSystem@@QEAA@XZ endp
 
 ?_DESTRUCTOR@FileMessage@SaveFileSystem@@QEAAXXZ proc EXPORT
@@ -5617,12 +5659,12 @@ jmp function_pointers[893*8]
 
 ; SaveFileSystem::FileMessage::~FileMessage();
 ??1FileMessage@SaveFileSystem@@QEAA@XZ proc EXPORT
-jmp function_pointers[894*8]
+jmp function_pointers[900*8]
 ??1FileMessage@SaveFileSystem@@QEAA@XZ endp
 
 ; SaveFileSystem::FileMessage::operator=(const struct SaveFileSystem::FileMessage &);
 ??4FileMessage@SaveFileSystem@@QEAAAEAU01@AEBU01@@Z proc EXPORT
-jmp function_pointers[895*8]
+jmp function_pointers[901*8]
 ??4FileMessage@SaveFileSystem@@QEAAAEAU01@AEBU01@@Z endp
 
 ?_DESTRUCTOR@GameData@@QEAAXXZ proc EXPORT
@@ -5630,7 +5672,7 @@ jmp function_pointers[895*8]
 
 ; GameData::~GameData();
 ??1GameData@@UEAA@XZ proc EXPORT
-jmp function_pointers[896*8]
+jmp function_pointers[902*8]
 ??1GameData@@UEAA@XZ endp
 
 ?_CONSTRUCTOR@GameData@@QEAAXXZ proc EXPORT
@@ -5638,286 +5680,286 @@ jmp function_pointers[896*8]
 
 ; GameData::GameData();
 ??0GameData@@QEAA@XZ proc EXPORT
-jmp function_pointers[897*8]
+jmp function_pointers[903*8]
 ??0GameData@@QEAA@XZ endp
 
 ; GameData::isValid();
 ?isValid@GameData@@QEBA_NXZ proc EXPORT
-jmp function_pointers[898*8]
+jmp function_pointers[904*8]
 ?isValid@GameData@@QEBA_NXZ endp
 
 ; GameData::getSourceContainer();
 ?getSourceContainer@GameData@@QEBAPEAVGameDataContainer@@XZ proc EXPORT
-jmp function_pointers[899*8]
+jmp function_pointers[905*8]
 ?getSourceContainer@GameData@@QEBAPEAVGameDataContainer@@XZ endp
 
 ; GameData::destroy();
 ?destroy@GameData@@QEAAXXZ proc EXPORT
-jmp function_pointers[900*8]
+jmp function_pointers[906*8]
 ?destroy@GameData@@QEAAXXZ endp
 
 ; GameData::initialise(enum itemType, bool);
 ?initialise@GameData@@QEAAXW4itemType@@_N@Z proc EXPORT
-jmp function_pointers[901*8]
+jmp function_pointers[907*8]
 ?initialise@GameData@@QEAAXW4itemType@@_N@Z endp
 
 ; GameData::loadFromFile(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, enum itemType);
 ?loadFromFile@GameData@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@W4itemType@@@Z proc EXPORT
-jmp function_pointers[902*8]
+jmp function_pointers[908*8]
 ?loadFromFile@GameData@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@W4itemType@@@Z endp
 
 ; GameData::saveToFile(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?saveToFile@GameData@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[903*8]
+jmp function_pointers[909*8]
 ?saveToFile@GameData@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; symbol is too long
 ; ?storeHandleList@GameData@@QEAAXAEBV?$unordered_set@Vhand@@U?$hash@Vhand@@@boost@@U?$equal_to@Vhand@@@std@@V?$STLAllocator@Vhand@@V?$CategorisedAllocPolicy@$0A@@Ogre@@@Ogre@@@unordered@boost@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
 ; GameData::storeHandleList(const class boost::unordered::unordered_set<hand,boost::hash<hand>,std::equal_to<hand>,Ogre::STLAllocator<hand,Ogre::CategorisedAllocPolicy<0> > > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 GameData_storeHandleList_PLACEHOLDER proc EXPORT
-jmp function_pointers[904*8]
+jmp function_pointers[910*8]
 GameData_storeHandleList_PLACEHOLDER endp
 
 ; GameData::storeHandleList(const class lektor<hand> &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?storeHandleList@GameData@@QEAAXAEBV?$lektor@Vhand@@@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[905*8]
+jmp function_pointers[911*8]
 ?storeHandleList@GameData@@QEAAXAEBV?$lektor@Vhand@@@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; symbol is too long
 ; ?getHandleList@GameData@@QEAAXAEAV?$unordered_set@Vhand@@U?$hash@Vhand@@@boost@@U?$equal_to@Vhand@@@std@@V?$STLAllocator@Vhand@@V?$CategorisedAllocPolicy@$0A@@Ogre@@@Ogre@@@unordered@boost@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
 ; GameData::getHandleList(class boost::unordered::unordered_set<hand,boost::hash<hand>,std::equal_to<hand>,Ogre::STLAllocator<hand,Ogre::CategorisedAllocPolicy<0> > > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 GameData_getHandleList_PLACEHOLDER proc EXPORT
-jmp function_pointers[906*8]
+jmp function_pointers[912*8]
 GameData_getHandleList_PLACEHOLDER endp
 
 ; GameData::getHandleList(class lektor<hand> &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?getHandleList@GameData@@QEAAXAEAV?$lektor@Vhand@@@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[907*8]
+jmp function_pointers[913*8]
 ?getHandleList@GameData@@QEAAXAEAV?$lektor@Vhand@@@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; GameData::storeHandle(const class hand &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, bool);
 ?storeHandle@GameData@@QEAAXAEBVhand@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@Z proc EXPORT
-jmp function_pointers[908*8]
+jmp function_pointers[914*8]
 ?storeHandle@GameData@@QEAAXAEBVhand@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@Z endp
 
 ; GameData::getHandle(class hand &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?getHandle@GameData@@QEAA_NAEAVhand@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[909*8]
+jmp function_pointers[915*8]
 ?getHandle@GameData@@QEAA_NAEAVhand@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; GameData::updateFrom(const class GameData *, bool);
 ?updateFrom@GameData@@QEAA_NPEBV1@_N@Z proc EXPORT
-jmp function_pointers[910*8]
+jmp function_pointers[916*8]
 ?updateFrom@GameData@@QEAA_NPEBV1@_N@Z endp
 
 ; GameData::isValueActive(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?isValueActive@GameData@@QEBA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[911*8]
+jmp function_pointers[917*8]
 ?isValueActive@GameData@@QEBA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; GameData::isRefActive(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?isRefActive@GameData@@QEBA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[912*8]
+jmp function_pointers[918*8]
 ?isRefActive@GameData@@QEBA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; GameData::addFileName(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, class std::basic_string<char,std::char_traits<char>,std::allocator<char> >, class std::basic_string<char,std::char_traits<char>,std::allocator<char> >, bool);
 ?addFileName@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0V23@1_N@Z proc EXPORT
-jmp function_pointers[913*8]
+jmp function_pointers[919*8]
 ?addFileName@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0V23@1_N@Z endp
 
 ; GameData::addString(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, class std::basic_string<char,std::char_traits<char>,std::allocator<char> >, bool);
 ?addString@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0V23@_N@Z proc EXPORT
-jmp function_pointers[914*8]
+jmp function_pointers[920*8]
 ?addString@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0V23@_N@Z endp
 
 ; GameData::add(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, class Ogre::Vector3);
 ?add@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@VVector3@Ogre@@@Z proc EXPORT
-jmp function_pointers[915*8]
+jmp function_pointers[921*8]
 ?add@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@VVector3@Ogre@@@Z endp
 
 ; GameData::add(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, bool, class std::basic_string<char,std::char_traits<char>,std::allocator<char> >, bool);
 ?add@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_NV23@1@Z proc EXPORT
-jmp function_pointers[916*8]
+jmp function_pointers[922*8]
 ?add@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_NV23@1@Z endp
 
 ; GameData::add(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, float, class std::basic_string<char,std::char_traits<char>,std::allocator<char> >, bool, bool);
 ?add@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@MV23@_N2@Z proc EXPORT
-jmp function_pointers[917*8]
+jmp function_pointers[923*8]
 ?add@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@MV23@_N2@Z endp
 
 ; GameData::add(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, unsigned int, class std::basic_string<char,std::char_traits<char>,std::allocator<char> >, bool);
 ?add@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@IV23@_N@Z proc EXPORT
-jmp function_pointers[918*8]
+jmp function_pointers[924*8]
 ?add@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@IV23@_N@Z endp
 
 ; GameData::add(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, int, class std::basic_string<char,std::char_traits<char>,std::allocator<char> >, bool);
 ?add@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HV23@_N@Z proc EXPORT
-jmp function_pointers[919*8]
+jmp function_pointers[925*8]
 ?add@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HV23@_N@Z endp
 
 ; GameData::getGameDataReferenceObject(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?getGameDataReferenceObject@GameData@@QEAAPEAVGameDataReference@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z proc EXPORT
-jmp function_pointers[920*8]
+jmp function_pointers[926*8]
 ?getGameDataReferenceObject@GameData@@QEAAPEAVGameDataReference@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z endp
 
 ; GameData::addToList(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, int, int, int);
 ?addToList@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0HHH@Z proc EXPORT
-jmp function_pointers[921*8]
+jmp function_pointers[927*8]
 ?addToList@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0HHH@Z endp
 
 ; GameData::removeFromList(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, int);
 ?removeFromList@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z proc EXPORT
-jmp function_pointers[922*8]
+jmp function_pointers[928*8]
 ?removeFromList@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z endp
 
 ; GameData::removeFromList(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?removeFromList@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z proc EXPORT
-jmp function_pointers[923*8]
+jmp function_pointers[929*8]
 ?removeFromList@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z endp
 
 ; GameData::findInList(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?findInList@GameData@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z proc EXPORT
-jmp function_pointers[924*8]
+jmp function_pointers[930*8]
 ?findInList@GameData@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z endp
 
 ; GameData::clearList(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?clearList@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[925*8]
+jmp function_pointers[931*8]
 ?clearList@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; GameData::clearEverything();
 ?clearEverything@GameData@@QEAAXXZ proc EXPORT
-jmp function_pointers[926*8]
+jmp function_pointers[932*8]
 ?clearEverything@GameData@@QEAAXXZ endp
 
 ; GameData::clearInstances();
 ?clearInstances@GameData@@QEAAXXZ proc EXPORT
-jmp function_pointers[927*8]
+jmp function_pointers[933*8]
 ?clearInstances@GameData@@QEAAXXZ endp
 
 ; GameData::getFromList(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, int);
 ?getFromList@GameData@@QEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@H@Z proc EXPORT
-jmp function_pointers[928*8]
+jmp function_pointers[934*8]
 ?getFromList@GameData@@QEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@H@Z endp
 
 ; GameData::getFromList_random(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?getFromList_random@GameData@@QEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@@Z proc EXPORT
-jmp function_pointers[929*8]
+jmp function_pointers[935*8]
 ?getFromList_random@GameData@@QEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@@Z endp
 
 ; GameData::getListSize(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?getListSize@GameData@@QEBAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[930*8]
+jmp function_pointers[936*8]
 ?getListSize@GameData@@QEBAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; GameData::listExists(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?listExists@GameData@@QEBA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[931*8]
+jmp function_pointers[937*8]
 ?listExists@GameData@@QEBA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; GameData::listExistsAndNotEmpty(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?listExistsAndNotEmpty@GameData@@QEBA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[932*8]
+jmp function_pointers[938*8]
 ?listExistsAndNotEmpty@GameData@@QEBA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; GameData::getAllFromList(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, class lektor<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > &);
 ?getAllFromList@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAV?$lektor@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@@@Z proc EXPORT
-jmp function_pointers[933*8]
+jmp function_pointers[939*8]
 ?getAllFromList@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAV?$lektor@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@@@Z endp
 
 ; GameData::getReferenceList(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?getReferenceList@GameData@@QEAAPEBV?$vector@VGameDataReference@@V?$STLAllocator@VGameDataReference@@V?$CategorisedAllocPolicy@$0A@@Ogre@@@Ogre@@@std@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@Z proc EXPORT
-jmp function_pointers[934*8]
+jmp function_pointers[940*8]
 ?getReferenceList@GameData@@QEAAPEBV?$vector@VGameDataReference@@V?$STLAllocator@VGameDataReference@@V?$CategorisedAllocPolicy@$0A@@Ogre@@@Ogre@@@std@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@Z endp
 
 ; GameData::getReferenceListIfExists(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?getReferenceListIfExists@GameData@@QEBAPEBV?$vector@VGameDataReference@@V?$STLAllocator@VGameDataReference@@V?$CategorisedAllocPolicy@$0A@@Ogre@@@Ogre@@@std@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@Z proc EXPORT
-jmp function_pointers[935*8]
+jmp function_pointers[941*8]
 ?getReferenceListIfExists@GameData@@QEBAPEBV?$vector@VGameDataReference@@V?$STLAllocator@VGameDataReference@@V?$CategorisedAllocPolicy@$0A@@Ogre@@@Ogre@@@std@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@Z endp
 
 ; GameData::_getReferenceList_nonConst(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?_getReferenceList_nonConst@GameData@@QEAAPEAV?$vector@VGameDataReference@@V?$STLAllocator@VGameDataReference@@V?$CategorisedAllocPolicy@$0A@@Ogre@@@Ogre@@@std@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@Z proc EXPORT
-jmp function_pointers[936*8]
+jmp function_pointers[942*8]
 ?_getReferenceList_nonConst@GameData@@QEAAPEAV?$vector@VGameDataReference@@V?$STLAllocator@VGameDataReference@@V?$CategorisedAllocPolicy@$0A@@Ogre@@@Ogre@@@std@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@Z endp
 
 ; GameData::getAllFromListAsDatas(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, class lektor<GameData *> &, class GameDataContainer *, enum itemType);
 ?getAllFromListAsDatas@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAV?$lektor@PEAVGameData@@@@PEAVGameDataContainer@@W4itemType@@@Z proc EXPORT
-jmp function_pointers[937*8]
+jmp function_pointers[943*8]
 ?getAllFromListAsDatas@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAV?$lektor@PEAVGameData@@@@PEAVGameDataContainer@@W4itemType@@@Z endp
 
 ; GameData::getFromListAsData(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, int, class GameDataContainer *, enum itemType);
 ?getFromListAsData@GameData@@QEAAPEAV1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HPEAVGameDataContainer@@W4itemType@@@Z proc EXPORT
-jmp function_pointers[938*8]
+jmp function_pointers[944*8]
 ?getFromListAsData@GameData@@QEAAPEAV1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HPEAVGameDataContainer@@W4itemType@@@Z endp
 
 ; GameData::getValueFromList(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, int);
 ?getValueFromList@GameData@@QEBAAEBVTripleInt@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z proc EXPORT
-jmp function_pointers[939*8]
+jmp function_pointers[945*8]
 ?getValueFromList@GameData@@QEBAAEBVTripleInt@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z endp
 
 ; GameData::addSavedInstancedObject(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, int, const class Ogre::Vector3 &, const class Ogre::Quaternion &, const class lektor<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > &);
 ?addSavedInstancedObject@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0HAEBVVector3@Ogre@@AEBVQuaternion@5@AEBV?$lektor@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@@@Z proc EXPORT
-jmp function_pointers[940*8]
+jmp function_pointers[946*8]
 ?addSavedInstancedObject@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0HAEBVVector3@Ogre@@AEBVQuaternion@5@AEBV?$lektor@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@@@Z endp
 
 ; GameData::deleteInstancedObject(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, int);
 ?deleteInstancedObject@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z proc EXPORT
-jmp function_pointers[941*8]
+jmp function_pointers[947*8]
 ?deleteInstancedObject@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z endp
 
 ; GameData::getInstances(class lektor<GameData::ObjectInstance *> &);
 ?getInstances@GameData@@QEAAXAEAV?$lektor@PEAVObjectInstance@GameData@@@@@Z proc EXPORT
-jmp function_pointers[942*8]
+jmp function_pointers[948*8]
 ?getInstances@GameData@@QEAAXAEAV?$lektor@PEAVObjectInstance@GameData@@@@@Z endp
 
 ; GameData::getNewID();
 ?getNewID@GameData@@QEAAHXZ proc EXPORT
-jmp function_pointers[943*8]
+jmp function_pointers[949*8]
 ?getNewID@GameData@@QEAAHXZ endp
 
 ; GameData::getColor(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?getColor@GameData@@QEAA?AVColourValue@Ogre@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[944*8]
+jmp function_pointers[950*8]
 ?getColor@GameData@@QEAA?AVColourValue@Ogre@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; GameData::getColorVec(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?getColorVec@GameData@@QEAA?AVVector3@Ogre@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[945*8]
+jmp function_pointers[951*8]
 ?getColorVec@GameData@@QEAA?AVVector3@Ogre@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; GameData::setColor(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class Ogre::Vector3 &);
 ?setColor@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVVector3@Ogre@@@Z proc EXPORT
-jmp function_pointers[946*8]
+jmp function_pointers[952*8]
 ?setColor@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVVector3@Ogre@@@Z endp
 
 ; GameData::setColor(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class Ogre::ColourValue &);
 ?setColor@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVColourValue@Ogre@@@Z proc EXPORT
-jmp function_pointers[947*8]
+jmp function_pointers[953*8]
 ?setColor@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVColourValue@Ogre@@@Z endp
 
 ; GameData::addANewInstancedObject(class GameData::ObjectInstance *);
 ?addANewInstancedObject@GameData@@QEAAPEAVObjectInstance@1@PEAV21@@Z proc EXPORT
-jmp function_pointers[948*8]
+jmp function_pointers[954*8]
 ?addANewInstancedObject@GameData@@QEAAPEAVObjectInstance@1@PEAV21@@Z endp
 
 ; GameData::addANewInstancedObject(class GameData *, const class PosRotPair &);
 ?addANewInstancedObject@GameData@@QEAAXPEAV1@AEBVPosRotPair@@@Z proc EXPORT
-jmp function_pointers[949*8]
+jmp function_pointers[955*8]
 ?addANewInstancedObject@GameData@@QEAAXPEAV1@AEBVPosRotPair@@@Z endp
 
 ; GameData::addANewInstancedObject(class GameData *);
 ?addANewInstancedObject@GameData@@QEAAXPEAV1@@Z proc EXPORT
-jmp function_pointers[950*8]
+jmp function_pointers[956*8]
 ?addANewInstancedObject@GameData@@QEAAXPEAV1@@Z endp
 
 ; GameData::addANewInstancedObject(const class GameSaveState &, const class PosRotPair &, class PosRotPair *);
 ?addANewInstancedObject@GameData@@QEAAPEAVObjectInstance@1@AEBVGameSaveState@@AEBVPosRotPair@@PEAV4@@Z proc EXPORT
-jmp function_pointers[951*8]
+jmp function_pointers[957*8]
 ?addANewInstancedObject@GameData@@QEAAPEAVObjectInstance@1@AEBVGameSaveState@@AEBVPosRotPair@@PEAV4@@Z endp
 
 ; GameData::addDeletedInstance(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?addDeletedInstance@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[952*8]
+jmp function_pointers[958*8]
 ?addDeletedInstance@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ?_CONSTRUCTOR@ObjectInstance@GameData@@QEAAXAEBV12@@Z proc EXPORT
@@ -5925,7 +5967,7 @@ jmp function_pointers[952*8]
 
 ; GameData::ObjectInstance::ObjectInstance(const class GameData::ObjectInstance &);
 ??0ObjectInstance@GameData@@QEAA@AEBV01@@Z proc EXPORT
-jmp function_pointers[953*8]
+jmp function_pointers[959*8]
 ??0ObjectInstance@GameData@@QEAA@AEBV01@@Z endp
 
 ?_CONSTRUCTOR@ObjectInstance@GameData@@QEAAXXZ proc EXPORT
@@ -5933,19 +5975,19 @@ jmp function_pointers[953*8]
 
 ; GameData::ObjectInstance::ObjectInstance();
 ??0ObjectInstance@GameData@@QEAA@XZ proc EXPORT
-jmp function_pointers[954*8]
+jmp function_pointers[960*8]
 ??0ObjectInstance@GameData@@QEAA@XZ endp
 
 ; GameData::ObjectInstance::operator=(const class GameData::ObjectInstance &);
 ??4ObjectInstance@GameData@@QEAAAEBV01@AEBV01@@Z proc EXPORT
-jmp function_pointers[955*8]
+jmp function_pointers[961*8]
 ??4ObjectInstance@GameData@@QEAAAEBV01@AEBV01@@Z endp
 
 ; symbol is too long
 ; ?updateInstancedObjectAttachedDatas@ObjectInstance@GameData@@QEAAXAEBV?$unordered_map@W4itemType@@PEAVGameData@@U?$hash@W4itemType@@@boost@@U?$equal_to@W4itemType@@@std@@V?$STLAllocator@U?$pair@$$CBW4itemType@@PEAVGameData@@@std@@V?$CategorisedAllocPolicy@$0A@@Ogre@@@Ogre@@@unordered@boost@@@Z
 ; GameData::ObjectInstance::updateInstancedObjectAttachedDatas(const class boost::unordered::unordered_map<enum itemType,GameData *,boost::hash<enum itemType>,std::equal_to<enum itemType>,Ogre::STLAllocator<std::pair<enum itemType const ,GameData *>,Ogre::CategorisedAllocPolicy<0> > > &);
 GameData_ObjectInstance_updateInstancedObjectAttachedDatas_PLACEHOLDER proc EXPORT
-jmp function_pointers[956*8]
+jmp function_pointers[962*8]
 GameData_ObjectInstance_updateInstancedObjectAttachedDatas_PLACEHOLDER endp
 
 ?_DESTRUCTOR@ObjectInstance@GameData@@QEAAXXZ proc EXPORT
@@ -5953,7 +5995,7 @@ GameData_ObjectInstance_updateInstancedObjectAttachedDatas_PLACEHOLDER endp
 
 ; GameData::ObjectInstance::~ObjectInstance();
 ??1ObjectInstance@GameData@@QEAA@XZ proc EXPORT
-jmp function_pointers[957*8]
+jmp function_pointers[963*8]
 ??1ObjectInstance@GameData@@QEAA@XZ endp
 
 ?_CONSTRUCTOR@GameDataManager@@QEAAXXZ proc EXPORT
@@ -5961,37 +6003,37 @@ jmp function_pointers[957*8]
 
 ; GameDataManager::GameDataManager();
 ??0GameDataManager@@QEAA@XZ proc EXPORT
-jmp function_pointers[958*8]
+jmp function_pointers[964*8]
 ??0GameDataManager@@QEAA@XZ endp
 
 ; GameDataManager::reloadGameData(class std::basic_string<char,std::char_traits<char>,std::allocator<char> >, bool, bool);
 ?reloadGameData@GameDataManager@@QEAA_NV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N1@Z proc EXPORT
-jmp function_pointers[959*8]
+jmp function_pointers[965*8]
 ?reloadGameData@GameDataManager@@QEAA_NV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N1@Z endp
 
 ; GameDataManager::postProcessingTheDatas();
 ?postProcessingTheDatas@GameDataManager@@QEAAXXZ proc EXPORT
-jmp function_pointers[960*8]
+jmp function_pointers[966*8]
 ?postProcessingTheDatas@GameDataManager@@QEAAXXZ endp
 
 ; GameDataManager::getBuildings(class lektor<GameData *> &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?getBuildings@GameDataManager@@QEAAXAEAV?$lektor@PEAVGameData@@@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[961*8]
+jmp function_pointers[967*8]
 ?getBuildings@GameDataManager@@QEAAXAEAV?$lektor@PEAVGameData@@@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; GameDataManager::getMapSector(int, int);
 ?getMapSector@GameDataManager@@QEAAPEAVGameData@@HH@Z proc EXPORT
-jmp function_pointers[962*8]
+jmp function_pointers[968*8]
 ?getMapSector@GameDataManager@@QEAAPEAVGameData@@HH@Z endp
 
 ; GameDataManager::updateDatasOfType(class GameDataContainer *, enum itemType, bool);
 ?updateDatasOfType@GameDataManager@@QEAAXPEAVGameDataContainer@@W4itemType@@_N@Z proc EXPORT
-jmp function_pointers[963*8]
+jmp function_pointers[969*8]
 ?updateDatasOfType@GameDataManager@@QEAAXPEAVGameDataContainer@@W4itemType@@_N@Z endp
 
 ; GameDataManager::updateData(class GameData *, bool);
 ?updateData@GameDataManager@@QEAAXPEAVGameData@@_N@Z proc EXPORT
-jmp function_pointers[964*8]
+jmp function_pointers[970*8]
 ?updateData@GameDataManager@@QEAAXPEAVGameData@@_N@Z endp
 
 ?_DESTRUCTOR@GameDataManager@@QEAAXXZ proc EXPORT
@@ -5999,15 +6041,124 @@ jmp function_pointers[964*8]
 
 ; GameDataManager::~GameDataManager();
 ??1GameDataManager@@UEAA@XZ proc EXPORT
-jmp function_pointers[965*8]
+jmp function_pointers[971*8]
 ??1GameDataManager@@UEAA@XZ endp
+
+?_CONSTRUCTOR@GUIWindow@@QEAAXXZ proc EXPORT
+?_CONSTRUCTOR@GUIWindow@@QEAAXXZ endp
+
+; GUIWindow::GUIWindow();
+??0GUIWindow@@QEAA@XZ proc EXPORT
+jmp function_pointers[972*8]
+??0GUIWindow@@QEAA@XZ endp
+
+?_DESTRUCTOR@GUIWindow@@QEAAXXZ proc EXPORT
+?_DESTRUCTOR@GUIWindow@@QEAAXXZ endp
+
+; GUIWindow::~GUIWindow();
+??1GUIWindow@@UEAA@XZ proc EXPORT
+jmp function_pointers[973*8]
+??1GUIWindow@@UEAA@XZ endp
+
+?_NV_clear@GUIWindow@@QEAAXXZ proc EXPORT
+?_NV_clear@GUIWindow@@QEAAXXZ endp
+
+; GUIWindow::clear();
+?clear@GUIWindow@@UEAAXXZ proc EXPORT
+jmp function_pointers[974*8]
+?clear@GUIWindow@@UEAAXXZ endp
+
+?_NV_setPositionReal@GUIWindow@@QEAAXMM@Z proc EXPORT
+?_NV_setPositionReal@GUIWindow@@QEAAXMM@Z endp
+
+; GUIWindow::setPositionReal(float, float);
+?setPositionReal@GUIWindow@@UEAAXMM@Z proc EXPORT
+jmp function_pointers[975*8]
+?setPositionReal@GUIWindow@@UEAAXMM@Z endp
+
+?_NV_setPosition@GUIWindow@@QEAAXHH@Z proc EXPORT
+?_NV_setPosition@GUIWindow@@QEAAXHH@Z endp
+
+; GUIWindow::setPosition(int, int);
+?setPosition@GUIWindow@@UEAAXHH@Z proc EXPORT
+jmp function_pointers[976*8]
+?setPosition@GUIWindow@@UEAAXHH@Z endp
+
+?_NV_getWidth@GUIWindow@@QEBAHXZ proc EXPORT
+?_NV_getWidth@GUIWindow@@QEBAHXZ endp
+
+; GUIWindow::getWidth();
+?getWidth@GUIWindow@@UEBAHXZ proc EXPORT
+jmp function_pointers[977*8]
+?getWidth@GUIWindow@@UEBAHXZ endp
+
+?_NV_getHeight@GUIWindow@@QEBAHXZ proc EXPORT
+?_NV_getHeight@GUIWindow@@QEBAHXZ endp
+
+; GUIWindow::getHeight();
+?getHeight@GUIWindow@@UEBAHXZ proc EXPORT
+jmp function_pointers[978*8]
+?getHeight@GUIWindow@@UEBAHXZ endp
+
+?_NV_getWidthReal@GUIWindow@@QEBAMXZ proc EXPORT
+?_NV_getWidthReal@GUIWindow@@QEBAMXZ endp
+
+; GUIWindow::getWidthReal();
+?getWidthReal@GUIWindow@@UEBAMXZ proc EXPORT
+jmp function_pointers[979*8]
+?getWidthReal@GUIWindow@@UEBAMXZ endp
+
+?_NV_getHeightReal@GUIWindow@@QEBAMXZ proc EXPORT
+?_NV_getHeightReal@GUIWindow@@QEBAMXZ endp
+
+; GUIWindow::getHeightReal();
+?getHeightReal@GUIWindow@@UEBAMXZ proc EXPORT
+jmp function_pointers[980*8]
+?getHeightReal@GUIWindow@@UEBAMXZ endp
+
+?_NV_isVisible@GUIWindow@@QEBA_NXZ proc EXPORT
+?_NV_isVisible@GUIWindow@@QEBA_NXZ endp
+
+; GUIWindow::isVisible();
+?isVisible@GUIWindow@@UEBA_NXZ proc EXPORT
+jmp function_pointers[981*8]
+?isVisible@GUIWindow@@UEBA_NXZ endp
+
+?_NV_update@GUIWindow@@QEAAXXZ proc EXPORT
+?_NV_update@GUIWindow@@QEAAXXZ endp
+
+; GUIWindow::update();
+?update@GUIWindow@@UEAAXXZ proc EXPORT
+jmp function_pointers[982*8]
+?update@GUIWindow@@UEAAXXZ endp
+
+?_NV_autoChangeSelectedObject@GUIWindow@@QEAAXAEBVhand@@@Z proc EXPORT
+?_NV_autoChangeSelectedObject@GUIWindow@@QEAAXAEBVhand@@@Z endp
+
+; GUIWindow::autoChangeSelectedObject(const class hand &);
+?autoChangeSelectedObject@GUIWindow@@UEAAXAEBVhand@@@Z proc EXPORT
+jmp function_pointers[983*8]
+?autoChangeSelectedObject@GUIWindow@@UEAAXAEBVhand@@@Z endp
+
+; GUIWindow::getWidget();
+?getWidget@GUIWindow@@QEAAPEAVWidget@MyGUI@@XZ proc EXPORT
+jmp function_pointers[984*8]
+?getWidget@GUIWindow@@QEAAPEAVWidget@MyGUI@@XZ endp
+
+?_NV_resize@GUIWindow@@QEAAXHH@Z proc EXPORT
+?_NV_resize@GUIWindow@@QEAAXHH@Z endp
+
+; GUIWindow::resize(int, int);
+?resize@GUIWindow@@UEAAXHH@Z proc EXPORT
+jmp function_pointers[985*8]
+?resize@GUIWindow@@UEAAXHH@Z endp
 
 ?_CONSTRUCTOR@Faction@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
 ?_CONSTRUCTOR@Faction@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; Faction::Faction(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ??0Faction@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[966*8]
+jmp function_pointers[986*8]
 ??0Faction@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ?_DESTRUCTOR@Faction@@QEAAXXZ proc EXPORT
@@ -6015,147 +6166,147 @@ jmp function_pointers[966*8]
 
 ; Faction::~Faction();
 ??1Faction@@QEAA@XZ proc EXPORT
-jmp function_pointers[967*8]
+jmp function_pointers[987*8]
 ??1Faction@@QEAA@XZ endp
 
 ; Faction::getFundamentalNPCType();
 ?getFundamentalNPCType@Faction@@QEAA?AW4CharacterTypeEnum@@XZ proc EXPORT
-jmp function_pointers[968*8]
+jmp function_pointers[988*8]
 ?getFundamentalNPCType@Faction@@QEAA?AW4CharacterTypeEnum@@XZ endp
 
 ; Faction::getProsperityMultiplier();
 ?getProsperityMultiplier@Faction@@QEAAMXZ proc EXPORT
-jmp function_pointers[969*8]
+jmp function_pointers[989*8]
 ?getProsperityMultiplier@Faction@@QEAAMXZ endp
 
 ; Faction::clearAndDestroy();
 ?clearAndDestroy@Faction@@QEAAXXZ proc EXPORT
-jmp function_pointers[970*8]
+jmp function_pointers[990*8]
 ?clearAndDestroy@Faction@@QEAAXXZ endp
 
 ; Faction::setup(class GameData *);
 ?setup@Faction@@QEAA_NPEAVGameData@@@Z proc EXPORT
-jmp function_pointers[971*8]
+jmp function_pointers[991*8]
 ?setup@Faction@@QEAA_NPEAVGameData@@@Z endp
 
 ; Faction::setup2();
 ?setup2@Faction@@QEAA_NXZ proc EXPORT
-jmp function_pointers[972*8]
+jmp function_pointers[992*8]
 ?setup2@Faction@@QEAA_NXZ endp
 
 ; Faction::setup3();
 ?setup3@Faction@@QEAAXXZ proc EXPORT
-jmp function_pointers[973*8]
+jmp function_pointers[993*8]
 ?setup3@Faction@@QEAAXXZ endp
 
 ; Faction::getNewPlatoonID();
 ?getNewPlatoonID@Faction@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ proc EXPORT
-jmp function_pointers[974*8]
+jmp function_pointers[994*8]
 ?getNewPlatoonID@Faction@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ endp
 
 ; Faction::resetPlatoonID();
 ?resetPlatoonID@Faction@@QEAAXXZ proc EXPORT
-jmp function_pointers[975*8]
+jmp function_pointers[995*8]
 ?resetPlatoonID@Faction@@QEAAXXZ endp
 
 ; Faction::createNewEmptyUnloadedPlatoon(class GameData *, const class Ogre::Vector3 &, class GameDataContainer *, bool);
 ?createNewEmptyUnloadedPlatoon@Faction@@QEAAPEAVPlatoon@@PEAVGameData@@AEBVVector3@Ogre@@PEAVGameDataContainer@@_N@Z proc EXPORT
-jmp function_pointers[976*8]
+jmp function_pointers[996*8]
 ?createNewEmptyUnloadedPlatoon@Faction@@QEAAPEAVPlatoon@@PEAVGameData@@AEBVVector3@Ogre@@PEAVGameDataContainer@@_N@Z endp
 
 ; Faction::createNewEmptyActivePlatoon(class GameData *, bool, const class Ogre::Vector3 &);
 ?createNewEmptyActivePlatoon@Faction@@QEAAPEAVPlatoon@@PEAVGameData@@_NAEBVVector3@Ogre@@@Z proc EXPORT
-jmp function_pointers[977*8]
+jmp function_pointers[997*8]
 ?createNewEmptyActivePlatoon@Faction@@QEAAPEAVPlatoon@@PEAVGameData@@_NAEBVVector3@Ogre@@@Z endp
 
 ; Faction::createPlatoonUnloaded(class GameData *, class GameDataContainer *, class GameData *, const class Ogre::Vector3 &, bool);
 ?createPlatoonUnloaded@Faction@@QEAAXPEAVGameData@@PEAVGameDataContainer@@0AEBVVector3@Ogre@@_N@Z proc EXPORT
-jmp function_pointers[978*8]
+jmp function_pointers[998*8]
 ?createPlatoonUnloaded@Faction@@QEAAXPEAVGameData@@PEAVGameDataContainer@@0AEBVVector3@Ogre@@_N@Z endp
 
 ; Faction::createPlatoonAuto(class GameData *, class GameData *, const class Ogre::Vector3 &);
 ?createPlatoonAuto@Faction@@QEAAXPEAVGameData@@0AEBVVector3@Ogre@@@Z proc EXPORT
-jmp function_pointers[979*8]
+jmp function_pointers[999*8]
 ?createPlatoonAuto@Faction@@QEAAXPEAVGameData@@0AEBVVector3@Ogre@@@Z endp
 
 ; Faction::createPlatoonsAuto(class lektor<GameData *> &);
 ?createPlatoonsAuto@Faction@@QEAAXAEAV?$lektor@PEAVGameData@@@@@Z proc EXPORT
-jmp function_pointers[980*8]
+jmp function_pointers[1000*8]
 ?createPlatoonsAuto@Faction@@QEAAXAEAV?$lektor@PEAVGameData@@@@@Z endp
 
 ; Faction::createReplacementPlatoonForPlayerWhenSavegameIsCorrupt(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?createReplacementPlatoonForPlayerWhenSavegameIsCorrupt@Faction@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[981*8]
+jmp function_pointers[1001*8]
 ?createReplacementPlatoonForPlayerWhenSavegameIsCorrupt@Faction@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; Faction::restorePlatoon(class Platoon *);
 ?restorePlatoon@Faction@@QEAAXPEAVPlatoon@@@Z proc EXPORT
-jmp function_pointers[982*8]
+jmp function_pointers[1002*8]
 ?restorePlatoon@Faction@@QEAAXPEAVPlatoon@@@Z endp
 
 ; Faction::resetSquadPositions(const class Ogre::Vector3 &);
 ?resetSquadPositions@Faction@@QEAA_NAEBVVector3@Ogre@@@Z proc EXPORT
-jmp function_pointers[983*8]
+jmp function_pointers[1003*8]
 ?resetSquadPositions@Faction@@QEAA_NAEBVVector3@Ogre@@@Z endp
 
 ; Faction::countPopulation(class TownBase *);
 ?countPopulation@Faction@@QEAAHPEAVTownBase@@@Z proc EXPORT
-jmp function_pointers[984*8]
+jmp function_pointers[1004*8]
 ?countPopulation@Faction@@QEAAHPEAVTownBase@@@Z endp
 
 ; Faction::countNumSquads(class GameData *, class TownBase *);
 ?countNumSquads@Faction@@QEAAHPEAVGameData@@PEAVTownBase@@@Z proc EXPORT
-jmp function_pointers[985*8]
+jmp function_pointers[1005*8]
 ?countNumSquads@Faction@@QEAAHPEAVGameData@@PEAVTownBase@@@Z endp
 
 ; Faction::destroyPlatoon(class Platoon *);
 ?destroyPlatoon@Faction@@QEAAXPEAVPlatoon@@@Z proc EXPORT
-jmp function_pointers[986*8]
+jmp function_pointers[1006*8]
 ?destroyPlatoon@Faction@@QEAAXPEAVPlatoon@@@Z endp
 
 ; Faction::removePlatoon(class Platoon *);
 ?removePlatoon@Faction@@QEAAXPEAVPlatoon@@@Z proc EXPORT
-jmp function_pointers[987*8]
+jmp function_pointers[1007*8]
 ?removePlatoon@Faction@@QEAAXPEAVPlatoon@@@Z endp
 
 ; Faction::getRandomLockLevel(class GameData *);
 ?getRandomLockLevel@Faction@@QEBAHPEAVGameData@@@Z proc EXPORT
-jmp function_pointers[988*8]
+jmp function_pointers[1008*8]
 ?getRandomLockLevel@Faction@@QEBAHPEAVGameData@@@Z endp
 
 ; Faction::getData();
 ?getData@Faction@@QEBAPEAVGameData@@XZ proc EXPORT
-jmp function_pointers[989*8]
+jmp function_pointers[1009*8]
 ?getData@Faction@@QEBAPEAVGameData@@XZ endp
 
 ; Faction::getGUIData(class DatapanelGUI *, int);
 ?getGUIData@Faction@@QEAAXPEAVDatapanelGUI@@H@Z proc EXPORT
-jmp function_pointers[990*8]
+jmp function_pointers[1010*8]
 ?getGUIData@Faction@@QEAAXPEAVDatapanelGUI@@H@Z endp
 
 ; Faction::getDefaultDivision();
 ?getDefaultDivision@Faction@@QEAAPEAVGameData@@XZ proc EXPORT
-jmp function_pointers[991*8]
+jmp function_pointers[1011*8]
 ?getDefaultDivision@Faction@@QEAAPEAVGameData@@XZ endp
 
 ; Faction::getFactionColorScheme();
 ?getFactionColorScheme@Faction@@QEAAPEAVGameData@@XZ proc EXPORT
-jmp function_pointers[992*8]
+jmp function_pointers[1012*8]
 ?getFactionColorScheme@Faction@@QEAAPEAVGameData@@XZ endp
 
 ; Faction::loadState(class GameDataContainer *, class GameData *);
 ?loadState@Faction@@QEAAXPEAVGameDataContainer@@PEAVGameData@@@Z proc EXPORT
-jmp function_pointers[993*8]
+jmp function_pointers[1013*8]
 ?loadState@Faction@@QEAAXPEAVGameDataContainer@@PEAVGameData@@@Z endp
 
 ; Faction::saveState(class GameDataContainer *, bool);
 ?saveState@Faction@@QEAAPEAVGameData@@PEAVGameDataContainer@@_N@Z proc EXPORT
-jmp function_pointers[994*8]
+jmp function_pointers[1014*8]
 ?saveState@Faction@@QEAAPEAVGameData@@PEAVGameDataContainer@@_N@Z endp
 
 ; Faction::_activateUnloadedPlatoons();
 ?_activateUnloadedPlatoons@Faction@@QEAAXXZ proc EXPORT
-jmp function_pointers[995*8]
+jmp function_pointers[1015*8]
 ?_activateUnloadedPlatoons@Faction@@QEAAXXZ endp
 
 ?_NV_getCharactersInArea@Faction@@QEAAXAEAV?$lektor@PEAVRootObject@@@@AEBVVector3@Ogre@@M_N@Z proc EXPORT
@@ -6163,7 +6314,7 @@ jmp function_pointers[995*8]
 
 ; Faction::getCharactersInArea(class lektor<RootObject *> &, const class Ogre::Vector3 &, float, bool);
 ?getCharactersInArea@Faction@@UEAAXAEAV?$lektor@PEAVRootObject@@@@AEBVVector3@Ogre@@M_N@Z proc EXPORT
-jmp function_pointers[996*8]
+jmp function_pointers[1016*8]
 ?getCharactersInArea@Faction@@UEAAXAEAV?$lektor@PEAVRootObject@@@@AEBVVector3@Ogre@@M_N@Z endp
 
 ?_NV_getSelectedObjects@Faction@@QEAAXAEAV?$lektor@PEAVRootObject@@@@W4itemType@@_N@Z proc EXPORT
@@ -6171,7 +6322,7 @@ jmp function_pointers[996*8]
 
 ; Faction::getSelectedObjects(class lektor<RootObject *> &, enum itemType, bool);
 ?getSelectedObjects@Faction@@UEAAXAEAV?$lektor@PEAVRootObject@@@@W4itemType@@_N@Z proc EXPORT
-jmp function_pointers[997*8]
+jmp function_pointers[1017*8]
 ?getSelectedObjects@Faction@@UEAAXAEAV?$lektor@PEAVRootObject@@@@W4itemType@@_N@Z endp
 
 ?_NV_removeObject@Faction@@QEAAXPEAVRootObject@@@Z proc EXPORT
@@ -6179,7 +6330,7 @@ jmp function_pointers[997*8]
 
 ; Faction::removeObject(class RootObject *);
 ?removeObject@Faction@@UEAAXPEAVRootObject@@@Z proc EXPORT
-jmp function_pointers[998*8]
+jmp function_pointers[1018*8]
 ?removeObject@Faction@@UEAAXPEAVRootObject@@@Z endp
 
 ?_NV_destroyObject@Faction@@QEAAXPEAVRootObject@@@Z proc EXPORT
@@ -6187,7 +6338,7 @@ jmp function_pointers[998*8]
 
 ; Faction::destroyObject(class RootObject *);
 ?destroyObject@Faction@@UEAAXPEAVRootObject@@@Z proc EXPORT
-jmp function_pointers[999*8]
+jmp function_pointers[1019*8]
 ?destroyObject@Faction@@UEAAXPEAVRootObject@@@Z endp
 
 ?_NV_processKillList@Faction@@QEAAXXZ proc EXPORT
@@ -6195,7 +6346,7 @@ jmp function_pointers[999*8]
 
 ; Faction::processKillList();
 ?processKillList@Faction@@UEAAXXZ proc EXPORT
-jmp function_pointers[1000*8]
+jmp function_pointers[1020*8]
 ?processKillList@Faction@@UEAAXXZ endp
 
 ?_NV_addActiveObject@Faction@@QEAA_NPEAVRootObject@@PEAVActivePlatoon@@@Z proc EXPORT
@@ -6203,162 +6354,162 @@ jmp function_pointers[1000*8]
 
 ; Faction::addActiveObject(class RootObject *, class ActivePlatoon *);
 ?addActiveObject@Faction@@UEAA_NPEAVRootObject@@PEAVActivePlatoon@@@Z proc EXPORT
-jmp function_pointers[1001*8]
+jmp function_pointers[1021*8]
 ?addActiveObject@Faction@@UEAA_NPEAVRootObject@@PEAVActivePlatoon@@@Z endp
 
 ; Faction::choosePlatoon();
 ?choosePlatoon@Faction@@QEAAPEAVActivePlatoon@@XZ proc EXPORT
-jmp function_pointers[1002*8]
+jmp function_pointers[1022*8]
 ?choosePlatoon@Faction@@QEAAPEAVActivePlatoon@@XZ endp
 
 ; Faction::getActivePlatoons();
 ?getActivePlatoons@Faction@@QEBAPEBV?$lektor@PEAVPlatoon@@@@XZ proc EXPORT
-jmp function_pointers[1003*8]
+jmp function_pointers[1023*8]
 ?getActivePlatoons@Faction@@QEBAPEBV?$lektor@PEAVPlatoon@@@@XZ endp
 
 ; Faction::getUnloadedPlatoons();
 ?getUnloadedPlatoons@Faction@@QEBAPEBV?$lektor@PEAVPlatoon@@@@XZ proc EXPORT
-jmp function_pointers[1004*8]
+jmp function_pointers[1024*8]
 ?getUnloadedPlatoons@Faction@@QEBAPEBV?$lektor@PEAVPlatoon@@@@XZ endp
 
 ; Faction::getFactionSize();
 ?getFactionSize@Faction@@QEBAHXZ proc EXPORT
-jmp function_pointers[1005*8]
+jmp function_pointers[1025*8]
 ?getFactionSize@Faction@@QEBAHXZ endp
 
 ; Faction::update(float);
 ?update@Faction@@QEAAXM@Z proc EXPORT
-jmp function_pointers[1006*8]
+jmp function_pointers[1026*8]
 ?update@Faction@@QEAAXM@Z endp
 
 ; Faction::periodicUpdateThreaded();
 ?periodicUpdateThreaded@Faction@@QEAA_NXZ proc EXPORT
-jmp function_pointers[1007*8]
+jmp function_pointers[1027*8]
 ?periodicUpdateThreaded@Faction@@QEAA_NXZ endp
 
 ; Faction::periodicUpdateMT();
 ?periodicUpdateMT@Faction@@QEAA_NXZ proc EXPORT
-jmp function_pointers[1008*8]
+jmp function_pointers[1028*8]
 ?periodicUpdateMT@Faction@@QEAA_NXZ endp
 
 ; Faction::isThePlayer();
 ?isThePlayer@Faction@@QEBA_NXZ proc EXPORT
-jmp function_pointers[1009*8]
+jmp function_pointers[1029*8]
 ?isThePlayer@Faction@@QEBA_NXZ endp
 
 ; Faction::isNotARealFaction();
 ?isNotARealFaction@Faction@@QEBA_NXZ proc EXPORT
-jmp function_pointers[1010*8]
+jmp function_pointers[1030*8]
 ?isNotARealFaction@Faction@@QEBA_NXZ endp
 
 ; Faction::getName();
 ?getName@Faction@@QEAAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ proc EXPORT
-jmp function_pointers[1011*8]
+jmp function_pointers[1031*8]
 ?getName@Faction@@QEAAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ endp
 
 ; Faction::getNumPlatoons(class GameData *, bool, class TownBase *);
 ?getNumPlatoons@Faction@@QEBAHPEAVGameData@@_NPEAVTownBase@@@Z proc EXPORT
-jmp function_pointers[1012*8]
+jmp function_pointers[1032*8]
 ?getNumPlatoons@Faction@@QEBAHPEAVGameData@@_NPEAVTownBase@@@Z endp
 
 ; Faction::getSquadThatOwns(class Building *);
 ?getSquadThatOwns@Faction@@QEAAPEAVPlatoon@@PEAVBuilding@@@Z proc EXPORT
-jmp function_pointers[1013*8]
+jmp function_pointers[1033*8]
 ?getSquadThatOwns@Faction@@QEAAPEAVPlatoon@@PEAVBuilding@@@Z endp
 
 ; Faction::getAllSquadsThatOwn(class lektor<Platoon *> &, class Building *);
 ?getAllSquadsThatOwn@Faction@@QEAAXAEAV?$lektor@PEAVPlatoon@@@@PEAVBuilding@@@Z proc EXPORT
-jmp function_pointers[1014*8]
+jmp function_pointers[1034*8]
 ?getAllSquadsThatOwn@Faction@@QEAAXAEAV?$lektor@PEAVPlatoon@@@@PEAVBuilding@@@Z endp
 
 ; Faction::getAllActiveSquads();
 ?getAllActiveSquads@Faction@@QEAAPEBV?$lektor@PEAVPlatoon@@@@XZ proc EXPORT
-jmp function_pointers[1015*8]
+jmp function_pointers[1035*8]
 ?getAllActiveSquads@Faction@@QEAAPEBV?$lektor@PEAVPlatoon@@@@XZ endp
 
 ; Faction::getRoadPreference();
 ?getRoadPreference@Faction@@QEBAMXZ proc EXPORT
-jmp function_pointers[1016*8]
+jmp function_pointers[1036*8]
 ?getRoadPreference@Faction@@QEBAMXZ endp
 
 ; Faction::isAntiSlavery();
 ?isAntiSlavery@Faction@@QEAA_NXZ proc EXPORT
-jmp function_pointers[1017*8]
+jmp function_pointers[1037*8]
 ?isAntiSlavery@Faction@@QEAA_NXZ endp
 
 ; Faction::getLawEnforcementFaction();
 ?getLawEnforcementFaction@Faction@@QEAAPEAV1@XZ proc EXPORT
-jmp function_pointers[1018*8]
+jmp function_pointers[1038*8]
 ?getLawEnforcementFaction@Faction@@QEAAPEAV1@XZ endp
 
 ; Faction::chooseARace(class GameData *, class GameData *);
 ?chooseARace@Faction@@QEAAPEAVGameData@@PEAV2@0@Z proc EXPORT
-jmp function_pointers[1019*8]
+jmp function_pointers[1039*8]
 ?chooseARace@Faction@@QEAAPEAVGameData@@PEAV2@0@Z endp
 
 ; Faction::setName(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?setName@Faction@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[1020*8]
+jmp function_pointers[1040*8]
 ?setName@Faction@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; Faction::getBuildingReplacement(class GameData *);
 ?getBuildingReplacement@Faction@@QEAAPEAVGameData@@PEAV2@@Z proc EXPORT
-jmp function_pointers[1021*8]
+jmp function_pointers[1041*8]
 ?getBuildingReplacement@Faction@@QEAAPEAVGameData@@PEAV2@@Z endp
 
 ; Faction::_switchToUnloadedPlatoon(class ActivePlatoon *);
 ?_switchToUnloadedPlatoon@Faction@@QEAAXPEAVActivePlatoon@@@Z proc EXPORT
-jmp function_pointers[1022*8]
+jmp function_pointers[1042*8]
 ?_switchToUnloadedPlatoon@Faction@@QEAAXPEAVActivePlatoon@@@Z endp
 
 ; Faction::_newPlatoon(class Faction *, class GameData *, class GameData *, const class Ogre::Vector3 &, bool);
 ?_newPlatoon@Faction@@QEAAPEAVPlatoon@@PEAV1@PEAVGameData@@1AEBVVector3@Ogre@@_N@Z proc EXPORT
-jmp function_pointers[1023*8]
+jmp function_pointers[1043*8]
 ?_newPlatoon@Faction@@QEAAPEAVPlatoon@@PEAV1@PEAVGameData@@1AEBVVector3@Ogre@@_N@Z endp
 
 ; Faction::_addActivePlatoonToList(class Platoon *);
 ?_addActivePlatoonToList@Faction@@QEAAXPEAVPlatoon@@@Z proc EXPORT
-jmp function_pointers[1024*8]
+jmp function_pointers[1044*8]
 ?_addActivePlatoonToList@Faction@@QEAAXPEAVPlatoon@@@Z endp
 
 ; Faction::addPlatoon(class Platoon *);
 ?addPlatoon@Faction@@QEAAXPEAVPlatoon@@@Z proc EXPORT
-jmp function_pointers[1025*8]
+jmp function_pointers[1045*8]
 ?addPlatoon@Faction@@QEAAXPEAVPlatoon@@@Z endp
 
 ; Faction::changePlatoonIndex(class Platoon *, int);
 ?changePlatoonIndex@Faction@@QEAAXPEAVPlatoon@@H@Z proc EXPORT
-jmp function_pointers[1026*8]
+jmp function_pointers[1046*8]
 ?changePlatoonIndex@Faction@@QEAAXPEAVPlatoon@@H@Z endp
 
 ; Faction::deactivatePlatoon(class Platoon *);
 ?deactivatePlatoon@Faction@@QEAAXPEAVPlatoon@@@Z proc EXPORT
-jmp function_pointers[1027*8]
+jmp function_pointers[1047*8]
 ?deactivatePlatoon@Faction@@QEAAXPEAVPlatoon@@@Z endp
 
 ; Faction::activatePlatoon(class Platoon *);
 ?activatePlatoon@Faction@@QEAAXPEAVPlatoon@@@Z proc EXPORT
-jmp function_pointers[1028*8]
+jmp function_pointers[1048*8]
 ?activatePlatoon@Faction@@QEAAXPEAVPlatoon@@@Z endp
 
 ; Faction::updateUnloadedPlatoons(float);
 ?updateUnloadedPlatoons@Faction@@QEAAXM@Z proc EXPORT
-jmp function_pointers[1029*8]
+jmp function_pointers[1049*8]
 ?updateUnloadedPlatoons@Faction@@QEAAXM@Z endp
 
 ; Faction::updateActivePlatoons(float);
 ?updateActivePlatoons@Faction@@QEAAXM@Z proc EXPORT
-jmp function_pointers[1030*8]
+jmp function_pointers[1050*8]
 ?updateActivePlatoons@Faction@@QEAAXM@Z endp
 
 ; Faction::spawnSquadMissionsUpdate();
 ?spawnSquadMissionsUpdate@Faction@@QEAAXXZ proc EXPORT
-jmp function_pointers[1031*8]
+jmp function_pointers[1051*8]
 ?spawnSquadMissionsUpdate@Faction@@QEAAXXZ endp
 
 ; Faction::_spawnASquad(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, float);
 ?_spawnASquad@Faction@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@M@Z proc EXPORT
-jmp function_pointers[1032*8]
+jmp function_pointers[1052*8]
 ?_spawnASquad@Faction@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@M@Z endp
 
 ?_CONSTRUCTOR@BuildingSwaps@Faction@@QEAAXPEAVGameData@@@Z proc EXPORT
@@ -6366,7 +6517,7 @@ jmp function_pointers[1032*8]
 
 ; Faction::BuildingSwaps::BuildingSwaps(class GameData *);
 ??0BuildingSwaps@Faction@@QEAA@PEAVGameData@@@Z proc EXPORT
-jmp function_pointers[1033*8]
+jmp function_pointers[1053*8]
 ??0BuildingSwaps@Faction@@QEAA@PEAVGameData@@@Z endp
 
 ?_CONSTRUCTOR@BuildingSwaps@Faction@@QEAAXXZ proc EXPORT
@@ -6374,17 +6525,17 @@ jmp function_pointers[1033*8]
 
 ; Faction::BuildingSwaps::BuildingSwaps();
 ??0BuildingSwaps@Faction@@QEAA@XZ proc EXPORT
-jmp function_pointers[1034*8]
+jmp function_pointers[1054*8]
 ??0BuildingSwaps@Faction@@QEAA@XZ endp
 
 ; Faction::BuildingSwaps::hasReplacement(class GameData *);
 ?hasReplacement@BuildingSwaps@Faction@@QEBA_NPEAVGameData@@@Z proc EXPORT
-jmp function_pointers[1035*8]
+jmp function_pointers[1055*8]
 ?hasReplacement@BuildingSwaps@Faction@@QEBA_NPEAVGameData@@@Z endp
 
 ; Faction::BuildingSwaps::getReplacement(class GameData *);
 ?getReplacement@BuildingSwaps@Faction@@QEBAPEAVGameData@@PEAV3@@Z proc EXPORT
-jmp function_pointers[1036*8]
+jmp function_pointers[1056*8]
 ?getReplacement@BuildingSwaps@Faction@@QEBAPEAVGameData@@PEAV3@@Z endp
 
 ?_DESTRUCTOR@BuildingSwaps@Faction@@QEAAXXZ proc EXPORT
@@ -6392,12 +6543,12 @@ jmp function_pointers[1036*8]
 
 ; Faction::BuildingSwaps::~BuildingSwaps();
 ??1BuildingSwaps@Faction@@QEAA@XZ proc EXPORT
-jmp function_pointers[1037*8]
+jmp function_pointers[1057*8]
 ??1BuildingSwaps@Faction@@QEAA@XZ endp
 
 ; Faction::BuildingSwaps::operator=(const class Faction::BuildingSwaps &);
 ??4BuildingSwaps@Faction@@QEAAAEAV01@AEBV01@@Z proc EXPORT
-jmp function_pointers[1038*8]
+jmp function_pointers[1058*8]
 ??4BuildingSwaps@Faction@@QEAAAEAV01@AEBV01@@Z endp
 
 ?_CONSTRUCTOR@FactionLeader@@QEAAXPEAVFaction@@@Z proc EXPORT
@@ -6405,22 +6556,22 @@ jmp function_pointers[1038*8]
 
 ; FactionLeader::FactionLeader(class Faction *);
 ??0FactionLeader@@QEAA@PEAVFaction@@@Z proc EXPORT
-jmp function_pointers[1039*8]
+jmp function_pointers[1059*8]
 ??0FactionLeader@@QEAA@PEAVFaction@@@Z endp
 
 ; FactionLeader::setNewLeader(class Character *);
 ?setNewLeader@FactionLeader@@QEAAXPEAVCharacter@@@Z proc EXPORT
-jmp function_pointers[1040*8]
+jmp function_pointers[1060*8]
 ?setNewLeader@FactionLeader@@QEAAXPEAVCharacter@@@Z endp
 
 ; FactionLeader::getEnemyMissionTargetList(class lektor<RootObject *> &, class GameData *);
 ?getEnemyMissionTargetList@FactionLeader@@QEAAXAEAV?$lektor@PEAVRootObject@@@@PEAVGameData@@@Z proc EXPORT
-jmp function_pointers[1041*8]
+jmp function_pointers[1061*8]
 ?getEnemyMissionTargetList@FactionLeader@@QEAAXAEAV?$lektor@PEAVRootObject@@@@PEAVGameData@@@Z endp
 
 ; FactionLeader::getGUIData(class DatapanelGUI *, int);
 ?getGUIData@FactionLeader@@QEAAXPEAVDatapanelGUI@@H@Z proc EXPORT
-jmp function_pointers[1042*8]
+jmp function_pointers[1062*8]
 ?getGUIData@FactionLeader@@QEAAXPEAVDatapanelGUI@@H@Z endp
 
 ?_DESTRUCTOR@FactionLeader@@QEAAXXZ proc EXPORT
@@ -6428,42 +6579,42 @@ jmp function_pointers[1042*8]
 
 ; FactionLeader::~FactionLeader();
 ??1FactionLeader@@QEAA@XZ proc EXPORT
-jmp function_pointers[1043*8]
+jmp function_pointers[1063*8]
 ??1FactionLeader@@QEAA@XZ endp
 
 ; TradeCulture::reset();
 ?reset@TradeCulture@@QEAAXXZ proc EXPORT
-jmp function_pointers[1044*8]
+jmp function_pointers[1064*8]
 ?reset@TradeCulture@@QEAAXXZ endp
 
 ; TradeCulture::setupTradeCulture(class GameData *);
 ?setupTradeCulture@TradeCulture@@QEAAXPEAVGameData@@@Z proc EXPORT
-jmp function_pointers[1045*8]
+jmp function_pointers[1065*8]
 ?setupTradeCulture@TradeCulture@@QEAAXPEAVGameData@@@Z endp
 
 ; TradeCulture::getForbiddenItemsList();
 ?getForbiddenItemsList@TradeCulture@@QEBAAEBV?$lektor@PEAVGameData@@@@XZ proc EXPORT
-jmp function_pointers[1046*8]
+jmp function_pointers[1066*8]
 ?getForbiddenItemsList@TradeCulture@@QEBAAEBV?$lektor@PEAVGameData@@@@XZ endp
 
 ; TradeCulture::isItemIllegal(class GameData *);
 ?isItemIllegal@TradeCulture@@QEBA_NPEAVGameData@@@Z proc EXPORT
-jmp function_pointers[1047*8]
+jmp function_pointers[1067*8]
 ?isItemIllegal@TradeCulture@@QEBA_NPEAVGameData@@@Z endp
 
 ; TradeCulture::getAllIllegalItems();
 ?getAllIllegalItems@TradeCulture@@QEBAPEBV?$set@PEAVGameData@@U?$less@PEAVGameData@@@std@@V?$STLAllocator@PEAVGameData@@V?$CategorisedAllocPolicy@$0A@@Ogre@@@Ogre@@@std@@XZ proc EXPORT
-jmp function_pointers[1048*8]
+jmp function_pointers[1068*8]
 ?getAllIllegalItems@TradeCulture@@QEBAPEBV?$set@PEAVGameData@@U?$less@PEAVGameData@@@std@@V?$STLAllocator@PEAVGameData@@V?$CategorisedAllocPolicy@$0A@@Ogre@@@Ogre@@@std@@XZ endp
 
 ; TradeCulture::getTradePriceMultiplier(class GameData *);
 ?getTradePriceMultiplier@TradeCulture@@QEAAMPEAVGameData@@@Z proc EXPORT
-jmp function_pointers[1049*8]
+jmp function_pointers[1069*8]
 ?getTradePriceMultiplier@TradeCulture@@QEAAMPEAVGameData@@@Z endp
 
 ; TradeCulture::hasTradePriceMultiplier(class GameData *);
 ?hasTradePriceMultiplier@TradeCulture@@QEAA_NPEAVGameData@@@Z proc EXPORT
-jmp function_pointers[1050*8]
+jmp function_pointers[1070*8]
 ?hasTradePriceMultiplier@TradeCulture@@QEAA_NPEAVGameData@@@Z endp
 
 ?_CONSTRUCTOR@TradeCulture@@QEAAXXZ proc EXPORT
@@ -6471,7 +6622,7 @@ jmp function_pointers[1050*8]
 
 ; TradeCulture::TradeCulture();
 ??0TradeCulture@@QEAA@XZ proc EXPORT
-jmp function_pointers[1051*8]
+jmp function_pointers[1071*8]
 ??0TradeCulture@@QEAA@XZ endp
 
 ?_DESTRUCTOR@TradeCulture@@QEAAXXZ proc EXPORT
@@ -6479,17 +6630,107 @@ jmp function_pointers[1051*8]
 
 ; TradeCulture::~TradeCulture();
 ??1TradeCulture@@QEAA@XZ proc EXPORT
-jmp function_pointers[1052*8]
+jmp function_pointers[1072*8]
 ??1TradeCulture@@QEAA@XZ endp
+
+; TitleScreen::getSingleton();
+?getSingleton@TitleScreen@@SAPEAV1@XZ proc EXPORT
+jmp function_pointers[1073*8]
+?getSingleton@TitleScreen@@SAPEAV1@XZ endp
+
+?_CONSTRUCTOR@TitleScreen@@QEAAXXZ proc EXPORT
+?_CONSTRUCTOR@TitleScreen@@QEAAXXZ endp
+
+; TitleScreen::TitleScreen();
+??0TitleScreen@@QEAA@XZ proc EXPORT
+jmp function_pointers[1074*8]
+??0TitleScreen@@QEAA@XZ endp
+
+?_DESTRUCTOR@TitleScreen@@QEAAXXZ proc EXPORT
+?_DESTRUCTOR@TitleScreen@@QEAAXXZ endp
+
+; TitleScreen::~TitleScreen();
+??1TitleScreen@@UEAA@XZ proc EXPORT
+jmp function_pointers[1075*8]
+??1TitleScreen@@UEAA@XZ endp
+
+?_NV_clear@TitleScreen@@QEAAXXZ proc EXPORT
+?_NV_clear@TitleScreen@@QEAAXXZ endp
+
+; TitleScreen::clear();
+?clear@TitleScreen@@UEAAXXZ proc EXPORT
+jmp function_pointers[1076*8]
+?clear@TitleScreen@@UEAAXXZ endp
+
+?_NV_show@TitleScreen@@QEAAX_N@Z proc EXPORT
+?_NV_show@TitleScreen@@QEAAX_N@Z endp
+
+; TitleScreen::show(bool);
+?show@TitleScreen@@UEAAX_N@Z proc EXPORT
+jmp function_pointers[1077*8]
+?show@TitleScreen@@UEAAX_N@Z endp
+
+?_NV_update@TitleScreen@@QEAAXXZ proc EXPORT
+?_NV_update@TitleScreen@@QEAAXXZ endp
+
+; TitleScreen::update();
+?update@TitleScreen@@UEAAXXZ proc EXPORT
+jmp function_pointers[1078*8]
+?update@TitleScreen@@UEAAXXZ endp
+
+; TitleScreen::closeTheOtherBits();
+?closeTheOtherBits@TitleScreen@@QEAA_NXZ proc EXPORT
+jmp function_pointers[1079*8]
+?closeTheOtherBits@TitleScreen@@QEAA_NXZ endp
+
+; TitleScreen::loadGame(class MyGUI::Widget *);
+?loadGame@TitleScreen@@QEAAXPEAVWidget@MyGUI@@@Z proc EXPORT
+jmp function_pointers[1080*8]
+?loadGame@TitleScreen@@QEAAXPEAVWidget@MyGUI@@@Z endp
+
+; TitleScreen::importGame(class MyGUI::Widget *);
+?importGame@TitleScreen@@QEAAXPEAVWidget@MyGUI@@@Z proc EXPORT
+jmp function_pointers[1081*8]
+?importGame@TitleScreen@@QEAAXPEAVWidget@MyGUI@@@Z endp
+
+; TitleScreen::showOptions(class MyGUI::Widget *);
+?showOptions@TitleScreen@@QEAAXPEAVWidget@MyGUI@@@Z proc EXPORT
+jmp function_pointers[1082*8]
+?showOptions@TitleScreen@@QEAAXPEAVWidget@MyGUI@@@Z endp
+
+; TitleScreen::credits(class MyGUI::Widget *);
+?credits@TitleScreen@@QEAAXPEAVWidget@MyGUI@@@Z proc EXPORT
+jmp function_pointers[1083*8]
+?credits@TitleScreen@@QEAAXPEAVWidget@MyGUI@@@Z endp
+
+; TitleScreen::exitGame(class MyGUI::Widget *);
+?exitGame@TitleScreen@@QEAAXPEAVWidget@MyGUI@@@Z proc EXPORT
+jmp function_pointers[1084*8]
+?exitGame@TitleScreen@@QEAAXPEAVWidget@MyGUI@@@Z endp
+
+; TitleScreen::continueGame(class MyGUI::Widget *);
+?continueGame@TitleScreen@@QEAAXPEAVWidget@MyGUI@@@Z proc EXPORT
+jmp function_pointers[1085*8]
+?continueGame@TitleScreen@@QEAAXPEAVWidget@MyGUI@@@Z endp
+
+; TitleScreen::hover(class MyGUI::Widget *, class MyGUI::Widget *);
+?hover@TitleScreen@@QEAAXPEAVWidget@MyGUI@@0@Z proc EXPORT
+jmp function_pointers[1086*8]
+?hover@TitleScreen@@QEAAXPEAVWidget@MyGUI@@0@Z endp
+
+; TitleScreen::setCreditsVisible(bool);
+?setCreditsVisible@TitleScreen@@QEAAX_N@Z proc EXPORT
+jmp function_pointers[1087*8]
+?setCreditsVisible@TitleScreen@@QEAAX_N@Z endp
 
 ; GameWorld::justLoadFactionRelations(class GameDataManager *);
 ?justLoadFactionRelations@GameWorld@@QEAAXPEAVGameDataManager@@@Z proc EXPORT
-jmp function_pointers[1053*8]
+jmp function_pointers[1088*8]
 ?justLoadFactionRelations@GameWorld@@QEAAXPEAVGameDataManager@@@Z endp
 
 ; GameWorld::startUpThreads();
 ?startUpThreads@GameWorld@@QEAA_NXZ proc EXPORT
-jmp function_pointers[1054*8]
+jmp function_pointers[1089*8]
 ?startUpThreads@GameWorld@@QEAA_NXZ endp
 
 ?_CONSTRUCTOR@GameWorld@@QEAAXXZ proc EXPORT
@@ -6497,7 +6738,7 @@ jmp function_pointers[1054*8]
 
 ; GameWorld::GameWorld();
 ??0GameWorld@@QEAA@XZ proc EXPORT
-jmp function_pointers[1055*8]
+jmp function_pointers[1090*8]
 ??0GameWorld@@QEAA@XZ endp
 
 ?_DESTRUCTOR@GameWorld@@QEAAXXZ proc EXPORT
@@ -6505,317 +6746,317 @@ jmp function_pointers[1055*8]
 
 ; GameWorld::~GameWorld();
 ??1GameWorld@@QEAA@XZ proc EXPORT
-jmp function_pointers[1056*8]
+jmp function_pointers[1091*8]
 ??1GameWorld@@QEAA@XZ endp
 
 ; GameWorld::start(class RendererT *);
 ?start@GameWorld@@QEAA_NPEAVRendererT@@@Z proc EXPORT
-jmp function_pointers[1057*8]
+jmp function_pointers[1092*8]
 ?start@GameWorld@@QEAA_NPEAVRendererT@@@Z endp
 
 ; GameWorld::resetGame();
 ?resetGame@GameWorld@@QEAAXXZ proc EXPORT
-jmp function_pointers[1058*8]
+jmp function_pointers[1093*8]
 ?resetGame@GameWorld@@QEAAXXZ endp
 
 ; GameWorld::_clearAndDestroyGameWorldStuff();
 ?_clearAndDestroyGameWorldStuff@GameWorld@@QEAAXXZ proc EXPORT
-jmp function_pointers[1059*8]
+jmp function_pointers[1094*8]
 ?_clearAndDestroyGameWorldStuff@GameWorld@@QEAAXXZ endp
 
 ; GameWorld::initialisation();
 ?initialisation@GameWorld@@QEAA_NXZ proc EXPORT
-jmp function_pointers[1060*8]
+jmp function_pointers[1095*8]
 ?initialisation@GameWorld@@QEAA_NXZ endp
 
 ; GameWorld::initialisationGameData();
 ?initialisationGameData@GameWorld@@QEAA_NXZ proc EXPORT
-jmp function_pointers[1061*8]
+jmp function_pointers[1096*8]
 ?initialisationGameData@GameWorld@@QEAA_NXZ endp
 
 ; GameWorld::dailyUpdates();
 ?dailyUpdates@GameWorld@@QEAAXXZ proc EXPORT
-jmp function_pointers[1062*8]
+jmp function_pointers[1097*8]
 ?dailyUpdates@GameWorld@@QEAAXXZ endp
 
 ; GameWorld::initialiseNewGameWorld(class GameDataManager *);
 ?initialiseNewGameWorld@GameWorld@@QEAAXPEAVGameDataManager@@@Z proc EXPORT
-jmp function_pointers[1063*8]
+jmp function_pointers[1098*8]
 ?initialiseNewGameWorld@GameWorld@@QEAAXPEAVGameDataManager@@@Z endp
 
 ; GameWorld::errorToLogReleaseMode(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?errorToLogReleaseMode@GameWorld@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[1064*8]
+jmp function_pointers[1099*8]
 ?errorToLogReleaseMode@GameWorld@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; GameWorld::errorD(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?errorD@GameWorld@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[1065*8]
+jmp function_pointers[1100*8]
 ?errorD@GameWorld@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; GameWorld::logToSave(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?logToSave@GameWorld@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[1066*8]
+jmp function_pointers[1101*8]
 ?logToSave@GameWorld@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; GameWorld::log(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?log@GameWorld@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[1067*8]
+jmp function_pointers[1102*8]
 ?log@GameWorld@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; GameWorld::logDebug(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?logDebug@GameWorld@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z proc EXPORT
-jmp function_pointers[1068*8]
+jmp function_pointers[1103*8]
 ?logDebug@GameWorld@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z endp
 
 ; GameWorld::logDebug(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?logDebug@GameWorld@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[1069*8]
+jmp function_pointers[1104*8]
 ?logDebug@GameWorld@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; GameWorld::destroy(class Ogre::MovableObject *);
 ?destroy@GameWorld@@QEAAXPEAVMovableObject@Ogre@@@Z proc EXPORT
-jmp function_pointers[1070*8]
+jmp function_pointers[1105*8]
 ?destroy@GameWorld@@QEAAXPEAVMovableObject@Ogre@@@Z endp
 
 ; GameWorld::destroy(class AttachedEntity *);
 ?destroy@GameWorld@@QEAAXPEAVAttachedEntity@@@Z proc EXPORT
-jmp function_pointers[1071*8]
+jmp function_pointers[1106*8]
 ?destroy@GameWorld@@QEAAXPEAVAttachedEntity@@@Z endp
 
 ; GameWorld::destroy(class TownBuildingsManager *);
 ?destroy@GameWorld@@QEAAXPEAVTownBuildingsManager@@@Z proc EXPORT
-jmp function_pointers[1072*8]
+jmp function_pointers[1107*8]
 ?destroy@GameWorld@@QEAAXPEAVTownBuildingsManager@@@Z endp
 
 ; GameWorld::destroy(class NestBatcher *);
 ?destroy@GameWorld@@QEAAXPEAVNestBatcher@@@Z proc EXPORT
-jmp function_pointers[1073*8]
+jmp function_pointers[1108*8]
 ?destroy@GameWorld@@QEAAXPEAVNestBatcher@@@Z endp
 
 ; GameWorld::destroy(class RootObject *, bool, const char *);
 ?destroy@GameWorld@@QEAA_NPEAVRootObject@@_NPEBD@Z proc EXPORT
-jmp function_pointers[1074*8]
+jmp function_pointers[1109*8]
 ?destroy@GameWorld@@QEAA_NPEAVRootObject@@_NPEBD@Z endp
 
 ; GameWorld::destroy(class GameData *);
 ?destroy@GameWorld@@QEAAXPEAVGameData@@@Z proc EXPORT
-jmp function_pointers[1075*8]
+jmp function_pointers[1110*8]
 ?destroy@GameWorld@@QEAAXPEAVGameData@@@Z endp
 
 ; GameWorld::getIsInKillList(class RootObject *);
 ?getIsInKillList@GameWorld@@QEAA_NPEAVRootObject@@@Z proc EXPORT
-jmp function_pointers[1076*8]
+jmp function_pointers[1111*8]
 ?getIsInKillList@GameWorld@@QEAA_NPEAVRootObject@@@Z endp
 
 ; GameWorld::flushKillList();
 ?flushKillList@GameWorld@@QEAAXXZ proc EXPORT
-jmp function_pointers[1077*8]
+jmp function_pointers[1112*8]
 ?flushKillList@GameWorld@@QEAAXXZ endp
 
 ; GameWorld::dynamicDestroyBuilding(const class hand &);
 ?dynamicDestroyBuilding@GameWorld@@QEAAXAEBVhand@@@Z proc EXPORT
-jmp function_pointers[1078*8]
+jmp function_pointers[1113*8]
 ?dynamicDestroyBuilding@GameWorld@@QEAAXAEBVhand@@@Z endp
 
 ; GameWorld::allThreadQueuesAreClear();
 ?allThreadQueuesAreClear@GameWorld@@QEAA_NXZ proc EXPORT
-jmp function_pointers[1079*8]
+jmp function_pointers[1114*8]
 ?allThreadQueuesAreClear@GameWorld@@QEAA_NXZ endp
 
 ; GameWorld::initBaseMods();
 ?initBaseMods@GameWorld@@QEAAXXZ proc EXPORT
-jmp function_pointers[1080*8]
+jmp function_pointers[1115*8]
 ?initBaseMods@GameWorld@@QEAAXXZ endp
 
 ; GameWorld::initModsList();
 ?initModsList@GameWorld@@QEAAXXZ proc EXPORT
-jmp function_pointers[1081*8]
+jmp function_pointers[1116*8]
 ?initModsList@GameWorld@@QEAAXXZ endp
 
 ; GameWorld::getModsListFromConfig();
 ?getModsListFromConfig@GameWorld@@QEAA?AV?$lektor@PEAVModInfo@@@@XZ proc EXPORT
-jmp function_pointers[1082*8]
+jmp function_pointers[1117*8]
 ?getModsListFromConfig@GameWorld@@QEAA?AV?$lektor@PEAVModInfo@@@@XZ endp
 
 ; GameWorld::getAllModsList();
 ?getAllModsList@GameWorld@@QEBAAEBV?$lektor@PEAVModInfo@@@@XZ proc EXPORT
-jmp function_pointers[1083*8]
+jmp function_pointers[1118*8]
 ?getAllModsList@GameWorld@@QEBAAEBV?$lektor@PEAVModInfo@@@@XZ endp
 
 ; GameWorld::getModIndex(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?getModIndex@GameWorld@@QEBAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[1084*8]
+jmp function_pointers[1119*8]
 ?getModIndex@GameWorld@@QEBAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; GameWorld::getModLeveldataFolder(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?getModLeveldataFolder@GameWorld@@QEAAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@@Z proc EXPORT
-jmp function_pointers[1085*8]
+jmp function_pointers[1120*8]
 ?getModLeveldataFolder@GameWorld@@QEAAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@@Z endp
 
 ; GameWorld::getObjectsWithinSphere(class lektor<RootObject *> &, const class Ogre::Vector3 &, float, enum itemType, int, class RootObject *);
 ?getObjectsWithinSphere@GameWorld@@QEAAXAEAV?$lektor@PEAVRootObject@@@@AEBVVector3@Ogre@@MW4itemType@@HPEAVRootObject@@@Z proc EXPORT
-jmp function_pointers[1086*8]
+jmp function_pointers[1121*8]
 ?getObjectsWithinSphere@GameWorld@@QEAAXAEAV?$lektor@PEAVRootObject@@@@AEBVVector3@Ogre@@MW4itemType@@HPEAVRootObject@@@Z endp
 
 ; GameWorld::getCharactersWithinSphere(class lektor<RootObject *> &, const class Ogre::Vector3 &, float, float, float, int, int, class RootObject *);
 ?getCharactersWithinSphere@GameWorld@@QEAAXAEAV?$lektor@PEAVRootObject@@@@AEBVVector3@Ogre@@MMMHHPEAVRootObject@@@Z proc EXPORT
-jmp function_pointers[1087*8]
+jmp function_pointers[1122*8]
 ?getCharactersWithinSphere@GameWorld@@QEAAXAEAV?$lektor@PEAVRootObject@@@@AEBVVector3@Ogre@@MMMHHPEAVRootObject@@@Z endp
 
 ; GameWorld::getObjectsWithinBox(class lektor<RootObject *> &, const class Ogre::Vector3 &, const class Ogre::Vector3 &, const class Ogre::Quaternion &, enum itemType, int, class RootObject *);
 ?getObjectsWithinBox@GameWorld@@QEAAXAEAV?$lektor@PEAVRootObject@@@@AEBVVector3@Ogre@@1AEBVQuaternion@4@W4itemType@@HPEAVRootObject@@@Z proc EXPORT
-jmp function_pointers[1088*8]
+jmp function_pointers[1123*8]
 ?getObjectsWithinBox@GameWorld@@QEAAXAEAV?$lektor@PEAVRootObject@@@@AEBVVector3@Ogre@@1AEBVQuaternion@4@W4itemType@@HPEAVRootObject@@@Z endp
 
 ; GameWorld::buildingIntersectionTestCapsule(const class Ogre::Vector3 &, float, float, class RootObject *);
 ?buildingIntersectionTestCapsule@GameWorld@@QEAA_NAEBVVector3@Ogre@@MMPEAVRootObject@@@Z proc EXPORT
-jmp function_pointers[1089*8]
+jmp function_pointers[1124*8]
 ?buildingIntersectionTestCapsule@GameWorld@@QEAA_NAEBVVector3@Ogre@@MMPEAVRootObject@@@Z endp
 
 ; GameWorld::getLightLevel(const class Ogre::Vector3 &, int, bool);
 ?getLightLevel@GameWorld@@QEBAMAEBVVector3@Ogre@@H_N@Z proc EXPORT
-jmp function_pointers[1090*8]
+jmp function_pointers[1125*8]
 ?getLightLevel@GameWorld@@QEBAMAEBVVector3@Ogre@@H_N@Z endp
 
 ; GameWorld::populateMapArea_nonPermanent(class ZoneMap *, int, bool);
 ?populateMapArea_nonPermanent@GameWorld@@QEAAXPEAVZoneMap@@H_N@Z proc EXPORT
-jmp function_pointers[1091*8]
+jmp function_pointers[1126*8]
 ?populateMapArea_nonPermanent@GameWorld@@QEAAXPEAVZoneMap@@H_N@Z endp
 
 ; GameWorld::findValidSpawnPos(class Ogre::Vector3 &, const class Ogre::Vector3 &);
 ?findValidSpawnPos@GameWorld@@QEAA_NAEAVVector3@Ogre@@AEBV23@@Z proc EXPORT
-jmp function_pointers[1092*8]
+jmp function_pointers[1127*8]
 ?findValidSpawnPos@GameWorld@@QEAA_NAEAVVector3@Ogre@@AEBV23@@Z endp
 
 ; GameWorld::togglePause(bool);
 ?togglePause@GameWorld@@QEAAX_N@Z proc EXPORT
-jmp function_pointers[1093*8]
+jmp function_pointers[1128*8]
 ?togglePause@GameWorld@@QEAAX_N@Z endp
 
 ; GameWorld::getFrameSpeedMultiplier();
 ?getFrameSpeedMultiplier@GameWorld@@QEBAMXZ proc EXPORT
-jmp function_pointers[1094*8]
+jmp function_pointers[1129*8]
 ?getFrameSpeedMultiplier@GameWorld@@QEBAMXZ endp
 
 ; GameWorld::setFrameSpeedMultiplier(float);
 ?setFrameSpeedMultiplier@GameWorld@@QEAAXM@Z proc EXPORT
-jmp function_pointers[1095*8]
+jmp function_pointers[1130*8]
 ?setFrameSpeedMultiplier@GameWorld@@QEAAXM@Z endp
 
 ; GameWorld::setGameSpeed(float, bool);
 ?setGameSpeed@GameWorld@@QEAAXM_N@Z proc EXPORT
-jmp function_pointers[1096*8]
+jmp function_pointers[1131*8]
 ?setGameSpeed@GameWorld@@QEAAXM_N@Z endp
 
 ; GameWorld::userPause(bool);
 ?userPause@GameWorld@@QEAAX_N@Z proc EXPORT
-jmp function_pointers[1097*8]
+jmp function_pointers[1132*8]
 ?userPause@GameWorld@@QEAAX_N@Z endp
 
 ; GameWorld::isPaused();
 ?isPaused@GameWorld@@QEBA_NXZ proc EXPORT
-jmp function_pointers[1098*8]
+jmp function_pointers[1133*8]
 ?isPaused@GameWorld@@QEBA_NXZ endp
 
 ; GameWorld::getCameraCenter();
 ?getCameraCenter@GameWorld@@QEBA?BVVector3@Ogre@@XZ proc EXPORT
-jmp function_pointers[1099*8]
+jmp function_pointers[1134*8]
 ?getCameraCenter@GameWorld@@QEBA?BVVector3@Ogre@@XZ endp
 
 ; GameWorld::getCameraPos();
 ?getCameraPos@GameWorld@@QEBA?BVVector3@Ogre@@XZ proc EXPORT
-jmp function_pointers[1100*8]
+jmp function_pointers[1135*8]
 ?getCameraPos@GameWorld@@QEBA?BVVector3@Ogre@@XZ endp
 
 ; GameWorld::fixNaNPosition(class Ogre::Vector3 &);
 ?fixNaNPosition@GameWorld@@QEBA_NAEAVVector3@Ogre@@@Z proc EXPORT
-jmp function_pointers[1101*8]
+jmp function_pointers[1136*8]
 ?fixNaNPosition@GameWorld@@QEBA_NAEAVVector3@Ogre@@@Z endp
 
 ; GameWorld::getWindSpeed(const class Ogre::Vector3 &);
 ?getWindSpeed@GameWorld@@QEBAMAEBVVector3@Ogre@@@Z proc EXPORT
-jmp function_pointers[1102*8]
+jmp function_pointers[1137*8]
 ?getWindSpeed@GameWorld@@QEBAMAEBVVector3@Ogre@@@Z endp
 
 ; GameWorld::isLoadingFromASaveGame();
 ?isLoadingFromASaveGame@GameWorld@@QEAA_NXZ proc EXPORT
-jmp function_pointers[1103*8]
+jmp function_pointers[1138*8]
 ?isLoadingFromASaveGame@GameWorld@@QEAA_NXZ endp
 
 ; GameWorld::addToUpdateListMain(class Character *);
 ?addToUpdateListMain@GameWorld@@QEAAXPEAVCharacter@@@Z proc EXPORT
-jmp function_pointers[1104*8]
+jmp function_pointers[1139*8]
 ?addToUpdateListMain@GameWorld@@QEAAXPEAVCharacter@@@Z endp
 
 ; GameWorld::removeFromUpdateListMain(class Character *);
 ?removeFromUpdateListMain@GameWorld@@QEAAXPEAVCharacter@@@Z proc EXPORT
-jmp function_pointers[1105*8]
+jmp function_pointers[1140*8]
 ?removeFromUpdateListMain@GameWorld@@QEAAXPEAVCharacter@@@Z endp
 
 ; GameWorld::getCharacterUpdateList();
 ?getCharacterUpdateList@GameWorld@@QEBAAEBV?$unordered_set@PEAVCharacter@@U?$hash@PEAVCharacter@@@boost@@U?$equal_to@PEAVCharacter@@@std@@V?$STLAllocator@PEAVCharacter@@V?$CategorisedAllocPolicy@$0A@@Ogre@@@Ogre@@@unordered@boost@@XZ proc EXPORT
-jmp function_pointers[1106*8]
+jmp function_pointers[1141*8]
 ?getCharacterUpdateList@GameWorld@@QEBAAEBV?$unordered_set@PEAVCharacter@@U?$hash@PEAVCharacter@@@boost@@U?$equal_to@PEAVCharacter@@@std@@V?$STLAllocator@PEAVCharacter@@V?$CategorisedAllocPolicy@$0A@@Ogre@@@Ogre@@@unordered@boost@@XZ endp
 
 ; GameWorld::addToDeathParade(class Character *);
 ?addToDeathParade@GameWorld@@QEAAXPEAVCharacter@@@Z proc EXPORT
-jmp function_pointers[1107*8]
+jmp function_pointers[1142*8]
 ?addToDeathParade@GameWorld@@QEAAXPEAVCharacter@@@Z endp
 
 ; GameWorld::removeFromDeathParade(class Character *);
 ?removeFromDeathParade@GameWorld@@QEAA_NPEAVCharacter@@@Z proc EXPORT
-jmp function_pointers[1108*8]
+jmp function_pointers[1143*8]
 ?removeFromDeathParade@GameWorld@@QEAA_NPEAVCharacter@@@Z endp
 
 ; GameWorld::removeFromDeathParadeByPlatoon(class Platoon *);
 ?removeFromDeathParadeByPlatoon@GameWorld@@QEAAXPEAVPlatoon@@@Z proc EXPORT
-jmp function_pointers[1109*8]
+jmp function_pointers[1144*8]
 ?removeFromDeathParadeByPlatoon@GameWorld@@QEAAXPEAVPlatoon@@@Z endp
 
 ; GameWorld::getFromDeathParade(const class hand &);
 ?getFromDeathParade@GameWorld@@QEAAPEAVCharacter@@AEBVhand@@@Z proc EXPORT
-jmp function_pointers[1110*8]
+jmp function_pointers[1145*8]
 ?getFromDeathParade@GameWorld@@QEAAPEAVCharacter@@AEBVhand@@@Z endp
 
 ; GameWorld::hideContextMenu();
 ?hideContextMenu@GameWorld@@QEAAXXZ proc EXPORT
-jmp function_pointers[1111*8]
+jmp function_pointers[1146*8]
 ?hideContextMenu@GameWorld@@QEAAXXZ endp
 
 ; GameWorld::showPlayerAMessage_withLog(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, bool);
 ?showPlayerAMessage_withLog@GameWorld@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@Z proc EXPORT
-jmp function_pointers[1112*8]
+jmp function_pointers[1147*8]
 ?showPlayerAMessage_withLog@GameWorld@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@Z endp
 
 ; GameWorld::showPlayerAMessage(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, bool);
 ?showPlayerAMessage@GameWorld@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@Z proc EXPORT
-jmp function_pointers[1113*8]
+jmp function_pointers[1148*8]
 ?showPlayerAMessage@GameWorld@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@Z endp
 
 ; GameWorld::showPlayerAMessageD(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, bool);
 ?showPlayerAMessageD@GameWorld@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@Z proc EXPORT
-jmp function_pointers[1114*8]
+jmp function_pointers[1149*8]
 ?showPlayerAMessageD@GameWorld@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@Z endp
 
 ; GameWorld::playNotification(const char *);
 ?playNotification@GameWorld@@QEBAXPEBD@Z proc EXPORT
-jmp function_pointers[1115*8]
+jmp function_pointers[1150*8]
 ?playNotification@GameWorld@@QEBAXPEBD@Z endp
 
 ; GameWorld::sysMessage(const class GameWorld::SysMessage &);
 ?sysMessage@GameWorld@@QEAAXAEBVSysMessage@1@@Z proc EXPORT
-jmp function_pointers[1116*8]
+jmp function_pointers[1151*8]
 ?sysMessage@GameWorld@@QEAAXAEBVSysMessage@1@@Z endp
 
 ; GameWorld::sysMessageUrgent(const class GameWorld::SysMessage &);
 ?sysMessageUrgent@GameWorld@@QEAAXAEBVSysMessage@1@@Z proc EXPORT
-jmp function_pointers[1117*8]
+jmp function_pointers[1152*8]
 ?sysMessageUrgent@GameWorld@@QEAAXAEBVSysMessage@1@@Z endp
 
 ; GameWorld::sysMessage_noDuplicates(const class GameWorld::SysMessage &);
 ?sysMessage_noDuplicates@GameWorld@@QEAAXAEBVSysMessage@1@@Z proc EXPORT
-jmp function_pointers[1118*8]
+jmp function_pointers[1153*8]
 ?sysMessage_noDuplicates@GameWorld@@QEAAXAEBVSysMessage@1@@Z endp
 
 ?_NV_mainLoop_GPUSensitiveStuff@GameWorld@@QEAAXM@Z proc EXPORT
@@ -6823,132 +7064,132 @@ jmp function_pointers[1118*8]
 
 ; GameWorld::mainLoop_GPUSensitiveStuff(float);
 ?mainLoop_GPUSensitiveStuff@GameWorld@@UEAAXM@Z proc EXPORT
-jmp function_pointers[1119*8]
+jmp function_pointers[1154*8]
 ?mainLoop_GPUSensitiveStuff@GameWorld@@UEAAXM@Z endp
 
 ; GameWorld::clearPortaitsUpdate();
 ?clearPortaitsUpdate@GameWorld@@QEAAXXZ proc EXPORT
-jmp function_pointers[1120*8]
+jmp function_pointers[1155*8]
 ?clearPortaitsUpdate@GameWorld@@QEAAXXZ endp
 
 ; GameWorld::addPortraitUpdate(const class hand &);
 ?addPortraitUpdate@GameWorld@@QEAAXAEBVhand@@@Z proc EXPORT
-jmp function_pointers[1121*8]
+jmp function_pointers[1156*8]
 ?addPortraitUpdate@GameWorld@@QEAAXAEBVhand@@@Z endp
 
 ; GameWorld::removePortaitUpdate(const class hand &);
 ?removePortaitUpdate@GameWorld@@QEAAXAEBVhand@@@Z proc EXPORT
-jmp function_pointers[1122*8]
+jmp function_pointers[1157*8]
 ?removePortaitUpdate@GameWorld@@QEAAXAEBVhand@@@Z endp
 
 ; GameWorld::processSysMessages();
 ?processSysMessages@GameWorld@@QEAAXXZ proc EXPORT
-jmp function_pointers[1123*8]
+jmp function_pointers[1158*8]
 ?processSysMessages@GameWorld@@QEAAXXZ endp
 
 ; GameWorld::getCollisionGroupType(enum itemType, enum NxShapesType &, unsigned int &);
 ?getCollisionGroupType@GameWorld@@QEAAXW4itemType@@AEAW4NxShapesType@@AEAI@Z proc EXPORT
-jmp function_pointers[1124*8]
+jmp function_pointers[1159*8]
 ?getCollisionGroupType@GameWorld@@QEAAXW4itemType@@AEAW4NxShapesType@@AEAI@Z endp
 
 ; GameWorld::destroyDeathParade();
 ?destroyDeathParade@GameWorld@@QEAAXXZ proc EXPORT
-jmp function_pointers[1125*8]
+jmp function_pointers[1160*8]
 ?destroyDeathParade@GameWorld@@QEAAXXZ endp
 
 ; GameWorld::processKeys();
 ?processKeys@GameWorld@@QEAAXXZ proc EXPORT
-jmp function_pointers[1126*8]
+jmp function_pointers[1161*8]
 ?processKeys@GameWorld@@QEAAXXZ endp
 
 ; GameWorld::processThreadMessages();
 ?processThreadMessages@GameWorld@@QEAAXXZ proc EXPORT
-jmp function_pointers[1127*8]
+jmp function_pointers[1162*8]
 ?processThreadMessages@GameWorld@@QEAAXXZ endp
 
 ; GameWorld::charsUpdate();
 ?charsUpdate@GameWorld@@QEAAXXZ proc EXPORT
-jmp function_pointers[1128*8]
+jmp function_pointers[1163*8]
 ?charsUpdate@GameWorld@@QEAAXXZ endp
 
 ; GameWorld::charsUpdateUT();
 ?charsUpdateUT@GameWorld@@QEAAXXZ proc EXPORT
-jmp function_pointers[1129*8]
+jmp function_pointers[1164*8]
 ?charsUpdateUT@GameWorld@@QEAAXXZ endp
 
 ; GameWorld::charsUpdatePaused();
 ?charsUpdatePaused@GameWorld@@QEAAXXZ proc EXPORT
-jmp function_pointers[1130*8]
+jmp function_pointers[1165*8]
 ?charsUpdatePaused@GameWorld@@QEAAXXZ endp
 
 ; GameWorld::charsUpdateDeathParade();
 ?charsUpdateDeathParade@GameWorld@@QEAAXXZ proc EXPORT
-jmp function_pointers[1131*8]
+jmp function_pointers[1166*8]
 ?charsUpdateDeathParade@GameWorld@@QEAAXXZ endp
 
 ; GameWorld::threadSafeRagdollUpdates();
 ?threadSafeRagdollUpdates@GameWorld@@QEAAXXZ proc EXPORT
-jmp function_pointers[1132*8]
+jmp function_pointers[1167*8]
 ?threadSafeRagdollUpdates@GameWorld@@QEAAXXZ endp
 
 ; GameWorld::AINonRenderThread();
 ?AINonRenderThread@GameWorld@@QEAAPEAVThreadWannabe@@XZ proc EXPORT
-jmp function_pointers[1133*8]
+jmp function_pointers[1168*8]
 ?AINonRenderThread@GameWorld@@QEAAPEAVThreadWannabe@@XZ endp
 
 ; GameWorld::processAttachmentsKillList();
 ?processAttachmentsKillList@GameWorld@@QEAAXXZ proc EXPORT
-jmp function_pointers[1134*8]
+jmp function_pointers[1169*8]
 ?processAttachmentsKillList@GameWorld@@QEAAXXZ endp
 
 ; GameWorld::processKillList(bool);
 ?processKillList@GameWorld@@QEAAX_N@Z proc EXPORT
-jmp function_pointers[1135*8]
+jmp function_pointers[1170*8]
 ?processKillList@GameWorld@@QEAAX_N@Z endp
 
 ; GameWorld::processUpdateRemovalList();
 ?processUpdateRemovalList@GameWorld@@QEAAXXZ proc EXPORT
-jmp function_pointers[1136*8]
+jmp function_pointers[1171*8]
 ?processUpdateRemovalList@GameWorld@@QEAAXXZ endp
 
 ; GameWorld::loadAllPlatoons();
 ?loadAllPlatoons@GameWorld@@QEAAXXZ proc EXPORT
-jmp function_pointers[1137*8]
+jmp function_pointers[1172*8]
 ?loadAllPlatoons@GameWorld@@QEAAXXZ endp
 
 ; GameWorld::reCalculateFortificationInsideOutsideStateForAllCharacters();
 ?reCalculateFortificationInsideOutsideStateForAllCharacters@GameWorld@@QEAAXXZ proc EXPORT
-jmp function_pointers[1138*8]
+jmp function_pointers[1173*8]
 ?reCalculateFortificationInsideOutsideStateForAllCharacters@GameWorld@@QEAAXXZ endp
 
 ; GameWorld::getTimeStamp();
 ?getTimeStamp@GameWorld@@QEAANXZ proc EXPORT
-jmp function_pointers[1139*8]
+jmp function_pointers[1174*8]
 ?getTimeStamp@GameWorld@@QEAANXZ endp
 
 ; GameWorld::getTimeFromStamp(const class TimeOfDay &);
 ?getTimeFromStamp@GameWorld@@QEAA?AVTimeOfDay@@AEBV2@@Z proc EXPORT
-jmp function_pointers[1140*8]
+jmp function_pointers[1175*8]
 ?getTimeFromStamp@GameWorld@@QEAA?AVTimeOfDay@@AEBV2@@Z endp
 
 ; GameWorld::getTimeFromStamp(double);
 ?getTimeFromStamp@GameWorld@@QEAAMN@Z proc EXPORT
-jmp function_pointers[1141*8]
+jmp function_pointers[1176*8]
 ?getTimeFromStamp@GameWorld@@QEAAMN@Z endp
 
 ; GameWorld::getTimeFromStamp_inGameHours(double);
 ?getTimeFromStamp_inGameHours@GameWorld@@QEAAMN@Z proc EXPORT
-jmp function_pointers[1142*8]
+jmp function_pointers[1177*8]
 ?getTimeFromStamp_inGameHours@GameWorld@@QEAAMN@Z endp
 
 ; GameWorld::getTimeStamp_inGameHours();
 ?getTimeStamp_inGameHours@GameWorld@@QEAA?AVTimeOfDay@@XZ proc EXPORT
-jmp function_pointers[1143*8]
+jmp function_pointers[1178*8]
 ?getTimeStamp_inGameHours@GameWorld@@QEAA?AVTimeOfDay@@XZ endp
 
 ; GameWorld::getLengthOfHourInRealSeconds();
 ?getLengthOfHourInRealSeconds@GameWorld@@QEAAMXZ proc EXPORT
-jmp function_pointers[1144*8]
+jmp function_pointers[1179*8]
 ?getLengthOfHourInRealSeconds@GameWorld@@QEAAMXZ endp
 
 ?_CONSTRUCTOR@SysMessage@GameWorld@@QEAAXAEBV12@@Z proc EXPORT
@@ -6956,7 +7197,7 @@ jmp function_pointers[1144*8]
 
 ; GameWorld::SysMessage::SysMessage(const class GameWorld::SysMessage &);
 ??0SysMessage@GameWorld@@QEAA@AEBV01@@Z proc EXPORT
-jmp function_pointers[1145*8]
+jmp function_pointers[1180*8]
 ??0SysMessage@GameWorld@@QEAA@AEBV01@@Z endp
 
 ?_CONSTRUCTOR@SysMessage@GameWorld@@QEAAXW4SysMessageEnum@2@AEBVhand@@1_NMPEAX@Z proc EXPORT
@@ -6964,12 +7205,12 @@ jmp function_pointers[1145*8]
 
 ; GameWorld::SysMessage::SysMessage(enum GameWorld::SysMessageEnum, const class hand &, const class hand &, bool, float, void *);
 ??0SysMessage@GameWorld@@QEAA@W4SysMessageEnum@1@AEBVhand@@1_NMPEAX@Z proc EXPORT
-jmp function_pointers[1146*8]
+jmp function_pointers[1181*8]
 ??0SysMessage@GameWorld@@QEAA@W4SysMessageEnum@1@AEBVhand@@1_NMPEAX@Z endp
 
 ; GameWorld::SysMessage::operator==(const class GameWorld::SysMessage &);
 ??8SysMessage@GameWorld@@QEBA_NAEBV01@@Z proc EXPORT
-jmp function_pointers[1147*8]
+jmp function_pointers[1182*8]
 ??8SysMessage@GameWorld@@QEBA_NAEBV01@@Z endp
 
 ?_CONSTRUCTOR@GameLauncher@@QEAAXPEAVRoot@Ogre@@PEAVCWnd@@@Z proc EXPORT
@@ -6977,7 +7218,7 @@ jmp function_pointers[1147*8]
 
 ; GameLauncher::GameLauncher(class Ogre::Root *, class CWnd *);
 ??0GameLauncher@@QEAA@PEAVRoot@Ogre@@PEAVCWnd@@@Z proc EXPORT
-jmp function_pointers[1148*8]
+jmp function_pointers[1183*8]
 ??0GameLauncher@@QEAA@PEAVRoot@Ogre@@PEAVCWnd@@@Z endp
 
 ?_DESTRUCTOR@GameLauncher@@QEAAXXZ proc EXPORT
@@ -6985,7 +7226,7 @@ jmp function_pointers[1148*8]
 
 ; GameLauncher::~GameLauncher();
 ??1GameLauncher@@UEAA@XZ proc EXPORT
-jmp function_pointers[1149*8]
+jmp function_pointers[1184*8]
 ??1GameLauncher@@UEAA@XZ endp
 
 ?_NV_OnInitDialog@GameLauncher@@QEAAHXZ proc EXPORT
@@ -6993,7 +7234,7 @@ jmp function_pointers[1149*8]
 
 ; GameLauncher::OnInitDialog();
 ?OnInitDialog@GameLauncher@@UEAAHXZ proc EXPORT
-jmp function_pointers[1150*8]
+jmp function_pointers[1185*8]
 ?OnInitDialog@GameLauncher@@UEAAHXZ endp
 
 ?_NV_DoDataExchange@GameLauncher@@QEAAXPEAVCDataExchange@@@Z proc EXPORT
@@ -7001,27 +7242,27 @@ jmp function_pointers[1150*8]
 
 ; GameLauncher::DoDataExchange(class CDataExchange *);
 ?DoDataExchange@GameLauncher@@UEAAXPEAVCDataExchange@@@Z proc EXPORT
-jmp function_pointers[1151*8]
+jmp function_pointers[1186*8]
 ?DoDataExchange@GameLauncher@@UEAAXPEAVCDataExchange@@@Z endp
 
 ; GameLauncher::addTab(int, const wchar_t *, unsigned int);
 ?addTab@GameLauncher@@QEAA_NHPEB_WI@Z proc EXPORT
-jmp function_pointers[1152*8]
+jmp function_pointers[1187*8]
 ?addTab@GameLauncher@@QEAA_NHPEB_WI@Z endp
 
 ; GameLauncher::saveSettings();
 ?saveSettings@GameLauncher@@QEAAXXZ proc EXPORT
-jmp function_pointers[1153*8]
+jmp function_pointers[1188*8]
 ?saveSettings@GameLauncher@@QEAAXXZ endp
 
 ; GameLauncher::CStringToString(const class ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t> > > &);
 ?CStringToString@GameLauncher@@SA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV?$CStringT@_WV?$StrTraitMFC_DLL@_WV?$ChTraitsCRT@_W@ATL@@@@@ATL@@@Z proc EXPORT
-jmp function_pointers[1154*8]
+jmp function_pointers[1189*8]
 ?CStringToString@GameLauncher@@SA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV?$CStringT@_WV?$StrTraitMFC_DLL@_WV?$ChTraitsCRT@_W@ATL@@@@@ATL@@@Z endp
 
 ; GameLauncher::GetThisMessageMap();
 ?GetThisMessageMap@GameLauncher@@SAPEBUAFX_MSGMAP@@XZ proc EXPORT
-jmp function_pointers[1155*8]
+jmp function_pointers[1190*8]
 ?GetThisMessageMap@GameLauncher@@SAPEBUAFX_MSGMAP@@XZ endp
 
 ?_NV_GetMessageMap@GameLauncher@@QEBAPEBUAFX_MSGMAP@@XZ proc EXPORT
@@ -7029,42 +7270,42 @@ jmp function_pointers[1155*8]
 
 ; GameLauncher::GetMessageMap();
 ?GetMessageMap@GameLauncher@@UEBAPEBUAFX_MSGMAP@@XZ proc EXPORT
-jmp function_pointers[1156*8]
+jmp function_pointers[1191*8]
 ?GetMessageMap@GameLauncher@@UEBAPEBUAFX_MSGMAP@@XZ endp
 
 ; GameLauncher::OnPaint();
 ?OnPaint@GameLauncher@@QEAAXXZ proc EXPORT
-jmp function_pointers[1157*8]
+jmp function_pointers[1192*8]
 ?OnPaint@GameLauncher@@QEAAXXZ endp
 
 ; GameLauncher::OnBnClickedLauncherOk();
 ?OnBnClickedLauncherOk@GameLauncher@@QEAAXXZ proc EXPORT
-jmp function_pointers[1158*8]
+jmp function_pointers[1193*8]
 ?OnBnClickedLauncherOk@GameLauncher@@QEAAXXZ endp
 
 ; GameLauncher::OnClickedLauncherCancel();
 ?OnClickedLauncherCancel@GameLauncher@@QEAAXXZ proc EXPORT
-jmp function_pointers[1159*8]
+jmp function_pointers[1194*8]
 ?OnClickedLauncherCancel@GameLauncher@@QEAAXXZ endp
 
 ; GameLauncher::OnSelchangeLauncherTabs(struct tagNMHDR *, __int64 *);
 ?OnSelchangeLauncherTabs@GameLauncher@@QEAAXPEAUtagNMHDR@@PEA_J@Z proc EXPORT
-jmp function_pointers[1160*8]
+jmp function_pointers[1195*8]
 ?OnSelchangeLauncherTabs@GameLauncher@@QEAAXPEAUtagNMHDR@@PEA_J@Z endp
 
 ; GameLauncher::OnBnClickedLauncherBtnSaveConfig();
 ?OnBnClickedLauncherBtnSaveConfig@GameLauncher@@QEAAXXZ proc EXPORT
-jmp function_pointers[1161*8]
+jmp function_pointers[1196*8]
 ?OnBnClickedLauncherBtnSaveConfig@GameLauncher@@QEAAXXZ endp
 
 ; GameLauncher::OnBnClickedLauncherBtnAdvConfig();
 ?OnBnClickedLauncherBtnAdvConfig@GameLauncher@@QEAAXXZ proc EXPORT
-jmp function_pointers[1162*8]
+jmp function_pointers[1197*8]
 ?OnBnClickedLauncherBtnAdvConfig@GameLauncher@@QEAAXXZ endp
 
 ; GameLauncher::OnCbnSelchangeLauncherComboLanguage();
 ?OnCbnSelchangeLauncherComboLanguage@GameLauncher@@QEAAXXZ proc EXPORT
-jmp function_pointers[1163*8]
+jmp function_pointers[1198*8]
 ?OnCbnSelchangeLauncherComboLanguage@GameLauncher@@QEAAXXZ endp
 
 ?_CONSTRUCTOR@TabMods@GameLauncher@@QEAAXXZ proc EXPORT
@@ -7072,7 +7313,7 @@ jmp function_pointers[1163*8]
 
 ; GameLauncher::TabMods::TabMods();
 ??0TabMods@GameLauncher@@QEAA@XZ proc EXPORT
-jmp function_pointers[1164*8]
+jmp function_pointers[1199*8]
 ??0TabMods@GameLauncher@@QEAA@XZ endp
 
 ?_NV_DoDataExchange@TabMods@GameLauncher@@QEAAXPEAVCDataExchange@@@Z proc EXPORT
@@ -7080,7 +7321,7 @@ jmp function_pointers[1164*8]
 
 ; GameLauncher::TabMods::DoDataExchange(class CDataExchange *);
 ?DoDataExchange@TabMods@GameLauncher@@UEAAXPEAVCDataExchange@@@Z proc EXPORT
-jmp function_pointers[1165*8]
+jmp function_pointers[1200*8]
 ?DoDataExchange@TabMods@GameLauncher@@UEAAXPEAVCDataExchange@@@Z endp
 
 ?_NV_OnInitDialog@TabMods@GameLauncher@@QEAAHXZ proc EXPORT
@@ -7088,37 +7329,37 @@ jmp function_pointers[1165*8]
 
 ; GameLauncher::TabMods::OnInitDialog();
 ?OnInitDialog@TabMods@GameLauncher@@UEAAHXZ proc EXPORT
-jmp function_pointers[1166*8]
+jmp function_pointers[1201*8]
 ?OnInitDialog@TabMods@GameLauncher@@UEAAHXZ endp
 
 ; GameLauncher::TabMods::validModList();
 ?validModList@TabMods@GameLauncher@@QEBA_NXZ proc EXPORT
-jmp function_pointers[1167*8]
+jmp function_pointers[1202*8]
 ?validModList@TabMods@GameLauncher@@QEBA_NXZ endp
 
 ; GameLauncher::TabMods::loadMods();
 ?loadMods@TabMods@GameLauncher@@QEAAXXZ proc EXPORT
-jmp function_pointers[1168*8]
+jmp function_pointers[1203*8]
 ?loadMods@TabMods@GameLauncher@@QEAAXXZ endp
 
 ; GameLauncher::TabMods::saveMods();
 ?saveMods@TabMods@GameLauncher@@QEAAXXZ proc EXPORT
-jmp function_pointers[1169*8]
+jmp function_pointers[1204*8]
 ?saveMods@TabMods@GameLauncher@@QEAAXXZ endp
 
 ; GameLauncher::TabMods::arrangeMods();
 ?arrangeMods@TabMods@GameLauncher@@QEAAXXZ proc EXPORT
-jmp function_pointers[1170*8]
+jmp function_pointers[1205*8]
 ?arrangeMods@TabMods@GameLauncher@@QEAAXXZ endp
 
 ; GameLauncher::TabMods::updateModsList(bool);
 ?updateModsList@TabMods@GameLauncher@@QEAAX_N@Z proc EXPORT
-jmp function_pointers[1171*8]
+jmp function_pointers[1206*8]
 ?updateModsList@TabMods@GameLauncher@@QEAAX_N@Z endp
 
 ; GameLauncher::TabMods::GetThisMessageMap();
 ?GetThisMessageMap@TabMods@GameLauncher@@SAPEBUAFX_MSGMAP@@XZ proc EXPORT
-jmp function_pointers[1172*8]
+jmp function_pointers[1207*8]
 ?GetThisMessageMap@TabMods@GameLauncher@@SAPEBUAFX_MSGMAP@@XZ endp
 
 ?_NV_GetMessageMap@TabMods@GameLauncher@@QEBAPEBUAFX_MSGMAP@@XZ proc EXPORT
@@ -7126,42 +7367,42 @@ jmp function_pointers[1172*8]
 
 ; GameLauncher::TabMods::GetMessageMap();
 ?GetMessageMap@TabMods@GameLauncher@@UEBAPEBUAFX_MSGMAP@@XZ proc EXPORT
-jmp function_pointers[1173*8]
+jmp function_pointers[1208*8]
 ?GetMessageMap@TabMods@GameLauncher@@UEBAPEBUAFX_MSGMAP@@XZ endp
 
 ; GameLauncher::TabMods::OnBnClickedLauncherBtnModsSelectNone();
 ?OnBnClickedLauncherBtnModsSelectNone@TabMods@GameLauncher@@QEAAXXZ proc EXPORT
-jmp function_pointers[1174*8]
+jmp function_pointers[1209*8]
 ?OnBnClickedLauncherBtnModsSelectNone@TabMods@GameLauncher@@QEAAXXZ endp
 
 ; GameLauncher::TabMods::OnBnClickedLauncherBtnModsSelectAll();
 ?OnBnClickedLauncherBtnModsSelectAll@TabMods@GameLauncher@@QEAAXXZ proc EXPORT
-jmp function_pointers[1175*8]
+jmp function_pointers[1210*8]
 ?OnBnClickedLauncherBtnModsSelectAll@TabMods@GameLauncher@@QEAAXXZ endp
 
 ; GameLauncher::TabMods::OnBnClickedLauncherBtnModsReload();
 ?OnBnClickedLauncherBtnModsReload@TabMods@GameLauncher@@QEAAXXZ proc EXPORT
-jmp function_pointers[1176*8]
+jmp function_pointers[1211*8]
 ?OnBnClickedLauncherBtnModsReload@TabMods@GameLauncher@@QEAAXXZ endp
 
 ; GameLauncher::TabMods::OnBnClickedLauncherBtnModsUp();
 ?OnBnClickedLauncherBtnModsUp@TabMods@GameLauncher@@QEAAXXZ proc EXPORT
-jmp function_pointers[1177*8]
+jmp function_pointers[1212*8]
 ?OnBnClickedLauncherBtnModsUp@TabMods@GameLauncher@@QEAAXXZ endp
 
 ; GameLauncher::TabMods::OnBnClickedLauncherBtnModsDown();
 ?OnBnClickedLauncherBtnModsDown@TabMods@GameLauncher@@QEAAXXZ proc EXPORT
-jmp function_pointers[1178*8]
+jmp function_pointers[1213*8]
 ?OnBnClickedLauncherBtnModsDown@TabMods@GameLauncher@@QEAAXXZ endp
 
 ; GameLauncher::TabMods::OnBnClickedLauncherBtnModsInfo();
 ?OnBnClickedLauncherBtnModsInfo@TabMods@GameLauncher@@QEAAXXZ proc EXPORT
-jmp function_pointers[1179*8]
+jmp function_pointers[1214*8]
 ?OnBnClickedLauncherBtnModsInfo@TabMods@GameLauncher@@QEAAXXZ endp
 
 ; GameLauncher::TabMods::OnCheckListChange();
 ?OnCheckListChange@TabMods@GameLauncher@@QEAAXXZ proc EXPORT
-jmp function_pointers[1180*8]
+jmp function_pointers[1215*8]
 ?OnCheckListChange@TabMods@GameLauncher@@QEAAXXZ endp
 
 ?_DESTRUCTOR@TabMods@GameLauncher@@QEAAXXZ proc EXPORT
@@ -7169,15 +7410,567 @@ jmp function_pointers[1180*8]
 
 ; GameLauncher::TabMods::~TabMods();
 ??1TabMods@GameLauncher@@UEAA@XZ proc EXPORT
-jmp function_pointers[1181*8]
+jmp function_pointers[1216*8]
 ??1TabMods@GameLauncher@@UEAA@XZ endp
+
+; MedicalSystem::precalculateFirstAidNeedScore();
+?precalculateFirstAidNeedScore@MedicalSystem@@QEAAXXZ proc EXPORT
+jmp function_pointers[1217*8]
+?precalculateFirstAidNeedScore@MedicalSystem@@QEAAXXZ endp
+
+?_CONSTRUCTOR@MedicalSystem@@QEAAXXZ proc EXPORT
+?_CONSTRUCTOR@MedicalSystem@@QEAAXXZ endp
+
+; MedicalSystem::MedicalSystem();
+??0MedicalSystem@@QEAA@XZ proc EXPORT
+jmp function_pointers[1218*8]
+??0MedicalSystem@@QEAA@XZ endp
+
+?_DESTRUCTOR@MedicalSystem@@QEAAXXZ proc EXPORT
+?_DESTRUCTOR@MedicalSystem@@QEAAXXZ endp
+
+; MedicalSystem::~MedicalSystem();
+??1MedicalSystem@@UEAA@XZ proc EXPORT
+jmp function_pointers[1219*8]
+??1MedicalSystem@@UEAA@XZ endp
+
+; MedicalSystem::init(class AnimationClass *, class Character *, class GameData *, class CharStats *);
+?init@MedicalSystem@@QEAAXPEAVAnimationClass@@PEAVCharacter@@PEAVGameData@@PEAVCharStats@@@Z proc EXPORT
+jmp function_pointers[1220*8]
+?init@MedicalSystem@@QEAAXPEAVAnimationClass@@PEAVCharacter@@PEAVGameData@@PEAVCharStats@@@Z endp
+
+?_NV_updateStats@MedicalSystem@@QEAAXXZ proc EXPORT
+?_NV_updateStats@MedicalSystem@@QEAAXXZ endp
+
+; MedicalSystem::updateStats();
+?updateStats@MedicalSystem@@UEAAXXZ proc EXPORT
+jmp function_pointers[1221*8]
+?updateStats@MedicalSystem@@UEAAXXZ endp
+
+; MedicalSystem::notifyRaceChange(class GameData *);
+?notifyRaceChange@MedicalSystem@@QEAAXPEAVGameData@@@Z proc EXPORT
+jmp function_pointers[1222*8]
+?notifyRaceChange@MedicalSystem@@QEAAXPEAVGameData@@@Z endp
+
+; MedicalSystem::medicalUpdate(float);
+?medicalUpdate@MedicalSystem@@QEAAXM@Z proc EXPORT
+jmp function_pointers[1223*8]
+?medicalUpdate@MedicalSystem@@QEAAXM@Z endp
+
+?_NV_periodicUpdate@MedicalSystem@@QEAAXXZ proc EXPORT
+?_NV_periodicUpdate@MedicalSystem@@QEAAXXZ endp
+
+; MedicalSystem::periodicUpdate();
+?periodicUpdate@MedicalSystem@@UEAAXXZ proc EXPORT
+jmp function_pointers[1224*8]
+?periodicUpdate@MedicalSystem@@UEAAXXZ endp
+
+; MedicalSystem::scoreFirstAidNeed(bool);
+?scoreFirstAidNeed@MedicalSystem@@QEBAM_N@Z proc EXPORT
+jmp function_pointers[1225*8]
+?scoreFirstAidNeed@MedicalSystem@@QEBAM_N@Z endp
+
+; MedicalSystem::scoreJuryRigNeed(float);
+?scoreJuryRigNeed@MedicalSystem@@QEBAMM@Z proc EXPORT
+jmp function_pointers[1226*8]
+?scoreJuryRigNeed@MedicalSystem@@QEBAMM@Z endp
+
+; MedicalSystem::isFullyRested();
+?isFullyRested@MedicalSystem@@QEBA_NXZ proc EXPORT
+jmp function_pointers[1227*8]
+?isFullyRested@MedicalSystem@@QEBA_NXZ endp
+
+; MedicalSystem::_setHealth(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, float);
+?_setHealth@MedicalSystem@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@M@Z proc EXPORT
+jmp function_pointers[1228*8]
+?_setHealth@MedicalSystem@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@M@Z endp
+
+; MedicalSystem::validateHealthValues();
+?validateHealthValues@MedicalSystem@@QEAAXXZ proc EXPORT
+jmp function_pointers[1229*8]
+?validateHealthValues@MedicalSystem@@QEAAXXZ endp
+
+; MedicalSystem::getLimbState(enum RobotLimbs::Limb);
+?getLimbState@MedicalSystem@@QEBA?AW4LimbState@@W4Limb@RobotLimbs@@@Z proc EXPORT
+jmp function_pointers[1230*8]
+?getLimbState@MedicalSystem@@QEBA?AW4LimbState@@W4Limb@RobotLimbs@@@Z endp
+
+; MedicalSystem::amputate(enum RobotLimbs::Limb, bool, const class Ogre::Vector3 &);
+?amputate@MedicalSystem@@QEAAXW4Limb@RobotLimbs@@_NAEBVVector3@Ogre@@@Z proc EXPORT
+jmp function_pointers[1231*8]
+?amputate@MedicalSystem@@QEAAXW4Limb@RobotLimbs@@_NAEBVVector3@Ogre@@@Z endp
+
+; MedicalSystem::crushLimb(enum RobotLimbs::Limb);
+?crushLimb@MedicalSystem@@QEAAXW4Limb@RobotLimbs@@@Z proc EXPORT
+jmp function_pointers[1232*8]
+?crushLimb@MedicalSystem@@QEAAXW4Limb@RobotLimbs@@@Z endp
+
+; MedicalSystem::isUselessNoLimbGuy();
+?isUselessNoLimbGuy@MedicalSystem@@QEAA_NXZ proc EXPORT
+jmp function_pointers[1233*8]
+?isUselessNoLimbGuy@MedicalSystem@@QEAA_NXZ endp
+
+; MedicalSystem::recalculateStealthHinderance();
+?recalculateStealthHinderance@MedicalSystem@@QEAAMXZ proc EXPORT
+jmp function_pointers[1234*8]
+?recalculateStealthHinderance@MedicalSystem@@QEAAMXZ endp
+
+; MedicalSystem::getPart(enum RobotLimbs::Limb);
+?getPart@MedicalSystem@@QEAAPEAVHealthPartStatus@1@W4Limb@RobotLimbs@@@Z proc EXPORT
+jmp function_pointers[1235*8]
+?getPart@MedicalSystem@@QEAAPEAVHealthPartStatus@1@W4Limb@RobotLimbs@@@Z endp
+
+; MedicalSystem::getPart(unsigned __int64);
+?getPart@MedicalSystem@@QEAAPEAVHealthPartStatus@1@_K@Z proc EXPORT
+jmp function_pointers[1236*8]
+?getPart@MedicalSystem@@QEAAPEAVHealthPartStatus@1@_K@Z endp
+
+; MedicalSystem::getPart(enum MedicalSystem::HealthPartStatus::PartType, enum LeftRight);
+?getPart@MedicalSystem@@QEAAPEAVHealthPartStatus@1@W4PartType@21@W4LeftRight@@@Z proc EXPORT
+jmp function_pointers[1237*8]
+?getPart@MedicalSystem@@QEAAPEAVHealthPartStatus@1@W4PartType@21@W4LeftRight@@@Z endp
+
+; MedicalSystem::getPartCount();
+?getPartCount@MedicalSystem@@QEBAHXZ proc EXPORT
+jmp function_pointers[1238*8]
+?getPartCount@MedicalSystem@@QEBAHXZ endp
+
+; MedicalSystem::setRobotLimbItem(enum RobotLimbs::Limb, class Item *, bool);
+?setRobotLimbItem@MedicalSystem@@QEAAXW4Limb@RobotLimbs@@PEAVItem@@_N@Z proc EXPORT
+jmp function_pointers[1239*8]
+?setRobotLimbItem@MedicalSystem@@QEAAXW4Limb@RobotLimbs@@PEAVItem@@_N@Z endp
+
+; MedicalSystem::hasRobotics();
+?hasRobotics@MedicalSystem@@QEBA_NXZ proc EXPORT
+jmp function_pointers[1240*8]
+?hasRobotics@MedicalSystem@@QEBA_NXZ endp
+
+; MedicalSystem::addArmour(class Armour *);
+?addArmour@MedicalSystem@@QEAAXPEAVArmour@@@Z proc EXPORT
+jmp function_pointers[1241*8]
+?addArmour@MedicalSystem@@QEAAXPEAVArmour@@@Z endp
+
+; MedicalSystem::removeArmour(class Item *);
+?removeArmour@MedicalSystem@@QEAAXPEAVItem@@@Z proc EXPORT
+jmp function_pointers[1242*8]
+?removeArmour@MedicalSystem@@QEAAXPEAVItem@@@Z endp
+
+; MedicalSystem::wearingUniformOf(class Faction *);
+?wearingUniformOf@MedicalSystem@@QEAA_NPEAVFaction@@@Z proc EXPORT
+jmp function_pointers[1243*8]
+?wearingUniformOf@MedicalSystem@@QEAA_NPEAVFaction@@@Z endp
+
+; MedicalSystem::serialise(class GameData *);
+?serialise@MedicalSystem@@QEAAXPEAVGameData@@@Z proc EXPORT
+jmp function_pointers[1244*8]
+?serialise@MedicalSystem@@QEAAXPEAVGameData@@@Z endp
+
+; MedicalSystem::load(class GameData *);
+?load@MedicalSystem@@QEAAXPEAVGameData@@@Z proc EXPORT
+jmp function_pointers[1245*8]
+?load@MedicalSystem@@QEAAXPEAVGameData@@@Z endp
+
+; MedicalSystem::addWound(bool, enum CutDirection, class Damages &, int &, class RootObject *, enum AttackDirection::Enum &, class Harpoon *);
+?addWound@MedicalSystem@@QEAAPEAVGameData@@_NW4CutDirection@@AEAVDamages@@AEAHPEAVRootObject@@AEAW4Enum@AttackDirection@@PEAVHarpoon@@@Z proc EXPORT
+jmp function_pointers[1246*8]
+?addWound@MedicalSystem@@QEAAPEAVGameData@@_NW4CutDirection@@AEAVDamages@@AEAHPEAVRootObject@@AEAW4Enum@AttackDirection@@PEAVHarpoon@@@Z endp
+
+; MedicalSystem::punchSomething(enum HitMaterialType, class Character *, class CombatTechniqueData *, int);
+?punchSomething@MedicalSystem@@QEAAMW4HitMaterialType@@PEAVCharacter@@PEAVCombatTechniqueData@@H@Z proc EXPORT
+jmp function_pointers[1247*8]
+?punchSomething@MedicalSystem@@QEAAMW4HitMaterialType@@PEAVCharacter@@PEAVCombatTechniqueData@@H@Z endp
+
+; MedicalSystem::getBoneNameForBodypart(class GameData *);
+?getBoneNameForBodypart@MedicalSystem@@SAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAVGameData@@@Z proc EXPORT
+jmp function_pointers[1248*8]
+?getBoneNameForBodypart@MedicalSystem@@SAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAVGameData@@@Z endp
+
+; MedicalSystem::isFed();
+?isFed@MedicalSystem@@QEBA_NXZ proc EXPORT
+jmp function_pointers[1249*8]
+?isFed@MedicalSystem@@QEBA_NXZ endp
+
+; MedicalSystem::getMaxBlood();
+?getMaxBlood@MedicalSystem@@QEBAMXZ proc EXPORT
+jmp function_pointers[1250*8]
+?getMaxBlood@MedicalSystem@@QEBAMXZ endp
+
+; MedicalSystem::startKnockoutTimer();
+?startKnockoutTimer@MedicalSystem@@QEAAXXZ proc EXPORT
+jmp function_pointers[1251*8]
+?startKnockoutTimer@MedicalSystem@@QEAAXXZ endp
+
+; MedicalSystem::knockout(float);
+?knockout@MedicalSystem@@QEAAXM@Z proc EXPORT
+jmp function_pointers[1252*8]
+?knockout@MedicalSystem@@QEAAXM@Z endp
+
+; MedicalSystem::knockoutForceTimer(float);
+?knockoutForceTimer@MedicalSystem@@QEAAXM@Z proc EXPORT
+jmp function_pointers[1253*8]
+?knockoutForceTimer@MedicalSystem@@QEAAXM@Z endp
+
+; MedicalSystem::pointOfCollapseBloodloss();
+?pointOfCollapseBloodloss@MedicalSystem@@QEBAMXZ proc EXPORT
+jmp function_pointers[1254*8]
+?pointOfCollapseBloodloss@MedicalSystem@@QEBAMXZ endp
+
+; MedicalSystem::pointOfNoReturn();
+?pointOfNoReturn@MedicalSystem@@QEBAMXZ proc EXPORT
+jmp function_pointers[1255*8]
+?pointOfNoReturn@MedicalSystem@@QEBAMXZ endp
+
+; MedicalSystem::pointOfNoReturn_Hunger01(float);
+?pointOfNoReturn_Hunger01@MedicalSystem@@QEBAMM@Z proc EXPORT
+jmp function_pointers[1256*8]
+?pointOfNoReturn_Hunger01@MedicalSystem@@QEBAMM@Z endp
+
+; MedicalSystem::isHungerKO();
+?isHungerKO@MedicalSystem@@QEAA_NXZ proc EXPORT
+jmp function_pointers[1257*8]
+?isHungerKO@MedicalSystem@@QEAA_NXZ endp
+
+; MedicalSystem::getToughnessXpBonus();
+?getToughnessXpBonus@MedicalSystem@@QEAAMXZ proc EXPORT
+jmp function_pointers[1258*8]
+?getToughnessXpBonus@MedicalSystem@@QEAAMXZ endp
+
+; MedicalSystem::getHungerSpeedModifier();
+?getHungerSpeedModifier@MedicalSystem@@QEBAMXZ proc EXPORT
+jmp function_pointers[1259*8]
+?getHungerSpeedModifier@MedicalSystem@@QEBAMXZ endp
+
+; MedicalSystem::getHealthStatModifier(enum StatsEnumerated, bool, bool, bool, bool, bool, bool);
+?getHealthStatModifier@MedicalSystem@@QEBAMW4StatsEnumerated@@_N11111@Z proc EXPORT
+jmp function_pointers[1260*8]
+?getHealthStatModifier@MedicalSystem@@QEBAMW4StatsEnumerated@@_N11111@Z endp
+
+; MedicalSystem::_getRoboticsStatMult(enum StatsEnumerated);
+?_getRoboticsStatMult@MedicalSystem@@QEBAMW4StatsEnumerated@@@Z proc EXPORT
+jmp function_pointers[1261*8]
+?_getRoboticsStatMult@MedicalSystem@@QEBAMW4StatsEnumerated@@@Z endp
+
+; MedicalSystem::getMissingArmPenaltyMult();
+?getMissingArmPenaltyMult@MedicalSystem@@QEBAMXZ proc EXPORT
+jmp function_pointers[1262*8]
+?getMissingArmPenaltyMult@MedicalSystem@@QEBAMXZ endp
+
+; MedicalSystem::getDerivedHeadHealth();
+?getDerivedHeadHealth@MedicalSystem@@QEAAMXZ proc EXPORT
+jmp function_pointers[1263*8]
+?getDerivedHeadHealth@MedicalSystem@@QEAAMXZ endp
+
+; MedicalSystem::isCollapse(class MedicalSystem::HealthPartStatus *, float);
+?isCollapse@MedicalSystem@@QEAA_NPEAVHealthPartStatus@1@M@Z proc EXPORT
+jmp function_pointers[1264*8]
+?isCollapse@MedicalSystem@@QEAA_NPEAVHealthPartStatus@1@M@Z endp
+
+; MedicalSystem::getCollapseStage(class MedicalSystem::HealthPartStatus *, float);
+?getCollapseStage@MedicalSystem@@QEAA?AW4CollapseStage@1@PEAVHealthPartStatus@1@M@Z proc EXPORT
+jmp function_pointers[1265*8]
+?getCollapseStage@MedicalSystem@@QEAA?AW4CollapseStage@1@PEAVHealthPartStatus@1@M@Z endp
+
+; MedicalSystem::calculateDesiredPainAnimations();
+?calculateDesiredPainAnimations@MedicalSystem@@QEAAXXZ proc EXPORT
+jmp function_pointers[1266*8]
+?calculateDesiredPainAnimations@MedicalSystem@@QEAAXXZ endp
+
+; MedicalSystem::getMovementSpeedInjuryMultiplier();
+?getMovementSpeedInjuryMultiplier@MedicalSystem@@QEAAMXZ proc EXPORT
+jmp function_pointers[1267*8]
+?getMovementSpeedInjuryMultiplier@MedicalSystem@@QEAAMXZ endp
+
+; MedicalSystem::getStatRoboticsMultiplier(enum StatsEnumerated);
+?getStatRoboticsMultiplier@MedicalSystem@@QEAAMW4StatsEnumerated@@@Z proc EXPORT
+jmp function_pointers[1268*8]
+?getStatRoboticsMultiplier@MedicalSystem@@QEAAMW4StatsEnumerated@@@Z endp
+
+; MedicalSystem::getMovementSwimSpeedInjuryMultiplier();
+?getMovementSwimSpeedInjuryMultiplier@MedicalSystem@@QEAAMXZ proc EXPORT
+jmp function_pointers[1269*8]
+?getMovementSwimSpeedInjuryMultiplier@MedicalSystem@@QEAAMXZ endp
+
+; MedicalSystem::gettingEaten(float, bool);
+?gettingEaten@MedicalSystem@@QEAA_NM_N@Z proc EXPORT
+jmp function_pointers[1270*8]
+?gettingEaten@MedicalSystem@@QEAA_NM_N@Z endp
+
+; MedicalSystem::gettingAcidRain(float);
+?gettingAcidRain@MedicalSystem@@QEAA_NM@Z proc EXPORT
+jmp function_pointers[1271*8]
+?gettingAcidRain@MedicalSystem@@QEAA_NM@Z endp
+
+; MedicalSystem::gettingAcidWater(float);
+?gettingAcidWater@MedicalSystem@@QEAA_NM@Z proc EXPORT
+jmp function_pointers[1272*8]
+?gettingAcidWater@MedicalSystem@@QEAA_NM@Z endp
+
+; MedicalSystem::gettingAcidFeet(float);
+?gettingAcidFeet@MedicalSystem@@QEAA_NM@Z proc EXPORT
+jmp function_pointers[1273*8]
+?gettingAcidFeet@MedicalSystem@@QEAA_NM@Z endp
+
+; MedicalSystem::gettingGassed(float);
+?gettingGassed@MedicalSystem@@QEAA_NM@Z proc EXPORT
+jmp function_pointers[1274*8]
+?gettingGassed@MedicalSystem@@QEAA_NM@Z endp
+
+; MedicalSystem::gettingWindyface(float);
+?gettingWindyface@MedicalSystem@@QEAA_NM@Z proc EXPORT
+jmp function_pointers[1275*8]
+?gettingWindyface@MedicalSystem@@QEAA_NM@Z endp
+
+; MedicalSystem::gettingBurnt(float);
+?gettingBurnt@MedicalSystem@@QEAA_NM@Z proc EXPORT
+jmp function_pointers[1276*8]
+?gettingBurnt@MedicalSystem@@QEAA_NM@Z endp
+
+; MedicalSystem::applyFirstAid(float, class Item *, float, class Character *);
+?applyFirstAid@MedicalSystem@@QEAA_NMPEAVItem@@MPEAVCharacter@@@Z proc EXPORT
+jmp function_pointers[1277*8]
+?applyFirstAid@MedicalSystem@@QEAA_NMPEAVItem@@MPEAVCharacter@@@Z endp
+
+; MedicalSystem::applyDoctoring(float, class Item *, float, class Character *);
+?applyDoctoring@MedicalSystem@@QEAA_NMPEAVItem@@MPEAVCharacter@@@Z proc EXPORT
+jmp function_pointers[1278*8]
+?applyDoctoring@MedicalSystem@@QEAA_NMPEAVItem@@MPEAVCharacter@@@Z endp
+
+; MedicalSystem::applyRigging(float, class Item *, float);
+?applyRigging@MedicalSystem@@QEAA_NMPEAVItem@@M@Z proc EXPORT
+jmp function_pointers[1279*8]
+?applyRigging@MedicalSystem@@QEAA_NMPEAVItem@@M@Z endp
+
+; MedicalSystem::reassessCollapseMode(bool, bool);
+?reassessCollapseMode@MedicalSystem@@QEAAX_N0@Z proc EXPORT
+jmp function_pointers[1280*8]
+?reassessCollapseMode@MedicalSystem@@QEAAX_N0@Z endp
+
+; MedicalSystem::isUnconcious();
+?isUnconcious@MedicalSystem@@QEBA_NXZ proc EXPORT
+jmp function_pointers[1281*8]
+?isUnconcious@MedicalSystem@@QEBA_NXZ endp
+
+; MedicalSystem::isCrippled();
+?isCrippled@MedicalSystem@@QEBA_NXZ proc EXPORT
+jmp function_pointers[1282*8]
+?isCrippled@MedicalSystem@@QEBA_NXZ endp
+
+; MedicalSystem::isDead();
+?isDead@MedicalSystem@@QEBA_NXZ proc EXPORT
+jmp function_pointers[1283*8]
+?isDead@MedicalSystem@@QEBA_NXZ endp
+
+; MedicalSystem::hasAnArmToFightWith();
+?hasAnArmToFightWith@MedicalSystem@@QEBA_NXZ proc EXPORT
+jmp function_pointers[1284*8]
+?hasAnArmToFightWith@MedicalSystem@@QEBA_NXZ endp
+
+; MedicalSystem::hasFreshlySeveredALimb();
+?hasFreshlySeveredALimb@MedicalSystem@@QEAA_NXZ proc EXPORT
+jmp function_pointers[1285*8]
+?hasFreshlySeveredALimb@MedicalSystem@@QEAA_NXZ endp
+
+; MedicalSystem::isReallyHungry();
+?isReallyHungry@MedicalSystem@@QEBA_NXZ proc EXPORT
+jmp function_pointers[1286*8]
+?isReallyHungry@MedicalSystem@@QEBA_NXZ endp
+
+; MedicalSystem::scoreTechnique(class CombatTechniqueData *);
+?scoreTechnique@MedicalSystem@@QEAAMPEAVCombatTechniqueData@@@Z proc EXPORT
+jmp function_pointers[1287*8]
+?scoreTechnique@MedicalSystem@@QEAAMPEAVCombatTechniqueData@@@Z endp
+
+; MedicalSystem::getMedicalGUIData(class DatapanelGUI *);
+?getMedicalGUIData@MedicalSystem@@QEAAXPEAVDatapanelGUI@@@Z proc EXPORT
+jmp function_pointers[1288*8]
+?getMedicalGUIData@MedicalSystem@@QEAAXPEAVDatapanelGUI@@@Z endp
+
+; MedicalSystem::isProbablyDying();
+?isProbablyDying@MedicalSystem@@QEAA_NXZ proc EXPORT
+jmp function_pointers[1289*8]
+?isProbablyDying@MedicalSystem@@QEAA_NXZ endp
+
+; MedicalSystem::getOverallHealthRating();
+?getOverallHealthRating@MedicalSystem@@QEBAMXZ proc EXPORT
+jmp function_pointers[1290*8]
+?getOverallHealthRating@MedicalSystem@@QEBAMXZ endp
+
+; MedicalSystem::canGetUpWakeUp();
+?canGetUpWakeUp@MedicalSystem@@QEAA_NXZ proc EXPORT
+jmp function_pointers[1291*8]
+?canGetUpWakeUp@MedicalSystem@@QEAA_NXZ endp
+
+; MedicalSystem::_reassessRagdollPartsAssumingWeJustClearedTheEntireRagdoll();
+?_reassessRagdollPartsAssumingWeJustClearedTheEntireRagdoll@MedicalSystem@@QEAAXXZ proc EXPORT
+jmp function_pointers[1292*8]
+?_reassessRagdollPartsAssumingWeJustClearedTheEntireRagdoll@MedicalSystem@@QEAAXXZ endp
+
+; MedicalSystem::isRightArmOk();
+?isRightArmOk@MedicalSystem@@QEBA_NXZ proc EXPORT
+jmp function_pointers[1293*8]
+?isRightArmOk@MedicalSystem@@QEBA_NXZ endp
+
+; MedicalSystem::isLeftArmOk();
+?isLeftArmOk@MedicalSystem@@QEBA_NXZ proc EXPORT
+jmp function_pointers[1294*8]
+?isLeftArmOk@MedicalSystem@@QEBA_NXZ endp
+
+; MedicalSystem::canIkick();
+?canIkick@MedicalSystem@@QEBA_NXZ proc EXPORT
+jmp function_pointers[1295*8]
+?canIkick@MedicalSystem@@QEBA_NXZ endp
+
+; MedicalSystem::isInBloodlossTrauma();
+?isInBloodlossTrauma@MedicalSystem@@QEBA_NXZ proc EXPORT
+jmp function_pointers[1296*8]
+?isInBloodlossTrauma@MedicalSystem@@QEBA_NXZ endp
+
+; MedicalSystem::splatBlood(const class Damages &, enum CutDirection, enum AttackDirection::Enum);
+?splatBlood@MedicalSystem@@QEAAXAEBVDamages@@W4CutDirection@@W4Enum@AttackDirection@@@Z proc EXPORT
+jmp function_pointers[1297*8]
+?splatBlood@MedicalSystem@@QEAAXAEBVDamages@@W4CutDirection@@W4Enum@AttackDirection@@@Z endp
+
+; MedicalSystem::clearWeatherEffects();
+?clearWeatherEffects@MedicalSystem@@QEAAXXZ proc EXPORT
+jmp function_pointers[1298*8]
+?clearWeatherEffects@MedicalSystem@@QEAAXXZ endp
+
+; MedicalSystem::getWeatherStatPenaltyMult();
+?getWeatherStatPenaltyMult@MedicalSystem@@QEBAMXZ proc EXPORT
+jmp function_pointers[1299*8]
+?getWeatherStatPenaltyMult@MedicalSystem@@QEBAMXZ endp
+
+; MedicalSystem::getWeatherStatPenalty(float);
+?getWeatherStatPenalty@MedicalSystem@@QEBAHM@Z proc EXPORT
+jmp function_pointers[1300*8]
+?getWeatherStatPenalty@MedicalSystem@@QEBAHM@Z endp
+
+; MedicalSystem::calculateBleedRateForFX();
+?calculateBleedRateForFX@MedicalSystem@@QEAAMXZ proc EXPORT
+jmp function_pointers[1301*8]
+?calculateBleedRateForFX@MedicalSystem@@QEAAMXZ endp
+
+; MedicalSystem::bloodlossUpdate(float);
+?bloodlossUpdate@MedicalSystem@@QEAAXM@Z proc EXPORT
+jmp function_pointers[1302*8]
+?bloodlossUpdate@MedicalSystem@@QEAAXM@Z endp
+
+; MedicalSystem::drainMedkit(float, class Item *, float);
+?drainMedkit@MedicalSystem@@QEBAXMPEAVItem@@M@Z proc EXPORT
+jmp function_pointers[1303*8]
+?drainMedkit@MedicalSystem@@QEBAXMPEAVItem@@M@Z endp
+
+; MedicalSystem::applyDamage(class MedicalSystem::HealthPartStatus *, const class Damages &, bool, bool, const class Ogre::Vector3 &);
+?applyDamage@MedicalSystem@@QEAAXPEAVHealthPartStatus@1@AEBVDamages@@_N2AEBVVector3@Ogre@@@Z proc EXPORT
+jmp function_pointers[1304*8]
+?applyDamage@MedicalSystem@@QEAAXPEAVHealthPartStatus@1@AEBVDamages@@_N2AEBVVector3@Ogre@@@Z endp
+
+; MedicalSystem::ragdollPartCollapse(class MedicalSystem::HealthPartStatus *);
+?ragdollPartCollapse@MedicalSystem@@QEAAXPEAVHealthPartStatus@1@@Z proc EXPORT
+jmp function_pointers[1305*8]
+?ragdollPartCollapse@MedicalSystem@@QEAAXPEAVHealthPartStatus@1@@Z endp
+
+; MedicalSystem::updateDamageState();
+?updateDamageState@MedicalSystem@@QEAAXXZ proc EXPORT
+jmp function_pointers[1306*8]
+?updateDamageState@MedicalSystem@@QEAAXXZ endp
+
+; MedicalSystem::HealthPartStatus::serialise(class GameData *, int);
+?serialise@HealthPartStatus@MedicalSystem@@QEAAXPEAVGameData@@H@Z proc EXPORT
+jmp function_pointers[1307*8]
+?serialise@HealthPartStatus@MedicalSystem@@QEAAXPEAVGameData@@H@Z endp
+
+; MedicalSystem::HealthPartStatus::load(class GameData *, int);
+?load@HealthPartStatus@MedicalSystem@@QEAAXPEAVGameData@@H@Z proc EXPORT
+jmp function_pointers[1308*8]
+?load@HealthPartStatus@MedicalSystem@@QEAAXPEAVGameData@@H@Z endp
+
+; MedicalSystem::HealthPartStatus::isRobotic();
+?isRobotic@HealthPartStatus@MedicalSystem@@QEAA_NXZ proc EXPORT
+jmp function_pointers[1309*8]
+?isRobotic@HealthPartStatus@MedicalSystem@@QEAA_NXZ endp
+
+; MedicalSystem::HealthPartStatus::getData();
+?getData@HealthPartStatus@MedicalSystem@@QEAAPEAVGameData@@XZ proc EXPORT
+jmp function_pointers[1310*8]
+?getData@HealthPartStatus@MedicalSystem@@QEAAPEAVGameData@@XZ endp
+
+; MedicalSystem::HealthPartStatus::getRobotLimbEnum();
+?getRobotLimbEnum@HealthPartStatus@MedicalSystem@@QEBA?AW4Limb@RobotLimbs@@XZ proc EXPORT
+jmp function_pointers[1311*8]
+?getRobotLimbEnum@HealthPartStatus@MedicalSystem@@QEBA?AW4Limb@RobotLimbs@@XZ endp
+
+; MedicalSystem::HealthPartStatus::setup(class GameData *, float, float, float, class MedicalSystem *, bool, class Character *);
+?setup@HealthPartStatus@MedicalSystem@@QEAAXPEAVGameData@@MMMPEAV2@_NPEAVCharacter@@@Z proc EXPORT
+jmp function_pointers[1312*8]
+?setup@HealthPartStatus@MedicalSystem@@QEAAXPEAVGameData@@MMMPEAV2@_NPEAVCharacter@@@Z endp
+
+; MedicalSystem::HealthPartStatus::update(float, float, float, float, float, float);
+?update@HealthPartStatus@MedicalSystem@@QEAA_NMMMMMM@Z proc EXPORT
+jmp function_pointers[1313*8]
+?update@HealthPartStatus@MedicalSystem@@QEAA_NMMMMMM@Z endp
+
+; MedicalSystem::HealthPartStatus::updateDerivedHealths();
+?updateDerivedHealths@HealthPartStatus@MedicalSystem@@QEAAXXZ proc EXPORT
+jmp function_pointers[1314*8]
+?updateDerivedHealths@HealthPartStatus@MedicalSystem@@QEAAXXZ endp
+
+; MedicalSystem::HealthPartStatus::applyDamage(const class Damages &);
+?applyDamage@HealthPartStatus@MedicalSystem@@QEAAXAEBVDamages@@@Z proc EXPORT
+jmp function_pointers[1315*8]
+?applyDamage@HealthPartStatus@MedicalSystem@@QEAAXAEBVDamages@@@Z endp
+
+; MedicalSystem::HealthPartStatus::applyWearDamage(const class Damages &);
+?applyWearDamage@HealthPartStatus@MedicalSystem@@QEAAXAEBVDamages@@@Z proc EXPORT
+jmp function_pointers[1316*8]
+?applyWearDamage@HealthPartStatus@MedicalSystem@@QEAAXAEBVDamages@@@Z endp
+
+; MedicalSystem::HealthPartStatus::getWorstDamage(float);
+?getWorstDamage@HealthPartStatus@MedicalSystem@@QEBAMM@Z proc EXPORT
+jmp function_pointers[1317*8]
+?getWorstDamage@HealthPartStatus@MedicalSystem@@QEBAMM@Z endp
+
+; MedicalSystem::HealthPartStatus::getRobotLimbState();
+?getRobotLimbState@HealthPartStatus@MedicalSystem@@QEAA?AW4LimbState@@XZ proc EXPORT
+jmp function_pointers[1318*8]
+?getRobotLimbState@HealthPartStatus@MedicalSystem@@QEAA?AW4LimbState@@XZ endp
+
+; MedicalSystem::HealthPartStatus::setRobotLimbItem(class RobotLimbItem *, bool);
+?setRobotLimbItem@HealthPartStatus@MedicalSystem@@QEAAXPEAVRobotLimbItem@@_N@Z proc EXPORT
+jmp function_pointers[1319*8]
+?setRobotLimbItem@HealthPartStatus@MedicalSystem@@QEAAXPEAVRobotLimbItem@@_N@Z endp
+
+; MedicalSystem::HealthPartStatus::getExtraBleedingAmount();
+?getExtraBleedingAmount@HealthPartStatus@MedicalSystem@@QEAAMXZ proc EXPORT
+jmp function_pointers[1320*8]
+?getExtraBleedingAmount@HealthPartStatus@MedicalSystem@@QEAAMXZ endp
+
+; MedicalSystem::HealthPartStatus::isDead();
+?isDead@HealthPartStatus@MedicalSystem@@QEBA_NXZ proc EXPORT
+jmp function_pointers[1321*8]
+?isDead@HealthPartStatus@MedicalSystem@@QEBA_NXZ endp
+
+; MedicalSystem::HealthPartStatus::getBloodynessMult();
+?getBloodynessMult@HealthPartStatus@MedicalSystem@@QEBAMXZ proc EXPORT
+jmp function_pointers[1322*8]
+?getBloodynessMult@HealthPartStatus@MedicalSystem@@QEBAMXZ endp
+
+; MedicalSystem::HealthPartStatus::maxHealth();
+?maxHealth@HealthPartStatus@MedicalSystem@@QEBAMXZ proc EXPORT
+jmp function_pointers[1323*8]
+?maxHealth@HealthPartStatus@MedicalSystem@@QEBAMXZ endp
+
+; MedicalSystem::HealthPartStatus::healthAsPercent(float);
+?healthAsPercent@HealthPartStatus@MedicalSystem@@QEAAMM@Z proc EXPORT
+jmp function_pointers[1324*8]
+?healthAsPercent@HealthPartStatus@MedicalSystem@@QEAAMM@Z endp
 
 ?_CONSTRUCTOR@SaveInfo@@QEAAXAEBU1@@Z proc EXPORT
 ?_CONSTRUCTOR@SaveInfo@@QEAAXAEBU1@@Z endp
 
 ; SaveInfo::SaveInfo(const struct SaveInfo &);
 ??0SaveInfo@@QEAA@AEBU0@@Z proc EXPORT
-jmp function_pointers[1182*8]
+jmp function_pointers[1325*8]
 ??0SaveInfo@@QEAA@AEBU0@@Z endp
 
 ?_CONSTRUCTOR@SaveInfo@@QEAAXXZ proc EXPORT
@@ -7185,7 +7978,7 @@ jmp function_pointers[1182*8]
 
 ; SaveInfo::SaveInfo();
 ??0SaveInfo@@QEAA@XZ proc EXPORT
-jmp function_pointers[1183*8]
+jmp function_pointers[1326*8]
 ??0SaveInfo@@QEAA@XZ endp
 
 ?_DESTRUCTOR@SaveInfo@@QEAAXXZ proc EXPORT
@@ -7193,37 +7986,37 @@ jmp function_pointers[1183*8]
 
 ; SaveInfo::~SaveInfo();
 ??1SaveInfo@@QEAA@XZ proc EXPORT
-jmp function_pointers[1184*8]
+jmp function_pointers[1327*8]
 ??1SaveInfo@@QEAA@XZ endp
 
 ; SaveInfo::operator=(const struct SaveInfo &);
 ??4SaveInfo@@QEAAAEAU0@AEBU0@@Z proc EXPORT
-jmp function_pointers[1185*8]
+jmp function_pointers[1328*8]
 ??4SaveInfo@@QEAAAEAU0@AEBU0@@Z endp
 
 ; ThreadClass::stopRunning();
 ?stopRunning@ThreadClass@@QEAAXXZ proc EXPORT
-jmp function_pointers[1186*8]
+jmp function_pointers[1329*8]
 ?stopRunning@ThreadClass@@QEAAXXZ endp
 
 ; ThreadClass::canIRun();
 ?canIRun@ThreadClass@@QEAA_NXZ proc EXPORT
-jmp function_pointers[1187*8]
+jmp function_pointers[1330*8]
 ?canIRun@ThreadClass@@QEAA_NXZ endp
 
 ; ThreadClass::startRunning(float);
 ?startRunning@ThreadClass@@QEAA_NM@Z proc EXPORT
-jmp function_pointers[1188*8]
+jmp function_pointers[1331*8]
 ?startRunning@ThreadClass@@QEAA_NM@Z endp
 
 ; ThreadClass::isRunning();
 ?isRunning@ThreadClass@@QEAA_NXZ proc EXPORT
-jmp function_pointers[1189*8]
+jmp function_pointers[1332*8]
 ?isRunning@ThreadClass@@QEAA_NXZ endp
 
 ; ThreadClass::waitForRunningStop_Blocking();
 ?waitForRunningStop_Blocking@ThreadClass@@QEAA_NXZ proc EXPORT
-jmp function_pointers[1190*8]
+jmp function_pointers[1333*8]
 ?waitForRunningStop_Blocking@ThreadClass@@QEAA_NXZ endp
 
 ?_CONSTRUCTOR@ThreadClass@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
@@ -7231,7 +8024,7 @@ jmp function_pointers[1190*8]
 
 ; ThreadClass::ThreadClass(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ??0ThreadClass@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[1191*8]
+jmp function_pointers[1334*8]
 ??0ThreadClass@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ?_DESTRUCTOR@ThreadClass@@QEAAXXZ proc EXPORT
@@ -7239,32 +8032,32 @@ jmp function_pointers[1191*8]
 
 ; ThreadClass::~ThreadClass();
 ??1ThreadClass@@UEAA@XZ proc EXPORT
-jmp function_pointers[1192*8]
+jmp function_pointers[1335*8]
 ??1ThreadClass@@UEAA@XZ endp
 
 ; ThreadClass::setup(float, bool, bool);
 ?setup@ThreadClass@@QEAAXM_N0@Z proc EXPORT
-jmp function_pointers[1193*8]
+jmp function_pointers[1336*8]
 ?setup@ThreadClass@@QEAAXM_N0@Z endp
 
 ; ThreadClass::beginThread(float, bool, int);
 ?beginThread@ThreadClass@@QEAA_NM_NH@Z proc EXPORT
-jmp function_pointers[1194*8]
+jmp function_pointers[1337*8]
 ?beginThread@ThreadClass@@QEAA_NM_NH@Z endp
 
 ; ThreadClass::setThreadName(const char *);
 ?setThreadName@ThreadClass@@QEAAXPEBD@Z proc EXPORT
-jmp function_pointers[1195*8]
+jmp function_pointers[1338*8]
 ?setThreadName@ThreadClass@@QEAAXPEBD@Z endp
 
 ; ThreadClass::endThread();
 ?endThread@ThreadClass@@QEAAXXZ proc EXPORT
-jmp function_pointers[1196*8]
+jmp function_pointers[1339*8]
 ?endThread@ThreadClass@@QEAAXXZ endp
 
 ; ThreadClass::setName(const char *);
 ?setName@ThreadClass@@QEAAXPEBD@Z proc EXPORT
-jmp function_pointers[1197*8]
+jmp function_pointers[1340*8]
 ?setName@ThreadClass@@QEAAXPEBD@Z endp
 
 ?_CONSTRUCTOR@UtilityT@@QEAAXXZ proc EXPORT
@@ -7272,537 +8065,578 @@ jmp function_pointers[1197*8]
 
 ; UtilityT::UtilityT();
 ??0UtilityT@@QEAA@XZ proc EXPORT
-jmp function_pointers[1198*8]
+jmp function_pointers[1341*8]
 ??0UtilityT@@QEAA@XZ endp
 
 ; UtilityT::getMouseRay();
 ?getMouseRay@UtilityT@@SA?AVRay@Ogre@@XZ proc EXPORT
-jmp function_pointers[1199*8]
+jmp function_pointers[1342*8]
 ?getMouseRay@UtilityT@@SA?AVRay@Ogre@@XZ endp
 
 ; UtilityT::mouseTrace(class physHit &, const class Ogre::Vector2 &, unsigned int);
 ?mouseTrace@UtilityT@@SAXAEAVphysHit@@AEBVVector2@Ogre@@I@Z proc EXPORT
-jmp function_pointers[1200*8]
+jmp function_pointers[1343*8]
 ?mouseTrace@UtilityT@@SAXAEAVphysHit@@AEBVVector2@Ogre@@I@Z endp
 
 ; UtilityT::rayTrace(class physHit &, const class Ogre::Ray &, unsigned int);
 ?rayTrace@UtilityT@@SAXAEAVphysHit@@AEBVRay@Ogre@@I@Z proc EXPORT
-jmp function_pointers[1201*8]
+jmp function_pointers[1344*8]
 ?rayTrace@UtilityT@@SAXAEAVphysHit@@AEBVRay@Ogre@@I@Z endp
 
 ; UtilityT::ceilingTrace(const class Ogre::Vector3 &, unsigned int, bool);
 ?ceilingTrace@UtilityT@@SA_NAEBVVector3@Ogre@@I_N@Z proc EXPORT
-jmp function_pointers[1202*8]
+jmp function_pointers[1345*8]
 ?ceilingTrace@UtilityT@@SA_NAEBVVector3@Ogre@@I_N@Z endp
 
 ; UtilityT::traceNoActors(class physHit &, const class Ogre::Vector3 &, const class Ogre::Vector3 &, unsigned int);
 ?traceNoActors@UtilityT@@SAXAEAVphysHit@@AEBVVector3@Ogre@@1I@Z proc EXPORT
-jmp function_pointers[1203*8]
+jmp function_pointers[1346*8]
 ?traceNoActors@UtilityT@@SAXAEAVphysHit@@AEBVVector3@Ogre@@1I@Z endp
 
 ; UtilityT::trace(class physHit &, const class Ogre::Vector3 &, const class Ogre::Vector3 &, unsigned int);
 ?trace@UtilityT@@SAXAEAVphysHit@@AEBVVector3@Ogre@@1I@Z proc EXPORT
-jmp function_pointers[1204*8]
+jmp function_pointers[1347*8]
 ?trace@UtilityT@@SAXAEAVphysHit@@AEBVVector3@Ogre@@1I@Z endp
 
 ; UtilityT::traceFloorHeight(class physHit &, const class Ogre::Vector3 &, int);
 ?traceFloorHeight@UtilityT@@SAXAEAVphysHit@@AEBVVector3@Ogre@@H@Z proc EXPORT
-jmp function_pointers[1205*8]
+jmp function_pointers[1348*8]
 ?traceFloorHeight@UtilityT@@SAXAEAVphysHit@@AEBVVector3@Ogre@@H@Z endp
 
 ; UtilityT::_trace_TEST(class physHit &, const class Ogre::Vector3 &, const class Ogre::Vector3 &, unsigned int);
 ?_trace_TEST@UtilityT@@SAXAEAVphysHit@@AEBVVector3@Ogre@@1I@Z proc EXPORT
-jmp function_pointers[1206*8]
+jmp function_pointers[1349*8]
 ?_trace_TEST@UtilityT@@SAXAEAVphysHit@@AEBVVector3@Ogre@@1I@Z endp
 
 ; UtilityT::tracePosOnly(const class Ogre::Vector3 &, const class Ogre::Vector3 &, unsigned int);
 ?tracePosOnly@UtilityT@@SA?AVVector3@Ogre@@AEBV23@0I@Z proc EXPORT
-jmp function_pointers[1207*8]
+jmp function_pointers[1350*8]
 ?tracePosOnly@UtilityT@@SA?AVVector3@Ogre@@AEBV23@0I@Z endp
 
 ; UtilityT::sphereTrace(class physHit &, const class Ogre::Vector3 &, const class Ogre::Vector3 &, const float, unsigned int, bool);
 ?sphereTrace@UtilityT@@SAXAEAVphysHit@@AEBVVector3@Ogre@@1MI_N@Z proc EXPORT
-jmp function_pointers[1208*8]
+jmp function_pointers[1351*8]
 ?sphereTrace@UtilityT@@SAXAEAVphysHit@@AEBVVector3@Ogre@@1MI_N@Z endp
 
 ; UtilityT::boxTrace(class physHit &, const class Ogre::Vector3 &, const class Ogre::Vector3 &, const class Ogre::Vector3 &, unsigned int, bool);
 ?boxTrace@UtilityT@@SAXAEAVphysHit@@AEBVVector3@Ogre@@11I_N@Z proc EXPORT
-jmp function_pointers[1209*8]
+jmp function_pointers[1352*8]
 ?boxTrace@UtilityT@@SAXAEAVphysHit@@AEBVVector3@Ogre@@11I_N@Z endp
 
 ; UtilityT::mouseTraceAll(class lektor<PhysHitItem> &, unsigned int);
 ?mouseTraceAll@UtilityT@@SAXAEAV?$lektor@UPhysHitItem@@@@I@Z proc EXPORT
-jmp function_pointers[1210*8]
+jmp function_pointers[1353*8]
 ?mouseTraceAll@UtilityT@@SAXAEAV?$lektor@UPhysHitItem@@@@I@Z endp
 
 ; UtilityT::traceAll(class lektor<PhysHitItem> &, const class Ogre::Vector3 &, const class Ogre::Vector3 &, unsigned int);
 ?traceAll@UtilityT@@SAXAEAV?$lektor@UPhysHitItem@@@@AEBVVector3@Ogre@@1I@Z proc EXPORT
-jmp function_pointers[1211*8]
+jmp function_pointers[1354*8]
 ?traceAll@UtilityT@@SAXAEAV?$lektor@UPhysHitItem@@@@AEBVVector3@Ogre@@1I@Z endp
 
 ; UtilityT::getTerrainHeight(float, float);
 ?getTerrainHeight@UtilityT@@SAMMM@Z proc EXPORT
-jmp function_pointers[1212*8]
+jmp function_pointers[1355*8]
 ?getTerrainHeight@UtilityT@@SAMMM@Z endp
 
 ; UtilityT::getTerrainWithWaterHeight(float, float);
 ?getTerrainWithWaterHeight@UtilityT@@SAMMM@Z proc EXPORT
-jmp function_pointers[1213*8]
+jmp function_pointers[1356*8]
 ?getTerrainWithWaterHeight@UtilityT@@SAMMM@Z endp
 
 ; UtilityT::getTerrainWithWaterHeightFromRenderer(const class Ogre::Vector3 &);
 ?getTerrainWithWaterHeightFromRenderer@UtilityT@@SAMAEBVVector3@Ogre@@@Z proc EXPORT
-jmp function_pointers[1214*8]
+jmp function_pointers[1357*8]
 ?getTerrainWithWaterHeightFromRenderer@UtilityT@@SAMAEBVVector3@Ogre@@@Z endp
 
 ; UtilityT::getPositionInWater(float, float);
 ?getPositionInWater@UtilityT@@SA_NMM@Z proc EXPORT
-jmp function_pointers[1215*8]
+jmp function_pointers[1358*8]
 ?getPositionInWater@UtilityT@@SA_NMM@Z endp
 
 ; UtilityT::getFloorHeight(const class Ogre::Vector3 &, int, bool, bool);
 ?getFloorHeight@UtilityT@@SAMAEBVVector3@Ogre@@H_N1@Z proc EXPORT
-jmp function_pointers[1216*8]
+jmp function_pointers[1359*8]
 ?getFloorHeight@UtilityT@@SAMAEBVVector3@Ogre@@H_N1@Z endp
 
 ; UtilityT::getFloorHeight(const class Ogre::Vector3 &, bool, bool);
 ?getFloorHeight@UtilityT@@SAMAEBVVector3@Ogre@@_N1@Z proc EXPORT
-jmp function_pointers[1217*8]
+jmp function_pointers[1360*8]
 ?getFloorHeight@UtilityT@@SAMAEBVVector3@Ogre@@_N1@Z endp
 
 ; UtilityT::getBuildingGroundFloorHeight(const class Ogre::Vector3 &, bool);
 ?getBuildingGroundFloorHeight@UtilityT@@SAMAEBVVector3@Ogre@@_N@Z proc EXPORT
-jmp function_pointers[1218*8]
+jmp function_pointers[1361*8]
 ?getBuildingGroundFloorHeight@UtilityT@@SAMAEBVVector3@Ogre@@_N@Z endp
 
 ; UtilityT::isIndoors(const class Ogre::Vector3 &);
 ?isIndoors@UtilityT@@SAPEAVBuilding@@AEBVVector3@Ogre@@@Z proc EXPORT
-jmp function_pointers[1219*8]
+jmp function_pointers[1362*8]
 ?isIndoors@UtilityT@@SAPEAVBuilding@@AEBVVector3@Ogre@@@Z endp
 
 ; UtilityT::isIndoorsFast(const class Ogre::Vector3 &);
 ?isIndoorsFast@UtilityT@@SA_NAEBVVector3@Ogre@@@Z proc EXPORT
-jmp function_pointers[1220*8]
+jmp function_pointers[1363*8]
 ?isIndoorsFast@UtilityT@@SA_NAEBVVector3@Ogre@@@Z endp
 
 ; UtilityT::isIndoors_forWaypoint(const class Ogre::Vector3 &);
 ?isIndoors_forWaypoint@UtilityT@@SAPEAVBuilding@@AEBVVector3@Ogre@@@Z proc EXPORT
-jmp function_pointers[1221*8]
+jmp function_pointers[1364*8]
 ?isIndoors_forWaypoint@UtilityT@@SAPEAVBuilding@@AEBVVector3@Ogre@@@Z endp
 
 ; UtilityT::cascadeSetStatic(class Ogre::SceneNode *, bool);
 ?cascadeSetStatic@UtilityT@@SAXPEAVSceneNode@Ogre@@_N@Z proc EXPORT
-jmp function_pointers[1222*8]
+jmp function_pointers[1365*8]
 ?cascadeSetStatic@UtilityT@@SAXPEAVSceneNode@Ogre@@_N@Z endp
 
 ; UtilityT::perlinNoise_2D(double, double, double, float);
 ?perlinNoise_2D@UtilityT@@QEAAMNNNM@Z proc EXPORT
-jmp function_pointers[1223*8]
+jmp function_pointers[1366*8]
 ?perlinNoise_2D@UtilityT@@QEAAMNNNM@Z endp
 
 ; UtilityT::getFloorNumber(int);
 ?getFloorNumber@UtilityT@@SAHH@Z proc EXPORT
-jmp function_pointers[1224*8]
+jmp function_pointers[1367*8]
 ?getFloorNumber@UtilityT@@SAHH@Z endp
 
 ; UtilityT::getFloorNumber(const class Ogre::Vector3 &, class hand *);
 ?getFloorNumber@UtilityT@@SAHAEBVVector3@Ogre@@PEAVhand@@@Z proc EXPORT
-jmp function_pointers[1225*8]
+jmp function_pointers[1368*8]
 ?getFloorNumber@UtilityT@@SAHAEBVVector3@Ogre@@PEAVhand@@@Z endp
 
 ; UtilityT::getTerrainHeightFastWithNormal(float, float, class Ogre::Vector3 &, class ZoneMap *);
 ?getTerrainHeightFastWithNormal@UtilityT@@QEAAMMMAEAVVector3@Ogre@@PEAVZoneMap@@@Z proc EXPORT
-jmp function_pointers[1226*8]
+jmp function_pointers[1369*8]
 ?getTerrainHeightFastWithNormal@UtilityT@@QEAAMMMAEAVVector3@Ogre@@PEAVZoneMap@@@Z endp
 
 ; UtilityT::getTerrainHeightFast(float, float, class ZoneMap *);
 ?getTerrainHeightFast@UtilityT@@SAMMMPEAVZoneMap@@@Z proc EXPORT
-jmp function_pointers[1227*8]
+jmp function_pointers[1370*8]
 ?getTerrainHeightFast@UtilityT@@SAMMMPEAVZoneMap@@@Z endp
 
 ; UtilityT::getTerrainSlopeFast(float, float, class ZoneMap *);
 ?getTerrainSlopeFast@UtilityT@@QEAAMMMPEAVZoneMap@@@Z proc EXPORT
-jmp function_pointers[1228*8]
+jmp function_pointers[1371*8]
 ?getTerrainSlopeFast@UtilityT@@QEAAMMMPEAVZoneMap@@@Z endp
 
 ; UtilityT::random(float, float);
 ?random@UtilityT@@SAMMM@Z proc EXPORT
-jmp function_pointers[1229*8]
+jmp function_pointers[1372*8]
 ?random@UtilityT@@SAMMM@Z endp
 
 ; UtilityT::random();
 ?random@UtilityT@@SAMXZ proc EXPORT
-jmp function_pointers[1230*8]
+jmp function_pointers[1373*8]
 ?random@UtilityT@@SAMXZ endp
 
 ; UtilityT::randomBool();
 ?randomBool@UtilityT@@SA_NXZ proc EXPORT
-jmp function_pointers[1231*8]
+jmp function_pointers[1374*8]
 ?randomBool@UtilityT@@SA_NXZ endp
 
 ; UtilityT::randomInt(int, int);
 ?randomInt@UtilityT@@SAHHH@Z proc EXPORT
-jmp function_pointers[1232*8]
+jmp function_pointers[1375*8]
 ?randomInt@UtilityT@@SAHHH@Z endp
 
 ; UtilityT::seed(unsigned int);
 ?seed@UtilityT@@SAXI@Z proc EXPORT
-jmp function_pointers[1233*8]
+jmp function_pointers[1376*8]
 ?seed@UtilityT@@SAXI@Z endp
 
 ; UtilityT::seed();
 ?seed@UtilityT@@SAXXZ proc EXPORT
-jmp function_pointers[1234*8]
+jmp function_pointers[1377*8]
 ?seed@UtilityT@@SAXXZ endp
 
 ; UtilityT::round(float);
 ?round@UtilityT@@SAHM@Z proc EXPORT
-jmp function_pointers[1235*8]
+jmp function_pointers[1378*8]
 ?round@UtilityT@@SAHM@Z endp
 
 ; UtilityT::nlerp(const float &, const float &, const float &);
 ?nlerp@UtilityT@@SAMAEBM00@Z proc EXPORT
-jmp function_pointers[1236*8]
+jmp function_pointers[1379*8]
 ?nlerp@UtilityT@@SAMAEBM00@Z endp
 
 ; UtilityT::getNextPow2(int);
 ?getNextPow2@UtilityT@@SAHH@Z proc EXPORT
-jmp function_pointers[1237*8]
+jmp function_pointers[1380*8]
 ?getNextPow2@UtilityT@@SAHH@Z endp
 
 ; UtilityT::quatSetDirection(class Ogre::Quaternion &, const class Ogre::Vector3 &, const class Ogre::Vector3 &);
 ?quatSetDirection@UtilityT@@SAXAEAVQuaternion@Ogre@@AEBVVector3@3@1@Z proc EXPORT
-jmp function_pointers[1238*8]
+jmp function_pointers[1381*8]
 ?quatSetDirection@UtilityT@@SAXAEAVQuaternion@Ogre@@AEBVVector3@3@1@Z endp
 
 ; UtilityT::getSubMapSector(float, float);
 ?getSubMapSector@UtilityT@@SA?AViVector2@@MM@Z proc EXPORT
-jmp function_pointers[1239*8]
+jmp function_pointers[1382*8]
 ?getSubMapSector@UtilityT@@SA?AViVector2@@MM@Z endp
 
 ; UtilityT::getSubMapSectorBounds(const class iVector2);
 ?getSubMapSectorBounds@UtilityT@@SA?AVVector4@Ogre@@ViVector2@@@Z proc EXPORT
-jmp function_pointers[1240*8]
+jmp function_pointers[1383*8]
 ?getSubMapSectorBounds@UtilityT@@SA?AVVector4@Ogre@@ViVector2@@@Z endp
 
 ; UtilityT::getResourceFilePath(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?getResourceFilePath@UtilityT@@SA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAV23@@Z proc EXPORT
-jmp function_pointers[1241*8]
+jmp function_pointers[1384*8]
 ?getResourceFilePath@UtilityT@@SA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAV23@@Z endp
 
 ; UtilityT::removePathFromString(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?removePathFromString@UtilityT@@SA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@@Z proc EXPORT
-jmp function_pointers[1242*8]
+jmp function_pointers[1385*8]
 ?removePathFromString@UtilityT@@SA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@@Z endp
 
 ; UtilityT::removeFilenameFromPath(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?removeFilenameFromPath@UtilityT@@SA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@@Z proc EXPORT
-jmp function_pointers[1243*8]
+jmp function_pointers[1386*8]
 ?removeFilenameFromPath@UtilityT@@SA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@@Z endp
 
 ; UtilityT::removeFileExtensionFromString(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?removeFileExtensionFromString@UtilityT@@SA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@@Z proc EXPORT
-jmp function_pointers[1244*8]
+jmp function_pointers[1387*8]
 ?removeFileExtensionFromString@UtilityT@@SA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@@Z endp
 
 ; UtilityT::getFileExtensionFromString(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?getFileExtensionFromString@UtilityT@@SA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@@Z proc EXPORT
-jmp function_pointers[1245*8]
+jmp function_pointers[1388*8]
 ?getFileExtensionFromString@UtilityT@@SA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@@Z endp
 
 ; UtilityT::removeInvalidFileNameChars(class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?removeInvalidFileNameChars@UtilityT@@SAXAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[1246*8]
+jmp function_pointers[1389*8]
 ?removeInvalidFileNameChars@UtilityT@@SAXAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; UtilityT::compareStringsCaseInsenstive(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?compareStringsCaseInsenstive@UtilityT@@SA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z proc EXPORT
-jmp function_pointers[1247*8]
+jmp function_pointers[1390*8]
 ?compareStringsCaseInsenstive@UtilityT@@SA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z endp
 
 ; UtilityT::profilesClear();
 ?profilesClear@UtilityT@@QEAAXXZ proc EXPORT
-jmp function_pointers[1248*8]
+jmp function_pointers[1391*8]
 ?profilesClear@UtilityT@@QEAAXXZ endp
 
 ; UtilityT::profilesPrint();
 ?profilesPrint@UtilityT@@QEAAXXZ proc EXPORT
-jmp function_pointers[1249*8]
+jmp function_pointers[1392*8]
 ?profilesPrint@UtilityT@@QEAAXXZ endp
 
 ; UtilityT::profileGet(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?profileGet@UtilityT@@QEAAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[1250*8]
+jmp function_pointers[1393*8]
 ?profileGet@UtilityT@@QEAAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; UtilityT::getTerrainHeightFromRenderer(const class Ogre::Vector3 &, bool, int);
 ?getTerrainHeightFromRenderer@UtilityT@@SAMAEBVVector3@Ogre@@_NH@Z proc EXPORT
-jmp function_pointers[1251*8]
+jmp function_pointers[1394*8]
 ?getTerrainHeightFromRenderer@UtilityT@@SAMAEBVVector3@Ogre@@_NH@Z endp
 
 ; UtilityT::getApproxTerrainHeightFromRenderer(const class Ogre::Vector3 &, class Ogre::Vector3 &);
 ?getApproxTerrainHeightFromRenderer@UtilityT@@SAMAEBVVector3@Ogre@@AEAV23@@Z proc EXPORT
-jmp function_pointers[1252*8]
+jmp function_pointers[1395*8]
 ?getApproxTerrainHeightFromRenderer@UtilityT@@SAMAEBVVector3@Ogre@@AEAV23@@Z endp
 
 ; UtilityT::worldToScreenRel(const class Ogre::Vector3 &, float &, float &);
 ?worldToScreenRel@UtilityT@@QEAA_NAEBVVector3@Ogre@@AEAM1@Z proc EXPORT
-jmp function_pointers[1253*8]
+jmp function_pointers[1396*8]
 ?worldToScreenRel@UtilityT@@QEAA_NAEBVVector3@Ogre@@AEAM1@Z endp
 
 ; UtilityT::worldToScreenPX(const class Ogre::Vector3 &, float &, float &);
 ?worldToScreenPX@UtilityT@@QEAA_NAEBVVector3@Ogre@@AEAM1@Z proc EXPORT
-jmp function_pointers[1254*8]
+jmp function_pointers[1397*8]
 ?worldToScreenPX@UtilityT@@QEAA_NAEBVVector3@Ogre@@AEAM1@Z endp
 
 ; UtilityT::worldToScreenWithRadius(const class Ogre::Vector3 &, const float, float &, float &, float &, float &);
 ?worldToScreenWithRadius@UtilityT@@QEAA_NAEBVVector3@Ogre@@MAEAM111@Z proc EXPORT
-jmp function_pointers[1255*8]
+jmp function_pointers[1398*8]
 ?worldToScreenWithRadius@UtilityT@@QEAA_NAEBVVector3@Ogre@@MAEAM111@Z endp
 
 ; UtilityT::placeOrientedMarker(const class Ogre::Vector3 &, const class Ogre::Quaternion &, class Ogre::SceneNode *);
 ?placeOrientedMarker@UtilityT@@QEAAPEAVEntity@Ogre@@AEBVVector3@3@AEBVQuaternion@3@PEAVSceneNode@3@@Z proc EXPORT
-jmp function_pointers[1256*8]
+jmp function_pointers[1399*8]
 ?placeOrientedMarker@UtilityT@@QEAAPEAVEntity@Ogre@@AEBVVector3@3@AEBVQuaternion@3@PEAVSceneNode@3@@Z endp
 
 ; UtilityT::placeMarker(const class Ogre::Vector3 &, const void *, int);
 ?placeMarker@UtilityT@@QEAAXAEBVVector3@Ogre@@PEBXH@Z proc EXPORT
-jmp function_pointers[1257*8]
+jmp function_pointers[1400*8]
 ?placeMarker@UtilityT@@QEAAXAEBVVector3@Ogre@@PEBXH@Z endp
 
 ; UtilityT::placeMarker(const class Ogre::Vector3 &, int);
 ?placeMarker@UtilityT@@QEAAXAEBVVector3@Ogre@@H@Z proc EXPORT
-jmp function_pointers[1258*8]
+jmp function_pointers[1401*8]
 ?placeMarker@UtilityT@@QEAAXAEBVVector3@Ogre@@H@Z endp
 
 ; UtilityT::debugBox(class NxShape *);
 ?debugBox@UtilityT@@QEAAXPEAVNxShape@@@Z proc EXPORT
-jmp function_pointers[1259*8]
+jmp function_pointers[1402*8]
 ?debugBox@UtilityT@@QEAAXPEAVNxShape@@@Z endp
 
 ; UtilityT::placeBox(class Ogre::Vector3, class Ogre::SceneNode *);
 ?placeBox@UtilityT@@QEAAXVVector3@Ogre@@PEAVSceneNode@3@@Z proc EXPORT
-jmp function_pointers[1260*8]
+jmp function_pointers[1403*8]
 ?placeBox@UtilityT@@QEAAXVVector3@Ogre@@PEAVSceneNode@3@@Z endp
 
 ; UtilityT::placeArrow(const class Ogre::Vector3 &, const class Ogre::Vector3 &, const void *, float, float, int);
 ?placeArrow@UtilityT@@QEAAXAEBVVector3@Ogre@@0PEBXMMH@Z proc EXPORT
-jmp function_pointers[1261*8]
+jmp function_pointers[1404*8]
 ?placeArrow@UtilityT@@QEAAXAEBVVector3@Ogre@@0PEBXMMH@Z endp
 
 ; UtilityT::placeArrowTo(const class Ogre::Vector3 &, const class Ogre::Vector3 &, const void *, float, int);
 ?placeArrowTo@UtilityT@@QEAAXAEBVVector3@Ogre@@0PEBXMH@Z proc EXPORT
-jmp function_pointers[1262*8]
+jmp function_pointers[1405*8]
 ?placeArrowTo@UtilityT@@QEAAXAEBVVector3@Ogre@@0PEBXMH@Z endp
 
 ; UtilityT::placeArrowBT(const class Ogre::Vector3 &, const class Ogre::Vector3 &, const void *, float, float, int);
 ?placeArrowBT@UtilityT@@QEAAXAEBVVector3@Ogre@@0PEBXMMH@Z proc EXPORT
-jmp function_pointers[1263*8]
+jmp function_pointers[1406*8]
 ?placeArrowBT@UtilityT@@QEAAXAEBVVector3@Ogre@@0PEBXMMH@Z endp
 
 ; UtilityT::removeArrow(const void *);
 ?removeArrow@UtilityT@@QEAAXPEBX@Z proc EXPORT
-jmp function_pointers[1264*8]
+jmp function_pointers[1407*8]
 ?removeArrow@UtilityT@@QEAAXPEBX@Z endp
 
 ; UtilityT::placeSphere(const class Ogre::Vector3 &, const void *, float, int);
 ?placeSphere@UtilityT@@QEAAXAEBVVector3@Ogre@@PEBXMH@Z proc EXPORT
-jmp function_pointers[1265*8]
+jmp function_pointers[1408*8]
 ?placeSphere@UtilityT@@QEAAXAEBVVector3@Ogre@@PEBXMH@Z endp
 
 ; UtilityT::placeAxis(const class Ogre::Vector3 &, const class Ogre::Quaternion &);
 ?placeAxis@UtilityT@@QEAAXAEBVVector3@Ogre@@AEBVQuaternion@3@@Z proc EXPORT
-jmp function_pointers[1266*8]
+jmp function_pointers[1409*8]
 ?placeAxis@UtilityT@@QEAAXAEBVVector3@Ogre@@AEBVQuaternion@3@@Z endp
 
 ; UtilityT::placeAxis(const class Ogre::Vector3 &, const class NxMat33 &);
 ?placeAxis@UtilityT@@QEAAXAEBVVector3@Ogre@@AEBVNxMat33@@@Z proc EXPORT
-jmp function_pointers[1267*8]
+jmp function_pointers[1410*8]
 ?placeAxis@UtilityT@@QEAAXAEBVVector3@Ogre@@AEBVNxMat33@@@Z endp
 
 ; UtilityT::ogreTrace(const class Ogre::Vector3 &, const class Ogre::Vector3 &, int);
 ?ogreTrace@UtilityT@@QEAA?AVrendHit@@AEBVVector3@Ogre@@0H@Z proc EXPORT
-jmp function_pointers[1268*8]
+jmp function_pointers[1411*8]
 ?ogreTrace@UtilityT@@QEAA?AVrendHit@@AEBVVector3@Ogre@@0H@Z endp
 
 ; UtilityT::getDebugMaterial(int, bool);
 ?getDebugMaterial@UtilityT@@QEAA?AV?$SharedPtr@VMaterial@Ogre@@@Ogre@@H_N@Z proc EXPORT
-jmp function_pointers[1269*8]
+jmp function_pointers[1412*8]
 ?getDebugMaterial@UtilityT@@QEAA?AV?$SharedPtr@VMaterial@Ogre@@@Ogre@@H_N@Z endp
 
 ; UtilityT::flushMarkerQueue();
 ?flushMarkerQueue@UtilityT@@QEAAXXZ proc EXPORT
-jmp function_pointers[1270*8]
+jmp function_pointers[1413*8]
 ?flushMarkerQueue@UtilityT@@QEAAXXZ endp
 
 ; UtilityT::removeMarkers();
 ?removeMarkers@UtilityT@@QEAAXXZ proc EXPORT
-jmp function_pointers[1271*8]
+jmp function_pointers[1414*8]
 ?removeMarkers@UtilityT@@QEAAXXZ endp
 
 ; UtilityT::folderExists(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?folderExists@UtilityT@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[1272*8]
+jmp function_pointers[1415*8]
 ?folderExists@UtilityT@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; UtilityT::fileExists(const class std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > &);
 ?fileExists@UtilityT@@QEAA_NAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z proc EXPORT
-jmp function_pointers[1273*8]
+jmp function_pointers[1416*8]
 ?fileExists@UtilityT@@QEAA_NAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z endp
 
 ; UtilityT::fileExistsASCII(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?fileExistsASCII@UtilityT@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[1274*8]
+jmp function_pointers[1417*8]
 ?fileExistsASCII@UtilityT@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; UtilityT::createFile(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?createFile@UtilityT@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z proc EXPORT
-jmp function_pointers[1275*8]
+jmp function_pointers[1418*8]
 ?createFile@UtilityT@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z endp
 
 ; UtilityT::writeFile(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, bool);
 ?writeFile@UtilityT@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0_N@Z proc EXPORT
-jmp function_pointers[1276*8]
+jmp function_pointers[1419*8]
 ?writeFile@UtilityT@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0_N@Z endp
 
 ; UtilityT::readFile(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?readFile@UtilityT@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAV23@@Z proc EXPORT
-jmp function_pointers[1277*8]
+jmp function_pointers[1420*8]
 ?readFile@UtilityT@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAV23@@Z endp
 
 ; UtilityT::isFile(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?isFile@UtilityT@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[1278*8]
+jmp function_pointers[1421*8]
 ?isFile@UtilityT@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; UtilityT::isDirectory(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?isDirectory@UtilityT@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[1279*8]
+jmp function_pointers[1422*8]
 ?isDirectory@UtilityT@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; UtilityT::makeSureGameFolderExists(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?makeSureGameFolderExists@UtilityT@@SAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[1280*8]
+jmp function_pointers[1423*8]
 ?makeSureGameFolderExists@UtilityT@@SAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; UtilityT::makeSureFolderExists(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?makeSureFolderExists@UtilityT@@SAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[1281*8]
+jmp function_pointers[1424*8]
 ?makeSureFolderExists@UtilityT@@SAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; UtilityT::getFullPath(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?getFullPath@UtilityT@@SA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@@Z proc EXPORT
-jmp function_pointers[1282*8]
+jmp function_pointers[1425*8]
 ?getFullPath@UtilityT@@SA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@@Z endp
 
 ; UtilityT::getRelativePath(const class boost::filesystem::path &, const class boost::filesystem::path &, class boost::filesystem::path &);
 ?getRelativePath@UtilityT@@SA_NAEBVpath@filesystem@boost@@0AEAV234@@Z proc EXPORT
-jmp function_pointers[1283*8]
+jmp function_pointers[1426*8]
 ?getRelativePath@UtilityT@@SA_NAEBVpath@filesystem@boost@@0AEAV234@@Z endp
 
 ; UtilityT::getFilesInDir(class lektor<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?getFilesInDir@UtilityT@@QEAA_NAEAV?$lektor@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@1@Z proc EXPORT
-jmp function_pointers[1284*8]
+jmp function_pointers[1427*8]
 ?getFilesInDir@UtilityT@@QEAA_NAEAV?$lektor@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@1@Z endp
 
 ; UtilityT::getFilesInGameDir(class lektor<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?getFilesInGameDir@UtilityT@@QEAA_NAEAV?$lektor@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@1@Z proc EXPORT
-jmp function_pointers[1285*8]
+jmp function_pointers[1428*8]
 ?getFilesInGameDir@UtilityT@@QEAA_NAEAV?$lektor@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@1@Z endp
 
 ; UtilityT::getDirsInDir(class lektor<std::basic_string<char,std::char_traits<char>,std::allocator<char> > > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?getDirsInDir@UtilityT@@QEAAXAEAV?$lektor@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[1286*8]
+jmp function_pointers[1429*8]
 ?getDirsInDir@UtilityT@@QEAAXAEAV?$lektor@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; UtilityT::getCurrentDir();
 ?getCurrentDir@UtilityT@@QEAA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ proc EXPORT
-jmp function_pointers[1287*8]
+jmp function_pointers[1430*8]
 ?getCurrentDir@UtilityT@@QEAA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ endp
 
 ; UtilityT::setCurrentDir(const class std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > &);
 ?setCurrentDir@UtilityT@@QEAAXAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z proc EXPORT
-jmp function_pointers[1288*8]
+jmp function_pointers[1431*8]
 ?setCurrentDir@UtilityT@@QEAAXAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z endp
 
 ; UtilityT::deleteFilesInFolder(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, bool);
 ?deleteFilesInFolder@UtilityT@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0_N@Z proc EXPORT
-jmp function_pointers[1289*8]
+jmp function_pointers[1432*8]
 ?deleteFilesInFolder@UtilityT@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0_N@Z endp
 
 ; UtilityT::deleteFolder(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?deleteFolder@UtilityT@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[1290*8]
+jmp function_pointers[1433*8]
 ?deleteFolder@UtilityT@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; UtilityT::deleteFile(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?deleteFile@UtilityT@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-jmp function_pointers[1291*8]
+jmp function_pointers[1434*8]
 ?deleteFile@UtilityT@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; UtilityT::moveFile(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?moveFile@UtilityT@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z proc EXPORT
-jmp function_pointers[1292*8]
+jmp function_pointers[1435*8]
 ?moveFile@UtilityT@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z endp
 
 ; UtilityT::copyFile(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?copyFile@UtilityT@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z proc EXPORT
-jmp function_pointers[1293*8]
+jmp function_pointers[1436*8]
 ?copyFile@UtilityT@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z endp
 
 ; UtilityT::copyFilesInFolder(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ?copyFilesInFolder@UtilityT@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@00@Z proc EXPORT
-jmp function_pointers[1294*8]
+jmp function_pointers[1437*8]
 ?copyFilesInFolder@UtilityT@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@00@Z endp
 
 ; UtilityT::positionIsInFrontOfMe(const class Ogre::Vector3 &, const class Ogre::Vector3 &);
 ?positionIsInFrontOfMe@UtilityT@@SA_NAEBVVector3@Ogre@@0@Z proc EXPORT
-jmp function_pointers[1295*8]
+jmp function_pointers[1438*8]
 ?positionIsInFrontOfMe@UtilityT@@SA_NAEBVVector3@Ogre@@0@Z endp
 
 ; UtilityT::pointInPlane(class Ogre::Vector3, class Ogre::Vector3, class Ogre::Vector3);
 ?pointInPlane@UtilityT@@SA_NVVector3@Ogre@@00@Z proc EXPORT
-jmp function_pointers[1296*8]
+jmp function_pointers[1439*8]
 ?pointInPlane@UtilityT@@SA_NVVector3@Ogre@@00@Z endp
 
 ; UtilityT::OBBCollision(class NxBox &, class NxBox &);
 ?OBBCollision@UtilityT@@SA_NAEAVNxBox@@0@Z proc EXPORT
-jmp function_pointers[1297*8]
+jmp function_pointers[1440*8]
 ?OBBCollision@UtilityT@@SA_NAEAVNxBox@@0@Z endp
 
 ; UtilityT::colorToGUIString(const class Ogre::ColourValue &);
 ?colorToGUIString@UtilityT@@SA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVColourValue@Ogre@@@Z proc EXPORT
-jmp function_pointers[1298*8]
+jmp function_pointers[1441*8]
 ?colorToGUIString@UtilityT@@SA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVColourValue@Ogre@@@Z endp
 
 ; UtilityT::roundToNearest(float &, int);
 ?roundToNearest@UtilityT@@QEAAXAEAMH@Z proc EXPORT
-jmp function_pointers[1299*8]
+jmp function_pointers[1442*8]
 ?roundToNearest@UtilityT@@QEAAXAEAMH@Z endp
+
+?_CONSTRUCTOR@BaseLayout@wraps@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAVWidget@MyGUI@@@Z proc EXPORT
+?_CONSTRUCTOR@BaseLayout@wraps@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAVWidget@MyGUI@@@Z endp
+
+; wraps::BaseLayout::BaseLayout(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, class MyGUI::Widget *);
+??0BaseLayout@wraps@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAVWidget@MyGUI@@@Z proc EXPORT
+jmp function_pointers[1443*8]
+??0BaseLayout@wraps@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAVWidget@MyGUI@@@Z endp
+
+; wraps::BaseLayout::initialise(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, class MyGUI::Widget *, bool, bool);
+?initialise@BaseLayout@wraps@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAVWidget@MyGUI@@_N2@Z proc EXPORT
+jmp function_pointers[1444*8]
+?initialise@BaseLayout@wraps@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAVWidget@MyGUI@@_N2@Z endp
+
+; wraps::BaseLayout::shutdown();
+?shutdown@BaseLayout@wraps@@QEAAXXZ proc EXPORT
+jmp function_pointers[1445*8]
+?shutdown@BaseLayout@wraps@@QEAAXXZ endp
+
+; wraps::BaseLayout::FindParentPrefix(class MyGUI::Widget *);
+?FindParentPrefix@BaseLayout@wraps@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAVWidget@MyGUI@@@Z proc EXPORT
+jmp function_pointers[1446*8]
+?FindParentPrefix@BaseLayout@wraps@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAVWidget@MyGUI@@@Z endp
+
+; wraps::BaseLayout::snapToParent(class MyGUI::Widget *);
+?snapToParent@BaseLayout@wraps@@QEAAXPEAVWidget@MyGUI@@@Z proc EXPORT
+jmp function_pointers[1447*8]
+?snapToParent@BaseLayout@wraps@@QEAAXPEAVWidget@MyGUI@@@Z endp
+
+; wraps::BaseLayout::_createFakeWidgetT(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, class MyGUI::Widget *);
+?_createFakeWidgetT@BaseLayout@wraps@@QEAAPEAVWidget@MyGUI@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAV34@@Z proc EXPORT
+jmp function_pointers[1448*8]
+?_createFakeWidgetT@BaseLayout@wraps@@QEAAPEAVWidget@MyGUI@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAV34@@Z endp
+
+?_DESTRUCTOR@BaseLayout@wraps@@QEAAXXZ proc EXPORT
+?_DESTRUCTOR@BaseLayout@wraps@@QEAAXXZ endp
+
+; wraps::BaseLayout::~BaseLayout();
+??1BaseLayout@wraps@@UEAA@XZ proc EXPORT
+jmp function_pointers[1449*8]
+??1BaseLayout@wraps@@UEAA@XZ endp
 
 ; static_functions::showErrorMessage();
 ?showErrorMessage@@YAXXZ proc EXPORT
-jmp function_pointers[1300*8]
+jmp function_pointers[1450*8]
 ?showErrorMessage@@YAXXZ endp
 
 ; static_functions::modMedicalSkill(float, class Item *, float);
 ?modMedicalSkill@@YAMMPEAVItem@@M@Z proc EXPORT
-jmp function_pointers[1301*8]
+jmp function_pointers[1451*8]
 ?modMedicalSkill@@YAMMPEAVItem@@M@Z endp
 
 ; static_functions::loadPhysXResource(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, int);
 ?loadPhysXResource@@YAPEAVNxuPhysicsCollection@NXU@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z proc EXPORT
-jmp function_pointers[1302*8]
+jmp function_pointers[1452*8]
 ?loadPhysXResource@@YAPEAVNxuPhysicsCollection@NXU@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z endp
 
 ; static_functions::NXU::scaleCopyCollection(const class NXU::NxuPhysicsCollection *, const char *, const class NxVec3 &, class NxPhysicsSDK *);
 ?scaleCopyCollection@NXU@@YAPEAVNxuPhysicsCollection@1@PEBV21@PEBDAEBVNxVec3@@PEAVNxPhysicsSDK@@@Z proc EXPORT
-jmp function_pointers[1303*8]
+jmp function_pointers[1453*8]
 ?scaleCopyCollection@NXU@@YAPEAVNxuPhysicsCollection@1@PEBV21@PEBDAEBVNxVec3@@PEAVNxPhysicsSDK@@@Z endp
 
 ; static_functions::getFoliageRotation(class FoliageSystem::EntData *, float, float, class Ogre::Quaternion &);
 ?getFoliageRotation@@YAXPEAVEntData@FoliageSystem@@MMAEAVQuaternion@Ogre@@@Z proc EXPORT
-jmp function_pointers[1304*8]
+jmp function_pointers[1454*8]
 ?getFoliageRotation@@YAXPEAVEntData@FoliageSystem@@MMAEAVQuaternion@Ogre@@@Z endp
 
 FUNC_END proc EXPORT
@@ -7810,7 +8644,7 @@ FUNC_END endp
 
 .data
 PUBLIC function_pointers
-function_pointers QWORD 1305 DUP(0)
+function_pointers QWORD 1455 DUP(0)
 
 .const
 PUBLIC FUNCTION_SIZE, FUNCTION_BUFF_LENGTH, FUNCTION_ERROR

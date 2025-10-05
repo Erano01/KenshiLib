@@ -140,6 +140,7 @@
     <ClInclude Include="Include\kenshi\CharacterAnimal.h" />
     <ClInclude Include="Include\kenshi\CharacterHuman.h" />
     <ClInclude Include="Include\kenshi\CharStats.h" />
+    <ClInclude Include="Include\kenshi\Damages.h" />
     <ClInclude Include="Include\kenshi\Dialogue.h" />
     <ClInclude Include="Include\kenshi\Enums.h" />
     <ClInclude Include="Include\kenshi\Faction.h" />
@@ -170,6 +171,7 @@
     <ClInclude Include="Include\kenshi\SaveFileSystem.h" />
     <ClInclude Include="Include\kenshi\SaveManager.h" />
     <ClInclude Include="Include\kenshi\Tasks.h" />
+    <ClInclude Include="Include\kenshi\TitleScreen.h" />
     <ClInclude Include="Include\kenshi\TradeCulture.h" />
     <ClInclude Include="Include\kenshi\ThreadClass.h" />
     <ClInclude Include="Include\kenshi\util\Array2d.h" />

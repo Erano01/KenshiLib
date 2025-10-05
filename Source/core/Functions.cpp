@@ -23,7 +23,7 @@
 */
 
 // array containing absolute function addresses - the length here doesn't matter as it's set in functions.asm
-extern "C" intptr_t function_pointers[1];
+extern "C" uintptr_t function_pointers[1];
 // address of first function definition
 extern "C" void FUNC_BEGIN(void);
 extern "C" void FUNC_END(void);
@@ -43,7 +43,7 @@ void InitRVAs()
         ErrorLog("Unable to open RVA file at " + RVAFilePath);
     assert_release(rvaFile.is_open());
     size_t end = rvaFile.tellg();
-    assert_release(end == (FUNCTION_BUFF_LENGTH * sizeof(intptr_t) / 2));
+    assert_release(end == (FUNCTION_BUFF_LENGTH * sizeof(uintptr_t) / 2));
     rvaFile.seekg(0);
 
     for (int i = 0; i < FUNCTION_BUFF_LENGTH; ++i)
@@ -51,23 +51,23 @@ void InitRVAs()
         int offset;
         rvaFile.read((char*)(&offset), 4);
         RVAPtr<void> c_inst(offset);
-        function_pointers[i] = (intptr_t)c_inst.GetPtr();
+        function_pointers[i] = (uintptr_t)c_inst.GetPtr();
     }
     DebugLog("RVAs loaded");
 }
 
 // NOTE: doesn't work with virtual functions
-inline intptr_t GetFunctionSlot(void* ptr)
+inline uintptr_t GetFunctionSlot(void* ptr)
 {
-	intptr_t functionsStart = (intptr_t)&FUNC_BEGIN;
-	intptr_t functionAddr = (intptr_t)ptr;
-	intptr_t slot = (functionAddr - functionsStart) / FUNCTION_SIZE;
+	uintptr_t functionsStart = (uintptr_t)&FUNC_BEGIN;
+	uintptr_t functionAddr = (uintptr_t)ptr;
+	uintptr_t slot = (functionAddr - functionsStart) / FUNCTION_SIZE;
 	return (functionAddr - functionsStart) / FUNCTION_SIZE;
 }
 
 intptr_t GetRealAddress(void* fun)
 {
-	assert_release((intptr_t&)fun >= (intptr_t)&FUNC_BEGIN && (intptr_t&)fun <= (intptr_t)&FUNC_END);
+	assert_release((uintptr_t&)fun >= (uintptr_t)&FUNC_BEGIN && (uintptr_t&)fun <= (uintptr_t)&FUNC_END);
 	return function_pointers[GetFunctionSlot(fun)]; // the cast has to be to a ref to work with member functions in VC++
 }
 
@@ -79,7 +79,7 @@ template<typename T>
 // NOTE: doesn't work with virtual functions
 intptr_t GetShimAddress(T fun)
 {
-	return (intptr_t&)fun; // the cast has to be to a ref to work with member functions in VC++
+	return (uintptr_t&)fun; // the cast has to be to a ref to work with member functions in VC++
 }
 
 template<typename T>
@@ -99,6 +99,6 @@ template<typename T>
 intptr_t GetMemberPointer(T fun)
 {
 	void* pPtr = (void*&)fun; // the cast has to be to a ref to work with member functions in VC++
-	return (intptr_t)pPtr;
+	return (uintptr_t)pPtr;
 }
 */
