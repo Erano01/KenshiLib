@@ -184,8 +184,6 @@
     <ClInclude Include="Include\kenshi\util\TimeOfDay.h" />
     <ClInclude Include="Include\kenshi\util\UtilityT.h" />
     <ClInclude Include="Include\kenshi\util\YesNoMaybe.h" />
-    <ClInclude Include="Include\kenshi\View.h" />
-    <ClInclude Include="Include\kenshi\Zone.h" />
     <ClInclude Include="Include\mygui\MyGUI.h" />
     <ClInclude Include="Include\mygui\MyGUI_ActionController.h" />
     <ClInclude Include="Include\mygui\MyGUI_Align.h" />
