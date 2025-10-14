@@ -23,7 +23,7 @@ class NxJoint;
 
 enum NxShapeFlag
 {
-    NX_TRIGGER_ON_ENTER = 0x80020008,
+    NX_TRIGGER_ON_ENTER = 0x1,
     NX_TRIGGER_ON_LEAVE = 0x2,
     NX_TRIGGER_ON_STAY = 0x4,
     NX_TRIGGER_ENABLE = 0x7,
@@ -356,9 +356,9 @@ namespace NXU
     class NxuPhysicsCollection;
     enum NXU_FileType
     {
-        FT_BINARY = 0x80020008,
-        FT_XML = 0x1,
-        FT_COLLADA = 0x2
+        FT_BINARY,
+        FT_XML,
+        FT_COLLADA
     };
 
     NxuPhysicsCollection* scaleCopyCollection(const NxuPhysicsCollection* source, const char* newId, const NxVec3& scale, NxPhysicsSDK* sdk);// RVA = 0x20B3B0

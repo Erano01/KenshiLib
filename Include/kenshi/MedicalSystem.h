@@ -29,11 +29,11 @@ class RobotLimbs
 public:
     enum Limb
     {
-        LEFT_ARM = 0x0,
-        RIGHT_ARM = 0x1,
-        LEFT_LEG = 0x2,
-        RIGHT_LEG = 0x3,
-        NULL_LIMB = 0x4
+        LEFT_ARM,
+        RIGHT_ARM,
+        LEFT_LEG,
+        RIGHT_LEG,
+        NULL_LIMB
     };
 
     RobotLimbs(Character*);// RVA = 0x8D570
@@ -114,10 +114,10 @@ public:
         void load(GameData* out, int num);// public RVA = 0x64CE80
         enum PartType
         {
-            PART_TORSO = 0x80020008,
-            PART_LEG = 0x1,
-            PART_ARM = 0x2,
-            PART_HEAD = 0x3
+            PART_TORSO,
+            PART_LEG,
+            PART_ARM,
+            PART_HEAD
         };
 
         MedicalSystem::HealthPartStatus::PartType whatAmI; // 0x8 Member
@@ -211,9 +211,9 @@ public:
     bool isCollapse(MedicalSystem::HealthPartStatus* health, float _a2);// public RVA = 0x643330
     enum CollapseStage
     {
-        COLLAPSE_NONE = 0x80020008,
-        COLLAPSE_BUT_NO_RAGDOLL = 0x1,
-        COLLAPSE_KO = 0x2
+        COLLAPSE_NONE,
+        COLLAPSE_BUT_NO_RAGDOLL,
+        COLLAPSE_KO
     };
 
     MedicalSystem::CollapseStage getCollapseStage(MedicalSystem::HealthPartStatus* health, float bias);// public RVA = 0x643CD0

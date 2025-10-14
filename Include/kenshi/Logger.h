@@ -7,7 +7,7 @@ class Logger
 public:
     enum Severity
     {
-        Tracw,
+        Trace,
         Debug,
         Info,
         Warning,
