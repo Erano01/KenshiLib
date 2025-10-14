@@ -2261,6 +2261,9 @@
     <ClInclude Include="Include\kenshi\Damages.h">
       <Filter>Header Files\kenshi</Filter>
     </ClInclude>
+    <ClInclude Include="Include\kenshi\Gear.h">
+      <Filter>Header Files\kenshi</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Library Include="Libraries\ogre\OgreMain_x64.lib">

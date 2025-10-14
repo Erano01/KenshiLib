@@ -36,22 +36,24 @@ public:
         NULL_LIMB
     };
 
-    RobotLimbs(Character*);// RVA = 0x8D570
-    ~RobotLimbs();// RVA = 0x8D5A0
-    void load(GameData*);// RVA = 0x90310
-    void save(GameData*);// RVA = 0x8FCD0
-    LimbState getState(Limb);// RVA = 0x8D5D0
-    Item* getLimb(Limb);// RVA = 0x8D5E0
-    int getMask();// RVA = 0x8D5F0
-    void setLimb(Limb, LimbState, Item*);// RVA = 0x8FF50
-    RootObject* getInventoryInterface(bool);// RVA = 0x90650
-    void destroyInventoryInterface();// RVA = 0x8D640
-    Item* getLimbItem(Limb);// RVA = 0x4FC120
+    RobotLimbs(Character* c);// public RVA = 0xCD3B0
+    void _CONSTRUCTOR(Character* c);// public RVA = 0xCD3B0
+    ~RobotLimbs();// public RVA = 0xCD3E0
+    void _DESTRUCTOR();// public RVA = 0xCD3E0
+    void load(GameData* state);// public RVA = 0xD0150
+    void save(GameData* state) const;// public RVA = 0xCFB10
+    LimbState getState(RobotLimbs::Limb limb) const;// public RVA = 0xCD410
+    Item* getLimb(RobotLimbs::Limb limb) const;// public RVA = 0xCD420
+    int getMask() const;// public RVA = 0xCD430
+    void setLimb(RobotLimbs::Limb limb, LimbState state, Item* item);// public RVA = 0xCFD90
+    RootObject* getInventoryInterface(bool create);// public RVA = 0xD0490
+    void destroyInventoryInterface();// public RVA = 0xCD480
+    Item* getLimbItem(RobotLimbs::Limb l);// public RVA = 0x6431B0
     Character* character; // 0x0 Member
     RootObject* inventory; // 0x8 Member
     LimbState states[0x4]; // 0x10 Member
     Item* items[0x4]; // 0x20 Member
-    // no_addr public void * __vecDelDtor(unsigned int);
+    // no_addr void * __vecDelDtor(unsigned int _a1);// public missing arg names
 };
 
 namespace AttackDirection 
