@@ -7,13 +7,6 @@
 #include <ogre/OgreMemoryAllocatorConfig.h>
 #include <ogre/OgreVector3.h>
 
-enum SquadType
-{
-    SQ_UNKNOWN,
-    SQ_RESIDENT,
-    SQ_ROAMING
-};
-
 enum MoveSpeed
 {
     WALK,
