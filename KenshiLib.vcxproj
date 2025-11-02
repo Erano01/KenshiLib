@@ -114,6 +114,7 @@
     <None Include="Include\ogre\OgreLodStrategyPrivate.inl" />
     <None Include="Include\ogre\OgreMovableObject.inl" />
     <None Include="Libraries\ogre\OgreMain_x64.def" />
+    <None Include="Source\kenshi\globals.inc" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\core\Functions.cpp" />

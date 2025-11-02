@@ -28,9 +28,9 @@ extern "C" uintptr_t function_pointers[1];
 extern "C" void FUNC_BEGIN(void);
 extern "C" void FUNC_END(void);
 extern "C" const uint32_t FUNCTION_SIZE;
-extern "C" const uint32_t FUNCTION_BUFF_LENGTH;
 // amount of "error" in the compiled function table, this MUST be 0
 extern "C" const uint32_t FUNCTION_ERROR;
+extern "C" const uint32_t FULL_BUFF_LENGTH;
 
 void InitRVAs()
 {
@@ -43,10 +43,10 @@ void InitRVAs()
         ErrorLog("Unable to open RVA file at " + RVAFilePath);
     assert_release(rvaFile.is_open());
     size_t end = rvaFile.tellg();
-    assert_release(end == (FUNCTION_BUFF_LENGTH * sizeof(uintptr_t) / 2));
+    assert_release(end == (FULL_BUFF_LENGTH * sizeof(int)));
     rvaFile.seekg(0);
 
-    for (int i = 0; i < FUNCTION_BUFF_LENGTH; ++i)
+    for (int i = 0; i < FULL_BUFF_LENGTH; ++i)
     {
         int offset;
         rvaFile.read((char*)(&offset), 4);

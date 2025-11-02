@@ -2364,6 +2364,9 @@
     <None Include="Include\kenshi\util\iVector2.h">
       <Filter>Header Files\kenshi</Filter>
     </None>
+    <None Include="Source\kenshi\globals.inc">
+      <Filter>Source Files\kenshi</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <MASM Include="Source\kenshi\functions.asm">
