@@ -168,6 +168,7 @@
     <ClInclude Include="Include\kenshi\PhysicsCollection.h" />
     <ClInclude Include="Include\kenshi\Platoon.h" />
     <ClInclude Include="Include\kenshi\PlayerInterface.h" />
+    <ClInclude Include="Include\kenshi\RaceData.h" />
     <ClInclude Include="Include\kenshi\RootObject.h" />
     <ClInclude Include="Include\kenshi\RootObjectBase.h" />
     <ClInclude Include="Include\kenshi\RootObjectFactory.h" />

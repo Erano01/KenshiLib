@@ -6,7 +6,7 @@
 #include "util/StringPair.h"
 
 #include <ogre/OgreVector3.h>
-#include <boost/unordered_map.hpp>
+#include <kenshi/util/OgreUnordered.h>
 
 // 1.0.59 GOG MedicalSystem TakeDamage possibly @ kenshi_GOG_x64.exe+5056D0 
 // MedicalSystem::TakeDamage(HealthPartStatus* part, struct damage, uint64_t unk)
