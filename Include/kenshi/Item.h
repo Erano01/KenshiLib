@@ -85,7 +85,7 @@ public:
 	bool isStolen(bool includeUnknown) const;// public RVA = 0x79D2F0
 	// no_addr void InventoryItemBase(const class InventoryItemBase & _a1);// public missing arg names
 	InventoryItemBase(GameData* dat, hand _handle, GameData* manufacturerData, GameData* materialData);// protected RVA = 0x75E8E0
-	void _CONSTRUCTOR(GameData* dat, hand _handle, GameData* manufacturerData, GameData* materialData);// protected RVA = 0x75E8E0
+	InventoryItemBase* _CONSTRUCTOR(GameData* dat, hand _handle, GameData* manufacturerData, GameData* materialData);// protected RVA = 0x75E8E0
 	virtual ~InventoryItemBase();// protected RVA = 0x75C890 vtable offset = 0x0
 	void _DESTRUCTOR();// protected RVA = 0x75C890 vtable offset = 0x0
 	void getTooltipTradeValue(Ogre::vector<StringPair>::type& lines);// protected RVA = 0x79D540
@@ -190,7 +190,7 @@ public:
 	bool persistantOwnerExists() const;// public RVA = 0x386F90
 	// no_addr void Item(const class Item & _a1);// public missing arg names
 	Item(GameData* baseData, GameData* companyData, GameData* _materialData, hand _handle);// protected RVA = 0x75EE40
-	void _CONSTRUCTOR(GameData* baseData, GameData* companyData, GameData* _materialData, hand _handle);// protected RVA = 0x75EE40
+	Item* _CONSTRUCTOR(GameData* baseData, GameData* companyData, GameData* _materialData, hand _handle);// protected RVA = 0x75EE40
 	virtual ~Item();// protected RVA = 0x75CB00 vtable offset = 0x0
 	void _DESTRUCTOR();// protected RVA = 0x75CB00 vtable offset = 0x0
 	virtual bool createPhysical();// protected RVA = 0x762D90 vtable offset = 0x0
@@ -234,7 +234,7 @@ public:
 		bool _NV_canEquip(RaceData* race, bool isAnimal);// public RVA = 0x592F30 vtable offset = 0x0
 		// no_addr void Limiter(const class RaceLimiter::Limiter & _a1);// public missing arg names
 		Limiter();// public RVA = 0x592D90
-		void _CONSTRUCTOR();// public RVA = 0x592D90
+		Limiter* _CONSTRUCTOR();// public RVA = 0x592D90
 		~Limiter();// public RVA = 0x591D00
 		void _DESTRUCTOR();// public RVA = 0x591D00
 		// no_addr class RaceLimiter::Limiter & operator=(const class RaceLimiter::Limiter & _a1);// public missing arg names
@@ -249,7 +249,7 @@ public:
 	bool _NV_canEquip(GameData* item, RaceData* race, bool isAnimal);// public RVA = 0x593780 vtable offset = 0x8
 	// no_addr void RaceLimiter(const class RaceLimiter & _a1);// public missing arg names
 	RaceLimiter();// public RVA = 0x592420
-	void _CONSTRUCTOR();// public RVA = 0x592420
+	RaceLimiter* _CONSTRUCTOR();// public RVA = 0x592420
 	~RaceLimiter();// public RVA = 0x76AC30
 	void _DESTRUCTOR();// public RVA = 0x76AC30
 	// no_addr class RaceLimiter & operator=(const class RaceLimiter & _a1);// public missing arg names
@@ -309,7 +309,7 @@ public:
 	ogre_unordered_set<GameData*>::type racesExclude; // 0x250 Member
 	// no_addr void ContainerItem(const class ContainerItem & _a1);// public missing arg names
 	ContainerItem(GameData* dat, GameData* mat, hand _handle);// protected RVA = 0x762600
-	void _CONSTRUCTOR(GameData* dat, GameData* mat, hand _handle);// protected RVA = 0x762600
+	ContainerItem* _CONSTRUCTOR(GameData* dat, GameData* mat, hand _handle);// protected RVA = 0x762600
 	Inventory* inventory; // 0x290 Member
 	// no_addr class ContainerItem & operator=(const class ContainerItem & _a1);// public missing arg names
 	// virtual void * __vecDelDtor(unsigned int _a1) = 0;// public vtable offset = 0x0 missing arg names

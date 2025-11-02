@@ -2,6 +2,7 @@
 
 class Item;
 class GameWorld;
+class GlobalConstants;
 class InputHandler;
 class OptionsHolder;
 

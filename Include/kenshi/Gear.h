@@ -8,7 +8,7 @@ public:
 	// Item offset = 0x0, length = 0x1E8
 	// no_addr void Gear(const class Gear & _a1);// public missing arg names
 	Gear(GameData* baseData, GameData* companyData, GameData* materialData, hand _handle, int _level, Faction* uniform);// public RVA = 0xD3050
-	void _CONSTRUCTOR(GameData* baseData, GameData* companyData, GameData* materialData, hand _handle, int _level, Faction* uniform);// public RVA = 0xD3050
+	Gear* _CONSTRUCTOR(GameData* baseData, GameData* companyData, GameData* materialData, hand _handle, int _level, Faction* uniform);// public RVA = 0xD3050
 	virtual Gear* isGear();// public RVA = 0xD3160 vtable offset = 0x0
 	Gear* _NV_isGear();// public RVA = 0xD3160 vtable offset = 0x0
 	virtual float getLevel01() const;// public RVA = 0xD3170 vtable offset = 0x368
@@ -67,7 +67,7 @@ public:
 	int _NV_getSkillModIndoors() const;// public RVA = 0x8A3B20 vtable offset = 0x378
 	// no_addr void Weapon(const class Weapon & _a1);// public missing arg names
 	Weapon(GameData* baseData, GameData* companyData, GameData* materialData, hand _handle, int _level);// protected RVA = 0x897080
-	void _CONSTRUCTOR(GameData* baseData, GameData* companyData, GameData* materialData, hand _handle, int _level);// protected RVA = 0x897080
+	Weapon* _CONSTRUCTOR(GameData* baseData, GameData* companyData, GameData* materialData, hand _handle, int _level);// protected RVA = 0x897080
 	virtual ~Weapon();// protected RVA = 0x8A3A70 vtable offset = 0x0
 	void _DESTRUCTOR();// protected RVA = 0x8A3A70 vtable offset = 0x0
 	float combatWeight; // 0x230 Member
@@ -83,7 +83,7 @@ public:
 	// Weapon offset = 0x0, length = 0x240
 	// no_addr void Sword(const class Sword & _a1);// public missing arg names
 	Sword(GameData* baseData, GameData* companyData, GameData* materialData, hand _handle, int _level);// public RVA = 0x897330
-	void _CONSTRUCTOR(GameData* baseData, GameData* companyData, GameData* materialData, hand _handle, int _level);// public RVA = 0x897330
+	Sword* _CONSTRUCTOR(GameData* baseData, GameData* companyData, GameData* materialData, hand _handle, int _level);// public RVA = 0x897330
 	virtual itemType getClassType() const;// public RVA = 0x8A88A0 vtable offset = 0x0
 	itemType _NV_getClassType() const;// public RVA = 0x8A88A0 vtable offset = 0x0
 	virtual Sword* isSword();// public RVA = 0x8A88B0 vtable offset = 0x0
@@ -114,7 +114,7 @@ public:
 	// Weapon offset = 0x0, length = 0x240
 	// no_addr void Crossbow(const class Crossbow & _a1);// public missing arg names
 	Crossbow(GameData* baseData, hand _handle, int _overalllevel);// private RVA = 0x8974E0
-	void _CONSTRUCTOR(GameData* baseData, hand _handle, int _overalllevel);// private RVA = 0x8974E0
+	Crossbow* _CONSTRUCTOR(GameData* baseData, hand _handle, int _overalllevel);// private RVA = 0x8974E0
 	virtual Crossbow* isCrossbow();// public RVA = 0x8A89D0 vtable offset = 0x0
 	Crossbow* _NV_isCrossbow();// public RVA = 0x8A89D0 vtable offset = 0x0
 	virtual itemType getClassType() const;// public RVA = 0x8A89E0 vtable offset = 0x0
@@ -201,7 +201,7 @@ public:
 	float getWeatherProtection_simple(WeatherAffecting weather);// public RVA = 0x65B240
 	// no_addr void Armour(const class Armour & _a1);// public missing arg names
 	Armour(GameData* baseData, GameData* _materialData, hand _handle, Faction* _uniformFlag, int _level);// protected RVA = 0x8976E0
-	void _CONSTRUCTOR(GameData* baseData, GameData* _materialData, hand _handle, Faction* _uniformFlag, int _level);// protected RVA = 0x8976E0
+	Armour* _CONSTRUCTOR(GameData* baseData, GameData* _materialData, hand _handle, Faction* _uniformFlag, int _level);// protected RVA = 0x8976E0
 	virtual ~Armour();// protected RVA = 0x8A8340 vtable offset = 0x0
 	void _DESTRUCTOR();// protected RVA = 0x8A8340 vtable offset = 0x0
 	ogre_unordered_map<GameData*, float>::type bodypartCoverage; // 0x2A8 Member
@@ -218,7 +218,7 @@ public:
 	// Armour offset = 0x0, length = 0x2F0
 	// no_addr void LockedArmour(const class LockedArmour & _a1);// public missing arg names
 	LockedArmour(GameData* baseData, GameData* _materialData, hand _handle, Faction* _uniformFlag, int _level);// public RVA = 0x898C90
-	void _CONSTRUCTOR(GameData* baseData, GameData* _materialData, hand _handle, Faction* _uniformFlag, int _level);// public RVA = 0x898C90
+	LockedArmour* _CONSTRUCTOR(GameData* baseData, GameData* _materialData, hand _handle, Faction* _uniformFlag, int _level);// public RVA = 0x898C90
 	virtual ~LockedArmour();// public RVA = 0x885C30 vtable offset = 0x0
 	void _DESTRUCTOR();// public RVA = 0x885C30 vtable offset = 0x0
 	virtual Armour* isArmour();// public RVA = 0x8A8590 vtable offset = 0x0

@@ -29,11 +29,11 @@ class TripleInt
 public:
     int value[0x3]; // 0x0 Member
     TripleInt(const TripleInt& who);// public RVA = 0x8AF30
-    void _CONSTRUCTOR(const TripleInt& who);// public RVA = 0x8AF30
+    TripleInt* _CONSTRUCTOR(const TripleInt& who);// public RVA = 0x8AF30
     TripleInt(int a, int b, int c);// public RVA = 0x6DF10
-    void _CONSTRUCTOR(int a, int b, int c);// public RVA = 0x6DF10
+    TripleInt* _CONSTRUCTOR(int a, int b, int c);// public RVA = 0x6DF10
     TripleInt();// public RVA = 0x2B49D0
-    void _CONSTRUCTOR();// public RVA = 0x2B49D0
+    TripleInt* _CONSTRUCTOR();// public RVA = 0x2B49D0
     const TripleInt& operator=(const TripleInt& a);// public RVA = 0x6DF30
     int operator[](int i) const;// public RVA = 0x64530
     int& operator[](int i);// public RVA = 0x6DF50
@@ -73,7 +73,7 @@ public:
     {
     public:
         CreatelistItem(GameData* _data, Ogre::Vector3 _position, bool _isFromActiveLevelMod, Faction* _owner, Ogre::Quaternion _rotation, FactoryCallbackInterface* _callbackObject, GameSaveState* _saveStateDataSource, RootObjectContainer* certainContainer, Building* home, float _age);// public RVA = 0x5890E0
-        void _CONSTRUCTOR(GameData* _data, Ogre::Vector3 _position, bool _isFromActiveLevelMod, Faction* _owner, Ogre::Quaternion _rotation, FactoryCallbackInterface* _callbackObject, GameSaveState* _saveStateDataSource, RootObjectContainer* certainContainer, Building* home, float _age);// public RVA = 0x5890E0
+        CreatelistItem* _CONSTRUCTOR(GameData* _data, Ogre::Vector3 _position, bool _isFromActiveLevelMod, Faction* _owner, Ogre::Quaternion _rotation, FactoryCallbackInterface* _callbackObject, GameSaveState* _saveStateDataSource, RootObjectContainer* certainContainer, Building* home, float _age);// public RVA = 0x5890E0
         RootObjectContainer* container; // 0x0 Member
         Building* homeBuilding; // 0x8 Member
         Faction* faction; // 0x10 Member
@@ -91,7 +91,7 @@ public:
     RootObjectBase* process(RootObjectFactory::CreatelistItem* o);// private RVA = 0x580FF0
     // no_addr void RootObjectFactory(const class RootObjectFactory & _a1);// public missing arg names
     RootObjectFactory();// public RVA = 0x87EBF0
-    void _CONSTRUCTOR();// public RVA = 0x87EBF0
+    RootObjectFactory* _CONSTRUCTOR();// public RVA = 0x87EBF0
     ~RootObjectFactory();// public RVA = 0x87CC10
     void _DESTRUCTOR();// public RVA = 0x87CC10
     // no_addr class RootObjectFactory & operator=(const class RootObjectFactory & _a1);// public missing arg names

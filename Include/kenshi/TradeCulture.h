@@ -22,7 +22,7 @@ public:
     bool hasTradePriceMultiplier(GameData* item);// public RVA = 0x9467B0
     // no_addr void TradeCulture(const class TradeCulture & _a1);// public missing arg names
     TradeCulture();// public RVA = 0x80EFA0
-    void _CONSTRUCTOR();// public RVA = 0x80EFA0
+    TradeCulture* _CONSTRUCTOR();// public RVA = 0x80EFA0
     ~TradeCulture();// public RVA = 0x80F050
     void _DESTRUCTOR();// public RVA = 0x80F050
     // no_addr class TradeCulture & operator=(const class TradeCulture & _a1);// public missing arg names

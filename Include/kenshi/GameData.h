@@ -22,11 +22,11 @@ class GameDataHeader
 {
 public:
     GameDataHeader(const GameDataHeader& __that);// public RVA = 0x87E400
-    void _CONSTRUCTOR(const GameDataHeader& __that);// public RVA = 0x87E400
+    GameDataHeader* _CONSTRUCTOR(const GameDataHeader& __that);// public RVA = 0x87E400
     GameDataHeader(const std::string& name, const std::string& filename);// public RVA = 0x6BD610
-    void _CONSTRUCTOR(const std::string& name, const std::string& filename);// public RVA = 0x6BD610
+    GameDataHeader* _CONSTRUCTOR(const std::string& name, const std::string& filename);// public RVA = 0x6BD610
     GameDataHeader();// public RVA = 0x6BB8D0
-    void _CONSTRUCTOR();// public RVA = 0x6BB8D0
+    GameDataHeader* _CONSTRUCTOR();// public RVA = 0x6BB8D0
     std::string name; // 0x0 Member
     std::string author; // 0x28 Member
     int version; // 0x50 Member
@@ -50,7 +50,7 @@ public:
     void _DESTRUCTOR();// protected RVA = 0x7A290 vtable offset = 0x0
     // no_addr void GameData(const class GameData & _a1);// public missing arg names
     GameData();// protected RVA = 0x51C560
-    void _CONSTRUCTOR();// protected RVA = 0x51C560
+    GameData* _CONSTRUCTOR();// protected RVA = 0x51C560
     bool isStandalone; // 0x18 Member
     bool isValid() const;// public RVA = 0x42EF10
     GameDataContainer* getSourceContainer() const;// public RVA = 0x8D330
@@ -136,9 +136,9 @@ public:
     {
     public:
         ObjectInstance(const GameData::ObjectInstance& __that);// public RVA = 0xB6080
-        void _CONSTRUCTOR(const GameData::ObjectInstance& __that);// public RVA = 0xB6080
+        ObjectInstance* _CONSTRUCTOR(const GameData::ObjectInstance& __that);// public RVA = 0xB6080
         ObjectInstance();// public RVA = 0xB5160
-        void _CONSTRUCTOR();// public RVA = 0xB5160
+        ObjectInstance* _CONSTRUCTOR();// public RVA = 0xB5160
         Ogre::Vector3 pos; // 0x0 Member
         Ogre::Quaternion rot; // 0xC Member
         std::string refID; // 0x20 Member

@@ -21,7 +21,7 @@ public:
     static RaceData* getRaceData(GameData* data);// public RVA = 0x42FC70
     // no_addr void RaceData(const class RaceData & _a1);// public missing arg names
     RaceData(GameData* data);// public RVA = 0x42E820
-    void _CONSTRUCTOR(GameData* data);// public RVA = 0x42E820
+    RaceData* _CONSTRUCTOR(GameData* data);// public RVA = 0x42E820
     bool isRelatedRace(RaceData* data);// public RVA = 0x670A20
     bool isRelatedRace(GameData* d);// public RVA = 0x42E550
     bool isSpecificRace(GameData* subrace);// public RVA = 0x670A10

@@ -8,9 +8,9 @@ class ModInfo : public Ogre::GeneralAllocatedObject
 public:
     // Ogre::AllocatedObject<Ogre::CategorisedAllocPolicy<0> > offset = 0x0, length = 0x1
     ModInfo(const ModInfo& __that);// public RVA = 0x87EC40
-    void _CONSTRUCTOR(const ModInfo& __that);// public RVA = 0x87EC40
+    ModInfo* _CONSTRUCTOR(const ModInfo& __that);// public RVA = 0x87EC40
     ModInfo();// public RVA = 0x8675C0
-    void _CONSTRUCTOR();// public RVA = 0x8675C0
+    ModInfo* _CONSTRUCTOR();// public RVA = 0x8675C0
     std::string name; // 0x0 Member
     std::string file; // 0x28 Member
     std::string path; // 0x50 Member

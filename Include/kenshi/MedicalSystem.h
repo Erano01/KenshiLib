@@ -37,7 +37,7 @@ public:
     };
 
     RobotLimbs(Character* c);// public RVA = 0xCD3B0
-    void _CONSTRUCTOR(Character* c);// public RVA = 0xCD3B0
+    RobotLimbs* _CONSTRUCTOR(Character* c);// public RVA = 0xCD3B0
     ~RobotLimbs();// public RVA = 0xCD3E0
     void _DESTRUCTOR();// public RVA = 0xCD3E0
     void load(GameData* state);// public RVA = 0xD0150
@@ -88,7 +88,7 @@ public:
     void precalculateFirstAidNeedScore();// private RVA = 0x6446E0
     // no_addr void MedicalSystem(const class MedicalSystem & _a1);// public missing arg names
     MedicalSystem();// public RVA = 0x640270
-    void _CONSTRUCTOR();// public RVA = 0x640270
+    MedicalSystem* _CONSTRUCTOR();// public RVA = 0x640270
     virtual ~MedicalSystem();// public RVA = 0x646230 vtable offset = 0x0
     void _DESTRUCTOR();// public RVA = 0x646230 vtable offset = 0x0
     void init(AnimationClass* animsys, Character* c, GameData* race, CharStats* _stats);// public RVA = 0x64DC90

@@ -59,7 +59,7 @@ public:
     // VTable         : (none)
     // no_addr void Ownerships(const class Ownerships & _a1);// public missing arg names
     Ownerships(Faction* f, Platoon* p);// public RVA = 0x7CA770
-    void _CONSTRUCTOR(Faction* f, Platoon* p);// public RVA = 0x7CA770
+    Ownerships* _CONSTRUCTOR(Faction* f, Platoon* p);// public RVA = 0x7CA770
     void setHandle(Platoon* h);// public RVA = 0x7EA9D0
     void addOwnedObject(const hand& what);// public RVA = 0x7EB8A0
     void removeOwnedObject(const hand& what);// public RVA = 0x7EAE90
@@ -109,7 +109,7 @@ public:
     std::string stringID; // 0x78 Member
     // no_addr void Platoon(class Platoon & _a1);// public missing arg names
     Platoon(Faction* f, GameData* _squadTemplate, GameData* platoonState, const Ogre::Vector3& p, bool _persistent);// protected RVA = 0x7ED070
-    void _CONSTRUCTOR(Faction* f, GameData* _squadTemplate, GameData* platoonState, const Ogre::Vector3& p, bool _persistent);// protected RVA = 0x7ED070
+    Platoon* _CONSTRUCTOR(Faction* f, GameData* _squadTemplate, GameData* platoonState, const Ogre::Vector3& p, bool _persistent);// protected RVA = 0x7ED070
     virtual ~Platoon();// protected RVA = 0x7EB380 vtable offset = 0x0
     void _DESTRUCTOR();// protected RVA = 0x7EB380 vtable offset = 0x0
     void setCharacterCount(int count);// protected RVA = 0x37D740

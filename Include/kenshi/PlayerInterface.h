@@ -21,7 +21,7 @@ public:
     virtual void factoryObjectCreatedCallback(RootObject* _a1) = 0;// public vtable offset = 0x0 missing arg names
     // no_addr void FactoryCallbackInterface(const class FactoryCallbackInterface & _a1);// public missing arg names
     FactoryCallbackInterface();// public RVA = 0x4EB6A0
-    void _CONSTRUCTOR();// public RVA = 0x4EB6A0
+    FactoryCallbackInterface* _CONSTRUCTOR();// public RVA = 0x4EB6A0
     // no_addr class FactoryCallbackInterface & operator=(const class FactoryCallbackInterface & _a1);// public missing arg names
 };
 
@@ -35,7 +35,7 @@ public:
     // Ogre::AllocatedObject<Ogre::CategorisedAllocPolicy<0> > offset = 0x0, length = 0x1
     // no_addr void ContextMenu(const class ContextMenu & _a1);// public missing arg names
     ContextMenu();// public RVA = 0x793750
-    void _CONSTRUCTOR();// public RVA = 0x793750
+    ContextMenu* _CONSTRUCTOR();// public RVA = 0x793750
     ~ContextMenu();// public RVA = 0x793800
     void _DESTRUCTOR();// public RVA = 0x793800
     void showContextMenu(bool on, RootObject* what);// public RVA = 0x7A5960
@@ -70,7 +70,7 @@ public:
     bool contains(const Ogre::Vector3& point, float r) const;// public RVA = 0x7F1320
     // no_addr void SelectionBox(const class SelectionBox & _a1);// public missing arg names
     SelectionBox();// public RVA = 0x7F2A40
-    void _CONSTRUCTOR();// public RVA = 0x7F2A40
+    SelectionBox* _CONSTRUCTOR();// public RVA = 0x7F2A40
     ~SelectionBox();// public RVA = 0x7F1260
     void _DESTRUCTOR();// public RVA = 0x7F1260
     // no_addr class SelectionBox & operator=(const class SelectionBox & _a1);// public missing arg names
@@ -100,7 +100,7 @@ public:
     // Ogre::AllocatedObject<Ogre::CategorisedAllocPolicy<0> > offset = 0x8, length = 0x1
     // no_addr void PlayerInterface(const class PlayerInterface & _a1);// public missing arg names
     PlayerInterface();// public RVA = 0x7F58D0
-    void _CONSTRUCTOR();// public RVA = 0x7F58D0
+    PlayerInterface* _CONSTRUCTOR();// public RVA = 0x7F58D0
     ~PlayerInterface();// public RVA = 0x7F9F80
     void _DESTRUCTOR();// public RVA = 0x7F9F80
     CameraClass* getCamera();// public RVA = 0x3E6B40
@@ -194,7 +194,7 @@ public:
     {
     public:
         AIOptions();// public RVA = 0x8055B0
-        void _CONSTRUCTOR();// public RVA = 0x8055B0
+        AIOptions* _CONSTRUCTOR();// public RVA = 0x8055B0
         void load(GameData* data);// public RVA = 0x3EBA30
         void save(GameData* data);// public RVA = 0x3EB1F0
         bool healAllies; // 0x0 Member

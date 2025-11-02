@@ -6,9 +6,9 @@ class iVector2
 {
 public:
     iVector2(int _x, int _y);// public RVA = 0x37E3C0
-    void _CONSTRUCTOR(int _x, int _y);// public RVA = 0x37E3C0
+    iVector2* _CONSTRUCTOR(int _x, int _y);// public RVA = 0x37E3C0
     iVector2();// public RVA = 0x15A860
-    void _CONSTRUCTOR();// public RVA = 0x15A860
+    iVector2* _CONSTRUCTOR();// public RVA = 0x15A860
     int x; // 0x0 Member
     int y; // 0x4 Member
     bool operator==(const iVector2& a) const;// public RVA = 0x39DD00

@@ -85,8 +85,8 @@ jmp function_pointers[9*8]
 jmp function_pointers[10*8]
 ?getWeatherProtection_simple@Armour@@QEAAMW4WeatherAffecting@@@Z endp
 
-?_CONSTRUCTOR@Armour@@QEAAXPEAVGameData@@0Vhand@@PEAVFaction@@H@Z proc EXPORT
-?_CONSTRUCTOR@Armour@@QEAAXPEAVGameData@@0Vhand@@PEAVFaction@@H@Z endp
+?_CONSTRUCTOR@Armour@@QEAAPEAV1@PEAVGameData@@0Vhand@@PEAVFaction@@H@Z proc EXPORT
+?_CONSTRUCTOR@Armour@@QEAAPEAV1@PEAVGameData@@0Vhand@@PEAVFaction@@H@Z endp
 
 ; Armour::Armour(class GameData *, class GameData *, class hand, class Faction *, int);
 ??0Armour@@QEAA@PEAVGameData@@0Vhand@@PEAVFaction@@H@Z proc EXPORT
@@ -101,8 +101,8 @@ jmp function_pointers[11*8]
 jmp function_pointers[12*8]
 ??1Armour@@UEAA@XZ endp
 
-?_CONSTRUCTOR@Bounty@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@Bounty@@QEAAXXZ endp
+?_CONSTRUCTOR@Bounty@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@Bounty@@QEAAPEAV1@XZ endp
 
 ; Bounty::Bounty();
 ??0Bounty@@QEAA@XZ proc EXPORT
@@ -129,8 +129,8 @@ jmp function_pointers[16*8]
 jmp function_pointers[17*8]
 ?_getHighestBountyFaction@BountyManager@@QEAAPEAVFaction@@XZ endp
 
-?_CONSTRUCTOR@BountyManager@@QEAAXPEAVCharacter@@@Z proc EXPORT
-?_CONSTRUCTOR@BountyManager@@QEAAXPEAVCharacter@@@Z endp
+?_CONSTRUCTOR@BountyManager@@QEAAPEAV1@PEAVCharacter@@@Z proc EXPORT
+?_CONSTRUCTOR@BountyManager@@QEAAPEAV1@PEAVCharacter@@@Z endp
 
 ; BountyManager::BountyManager(class Character *);
 ??0BountyManager@@QEAA@PEAVCharacter@@@Z proc EXPORT
@@ -750,8 +750,8 @@ jmp function_pointers[112*8]
 jmp function_pointers[113*8]
 ?getLayoutInstanceID@Building@@UEAAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ endp
 
-?_CONSTRUCTOR@Building@@QEAAXPEAVGameData@@AEBVVector3@Ogre@@AEBVQuaternion@4@PEAVFaction@@AEBVhand@@4PEAVLayout@@PEAV1@@Z proc EXPORT
-?_CONSTRUCTOR@Building@@QEAAXPEAVGameData@@AEBVVector3@Ogre@@AEBVQuaternion@4@PEAVFaction@@AEBVhand@@4PEAVLayout@@PEAV1@@Z endp
+?_CONSTRUCTOR@Building@@QEAAPEAV1@PEAVGameData@@AEBVVector3@Ogre@@AEBVQuaternion@4@PEAVFaction@@AEBVhand@@4PEAVLayout@@PEAV1@@Z proc EXPORT
+?_CONSTRUCTOR@Building@@QEAAPEAV1@PEAVGameData@@AEBVVector3@Ogre@@AEBVQuaternion@4@PEAVFaction@@AEBVhand@@4PEAVLayout@@PEAV1@@Z endp
 
 ; Building::Building(class GameData *, const class Ogre::Vector3 &, const class Ogre::Quaternion &, class Faction *, const class hand &, const class hand &, class Layout *, class Building *);
 ??0Building@@QEAA@PEAVGameData@@AEBVVector3@Ogre@@AEBVQuaternion@3@PEAVFaction@@AEBVhand@@4PEAVLayout@@PEAV0@@Z proc EXPORT
@@ -1525,16 +1525,16 @@ jmp function_pointers[231*8]
 jmp function_pointers[232*8]
 ?updateBadNodes@Building@@QEAAXXZ endp
 
-?_CONSTRUCTOR@ConstructionState@Building@@QEAAXAEBV12@@Z proc EXPORT
-?_CONSTRUCTOR@ConstructionState@Building@@QEAAXAEBV12@@Z endp
+?_CONSTRUCTOR@ConstructionState@Building@@QEAAPEAV12@AEBV12@@Z proc EXPORT
+?_CONSTRUCTOR@ConstructionState@Building@@QEAAPEAV12@AEBV12@@Z endp
 
 ; Building::ConstructionState::ConstructionState(const class Building::ConstructionState &);
 ??0ConstructionState@Building@@QEAA@AEBV01@@Z proc EXPORT
 jmp function_pointers[233*8]
 ??0ConstructionState@Building@@QEAA@AEBV01@@Z endp
 
-?_CONSTRUCTOR@ConstructionState@Building@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@ConstructionState@Building@@QEAAXXZ endp
+?_CONSTRUCTOR@ConstructionState@Building@@QEAAPEAV12@XZ proc EXPORT
+?_CONSTRUCTOR@ConstructionState@Building@@QEAAPEAV12@XZ endp
 
 ; Building::ConstructionState::ConstructionState();
 ??0ConstructionState@Building@@QEAA@XZ proc EXPORT
@@ -1634,8 +1634,8 @@ jmp function_pointers[251*8]
 jmp function_pointers[252*8]
 ?getNumRemaining@BuildMaterial@ConstructionState@Building@@QEBAMXZ endp
 
-?_CONSTRUCTOR@Character@@QEAAXPEAVGameData@@PEAVFaction@@AEBVhand@@@Z proc EXPORT
-?_CONSTRUCTOR@Character@@QEAAXPEAVGameData@@PEAVFaction@@AEBVhand@@@Z endp
+?_CONSTRUCTOR@Character@@QEAAPEAV1@PEAVGameData@@PEAVFaction@@AEBVhand@@@Z proc EXPORT
+?_CONSTRUCTOR@Character@@QEAAPEAV1@PEAVGameData@@PEAVFaction@@AEBVhand@@@Z endp
 
 ; Character::Character(class GameData *, class Faction *, const class hand &);
 ??0Character@@QEAA@PEAVGameData@@PEAVFaction@@AEBVhand@@@Z proc EXPORT
@@ -3637,16 +3637,16 @@ jmp function_pointers[585*8]
 jmp function_pointers[586*8]
 ?updateEnd@AttachedArrowManager@Character@@QEAAXXZ endp
 
-?_CONSTRUCTOR@AttachedArrowManager@Character@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@AttachedArrowManager@Character@@QEAAXXZ endp
+?_CONSTRUCTOR@AttachedArrowManager@Character@@QEAAPEAV12@XZ proc EXPORT
+?_CONSTRUCTOR@AttachedArrowManager@Character@@QEAAPEAV12@XZ endp
 
 ; Character::AttachedArrowManager::AttachedArrowManager();
 ??0AttachedArrowManager@Character@@QEAA@XZ proc EXPORT
 jmp function_pointers[587*8]
 ??0AttachedArrowManager@Character@@QEAA@XZ endp
 
-?_CONSTRUCTOR@RagdollMsg@Character@@QEAAX_NW4Enum@RagdollPart@@@Z proc EXPORT
-?_CONSTRUCTOR@RagdollMsg@Character@@QEAAX_NW4Enum@RagdollPart@@@Z endp
+?_CONSTRUCTOR@RagdollMsg@Character@@QEAAPEAV12@_NW4Enum@RagdollPart@@@Z proc EXPORT
+?_CONSTRUCTOR@RagdollMsg@Character@@QEAAPEAV12@_NW4Enum@RagdollPart@@@Z endp
 
 ; Character::RagdollMsg::RagdollMsg(bool, enum RagdollPart::Enum);
 ??0RagdollMsg@Character@@QEAA@_NW4Enum@RagdollPart@@@Z proc EXPORT
@@ -3658,16 +3658,16 @@ jmp function_pointers[588*8]
 jmp function_pointers[589*8]
 ??8RagdollMsg@Character@@QEBA_NAEBU01@@Z endp
 
-?_CONSTRUCTOR@WhoSeesMe@Character@@QEAAXNVYesNoMaybe@@M@Z proc EXPORT
-?_CONSTRUCTOR@WhoSeesMe@Character@@QEAAXNVYesNoMaybe@@M@Z endp
+?_CONSTRUCTOR@WhoSeesMe@Character@@QEAAPEAV12@NVYesNoMaybe@@M@Z proc EXPORT
+?_CONSTRUCTOR@WhoSeesMe@Character@@QEAAPEAV12@NVYesNoMaybe@@M@Z endp
 
 ; Character::WhoSeesMe::WhoSeesMe(double, class YesNoMaybe, float);
 ??0WhoSeesMe@Character@@QEAA@NVYesNoMaybe@@M@Z proc EXPORT
 jmp function_pointers[590*8]
 ??0WhoSeesMe@Character@@QEAA@NVYesNoMaybe@@M@Z endp
 
-?_CONSTRUCTOR@WhoSeesMe@Character@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@WhoSeesMe@Character@@QEAAXXZ endp
+?_CONSTRUCTOR@WhoSeesMe@Character@@QEAAPEAV12@XZ proc EXPORT
+?_CONSTRUCTOR@WhoSeesMe@Character@@QEAAPEAV12@XZ endp
 
 ; Character::WhoSeesMe::WhoSeesMe();
 ??0WhoSeesMe@Character@@QEAA@XZ proc EXPORT
@@ -3862,8 +3862,8 @@ jmp function_pointers[615*8]
 jmp function_pointers[616*8]
 ?eatItemInMouth@CharacterAnimal@@QEAAXXZ endp
 
-?_CONSTRUCTOR@CharacterAnimal@@QEAAXPEAVGameData@@PEAVFaction@@Vhand@@M@Z proc EXPORT
-?_CONSTRUCTOR@CharacterAnimal@@QEAAXPEAVGameData@@PEAVFaction@@Vhand@@M@Z endp
+?_CONSTRUCTOR@CharacterAnimal@@QEAAPEAV1@PEAVGameData@@PEAVFaction@@Vhand@@M@Z proc EXPORT
+?_CONSTRUCTOR@CharacterAnimal@@QEAAPEAV1@PEAVGameData@@PEAVFaction@@Vhand@@M@Z endp
 
 ; CharacterAnimal::CharacterAnimal(class GameData *, class Faction *, class hand, float);
 ??0CharacterAnimal@@QEAA@PEAVGameData@@PEAVFaction@@Vhand@@M@Z proc EXPORT
@@ -3894,8 +3894,8 @@ jmp function_pointers[619*8]
 jmp function_pointers[620*8]
 ?dropItem@CharacterAnimal@@UEAAXPEAVRootObject@@@Z endp
 
-?_CONSTRUCTOR@CharacterHuman@@QEAAXPEAVGameData@@PEAVFaction@@Vhand@@@Z proc EXPORT
-?_CONSTRUCTOR@CharacterHuman@@QEAAXPEAVGameData@@PEAVFaction@@Vhand@@@Z endp
+?_CONSTRUCTOR@CharacterHuman@@QEAAPEAV1@PEAVGameData@@PEAVFaction@@Vhand@@@Z proc EXPORT
+?_CONSTRUCTOR@CharacterHuman@@QEAAPEAV1@PEAVGameData@@PEAVFaction@@Vhand@@@Z endp
 
 ; CharacterHuman::CharacterHuman(class GameData *, class Faction *, class hand);
 ??0CharacterHuman@@QEAA@PEAVGameData@@PEAVFaction@@Vhand@@@Z proc EXPORT
@@ -4087,8 +4087,8 @@ jmp function_pointers[645*8]
 jmp function_pointers[646*8]
 ?getWeatherProtection@CharStats@@QEBAMW4WeatherAffecting@@@Z endp
 
-?_CONSTRUCTOR@CharStats@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@CharStats@@QEAAXXZ endp
+?_CONSTRUCTOR@CharStats@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@CharStats@@QEAAPEAV1@XZ endp
 
 ; CharStats::CharStats();
 ??0CharStats@@QEAA@XZ proc EXPORT
@@ -4880,16 +4880,16 @@ jmp function_pointers[788*8]
 jmp function_pointers[789*8]
 ?setProperOwner@ContainerItem@@UEAAXAEBVhand@@@Z endp
 
-?_CONSTRUCTOR@ContainerItem@@QEAAXPEAVGameData@@0Vhand@@@Z proc EXPORT
-?_CONSTRUCTOR@ContainerItem@@QEAAXPEAVGameData@@0Vhand@@@Z endp
+?_CONSTRUCTOR@ContainerItem@@QEAAPEAV1@PEAVGameData@@0Vhand@@@Z proc EXPORT
+?_CONSTRUCTOR@ContainerItem@@QEAAPEAV1@PEAVGameData@@0Vhand@@@Z endp
 
 ; ContainerItem::ContainerItem(class GameData *, class GameData *, class hand);
 ??0ContainerItem@@QEAA@PEAVGameData@@0Vhand@@@Z proc EXPORT
 jmp function_pointers[790*8]
 ??0ContainerItem@@QEAA@PEAVGameData@@0Vhand@@@Z endp
 
-?_CONSTRUCTOR@ContextMenu@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@ContextMenu@@QEAAXXZ endp
+?_CONSTRUCTOR@ContextMenu@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@ContextMenu@@QEAAPEAV1@XZ endp
 
 ; ContextMenu::ContextMenu();
 ??0ContextMenu@@QEAA@XZ proc EXPORT
@@ -4924,8 +4924,8 @@ jmp function_pointers[795*8]
 jmp function_pointers[796*8]
 ?_destroyMenuGUICheck@ContextMenu@@QEAAXXZ endp
 
-?_CONSTRUCTOR@Crossbow@@QEAAXPEAVGameData@@Vhand@@H@Z proc EXPORT
-?_CONSTRUCTOR@Crossbow@@QEAAXPEAVGameData@@Vhand@@H@Z endp
+?_CONSTRUCTOR@Crossbow@@QEAAPEAV1@PEAVGameData@@Vhand@@H@Z proc EXPORT
+?_CONSTRUCTOR@Crossbow@@QEAAPEAV1@PEAVGameData@@Vhand@@H@Z endp
 
 ; Crossbow::Crossbow(class GameData *, class hand, int);
 ??0Crossbow@@QEAA@PEAVGameData@@Vhand@@H@Z proc EXPORT
@@ -5022,24 +5022,24 @@ jmp function_pointers[808*8]
 jmp function_pointers[809*8]
 ??1Crossbow@@UEAA@XZ endp
 
-?_CONSTRUCTOR@Damages@@QEAAXAEBV1@@Z proc EXPORT
-?_CONSTRUCTOR@Damages@@QEAAXAEBV1@@Z endp
+?_CONSTRUCTOR@Damages@@QEAAPEAV1@AEBV1@@Z proc EXPORT
+?_CONSTRUCTOR@Damages@@QEAAPEAV1@AEBV1@@Z endp
 
 ; Damages::Damages(const class Damages &);
 ??0Damages@@QEAA@AEBV0@@Z proc EXPORT
 jmp function_pointers[810*8]
 ??0Damages@@QEAA@AEBV0@@Z endp
 
-?_CONSTRUCTOR@Damages@@QEAAXMMMMM@Z proc EXPORT
-?_CONSTRUCTOR@Damages@@QEAAXMMMMM@Z endp
+?_CONSTRUCTOR@Damages@@QEAAPEAV1@MMMMM@Z proc EXPORT
+?_CONSTRUCTOR@Damages@@QEAAPEAV1@MMMMM@Z endp
 
 ; Damages::Damages(float, float, float, float, float);
 ??0Damages@@QEAA@MMMMM@Z proc EXPORT
 jmp function_pointers[811*8]
 ??0Damages@@QEAA@MMMMM@Z endp
 
-?_CONSTRUCTOR@Damages@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@Damages@@QEAAXXZ endp
+?_CONSTRUCTOR@Damages@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@Damages@@QEAAPEAV1@XZ endp
 
 ; Damages::Damages();
 ??0Damages@@QEAA@XZ proc EXPORT
@@ -5079,8 +5079,8 @@ jmp function_pointers[817*8]
 jmp function_pointers[818*8]
 ?_insertWordSwapsRecurse@Dialogue@@QEAAXAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAVCharacter@@_NPEAVDialogLineData@@@Z endp
 
-?_CONSTRUCTOR@Dialogue@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@Dialogue@@QEAAXXZ endp
+?_CONSTRUCTOR@Dialogue@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@Dialogue@@QEAAPEAV1@XZ endp
 
 ; Dialogue::Dialogue();
 ??0Dialogue@@QEAA@XZ proc EXPORT
@@ -5445,8 +5445,8 @@ jmp function_pointers[889*8]
 jmp function_pointers[890*8]
 ?getCount@RepetitionCounter@Dialogue@@QEAAHW4EventTriggerEnum@@@Z endp
 
-?_CONSTRUCTOR@RepetitionCounter@Dialogue@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@RepetitionCounter@Dialogue@@QEAAXXZ endp
+?_CONSTRUCTOR@RepetitionCounter@Dialogue@@QEAAPEAV12@XZ proc EXPORT
+?_CONSTRUCTOR@RepetitionCounter@Dialogue@@QEAAPEAV12@XZ endp
 
 ; Dialogue::RepetitionCounter::RepetitionCounter();
 ??0RepetitionCounter@Dialogue@@QEAA@XZ proc EXPORT
@@ -5461,16 +5461,16 @@ jmp function_pointers[891*8]
 jmp function_pointers[892*8]
 ??1RepetitionCounter@Dialogue@@QEAA@XZ endp
 
-?_CONSTRUCTOR@DialogState@RepetitionCounter@Dialogue@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@DialogState@RepetitionCounter@Dialogue@@QEAAXXZ endp
+?_CONSTRUCTOR@DialogState@RepetitionCounter@Dialogue@@QEAAPEAV123@XZ proc EXPORT
+?_CONSTRUCTOR@DialogState@RepetitionCounter@Dialogue@@QEAAPEAV123@XZ endp
 
 ; Dialogue::RepetitionCounter::DialogState::DialogState();
 ??0DialogState@RepetitionCounter@Dialogue@@QEAA@XZ proc EXPORT
 jmp function_pointers[893*8]
 ??0DialogState@RepetitionCounter@Dialogue@@QEAA@XZ endp
 
-?_CONSTRUCTOR@DialogueSpeechBubble@@QEAAX_N0@Z proc EXPORT
-?_CONSTRUCTOR@DialogueSpeechBubble@@QEAAX_N0@Z endp
+?_CONSTRUCTOR@DialogueSpeechBubble@@QEAAPEAV1@_N0@Z proc EXPORT
+?_CONSTRUCTOR@DialogueSpeechBubble@@QEAAPEAV1@_N0@Z endp
 
 ; DialogueSpeechBubble::DialogueSpeechBubble(bool, bool);
 ??0DialogueSpeechBubble@@QEAA@_N0@Z proc EXPORT
@@ -5520,8 +5520,8 @@ jmp function_pointers[901*8]
 jmp function_pointers[902*8]
 ?getRect@DialogueSpeechBubble@@QEBA?AU?$TRect@H@types@MyGUI@@XZ endp
 
-?_CONSTRUCTOR@Faction@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-?_CONSTRUCTOR@Faction@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
+?_CONSTRUCTOR@Faction@@QEAAPEAV1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
+?_CONSTRUCTOR@Faction@@QEAAPEAV1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; Faction::Faction(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ??0Faction@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
@@ -5879,16 +5879,16 @@ jmp function_pointers[968*8]
 jmp function_pointers[969*8]
 ?_spawnASquad@Faction@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@M@Z endp
 
-?_CONSTRUCTOR@BuildingSwaps@Faction@@QEAAXPEAVGameData@@@Z proc EXPORT
-?_CONSTRUCTOR@BuildingSwaps@Faction@@QEAAXPEAVGameData@@@Z endp
+?_CONSTRUCTOR@BuildingSwaps@Faction@@QEAAPEAV12@PEAVGameData@@@Z proc EXPORT
+?_CONSTRUCTOR@BuildingSwaps@Faction@@QEAAPEAV12@PEAVGameData@@@Z endp
 
 ; Faction::BuildingSwaps::BuildingSwaps(class GameData *);
 ??0BuildingSwaps@Faction@@QEAA@PEAVGameData@@@Z proc EXPORT
 jmp function_pointers[970*8]
 ??0BuildingSwaps@Faction@@QEAA@PEAVGameData@@@Z endp
 
-?_CONSTRUCTOR@BuildingSwaps@Faction@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@BuildingSwaps@Faction@@QEAAXXZ endp
+?_CONSTRUCTOR@BuildingSwaps@Faction@@QEAAPEAV12@XZ proc EXPORT
+?_CONSTRUCTOR@BuildingSwaps@Faction@@QEAAPEAV12@XZ endp
 
 ; Faction::BuildingSwaps::BuildingSwaps();
 ??0BuildingSwaps@Faction@@QEAA@XZ proc EXPORT
@@ -5918,8 +5918,8 @@ jmp function_pointers[974*8]
 jmp function_pointers[975*8]
 ??4BuildingSwaps@Faction@@QEAAAEAV01@AEBV01@@Z endp
 
-?_CONSTRUCTOR@FactionLeader@@QEAAXPEAVFaction@@@Z proc EXPORT
-?_CONSTRUCTOR@FactionLeader@@QEAAXPEAVFaction@@@Z endp
+?_CONSTRUCTOR@FactionLeader@@QEAAPEAV1@PEAVFaction@@@Z proc EXPORT
+?_CONSTRUCTOR@FactionLeader@@QEAAPEAV1@PEAVFaction@@@Z endp
 
 ; FactionLeader::FactionLeader(class Faction *);
 ??0FactionLeader@@QEAA@PEAVFaction@@@Z proc EXPORT
@@ -5949,8 +5949,8 @@ jmp function_pointers[979*8]
 jmp function_pointers[980*8]
 ??1FactionLeader@@QEAA@XZ endp
 
-?_CONSTRUCTOR@FactoryCallbackInterface@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@FactoryCallbackInterface@@QEAAXXZ endp
+?_CONSTRUCTOR@FactoryCallbackInterface@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@FactoryCallbackInterface@@QEAAPEAV1@XZ endp
 
 ; FactoryCallbackInterface::FactoryCallbackInterface();
 ??0FactoryCallbackInterface@@QEAA@XZ proc EXPORT
@@ -5965,8 +5965,8 @@ jmp function_pointers[981*8]
 jmp function_pointers[982*8]
 ??1GameData@@UEAA@XZ endp
 
-?_CONSTRUCTOR@GameData@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@GameData@@QEAAXXZ endp
+?_CONSTRUCTOR@GameData@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@GameData@@QEAAPEAV1@XZ endp
 
 ; GameData::GameData();
 ??0GameData@@QEAA@XZ proc EXPORT
@@ -6252,16 +6252,16 @@ jmp function_pointers[1037*8]
 jmp function_pointers[1038*8]
 ?addDeletedInstance@GameData@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
-?_CONSTRUCTOR@ObjectInstance@GameData@@QEAAXAEBV12@@Z proc EXPORT
-?_CONSTRUCTOR@ObjectInstance@GameData@@QEAAXAEBV12@@Z endp
+?_CONSTRUCTOR@ObjectInstance@GameData@@QEAAPEAV12@AEBV12@@Z proc EXPORT
+?_CONSTRUCTOR@ObjectInstance@GameData@@QEAAPEAV12@AEBV12@@Z endp
 
 ; GameData::ObjectInstance::ObjectInstance(const class GameData::ObjectInstance &);
 ??0ObjectInstance@GameData@@QEAA@AEBV01@@Z proc EXPORT
 jmp function_pointers[1039*8]
 ??0ObjectInstance@GameData@@QEAA@AEBV01@@Z endp
 
-?_CONSTRUCTOR@ObjectInstance@GameData@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@ObjectInstance@GameData@@QEAAXXZ endp
+?_CONSTRUCTOR@ObjectInstance@GameData@@QEAAPEAV12@XZ proc EXPORT
+?_CONSTRUCTOR@ObjectInstance@GameData@@QEAAPEAV12@XZ endp
 
 ; GameData::ObjectInstance::ObjectInstance();
 ??0ObjectInstance@GameData@@QEAA@XZ proc EXPORT
@@ -6298,8 +6298,8 @@ jmp function_pointers[1044*8]
 jmp function_pointers[1045*8]
 ?addNewData@GameDataContainer@@QEAAXAEBV?$lektor@PEAVGameData@@@@@Z endp
 
-?_CONSTRUCTOR@GameDataContainer@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@GameDataContainer@@QEAAXXZ endp
+?_CONSTRUCTOR@GameDataContainer@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@GameDataContainer@@QEAAPEAV1@XZ endp
 
 ; GameDataContainer::GameDataContainer();
 ??0GameDataContainer@@QEAA@XZ proc EXPORT
@@ -6454,24 +6454,24 @@ jmp function_pointers[1074*8]
 jmp function_pointers[1075*8]
 ?_addToKillList@GameDataContainer@@SAXPEAVGameData@@@Z endp
 
-?_CONSTRUCTOR@GameDataHeader@@QEAAXAEBV1@@Z proc EXPORT
-?_CONSTRUCTOR@GameDataHeader@@QEAAXAEBV1@@Z endp
+?_CONSTRUCTOR@GameDataHeader@@QEAAPEAV1@AEBV1@@Z proc EXPORT
+?_CONSTRUCTOR@GameDataHeader@@QEAAPEAV1@AEBV1@@Z endp
 
 ; GameDataHeader::GameDataHeader(const class GameDataHeader &);
 ??0GameDataHeader@@QEAA@AEBV0@@Z proc EXPORT
 jmp function_pointers[1076*8]
 ??0GameDataHeader@@QEAA@AEBV0@@Z endp
 
-?_CONSTRUCTOR@GameDataHeader@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z proc EXPORT
-?_CONSTRUCTOR@GameDataHeader@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z endp
+?_CONSTRUCTOR@GameDataHeader@@QEAAPEAV1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z proc EXPORT
+?_CONSTRUCTOR@GameDataHeader@@QEAAPEAV1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z endp
 
 ; GameDataHeader::GameDataHeader(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ??0GameDataHeader@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z proc EXPORT
 jmp function_pointers[1077*8]
 ??0GameDataHeader@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z endp
 
-?_CONSTRUCTOR@GameDataHeader@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@GameDataHeader@@QEAAXXZ endp
+?_CONSTRUCTOR@GameDataHeader@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@GameDataHeader@@QEAAPEAV1@XZ endp
 
 ; GameDataHeader::GameDataHeader();
 ??0GameDataHeader@@QEAA@XZ proc EXPORT
@@ -6491,8 +6491,8 @@ jmp function_pointers[1079*8]
 jmp function_pointers[1080*8]
 ??4GameDataHeader@@QEAAAEAV0@AEBV0@@Z endp
 
-?_CONSTRUCTOR@GameDataManager@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@GameDataManager@@QEAAXXZ endp
+?_CONSTRUCTOR@GameDataManager@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@GameDataManager@@QEAAPEAV1@XZ endp
 
 ; GameDataManager::GameDataManager();
 ??0GameDataManager@@QEAA@XZ proc EXPORT
@@ -6537,8 +6537,8 @@ jmp function_pointers[1087*8]
 jmp function_pointers[1088*8]
 ??1GameDataManager@@UEAA@XZ endp
 
-?_CONSTRUCTOR@GameLauncher@@QEAAXPEAVRoot@Ogre@@PEAVCWnd@@@Z proc EXPORT
-?_CONSTRUCTOR@GameLauncher@@QEAAXPEAVRoot@Ogre@@PEAVCWnd@@@Z endp
+?_CONSTRUCTOR@GameLauncher@@QEAAPEAV1@PEAVRoot@Ogre@@PEAVCWnd@@@Z proc EXPORT
+?_CONSTRUCTOR@GameLauncher@@QEAAPEAV1@PEAVRoot@Ogre@@PEAVCWnd@@@Z endp
 
 ; GameLauncher::GameLauncher(class Ogre::Root *, class CWnd *);
 ??0GameLauncher@@QEAA@PEAVRoot@Ogre@@PEAVCWnd@@@Z proc EXPORT
@@ -6632,8 +6632,8 @@ jmp function_pointers[1103*8]
 jmp function_pointers[1104*8]
 ?OnCbnSelchangeLauncherComboLanguage@GameLauncher@@QEAAXXZ endp
 
-?_CONSTRUCTOR@TabChangelog@GameLauncher@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@TabChangelog@GameLauncher@@QEAAXXZ endp
+?_CONSTRUCTOR@TabChangelog@GameLauncher@@QEAAPEAV12@XZ proc EXPORT
+?_CONSTRUCTOR@TabChangelog@GameLauncher@@QEAAPEAV12@XZ endp
 
 ; GameLauncher::TabChangelog::TabChangelog();
 ??0TabChangelog@GameLauncher@@QEAA@XZ proc EXPORT
@@ -6690,8 +6690,8 @@ jmp function_pointers[1111*8]
 jmp function_pointers[1112*8]
 ??1TabChangelog@GameLauncher@@UEAA@XZ endp
 
-?_CONSTRUCTOR@TabMods@GameLauncher@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@TabMods@GameLauncher@@QEAAXXZ endp
+?_CONSTRUCTOR@TabMods@GameLauncher@@QEAAPEAV12@XZ proc EXPORT
+?_CONSTRUCTOR@TabMods@GameLauncher@@QEAAPEAV12@XZ endp
 
 ; GameLauncher::TabMods::TabMods();
 ??0TabMods@GameLauncher@@QEAA@XZ proc EXPORT
@@ -6795,8 +6795,8 @@ jmp function_pointers[1129*8]
 jmp function_pointers[1130*8]
 ??1TabMods@GameLauncher@@UEAA@XZ endp
 
-?_CONSTRUCTOR@TabVideo@GameLauncher@@QEAAXPEAVRoot@Ogre@@@Z proc EXPORT
-?_CONSTRUCTOR@TabVideo@GameLauncher@@QEAAXPEAVRoot@Ogre@@@Z endp
+?_CONSTRUCTOR@TabVideo@GameLauncher@@QEAAPEAV12@PEAVRoot@Ogre@@@Z proc EXPORT
+?_CONSTRUCTOR@TabVideo@GameLauncher@@QEAAPEAV12@PEAVRoot@Ogre@@@Z endp
 
 ; GameLauncher::TabVideo::TabVideo(class Ogre::Root *);
 ??0TabVideo@GameLauncher@@QEAA@PEAVRoot@Ogre@@@Z proc EXPORT
@@ -6903,16 +6903,16 @@ jmp function_pointers[1147*8]
 jmp function_pointers[1148*8]
 ??1TabVideo@GameLauncher@@UEAA@XZ endp
 
-?_CONSTRUCTOR@VideoDevice@GameLauncher@@QEAAXAEBV12@@Z proc EXPORT
-?_CONSTRUCTOR@VideoDevice@GameLauncher@@QEAAXAEBV12@@Z endp
+?_CONSTRUCTOR@VideoDevice@GameLauncher@@QEAAPEAV12@AEBV12@@Z proc EXPORT
+?_CONSTRUCTOR@VideoDevice@GameLauncher@@QEAAPEAV12@AEBV12@@Z endp
 
 ; GameLauncher::VideoDevice::VideoDevice(const class GameLauncher::VideoDevice &);
 ??0VideoDevice@GameLauncher@@QEAA@AEBV01@@Z proc EXPORT
 jmp function_pointers[1149*8]
 ??0VideoDevice@GameLauncher@@QEAA@AEBV01@@Z endp
 
-?_CONSTRUCTOR@VideoDevice@GameLauncher@@QEAAXW4RendererType@2@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-?_CONSTRUCTOR@VideoDevice@GameLauncher@@QEAAXW4RendererType@2@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
+?_CONSTRUCTOR@VideoDevice@GameLauncher@@QEAAPEAV12@W4RendererType@2@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
+?_CONSTRUCTOR@VideoDevice@GameLauncher@@QEAAPEAV12@W4RendererType@2@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; GameLauncher::VideoDevice::VideoDevice(enum GameLauncher::RendererType, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ??0VideoDevice@GameLauncher@@QEAA@W4RendererType@1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
@@ -6932,8 +6932,8 @@ jmp function_pointers[1151*8]
 jmp function_pointers[1152*8]
 ??4VideoDevice@GameLauncher@@QEAAAEAV01@AEBV01@@Z endp
 
-?_CONSTRUCTOR@VideoRenderer@GameLauncher@@QEAAXAEBV12@@Z proc EXPORT
-?_CONSTRUCTOR@VideoRenderer@GameLauncher@@QEAAXAEBV12@@Z endp
+?_CONSTRUCTOR@VideoRenderer@GameLauncher@@QEAAPEAV12@AEBV12@@Z proc EXPORT
+?_CONSTRUCTOR@VideoRenderer@GameLauncher@@QEAAPEAV12@AEBV12@@Z endp
 
 ; GameLauncher::VideoRenderer::VideoRenderer(const class GameLauncher::VideoRenderer &);
 ??0VideoRenderer@GameLauncher@@QEAA@AEBV01@@Z proc EXPORT
@@ -7023,24 +7023,24 @@ jmp function_pointers[1166*8]
 jmp function_pointers[1167*8]
 ??4VideoRenderer@GameLauncher@@QEAAAEAV01@AEBV01@@Z endp
 
-?_CONSTRUCTOR@GameSaveState@@QEAAXAEBV1@@Z proc EXPORT
-?_CONSTRUCTOR@GameSaveState@@QEAAXAEBV1@@Z endp
+?_CONSTRUCTOR@GameSaveState@@QEAAPEAV1@AEBV1@@Z proc EXPORT
+?_CONSTRUCTOR@GameSaveState@@QEAAPEAV1@AEBV1@@Z endp
 
 ; GameSaveState::GameSaveState(const class GameSaveState &);
 ??0GameSaveState@@QEAA@AEBV0@@Z proc EXPORT
 jmp function_pointers[1168*8]
 ??0GameSaveState@@QEAA@AEBV0@@Z endp
 
-?_CONSTRUCTOR@GameSaveState@@QEAAXPEAVGameDataContainer@@PEAVGameData@@1AEBVPosRotPair@@PEAV4@PEAVInstanceID@@@Z proc EXPORT
-?_CONSTRUCTOR@GameSaveState@@QEAAXPEAVGameDataContainer@@PEAVGameData@@1AEBVPosRotPair@@PEAV4@PEAVInstanceID@@@Z endp
+?_CONSTRUCTOR@GameSaveState@@QEAAPEAV1@PEAVGameDataContainer@@PEAVGameData@@1AEBVPosRotPair@@PEAV4@PEAVInstanceID@@@Z proc EXPORT
+?_CONSTRUCTOR@GameSaveState@@QEAAPEAV1@PEAVGameDataContainer@@PEAVGameData@@1AEBVPosRotPair@@PEAV4@PEAVInstanceID@@@Z endp
 
 ; GameSaveState::GameSaveState(class GameDataContainer *, class GameData *, class GameData *, const class PosRotPair &, class PosRotPair *, class InstanceID *);
 ??0GameSaveState@@QEAA@PEAVGameDataContainer@@PEAVGameData@@1AEBVPosRotPair@@PEAV3@PEAVInstanceID@@@Z proc EXPORT
 jmp function_pointers[1169*8]
 ??0GameSaveState@@QEAA@PEAVGameDataContainer@@PEAVGameData@@1AEBVPosRotPair@@PEAV3@PEAVInstanceID@@@Z endp
 
-?_CONSTRUCTOR@GameSaveState@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@GameSaveState@@QEAAXXZ endp
+?_CONSTRUCTOR@GameSaveState@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@GameSaveState@@QEAAPEAV1@XZ endp
 
 ; GameSaveState::GameSaveState();
 ??0GameSaveState@@QEAA@XZ proc EXPORT
@@ -7137,8 +7137,8 @@ jmp function_pointers[1186*8]
 jmp function_pointers[1187*8]
 ?startUpThreads@GameWorld@@QEAA_NXZ endp
 
-?_CONSTRUCTOR@GameWorld@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@GameWorld@@QEAAXXZ endp
+?_CONSTRUCTOR@GameWorld@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@GameWorld@@QEAAPEAV1@XZ endp
 
 ; GameWorld::GameWorld();
 ??0GameWorld@@QEAA@XZ proc EXPORT
@@ -7596,16 +7596,16 @@ jmp function_pointers[1276*8]
 jmp function_pointers[1277*8]
 ?getLengthOfHourInRealSeconds@GameWorld@@QEAAMXZ endp
 
-?_CONSTRUCTOR@SysMessage@GameWorld@@QEAAXAEBV12@@Z proc EXPORT
-?_CONSTRUCTOR@SysMessage@GameWorld@@QEAAXAEBV12@@Z endp
+?_CONSTRUCTOR@SysMessage@GameWorld@@QEAAPEAV12@AEBV12@@Z proc EXPORT
+?_CONSTRUCTOR@SysMessage@GameWorld@@QEAAPEAV12@AEBV12@@Z endp
 
 ; GameWorld::SysMessage::SysMessage(const class GameWorld::SysMessage &);
 ??0SysMessage@GameWorld@@QEAA@AEBV01@@Z proc EXPORT
 jmp function_pointers[1278*8]
 ??0SysMessage@GameWorld@@QEAA@AEBV01@@Z endp
 
-?_CONSTRUCTOR@SysMessage@GameWorld@@QEAAXW4SysMessageEnum@2@AEBVhand@@1_NMPEAX@Z proc EXPORT
-?_CONSTRUCTOR@SysMessage@GameWorld@@QEAAXW4SysMessageEnum@2@AEBVhand@@1_NMPEAX@Z endp
+?_CONSTRUCTOR@SysMessage@GameWorld@@QEAAPEAV12@W4SysMessageEnum@2@AEBVhand@@1_NMPEAX@Z proc EXPORT
+?_CONSTRUCTOR@SysMessage@GameWorld@@QEAAPEAV12@W4SysMessageEnum@2@AEBVhand@@1_NMPEAX@Z endp
 
 ; GameWorld::SysMessage::SysMessage(enum GameWorld::SysMessageEnum, const class hand &, const class hand &, bool, float, void *);
 ??0SysMessage@GameWorld@@QEAA@W4SysMessageEnum@1@AEBVhand@@1_NMPEAX@Z proc EXPORT
@@ -7617,8 +7617,8 @@ jmp function_pointers[1279*8]
 jmp function_pointers[1280*8]
 ??8SysMessage@GameWorld@@QEBA_NAEBV01@@Z endp
 
-?_CONSTRUCTOR@Gear@@QEAAXPEAVGameData@@00Vhand@@HPEAVFaction@@@Z proc EXPORT
-?_CONSTRUCTOR@Gear@@QEAAXPEAVGameData@@00Vhand@@HPEAVFaction@@@Z endp
+?_CONSTRUCTOR@Gear@@QEAAPEAV1@PEAVGameData@@00Vhand@@HPEAVFaction@@@Z proc EXPORT
+?_CONSTRUCTOR@Gear@@QEAAPEAV1@PEAVGameData@@00Vhand@@HPEAVFaction@@@Z endp
 
 ; Gear::Gear(class GameData *, class GameData *, class GameData *, class hand, int, class Faction *);
 ??0Gear@@QEAA@PEAVGameData@@00Vhand@@HPEAVFaction@@@Z proc EXPORT
@@ -7699,8 +7699,8 @@ jmp function_pointers[1290*8]
 jmp function_pointers[1291*8]
 ?setup@GlobalConstants@@QEAAXPEAVGameData@@@Z endp
 
-?_CONSTRUCTOR@GUIWindow@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@GUIWindow@@QEAAXXZ endp
+?_CONSTRUCTOR@GUIWindow@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@GUIWindow@@QEAAPEAV1@XZ endp
 
 ; GUIWindow::GUIWindow();
 ??0GUIWindow@@QEAA@XZ proc EXPORT
@@ -7808,48 +7808,48 @@ jmp function_pointers[1304*8]
 jmp function_pointers[1305*8]
 ?resize@GUIWindow@@UEAAXHH@Z endp
 
-?_CONSTRUCTOR@hand@@QEAAXPEAVGameData@@W4itemType@@@Z proc EXPORT
-?_CONSTRUCTOR@hand@@QEAAXPEAVGameData@@W4itemType@@@Z endp
+?_CONSTRUCTOR@hand@@QEAAPEAV1@PEAVGameData@@W4itemType@@@Z proc EXPORT
+?_CONSTRUCTOR@hand@@QEAAPEAV1@PEAVGameData@@W4itemType@@@Z endp
 
 ; hand::hand(class GameData *, enum itemType);
 ??0hand@@QEAA@PEAVGameData@@W4itemType@@@Z proc EXPORT
 jmp function_pointers[1306*8]
 ??0hand@@QEAA@PEAVGameData@@W4itemType@@@Z endp
 
-?_CONSTRUCTOR@hand@@QEAAXPEAVRootObjectBase@@@Z proc EXPORT
-?_CONSTRUCTOR@hand@@QEAAXPEAVRootObjectBase@@@Z endp
+?_CONSTRUCTOR@hand@@QEAAPEAV1@PEAVRootObjectBase@@@Z proc EXPORT
+?_CONSTRUCTOR@hand@@QEAAPEAV1@PEAVRootObjectBase@@@Z endp
 
 ; hand::hand(class RootObjectBase *);
 ??0hand@@QEAA@PEAVRootObjectBase@@@Z proc EXPORT
 jmp function_pointers[1307*8]
 ??0hand@@QEAA@PEAVRootObjectBase@@@Z endp
 
-?_CONSTRUCTOR@hand@@QEAAXH@Z proc EXPORT
-?_CONSTRUCTOR@hand@@QEAAXH@Z endp
+?_CONSTRUCTOR@hand@@QEAAPEAV1@H@Z proc EXPORT
+?_CONSTRUCTOR@hand@@QEAAPEAV1@H@Z endp
 
 ; hand::hand(const int);
 ??0hand@@QEAA@H@Z proc EXPORT
 jmp function_pointers[1308*8]
 ??0hand@@QEAA@H@Z endp
 
-?_CONSTRUCTOR@hand@@QEAAXAEBV1@@Z proc EXPORT
-?_CONSTRUCTOR@hand@@QEAAXAEBV1@@Z endp
+?_CONSTRUCTOR@hand@@QEAAPEAV1@AEBV1@@Z proc EXPORT
+?_CONSTRUCTOR@hand@@QEAAPEAV1@AEBV1@@Z endp
 
 ; hand::hand(const class hand &);
 ??0hand@@QEAA@AEBV0@@Z proc EXPORT
 jmp function_pointers[1309*8]
 ??0hand@@QEAA@AEBV0@@Z endp
 
-?_CONSTRUCTOR@hand@@QEAAXIIW4itemType@@II@Z proc EXPORT
-?_CONSTRUCTOR@hand@@QEAAXIIW4itemType@@II@Z endp
+?_CONSTRUCTOR@hand@@QEAAPEAV1@IIW4itemType@@II@Z proc EXPORT
+?_CONSTRUCTOR@hand@@QEAAPEAV1@IIW4itemType@@II@Z endp
 
 ; hand::hand(unsigned int, unsigned int, enum itemType, unsigned int, unsigned int);
 ??0hand@@QEAA@IIW4itemType@@II@Z proc EXPORT
 jmp function_pointers[1310*8]
 ??0hand@@QEAA@IIW4itemType@@II@Z endp
 
-?_CONSTRUCTOR@hand@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@hand@@QEAAXXZ endp
+?_CONSTRUCTOR@hand@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@hand@@QEAAPEAV1@XZ endp
 
 ; hand::hand();
 ??0hand@@QEAA@XZ proc EXPORT
@@ -8025,8 +8025,8 @@ jmp function_pointers[1342*8]
 jmp function_pointers[1343*8]
 ?clearMessages@InputHandler@@QEAAXXZ endp
 
-?_CONSTRUCTOR@InputHandler@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@InputHandler@@QEAAXXZ endp
+?_CONSTRUCTOR@InputHandler@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@InputHandler@@QEAAPEAV1@XZ endp
 
 ; InputHandler::InputHandler();
 ??0InputHandler@@QEAA@XZ proc EXPORT
@@ -8131,16 +8131,16 @@ jmp function_pointers[1362*8]
 jmp function_pointers[1363*8]
 ??1InputHandler@@QEAA@XZ endp
 
-?_CONSTRUCTOR@Command@InputHandler@@QEAAXAEBU12@@Z proc EXPORT
-?_CONSTRUCTOR@Command@InputHandler@@QEAAXAEBU12@@Z endp
+?_CONSTRUCTOR@Command@InputHandler@@QEAAPEAV12@AEBU12@@Z proc EXPORT
+?_CONSTRUCTOR@Command@InputHandler@@QEAAPEAV12@AEBU12@@Z endp
 
 ; InputHandler::Command::Command(const struct InputHandler::Command &);
 ??0Command@InputHandler@@QEAA@AEBU01@@Z proc EXPORT
 jmp function_pointers[1364*8]
 ??0Command@InputHandler@@QEAA@AEBU01@@Z endp
 
-?_CONSTRUCTOR@Command@InputHandler@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@Command@InputHandler@@QEAAXXZ endp
+?_CONSTRUCTOR@Command@InputHandler@@QEAAPEAV12@XZ proc EXPORT
+?_CONSTRUCTOR@Command@InputHandler@@QEAAPEAV12@XZ endp
 
 ; InputHandler::Command::Command();
 ??0Command@InputHandler@@QEAA@XZ proc EXPORT
@@ -8170,24 +8170,24 @@ jmp function_pointers[1368*8]
 jmp function_pointers[1369*8]
 ?getModIndex@InstanceID@@SAFAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
-?_CONSTRUCTOR@InstanceID@@QEAAXAEBV1@@Z proc EXPORT
-?_CONSTRUCTOR@InstanceID@@QEAAXAEBV1@@Z endp
+?_CONSTRUCTOR@InstanceID@@QEAAPEAV1@AEBV1@@Z proc EXPORT
+?_CONSTRUCTOR@InstanceID@@QEAAPEAV1@AEBV1@@Z endp
 
 ; InstanceID::InstanceID(const class InstanceID &);
 ??0InstanceID@@QEAA@AEBV0@@Z proc EXPORT
 jmp function_pointers[1370*8]
 ??0InstanceID@@QEAA@AEBV0@@Z endp
 
-?_CONSTRUCTOR@InstanceID@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAVObjectInstance@GameData@@@Z proc EXPORT
-?_CONSTRUCTOR@InstanceID@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAVObjectInstance@GameData@@@Z endp
+?_CONSTRUCTOR@InstanceID@@QEAAPEAV1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAVObjectInstance@GameData@@@Z proc EXPORT
+?_CONSTRUCTOR@InstanceID@@QEAAPEAV1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAVObjectInstance@GameData@@@Z endp
 
 ; InstanceID::InstanceID(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, class GameData::ObjectInstance &);
 ??0InstanceID@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAVObjectInstance@GameData@@@Z proc EXPORT
 jmp function_pointers[1371*8]
 ??0InstanceID@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAVObjectInstance@GameData@@@Z endp
 
-?_CONSTRUCTOR@InstanceID@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@InstanceID@@QEAAXXZ endp
+?_CONSTRUCTOR@InstanceID@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@InstanceID@@QEAAPEAV1@XZ endp
 
 ; InstanceID::InstanceID();
 ??0InstanceID@@QEAA@XZ proc EXPORT
@@ -8252,8 +8252,8 @@ jmp function_pointers[1382*8]
 jmp function_pointers[1383*8]
 ??4InstanceID@@QEAAAEAV0@AEBV0@@Z endp
 
-?_CONSTRUCTOR@Inventory@@QEAAXPEAVRootObject@@@Z proc EXPORT
-?_CONSTRUCTOR@Inventory@@QEAAXPEAVRootObject@@@Z endp
+?_CONSTRUCTOR@Inventory@@QEAAPEAV1@PEAVRootObject@@@Z proc EXPORT
+?_CONSTRUCTOR@Inventory@@QEAAPEAV1@PEAVRootObject@@@Z endp
 
 ; Inventory::Inventory(class RootObject *);
 ??0Inventory@@QEAA@PEAVRootObject@@@Z proc EXPORT
@@ -8692,8 +8692,8 @@ jmp function_pointers[1461*8]
 jmp function_pointers[1462*8]
 ?remember@HasRoomCache@Inventory@@QEAAXPEAVGameData@@_N@Z endp
 
-?_CONSTRUCTOR@HasRoomCache@Inventory@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@HasRoomCache@Inventory@@QEAAXXZ endp
+?_CONSTRUCTOR@HasRoomCache@Inventory@@QEAAPEAV12@XZ proc EXPORT
+?_CONSTRUCTOR@HasRoomCache@Inventory@@QEAAPEAV12@XZ endp
 
 ; Inventory::HasRoomCache::HasRoomCache();
 ??0HasRoomCache@Inventory@@QEAA@XZ proc EXPORT
@@ -8872,8 +8872,8 @@ jmp function_pointers[1488*8]
 jmp function_pointers[1489*8]
 ?isStolen@InventoryItemBase@@QEBA_N_N@Z endp
 
-?_CONSTRUCTOR@InventoryItemBase@@QEAAXPEAVGameData@@Vhand@@00@Z proc EXPORT
-?_CONSTRUCTOR@InventoryItemBase@@QEAAXPEAVGameData@@Vhand@@00@Z endp
+?_CONSTRUCTOR@InventoryItemBase@@QEAAPEAV1@PEAVGameData@@Vhand@@00@Z proc EXPORT
+?_CONSTRUCTOR@InventoryItemBase@@QEAAPEAV1@PEAVGameData@@Vhand@@00@Z endp
 
 ; InventoryItemBase::InventoryItemBase(class GameData *, class hand, class GameData *, class GameData *);
 ??0InventoryItemBase@@QEAA@PEAVGameData@@Vhand@@00@Z proc EXPORT
@@ -8898,8 +8898,8 @@ jmp function_pointers[1492*8]
 jmp function_pointers[1493*8]
 ?merchantPriceMod@InventoryItemBase@@QEBAMXZ endp
 
-?_CONSTRUCTOR@InventorySection@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HHW4AttachSlot@@PEAVInventory@@_N33@Z proc EXPORT
-?_CONSTRUCTOR@InventorySection@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HHW4AttachSlot@@PEAVInventory@@_N33@Z endp
+?_CONSTRUCTOR@InventorySection@@QEAAPEAV1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HHW4AttachSlot@@PEAVInventory@@_N33@Z proc EXPORT
+?_CONSTRUCTOR@InventorySection@@QEAAPEAV1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HHW4AttachSlot@@PEAVInventory@@_N33@Z endp
 
 ; InventorySection::InventorySection(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, int, int, enum AttachSlot, class Inventory *, bool, bool, bool);
 ??0InventorySection@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HHW4AttachSlot@@PEAVInventory@@_N33@Z proc EXPORT
@@ -9471,8 +9471,8 @@ jmp function_pointers[1582*8]
 jmp function_pointers[1583*8]
 ?persistantOwnerExists@Item@@QEBA_NXZ endp
 
-?_CONSTRUCTOR@Item@@QEAAXPEAVGameData@@00Vhand@@@Z proc EXPORT
-?_CONSTRUCTOR@Item@@QEAAXPEAVGameData@@00Vhand@@@Z endp
+?_CONSTRUCTOR@Item@@QEAAPEAV1@PEAVGameData@@00Vhand@@@Z proc EXPORT
+?_CONSTRUCTOR@Item@@QEAAPEAV1@PEAVGameData@@00Vhand@@@Z endp
 
 ; Item::Item(class GameData *, class GameData *, class GameData *, class hand);
 ??0Item@@QEAA@PEAVGameData@@00Vhand@@@Z proc EXPORT
@@ -9524,16 +9524,16 @@ jmp function_pointers[1589*8]
 jmp function_pointers[1590*8]
 ?itemEntityCreated@Item@@UEAAXPEAVEntity@Ogre@@@Z endp
 
-?_CONSTRUCTOR@iVector2@@QEAAXHH@Z proc EXPORT
-?_CONSTRUCTOR@iVector2@@QEAAXHH@Z endp
+?_CONSTRUCTOR@iVector2@@QEAAPEAV1@HH@Z proc EXPORT
+?_CONSTRUCTOR@iVector2@@QEAAPEAV1@HH@Z endp
 
 ; iVector2::iVector2(int, int);
 ??0iVector2@@QEAA@HH@Z proc EXPORT
 jmp function_pointers[1591*8]
 ??0iVector2@@QEAA@HH@Z endp
 
-?_CONSTRUCTOR@iVector2@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@iVector2@@QEAAXXZ endp
+?_CONSTRUCTOR@iVector2@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@iVector2@@QEAAPEAV1@XZ endp
 
 ; iVector2::iVector2();
 ??0iVector2@@QEAA@XZ proc EXPORT
@@ -9570,8 +9570,8 @@ jmp function_pointers[1597*8]
 jmp function_pointers[1598*8]
 ??HiVector2@@QEBA?AV0@AEBV0@@Z endp
 
-?_CONSTRUCTOR@LockedArmour@@QEAAXPEAVGameData@@0Vhand@@PEAVFaction@@H@Z proc EXPORT
-?_CONSTRUCTOR@LockedArmour@@QEAAXPEAVGameData@@0Vhand@@PEAVFaction@@H@Z endp
+?_CONSTRUCTOR@LockedArmour@@QEAAPEAV1@PEAVGameData@@0Vhand@@PEAVFaction@@H@Z proc EXPORT
+?_CONSTRUCTOR@LockedArmour@@QEAAPEAV1@PEAVGameData@@0Vhand@@PEAVFaction@@H@Z endp
 
 ; LockedArmour::LockedArmour(class GameData *, class GameData *, class hand, class Faction *, int);
 ??0LockedArmour@@QEAA@PEAVGameData@@0Vhand@@PEAVFaction@@H@Z proc EXPORT
@@ -9664,8 +9664,8 @@ jmp function_pointers[1611*8]
 jmp function_pointers[1612*8]
 ?precalculateFirstAidNeedScore@MedicalSystem@@QEAAXXZ endp
 
-?_CONSTRUCTOR@MedicalSystem@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@MedicalSystem@@QEAAXXZ endp
+?_CONSTRUCTOR@MedicalSystem@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@MedicalSystem@@QEAAPEAV1@XZ endp
 
 ; MedicalSystem::MedicalSystem();
 ??0MedicalSystem@@QEAA@XZ proc EXPORT
@@ -10211,16 +10211,16 @@ jmp function_pointers[1718*8]
 jmp function_pointers[1719*8]
 ?healthAsPercent@HealthPartStatus@MedicalSystem@@QEAAMM@Z endp
 
-?_CONSTRUCTOR@ModInfo@@QEAAXAEBV1@@Z proc EXPORT
-?_CONSTRUCTOR@ModInfo@@QEAAXAEBV1@@Z endp
+?_CONSTRUCTOR@ModInfo@@QEAAPEAV1@AEBV1@@Z proc EXPORT
+?_CONSTRUCTOR@ModInfo@@QEAAPEAV1@AEBV1@@Z endp
 
 ; ModInfo::ModInfo(const class ModInfo &);
 ??0ModInfo@@QEAA@AEBV0@@Z proc EXPORT
 jmp function_pointers[1720*8]
 ??0ModInfo@@QEAA@AEBV0@@Z endp
 
-?_CONSTRUCTOR@ModInfo@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@ModInfo@@QEAAXXZ endp
+?_CONSTRUCTOR@ModInfo@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@ModInfo@@QEAAPEAV1@XZ endp
 
 ; ModInfo::ModInfo();
 ??0ModInfo@@QEAA@XZ proc EXPORT
@@ -10253,48 +10253,48 @@ jmp function_pointers[1724*8]
 jmp function_pointers[1725*8]
 ??1NxUserTriggerReport@@UEAA@XZ endp
 
-?_CONSTRUCTOR@NxUserTriggerReport@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@NxUserTriggerReport@@QEAAXXZ endp
+?_CONSTRUCTOR@NxUserTriggerReport@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@NxUserTriggerReport@@QEAAPEAV1@XZ endp
 
 ; NxUserTriggerReport::NxUserTriggerReport();
 ??0NxUserTriggerReport@@QEAA@XZ proc EXPORT
 jmp function_pointers[1726*8]
 ??0NxUserTriggerReport@@QEAA@XZ endp
 
-?_CONSTRUCTOR@NxVec3@@QEAAXAEBV1@@Z proc EXPORT
-?_CONSTRUCTOR@NxVec3@@QEAAXAEBV1@@Z endp
+?_CONSTRUCTOR@NxVec3@@QEAAPEAV1@AEBV1@@Z proc EXPORT
+?_CONSTRUCTOR@NxVec3@@QEAAPEAV1@AEBV1@@Z endp
 
 ; NxVec3::NxVec3(const class NxVec3 &);
 ??0NxVec3@@QEAA@AEBV0@@Z proc EXPORT
 jmp function_pointers[1727*8]
 ??0NxVec3@@QEAA@AEBV0@@Z endp
 
-?_CONSTRUCTOR@NxVec3@@QEAAXQEBM@Z proc EXPORT
-?_CONSTRUCTOR@NxVec3@@QEAAXQEBM@Z endp
+?_CONSTRUCTOR@NxVec3@@QEAAPEAV1@QEBM@Z proc EXPORT
+?_CONSTRUCTOR@NxVec3@@QEAAPEAV1@QEBM@Z endp
 
 ; NxVec3::NxVec3(const float *);
 ??0NxVec3@@QEAA@QEBM@Z proc EXPORT
 jmp function_pointers[1728*8]
 ??0NxVec3@@QEAA@QEBM@Z endp
 
-?_CONSTRUCTOR@NxVec3@@QEAAXMMM@Z proc EXPORT
-?_CONSTRUCTOR@NxVec3@@QEAAXMMM@Z endp
+?_CONSTRUCTOR@NxVec3@@QEAAPEAV1@MMM@Z proc EXPORT
+?_CONSTRUCTOR@NxVec3@@QEAAPEAV1@MMM@Z endp
 
 ; NxVec3::NxVec3(float, float, float);
 ??0NxVec3@@QEAA@MMM@Z proc EXPORT
 jmp function_pointers[1729*8]
 ??0NxVec3@@QEAA@MMM@Z endp
 
-?_CONSTRUCTOR@NxVec3@@QEAAXM@Z proc EXPORT
-?_CONSTRUCTOR@NxVec3@@QEAAXM@Z endp
+?_CONSTRUCTOR@NxVec3@@QEAAPEAV1@M@Z proc EXPORT
+?_CONSTRUCTOR@NxVec3@@QEAAPEAV1@M@Z endp
 
 ; NxVec3::NxVec3(float);
 ??0NxVec3@@QEAA@M@Z proc EXPORT
 jmp function_pointers[1730*8]
 ??0NxVec3@@QEAA@M@Z endp
 
-?_CONSTRUCTOR@NxVec3@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@NxVec3@@QEAAXXZ endp
+?_CONSTRUCTOR@NxVec3@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@NxVec3@@QEAAPEAV1@XZ endp
 
 ; NxVec3::NxVec3();
 ??0NxVec3@@QEAA@XZ proc EXPORT
@@ -10431,8 +10431,8 @@ jmp function_pointers[1756*8]
 jmp function_pointers[1757*8]
 ??TNxVec3@@QEBA?AV0@AEBV0@@Z endp
 
-?_CONSTRUCTOR@OptionsHolder@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@OptionsHolder@@QEAAXXZ endp
+?_CONSTRUCTOR@OptionsHolder@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@OptionsHolder@@QEAAPEAV1@XZ endp
 
 ; OptionsHolder::OptionsHolder();
 ??0OptionsHolder@@QEAA@XZ proc EXPORT
@@ -10467,8 +10467,8 @@ jmp function_pointers[1762*8]
 jmp function_pointers[1763*8]
 ??1OptionsHolder@@QEAA@XZ endp
 
-?_CONSTRUCTOR@Ownerships@@QEAAXPEAVFaction@@PEAVPlatoon@@@Z proc EXPORT
-?_CONSTRUCTOR@Ownerships@@QEAAXPEAVFaction@@PEAVPlatoon@@@Z endp
+?_CONSTRUCTOR@Ownerships@@QEAAPEAV1@PEAVFaction@@PEAVPlatoon@@@Z proc EXPORT
+?_CONSTRUCTOR@Ownerships@@QEAAPEAV1@PEAVFaction@@PEAVPlatoon@@@Z endp
 
 ; Ownerships::Ownerships(class Faction *, class Platoon *);
 ??0Ownerships@@QEAA@PEAVFaction@@PEAVPlatoon@@@Z proc EXPORT
@@ -10609,8 +10609,8 @@ jmp function_pointers[1788*8]
 jmp function_pointers[1789*8]
 ??1Ownerships@@QEAA@XZ endp
 
-?_CONSTRUCTOR@PhysicalEntity@@QEAAXPEAVMovableObject@Ogre@@DPEAVGameData@@1_N@Z proc EXPORT
-?_CONSTRUCTOR@PhysicalEntity@@QEAAXPEAVMovableObject@Ogre@@DPEAVGameData@@1_N@Z endp
+?_CONSTRUCTOR@PhysicalEntity@@QEAAPEAV1@PEAVMovableObject@Ogre@@DPEAVGameData@@1_N@Z proc EXPORT
+?_CONSTRUCTOR@PhysicalEntity@@QEAAPEAV1@PEAVMovableObject@Ogre@@DPEAVGameData@@1_N@Z endp
 
 ; PhysicalEntity::PhysicalEntity(class Ogre::MovableObject *, char, class GameData *, class GameData *, bool);
 ??0PhysicalEntity@@QEAA@PEAVMovableObject@Ogre@@DPEAVGameData@@1_N@Z proc EXPORT
@@ -10625,8 +10625,8 @@ jmp function_pointers[1790*8]
 jmp function_pointers[1791*8]
 ??1PhysicalEntity@@UEAA@XZ endp
 
-?_CONSTRUCTOR@PhysicsActual@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@PhysicsActual@@QEAAXXZ endp
+?_CONSTRUCTOR@PhysicsActual@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@PhysicsActual@@QEAAPEAV1@XZ endp
 
 ; PhysicsActual::PhysicsActual();
 ??0PhysicsActual@@QEAA@XZ proc EXPORT
@@ -10755,8 +10755,8 @@ jmp function_pointers[1813*8]
 jmp function_pointers[1814*8]
 ?updateFrameEndMT@TriggerCallback@PhysicsActual@@QEAAXXZ endp
 
-?_CONSTRUCTOR@TriggerCallback@PhysicsActual@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@TriggerCallback@PhysicsActual@@QEAAXXZ endp
+?_CONSTRUCTOR@TriggerCallback@PhysicsActual@@QEAAPEAV12@XZ proc EXPORT
+?_CONSTRUCTOR@TriggerCallback@PhysicsActual@@QEAAPEAV12@XZ endp
 
 ; PhysicsActual::TriggerCallback::TriggerCallback();
 ??0TriggerCallback@PhysicsActual@@QEAA@XZ proc EXPORT
@@ -10819,16 +10819,16 @@ jmp function_pointers[1824*8]
 jmp function_pointers[1825*8]
 ?updateAimingType@PhysicsCollection@@QEAAMMAEBVVector3@Ogre@@@Z endp
 
-?_CONSTRUCTOR@PhysicsCollection@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@PhysicsCollection@@QEAAXXZ endp
+?_CONSTRUCTOR@PhysicsCollection@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@PhysicsCollection@@QEAAPEAV1@XZ endp
 
 ; PhysicsCollection::PhysicsCollection();
 ??0PhysicsCollection@@QEAA@XZ proc EXPORT
 jmp function_pointers[1826*8]
 ??0PhysicsCollection@@QEAA@XZ endp
 
-?_CONSTRUCTOR@LightEnt@PhysicsCollection@@QEAAXPEAVGameData@@_NPEAVSceneNode@Ogre@@@Z proc EXPORT
-?_CONSTRUCTOR@LightEnt@PhysicsCollection@@QEAAXPEAVGameData@@_NPEAVSceneNode@Ogre@@@Z endp
+?_CONSTRUCTOR@LightEnt@PhysicsCollection@@QEAAPEAV12@PEAVGameData@@_NPEAVSceneNode@Ogre@@@Z proc EXPORT
+?_CONSTRUCTOR@LightEnt@PhysicsCollection@@QEAAPEAV12@PEAVGameData@@_NPEAVSceneNode@Ogre@@@Z endp
 
 ; PhysicsCollection::LightEnt::LightEnt(class GameData *, bool, class Ogre::SceneNode *);
 ??0LightEnt@PhysicsCollection@@QEAA@PEAVGameData@@_NPEAVSceneNode@Ogre@@@Z proc EXPORT
@@ -10853,8 +10853,8 @@ jmp function_pointers[1829*8]
 jmp function_pointers[1830*8]
 ?setFloor@LightEnt@PhysicsCollection@@QEAAXH@Z endp
 
-?_CONSTRUCTOR@RotatingEnt@PhysicsCollection@@QEAAXPEAVMovableObject@Ogre@@HPEAVGameData@@1@Z proc EXPORT
-?_CONSTRUCTOR@RotatingEnt@PhysicsCollection@@QEAAXPEAVMovableObject@Ogre@@HPEAVGameData@@1@Z endp
+?_CONSTRUCTOR@RotatingEnt@PhysicsCollection@@QEAAPEAV12@PEAVMovableObject@Ogre@@HPEAVGameData@@1@Z proc EXPORT
+?_CONSTRUCTOR@RotatingEnt@PhysicsCollection@@QEAAPEAV12@PEAVMovableObject@Ogre@@HPEAVGameData@@1@Z endp
 
 ; PhysicsCollection::RotatingEnt::RotatingEnt(class Ogre::MovableObject *, int, class GameData *, class GameData *);
 ??0RotatingEnt@PhysicsCollection@@QEAA@PEAVMovableObject@Ogre@@HPEAVGameData@@1@Z proc EXPORT
@@ -10906,8 +10906,8 @@ jmp function_pointers[1836*8]
 jmp function_pointers[1837*8]
 ?weatherUpdated@RotatingEnt@PhysicsCollection@@UEAAXPEAVWeatherInstance@@_N@Z endp
 
-?_CONSTRUCTOR@StaticEnt@PhysicsCollection@@QEAAXPEAVMovableObject@Ogre@@HPEAVGameData@@1@Z proc EXPORT
-?_CONSTRUCTOR@StaticEnt@PhysicsCollection@@QEAAXPEAVMovableObject@Ogre@@HPEAVGameData@@1@Z endp
+?_CONSTRUCTOR@StaticEnt@PhysicsCollection@@QEAAPEAV12@PEAVMovableObject@Ogre@@HPEAVGameData@@1@Z proc EXPORT
+?_CONSTRUCTOR@StaticEnt@PhysicsCollection@@QEAAPEAV12@PEAVMovableObject@Ogre@@HPEAVGameData@@1@Z endp
 
 ; PhysicsCollection::StaticEnt::StaticEnt(class Ogre::MovableObject *, int, class GameData *, class GameData *);
 ??0StaticEnt@PhysicsCollection@@QEAA@PEAVMovableObject@Ogre@@HPEAVGameData@@1@Z proc EXPORT
@@ -10946,8 +10946,8 @@ jmp function_pointers[1841*8]
 jmp function_pointers[1842*8]
 ??1StaticEnt@PhysicsCollection@@UEAA@XZ endp
 
-?_CONSTRUCTOR@PhysicsInterface@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@PhysicsInterface@@QEAAXXZ endp
+?_CONSTRUCTOR@PhysicsInterface@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@PhysicsInterface@@QEAAPEAV1@XZ endp
 
 ; PhysicsInterface::PhysicsInterface();
 ??0PhysicsInterface@@QEAA@XZ proc EXPORT
@@ -11062,8 +11062,8 @@ jmp function_pointers[1863*8]
 jmp function_pointers[1864*8]
 ?setQueuesAreClear@PhysicsInterface@@QEAAX_N@Z endp
 
-?_CONSTRUCTOR@Platoon@@QEAAXPEAVFaction@@PEAVGameData@@1AEBVVector3@Ogre@@_N@Z proc EXPORT
-?_CONSTRUCTOR@Platoon@@QEAAXPEAVFaction@@PEAVGameData@@1AEBVVector3@Ogre@@_N@Z endp
+?_CONSTRUCTOR@Platoon@@QEAAPEAV1@PEAVFaction@@PEAVGameData@@1AEBVVector3@Ogre@@_N@Z proc EXPORT
+?_CONSTRUCTOR@Platoon@@QEAAPEAV1@PEAVFaction@@PEAVGameData@@1AEBVVector3@Ogre@@_N@Z endp
 
 ; Platoon::Platoon(class Faction *, class GameData *, class GameData *, const class Ogre::Vector3 &, bool);
 ??0Platoon@@QEAA@PEAVFaction@@PEAVGameData@@1AEBVVector3@Ogre@@_N@Z proc EXPORT
@@ -11381,8 +11381,8 @@ jmp function_pointers[1916*8]
 jmp function_pointers[1917*8]
 ?reCheckPersistenceOnUnload@Platoon@@UEAAXXZ endp
 
-?_CONSTRUCTOR@PlayerInterface@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@PlayerInterface@@QEAAXXZ endp
+?_CONSTRUCTOR@PlayerInterface@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@PlayerInterface@@QEAAPEAV1@XZ endp
 
 ; PlayerInterface::PlayerInterface();
 ??0PlayerInterface@@QEAA@XZ proc EXPORT
@@ -11850,8 +11850,8 @@ jmp function_pointers[2008*8]
 jmp function_pointers[2009*8]
 ?_isPlayerCharacter@PlayerInterface@@QEAA_NPEAVRootObject@@@Z endp
 
-?_CONSTRUCTOR@AIOptions@PlayerInterface@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@AIOptions@PlayerInterface@@QEAAXXZ endp
+?_CONSTRUCTOR@AIOptions@PlayerInterface@@QEAAPEAV12@XZ proc EXPORT
+?_CONSTRUCTOR@AIOptions@PlayerInterface@@QEAAPEAV12@XZ endp
 
 ; PlayerInterface::AIOptions::AIOptions();
 ??0AIOptions@PlayerInterface@@QEAA@XZ proc EXPORT
@@ -11878,8 +11878,8 @@ jmp function_pointers[2013*8]
 jmp function_pointers[2014*8]
 ?getRaceData@RaceData@@SAPEAV1@PEAVGameData@@@Z endp
 
-?_CONSTRUCTOR@RaceData@@QEAAXPEAVGameData@@@Z proc EXPORT
-?_CONSTRUCTOR@RaceData@@QEAAXPEAVGameData@@@Z endp
+?_CONSTRUCTOR@RaceData@@QEAAPEAV1@PEAVGameData@@@Z proc EXPORT
+?_CONSTRUCTOR@RaceData@@QEAAPEAV1@PEAVGameData@@@Z endp
 
 ; RaceData::RaceData(class GameData *);
 ??0RaceData@@QEAA@PEAVGameData@@@Z proc EXPORT
@@ -11947,8 +11947,8 @@ jmp function_pointers[2025*8]
 jmp function_pointers[2026*8]
 ?canEquip@RaceLimiter@@UEAA_NPEAVGameData@@PEAVRaceData@@_N@Z endp
 
-?_CONSTRUCTOR@RaceLimiter@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@RaceLimiter@@QEAAXXZ endp
+?_CONSTRUCTOR@RaceLimiter@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@RaceLimiter@@QEAAPEAV1@XZ endp
 
 ; RaceLimiter::RaceLimiter();
 ??0RaceLimiter@@QEAA@XZ proc EXPORT
@@ -11971,8 +11971,8 @@ jmp function_pointers[2028*8]
 jmp function_pointers[2029*8]
 ?canEquip@Limiter@RaceLimiter@@UEAA_NPEAVRaceData@@_N@Z endp
 
-?_CONSTRUCTOR@Limiter@RaceLimiter@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@Limiter@RaceLimiter@@QEAAXXZ endp
+?_CONSTRUCTOR@Limiter@RaceLimiter@@QEAAPEAV12@XZ proc EXPORT
+?_CONSTRUCTOR@Limiter@RaceLimiter@@QEAAPEAV12@XZ endp
 
 ; RaceLimiter::Limiter::Limiter();
 ??0Limiter@RaceLimiter@@QEAA@XZ proc EXPORT
@@ -11987,16 +11987,16 @@ jmp function_pointers[2030*8]
 jmp function_pointers[2031*8]
 ??1Limiter@RaceLimiter@@QEAA@XZ endp
 
-?_CONSTRUCTOR@rendHit@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@rendHit@@QEAAXXZ endp
+?_CONSTRUCTOR@rendHit@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@rendHit@@QEAAPEAV1@XZ endp
 
 ; rendHit::rendHit();
 ??0rendHit@@QEAA@XZ proc EXPORT
 jmp function_pointers[2032*8]
 ??0rendHit@@QEAA@XZ endp
 
-?_CONSTRUCTOR@RobotLimbs@@QEAAXPEAVCharacter@@@Z proc EXPORT
-?_CONSTRUCTOR@RobotLimbs@@QEAAXPEAVCharacter@@@Z endp
+?_CONSTRUCTOR@RobotLimbs@@QEAAPEAV1@PEAVCharacter@@@Z proc EXPORT
+?_CONSTRUCTOR@RobotLimbs@@QEAAPEAV1@PEAVCharacter@@@Z endp
 
 ; RobotLimbs::RobotLimbs(class Character *);
 ??0RobotLimbs@@QEAA@PEAVCharacter@@@Z proc EXPORT
@@ -12056,8 +12056,8 @@ jmp function_pointers[2042*8]
 jmp function_pointers[2043*8]
 ?getLimbItem@RobotLimbs@@QEAAPEAVItem@@W4Limb@1@@Z endp
 
-?_CONSTRUCTOR@RootObject@@QEAAXPEAVGameData@@PEAVFaction@@Vhand@@@Z proc EXPORT
-?_CONSTRUCTOR@RootObject@@QEAAXPEAVGameData@@PEAVFaction@@Vhand@@@Z endp
+?_CONSTRUCTOR@RootObject@@QEAAPEAV1@PEAVGameData@@PEAVFaction@@Vhand@@@Z proc EXPORT
+?_CONSTRUCTOR@RootObject@@QEAAPEAV1@PEAVGameData@@PEAVFaction@@Vhand@@@Z endp
 
 ; RootObject::RootObject(class GameData *, class Faction *, class hand);
 ??0RootObject@@QEAA@PEAVGameData@@PEAVFaction@@Vhand@@@Z proc EXPORT
@@ -12440,8 +12440,8 @@ jmp function_pointers[2090*8]
 jmp function_pointers[2091*8]
 ?loadUnloadCheck@RootObject@@UEAAXXZ endp
 
-?_CONSTRUCTOR@RootObjectBase@@QEAAXPEAVGameData@@PEAVFaction@@Vhand@@@Z proc EXPORT
-?_CONSTRUCTOR@RootObjectBase@@QEAAXPEAVGameData@@PEAVFaction@@Vhand@@@Z endp
+?_CONSTRUCTOR@RootObjectBase@@QEAAPEAV1@PEAVGameData@@PEAVFaction@@Vhand@@@Z proc EXPORT
+?_CONSTRUCTOR@RootObjectBase@@QEAAPEAV1@PEAVGameData@@PEAVFaction@@Vhand@@@Z endp
 
 ; RootObjectBase::RootObjectBase(class GameData *, class Faction *, class hand);
 ??0RootObjectBase@@QEAA@PEAVGameData@@PEAVFaction@@Vhand@@@Z proc EXPORT
@@ -12710,8 +12710,8 @@ jmp function_pointers[2132*8]
 jmp function_pointers[2133*8]
 ?process@RootObjectFactory@@QEAAPEAVRootObjectBase@@PEAVCreatelistItem@1@@Z endp
 
-?_CONSTRUCTOR@RootObjectFactory@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@RootObjectFactory@@QEAAXXZ endp
+?_CONSTRUCTOR@RootObjectFactory@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@RootObjectFactory@@QEAAPEAV1@XZ endp
 
 ; RootObjectFactory::RootObjectFactory();
 ??0RootObjectFactory@@QEAA@XZ proc EXPORT
@@ -12726,8 +12726,8 @@ jmp function_pointers[2134*8]
 jmp function_pointers[2135*8]
 ??1RootObjectFactory@@QEAA@XZ endp
 
-?_CONSTRUCTOR@CreatelistItem@RootObjectFactory@@QEAAXPEAVGameData@@VVector3@Ogre@@_NPEAVFaction@@VQuaternion@5@PEAVFactoryCallbackInterface@@PEAVGameSaveState@@PEAVRootObjectContainer@@PEAVBuilding@@M@Z proc EXPORT
-?_CONSTRUCTOR@CreatelistItem@RootObjectFactory@@QEAAXPEAVGameData@@VVector3@Ogre@@_NPEAVFaction@@VQuaternion@5@PEAVFactoryCallbackInterface@@PEAVGameSaveState@@PEAVRootObjectContainer@@PEAVBuilding@@M@Z endp
+?_CONSTRUCTOR@CreatelistItem@RootObjectFactory@@QEAAPEAV12@PEAVGameData@@VVector3@Ogre@@_NPEAVFaction@@VQuaternion@5@PEAVFactoryCallbackInterface@@PEAVGameSaveState@@PEAVRootObjectContainer@@PEAVBuilding@@M@Z proc EXPORT
+?_CONSTRUCTOR@CreatelistItem@RootObjectFactory@@QEAAPEAV12@PEAVGameData@@VVector3@Ogre@@_NPEAVFaction@@VQuaternion@5@PEAVFactoryCallbackInterface@@PEAVGameSaveState@@PEAVRootObjectContainer@@PEAVBuilding@@M@Z endp
 
 ; RootObjectFactory::CreatelistItem::CreatelistItem(class GameData *, class Ogre::Vector3, bool, class Faction *, class Ogre::Quaternion, class FactoryCallbackInterface *, class GameSaveState *, class RootObjectContainer *, class Building *, float);
 ??0CreatelistItem@RootObjectFactory@@QEAA@PEAVGameData@@VVector3@Ogre@@_NPEAVFaction@@VQuaternion@4@PEAVFactoryCallbackInterface@@PEAVGameSaveState@@PEAVRootObjectContainer@@PEAVBuilding@@M@Z proc EXPORT
@@ -12739,8 +12739,8 @@ jmp function_pointers[2136*8]
 jmp function_pointers[2137*8]
 ?getSingleton@SaveFileSystem@@SAPEAV1@XZ endp
 
-?_CONSTRUCTOR@SaveFileSystem@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@SaveFileSystem@@QEAAXXZ endp
+?_CONSTRUCTOR@SaveFileSystem@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@SaveFileSystem@@QEAAPEAV1@XZ endp
 
 ; SaveFileSystem::SaveFileSystem();
 ??0SaveFileSystem@@QEAA@XZ proc EXPORT
@@ -12853,8 +12853,8 @@ jmp function_pointers[2157*8]
 jmp function_pointers[2158*8]
 ?addMessage@SaveFileSystem@@QEAAXW4MessageType@1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@1@Z endp
 
-?_CONSTRUCTOR@FileMessage@SaveFileSystem@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@FileMessage@SaveFileSystem@@QEAAXXZ endp
+?_CONSTRUCTOR@FileMessage@SaveFileSystem@@QEAAPEAV12@XZ proc EXPORT
+?_CONSTRUCTOR@FileMessage@SaveFileSystem@@QEAAPEAV12@XZ endp
 
 ; SaveFileSystem::FileMessage::FileMessage();
 ??0FileMessage@SaveFileSystem@@QEAA@XZ proc EXPORT
@@ -12874,16 +12874,16 @@ jmp function_pointers[2160*8]
 jmp function_pointers[2161*8]
 ??4FileMessage@SaveFileSystem@@QEAAAEAU01@AEBU01@@Z endp
 
-?_CONSTRUCTOR@SaveInfo@@QEAAXAEBU1@@Z proc EXPORT
-?_CONSTRUCTOR@SaveInfo@@QEAAXAEBU1@@Z endp
+?_CONSTRUCTOR@SaveInfo@@QEAAPEAV1@AEBU1@@Z proc EXPORT
+?_CONSTRUCTOR@SaveInfo@@QEAAPEAV1@AEBU1@@Z endp
 
 ; SaveInfo::SaveInfo(const struct SaveInfo &);
 ??0SaveInfo@@QEAA@AEBU0@@Z proc EXPORT
 jmp function_pointers[2162*8]
 ??0SaveInfo@@QEAA@AEBU0@@Z endp
 
-?_CONSTRUCTOR@SaveInfo@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@SaveInfo@@QEAAXXZ endp
+?_CONSTRUCTOR@SaveInfo@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@SaveInfo@@QEAAPEAV1@XZ endp
 
 ; SaveInfo::SaveInfo();
 ??0SaveInfo@@QEAA@XZ proc EXPORT
@@ -13018,8 +13018,8 @@ jmp function_pointers[2187*8]
 jmp function_pointers[2188*8]
 ?initialisePaths@SaveManager@@QEAAXXZ endp
 
-?_CONSTRUCTOR@SaveManager@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@SaveManager@@QEAAXXZ endp
+?_CONSTRUCTOR@SaveManager@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@SaveManager@@QEAAPEAV1@XZ endp
 
 ; SaveManager::SaveManager();
 ??0SaveManager@@QEAA@XZ proc EXPORT
@@ -13134,8 +13134,8 @@ jmp function_pointers[2209*8]
 jmp function_pointers[2210*8]
 ?contains@SelectionBox@@QEBA_NAEBVVector3@Ogre@@M@Z endp
 
-?_CONSTRUCTOR@SelectionBox@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@SelectionBox@@QEAAXXZ endp
+?_CONSTRUCTOR@SelectionBox@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@SelectionBox@@QEAAPEAV1@XZ endp
 
 ; SelectionBox::SelectionBox();
 ??0SelectionBox@@QEAA@XZ proc EXPORT
@@ -13150,8 +13150,8 @@ jmp function_pointers[2211*8]
 jmp function_pointers[2212*8]
 ??1SelectionBox@@QEAA@XZ endp
 
-?_CONSTRUCTOR@SimpleTimeStamper@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@SimpleTimeStamper@@QEAAXXZ endp
+?_CONSTRUCTOR@SimpleTimeStamper@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@SimpleTimeStamper@@QEAAPEAV1@XZ endp
 
 ; SimpleTimeStamper::SimpleTimeStamper();
 ??0SimpleTimeStamper@@QEAA@XZ proc EXPORT
@@ -13176,32 +13176,32 @@ jmp function_pointers[2215*8]
 jmp function_pointers[2216*8]
 ??1SimpleTimeStamper@@QEAA@XZ endp
 
-?_CONSTRUCTOR@StringPair@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z proc EXPORT
-?_CONSTRUCTOR@StringPair@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z endp
+?_CONSTRUCTOR@StringPair@@QEAAPEAV1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z proc EXPORT
+?_CONSTRUCTOR@StringPair@@QEAAPEAV1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z endp
 
 ; StringPair::StringPair(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ??0StringPair@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z proc EXPORT
 jmp function_pointers[2217*8]
 ??0StringPair@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z endp
 
-?_CONSTRUCTOR@StringPair@@QEAAXAEBV1@@Z proc EXPORT
-?_CONSTRUCTOR@StringPair@@QEAAXAEBV1@@Z endp
+?_CONSTRUCTOR@StringPair@@QEAAPEAV1@AEBV1@@Z proc EXPORT
+?_CONSTRUCTOR@StringPair@@QEAAPEAV1@AEBV1@@Z endp
 
 ; StringPair::StringPair(const class StringPair &);
 ??0StringPair@@QEAA@AEBV0@@Z proc EXPORT
 jmp function_pointers[2218*8]
 ??0StringPair@@QEAA@AEBV0@@Z endp
 
-?_CONSTRUCTOR@StringPair@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-?_CONSTRUCTOR@StringPair@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
+?_CONSTRUCTOR@StringPair@@QEAAPEAV1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
+?_CONSTRUCTOR@StringPair@@QEAAPEAV1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; StringPair::StringPair(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ??0StringPair@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
 jmp function_pointers[2219*8]
 ??0StringPair@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
-?_CONSTRUCTOR@StringPair@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@StringPair@@QEAAXXZ endp
+?_CONSTRUCTOR@StringPair@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@StringPair@@QEAAPEAV1@XZ endp
 
 ; StringPair::StringPair();
 ??0StringPair@@QEAA@XZ proc EXPORT
@@ -13224,8 +13224,8 @@ jmp function_pointers[2221*8]
 jmp function_pointers[2222*8]
 ??4StringPair@@UEAAAEBV0@AEBV0@@Z endp
 
-?_CONSTRUCTOR@Sword@@QEAAXPEAVGameData@@00Vhand@@H@Z proc EXPORT
-?_CONSTRUCTOR@Sword@@QEAAXPEAVGameData@@00Vhand@@H@Z endp
+?_CONSTRUCTOR@Sword@@QEAAPEAV1@PEAVGameData@@00Vhand@@H@Z proc EXPORT
+?_CONSTRUCTOR@Sword@@QEAAPEAV1@PEAVGameData@@00Vhand@@H@Z endp
 
 ; Sword::Sword(class GameData *, class GameData *, class GameData *, class hand, int);
 ??0Sword@@QEAA@PEAVGameData@@00Vhand@@H@Z proc EXPORT
@@ -13310,8 +13310,8 @@ jmp function_pointers[2234*8]
 jmp function_pointers[2235*8]
 ?waitForRunningStop_Blocking@ThreadClass@@QEAA_NXZ endp
 
-?_CONSTRUCTOR@ThreadClass@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-?_CONSTRUCTOR@ThreadClass@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
+?_CONSTRUCTOR@ThreadClass@@QEAAPEAV1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
+?_CONSTRUCTOR@ThreadClass@@QEAAPEAV1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; ThreadClass::ThreadClass(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ??0ThreadClass@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
@@ -13351,8 +13351,8 @@ jmp function_pointers[2241*8]
 jmp function_pointers[2242*8]
 ?setName@ThreadClass@@QEAAXPEBD@Z endp
 
-?_CONSTRUCTOR@ThreadWannabe@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
-?_CONSTRUCTOR@ThreadWannabe@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
+?_CONSTRUCTOR@ThreadWannabe@@QEAAPEAV1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
+?_CONSTRUCTOR@ThreadWannabe@@QEAAPEAV1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
 ; ThreadWannabe::ThreadWannabe(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &);
 ??0ThreadWannabe@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z proc EXPORT
@@ -13393,16 +13393,16 @@ jmp function_pointers[2247*8]
 jmp function_pointers[2248*8]
 ??1ThreadWannabe@@UEAA@XZ endp
 
-?_CONSTRUCTOR@TimeOfDay@@QEAAXN@Z proc EXPORT
-?_CONSTRUCTOR@TimeOfDay@@QEAAXN@Z endp
+?_CONSTRUCTOR@TimeOfDay@@QEAAPEAV1@N@Z proc EXPORT
+?_CONSTRUCTOR@TimeOfDay@@QEAAPEAV1@N@Z endp
 
 ; TimeOfDay::TimeOfDay(double);
 ??0TimeOfDay@@QEAA@N@Z proc EXPORT
 jmp function_pointers[2249*8]
 ??0TimeOfDay@@QEAA@N@Z endp
 
-?_CONSTRUCTOR@TimeOfDay@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@TimeOfDay@@QEAAXXZ endp
+?_CONSTRUCTOR@TimeOfDay@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@TimeOfDay@@QEAAPEAV1@XZ endp
 
 ; TimeOfDay::TimeOfDay();
 ??0TimeOfDay@@QEAA@XZ proc EXPORT
@@ -13539,8 +13539,8 @@ jmp function_pointers[2275*8]
 jmp function_pointers[2276*8]
 ?getTotalTimeString@TimeOfDay@@QEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ endp
 
-?_CONSTRUCTOR@TimerClass@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@TimerClass@@QEAAXXZ endp
+?_CONSTRUCTOR@TimerClass@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@TimerClass@@QEAAPEAV1@XZ endp
 
 ; TimerClass::TimerClass();
 ??0TimerClass@@QEAA@XZ proc EXPORT
@@ -13552,8 +13552,8 @@ jmp function_pointers[2277*8]
 jmp function_pointers[2278*8]
 ?getSingleton@TitleScreen@@SAPEAV1@XZ endp
 
-?_CONSTRUCTOR@TitleScreen@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@TitleScreen@@QEAAXXZ endp
+?_CONSTRUCTOR@TitleScreen@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@TitleScreen@@QEAAPEAV1@XZ endp
 
 ; TitleScreen::TitleScreen();
 ??0TitleScreen@@QEAA@XZ proc EXPORT
@@ -13672,8 +13672,8 @@ jmp function_pointers[2298*8]
 jmp function_pointers[2299*8]
 ?hasTradePriceMultiplier@TradeCulture@@QEAA_NPEAVGameData@@@Z endp
 
-?_CONSTRUCTOR@TradeCulture@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@TradeCulture@@QEAAXXZ endp
+?_CONSTRUCTOR@TradeCulture@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@TradeCulture@@QEAAPEAV1@XZ endp
 
 ; TradeCulture::TradeCulture();
 ??0TradeCulture@@QEAA@XZ proc EXPORT
@@ -13688,24 +13688,24 @@ jmp function_pointers[2300*8]
 jmp function_pointers[2301*8]
 ??1TradeCulture@@QEAA@XZ endp
 
-?_CONSTRUCTOR@TripleInt@@QEAAXAEBV1@@Z proc EXPORT
-?_CONSTRUCTOR@TripleInt@@QEAAXAEBV1@@Z endp
+?_CONSTRUCTOR@TripleInt@@QEAAPEAV1@AEBV1@@Z proc EXPORT
+?_CONSTRUCTOR@TripleInt@@QEAAPEAV1@AEBV1@@Z endp
 
 ; TripleInt::TripleInt(const class TripleInt &);
 ??0TripleInt@@QEAA@AEBV0@@Z proc EXPORT
 jmp function_pointers[2302*8]
 ??0TripleInt@@QEAA@AEBV0@@Z endp
 
-?_CONSTRUCTOR@TripleInt@@QEAAXHHH@Z proc EXPORT
-?_CONSTRUCTOR@TripleInt@@QEAAXHHH@Z endp
+?_CONSTRUCTOR@TripleInt@@QEAAPEAV1@HHH@Z proc EXPORT
+?_CONSTRUCTOR@TripleInt@@QEAAPEAV1@HHH@Z endp
 
 ; TripleInt::TripleInt(int, int, int);
 ??0TripleInt@@QEAA@HHH@Z proc EXPORT
 jmp function_pointers[2303*8]
 ??0TripleInt@@QEAA@HHH@Z endp
 
-?_CONSTRUCTOR@TripleInt@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@TripleInt@@QEAAXXZ endp
+?_CONSTRUCTOR@TripleInt@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@TripleInt@@QEAAPEAV1@XZ endp
 
 ; TripleInt::TripleInt();
 ??0TripleInt@@QEAA@XZ proc EXPORT
@@ -13727,8 +13727,8 @@ jmp function_pointers[2306*8]
 jmp function_pointers[2307*8]
 ??ATripleInt@@QEAAAEAHH@Z endp
 
-?_CONSTRUCTOR@UtilityT@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@UtilityT@@QEAAXXZ endp
+?_CONSTRUCTOR@UtilityT@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@UtilityT@@QEAAPEAV1@XZ endp
 
 ; UtilityT::UtilityT();
 ??0UtilityT@@QEAA@XZ proc EXPORT
@@ -14324,8 +14324,8 @@ jmp function_pointers[2420*8]
 jmp function_pointers[2421*8]
 ?getSkillModIndoors@Weapon@@UEBAHXZ endp
 
-?_CONSTRUCTOR@Weapon@@QEAAXPEAVGameData@@00Vhand@@H@Z proc EXPORT
-?_CONSTRUCTOR@Weapon@@QEAAXPEAVGameData@@00Vhand@@H@Z endp
+?_CONSTRUCTOR@Weapon@@QEAAPEAV1@PEAVGameData@@00Vhand@@H@Z proc EXPORT
+?_CONSTRUCTOR@Weapon@@QEAAPEAV1@PEAVGameData@@00Vhand@@H@Z endp
 
 ; Weapon::Weapon(class GameData *, class GameData *, class GameData *, class hand, int);
 ??0Weapon@@QEAA@PEAVGameData@@00Vhand@@H@Z proc EXPORT
@@ -14340,8 +14340,8 @@ jmp function_pointers[2422*8]
 jmp function_pointers[2423*8]
 ??1Weapon@@UEAA@XZ endp
 
-?_CONSTRUCTOR@WeatherRegion@@QEAAXPEAVAreaBiomeGroup@@@Z proc EXPORT
-?_CONSTRUCTOR@WeatherRegion@@QEAAXPEAVAreaBiomeGroup@@@Z endp
+?_CONSTRUCTOR@WeatherRegion@@QEAAPEAV1@PEAVAreaBiomeGroup@@@Z proc EXPORT
+?_CONSTRUCTOR@WeatherRegion@@QEAAPEAV1@PEAVAreaBiomeGroup@@@Z endp
 
 ; WeatherRegion::WeatherRegion(class AreaBiomeGroup *);
 ??0WeatherRegion@@QEAA@PEAVAreaBiomeGroup@@@Z proc EXPORT
@@ -14426,16 +14426,16 @@ jmp function_pointers[2438*8]
 jmp function_pointers[2439*8]
 ?load@WeatherRegion@@QEAAXPEAVGameData@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z endp
 
-?_CONSTRUCTOR@Listener@WeatherRegion@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@Listener@WeatherRegion@@QEAAXXZ endp
+?_CONSTRUCTOR@Listener@WeatherRegion@@QEAAPEAV12@XZ proc EXPORT
+?_CONSTRUCTOR@Listener@WeatherRegion@@QEAAPEAV12@XZ endp
 
 ; WeatherRegion::Listener::Listener();
 ??0Listener@WeatherRegion@@QEAA@XZ proc EXPORT
 jmp function_pointers[2440*8]
 ??0Listener@WeatherRegion@@QEAA@XZ endp
 
-?_CONSTRUCTOR@BaseLayout@wraps@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAVWidget@MyGUI@@@Z proc EXPORT
-?_CONSTRUCTOR@BaseLayout@wraps@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAVWidget@MyGUI@@@Z endp
+?_CONSTRUCTOR@BaseLayout@wraps@@QEAAPEAV12@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAVWidget@MyGUI@@@Z proc EXPORT
+?_CONSTRUCTOR@BaseLayout@wraps@@QEAAPEAV12@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAVWidget@MyGUI@@@Z endp
 
 ; wraps::BaseLayout::BaseLayout(const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > &, class MyGUI::Widget *);
 ??0BaseLayout@wraps@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAVWidget@MyGUI@@@Z proc EXPORT
@@ -14475,32 +14475,32 @@ jmp function_pointers[2446*8]
 jmp function_pointers[2447*8]
 ??1BaseLayout@wraps@@UEAA@XZ endp
 
-?_CONSTRUCTOR@YesNoMaybe@@QEAAXH@Z proc EXPORT
-?_CONSTRUCTOR@YesNoMaybe@@QEAAXH@Z endp
+?_CONSTRUCTOR@YesNoMaybe@@QEAAPEAV1@H@Z proc EXPORT
+?_CONSTRUCTOR@YesNoMaybe@@QEAAPEAV1@H@Z endp
 
 ; YesNoMaybe::YesNoMaybe(int);
 ??0YesNoMaybe@@QEAA@H@Z proc EXPORT
 jmp function_pointers[2448*8]
 ??0YesNoMaybe@@QEAA@H@Z endp
 
-?_CONSTRUCTOR@YesNoMaybe@@QEAAXAEAV1@@Z proc EXPORT
-?_CONSTRUCTOR@YesNoMaybe@@QEAAXAEAV1@@Z endp
+?_CONSTRUCTOR@YesNoMaybe@@QEAAPEAV1@AEAV1@@Z proc EXPORT
+?_CONSTRUCTOR@YesNoMaybe@@QEAAPEAV1@AEAV1@@Z endp
 
 ; YesNoMaybe::YesNoMaybe(class YesNoMaybe &);
 ??0YesNoMaybe@@QEAA@AEAV0@@Z proc EXPORT
 jmp function_pointers[2449*8]
 ??0YesNoMaybe@@QEAA@AEAV0@@Z endp
 
-?_CONSTRUCTOR@YesNoMaybe@@QEAAXW4ynm@1@@Z proc EXPORT
-?_CONSTRUCTOR@YesNoMaybe@@QEAAXW4ynm@1@@Z endp
+?_CONSTRUCTOR@YesNoMaybe@@QEAAPEAV1@W4ynm@1@@Z proc EXPORT
+?_CONSTRUCTOR@YesNoMaybe@@QEAAPEAV1@W4ynm@1@@Z endp
 
 ; YesNoMaybe::YesNoMaybe(enum YesNoMaybe::ynm);
 ??0YesNoMaybe@@QEAA@W4ynm@0@@Z proc EXPORT
 jmp function_pointers[2450*8]
 ??0YesNoMaybe@@QEAA@W4ynm@0@@Z endp
 
-?_CONSTRUCTOR@YesNoMaybe@@QEAAXXZ proc EXPORT
-?_CONSTRUCTOR@YesNoMaybe@@QEAAXXZ endp
+?_CONSTRUCTOR@YesNoMaybe@@QEAAPEAV1@XZ proc EXPORT
+?_CONSTRUCTOR@YesNoMaybe@@QEAAPEAV1@XZ endp
 
 ; YesNoMaybe::YesNoMaybe();
 ??0YesNoMaybe@@QEAA@XZ proc EXPORT

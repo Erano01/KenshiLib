@@ -31,7 +31,7 @@ public:
     };
     // no_addr void InventorySection(const class InventorySection & _a1);// public missing arg names
     InventorySection(const std::string& _name, int _w, int _h, AttachSlot slot, Inventory* inv, bool _containerSlot, bool _equipSlot, bool enabled);// public RVA = 0x748390
-    void _CONSTRUCTOR(const std::string& _name, int _w, int _h, AttachSlot slot, Inventory* inv, bool _containerSlot, bool _equipSlot, bool enabled);// public RVA = 0x748390
+    InventorySection* _CONSTRUCTOR(const std::string& _name, int _w, int _h, AttachSlot slot, Inventory* inv, bool _containerSlot, bool _equipSlot, bool enabled);// public RVA = 0x748390
     virtual ~InventorySection();// public RVA = 0x746420 vtable offset = 0x0
     void _DESTRUCTOR();// public RVA = 0x746420 vtable offset = 0x0
     virtual bool hasRoomForItem(GameData* _itemData, int quantity);// public RVA = 0x74A620 vtable offset = 0x8
@@ -122,7 +122,7 @@ public:
     // VTable         : (none)
     // no_addr void Inventory(const class Inventory & _a1);// public missing arg names
     Inventory(RootObject* _owner);// public RVA = 0x749D30
-    void _CONSTRUCTOR(RootObject* _owner);// public RVA = 0x749D30
+    Inventory* _CONSTRUCTOR(RootObject* _owner);// public RVA = 0x749D30
     virtual ~Inventory();// public RVA = 0x749E80 vtable offset = 0x0
     void _DESTRUCTOR();// public RVA = 0x749E80 vtable offset = 0x0
     const hand& getHandle();// public RVA = 0x7449E0
@@ -160,7 +160,7 @@ public:
         void remember(GameData* d, bool state);// public RVA = 0x75AED0
         // no_addr void HasRoomCache(const class Inventory::HasRoomCache & _a1);// public missing arg names
         HasRoomCache();// public RVA = 0x75AF50
-        void _CONSTRUCTOR();// public RVA = 0x75AF50
+        HasRoomCache* _CONSTRUCTOR();// public RVA = 0x75AF50
         ~HasRoomCache();// public RVA = 0x75A1A0
         void _DESTRUCTOR();// public RVA = 0x75A1A0
         // no_addr class Inventory::HasRoomCache & operator=(const class Inventory::HasRoomCache & _a1);// public missing arg names

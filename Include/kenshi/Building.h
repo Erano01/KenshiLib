@@ -160,9 +160,9 @@ public:
     public:
         // Ogre::AllocatedObject<Ogre::CategorisedAllocPolicy<0> > offset = 0x0, length = 0x1
         ConstructionState(const Building::ConstructionState& c);// public RVA = 0x549AE0
-        void _CONSTRUCTOR(const Building::ConstructionState& c);// public RVA = 0x549AE0
+        ConstructionState* _CONSTRUCTOR(const Building::ConstructionState& c);// public RVA = 0x549AE0
         ConstructionState();// public RVA = 0x549A40
-        void _CONSTRUCTOR();// public RVA = 0x549A40
+        ConstructionState* _CONSTRUCTOR();// public RVA = 0x549A40
         ~ConstructionState();// public RVA = 0x55C2B0
         void _DESTRUCTOR();// public RVA = 0x55C2B0
         void addMaterials(GameData* mat);// public RVA = 0x549C20
@@ -327,7 +327,7 @@ public:
     BuildingClassType classType; // 0x198 Member
     // no_addr void Building(const class Building & _a1);// public missing arg names
     Building(GameData* data, const Ogre::Vector3& position, const Ogre::Quaternion& orientation, Faction* _participant, const hand& town, const hand& _handle, Layout* __isfurnitureOf, Building* _indoors);// protected RVA = 0x55C310
-    void _CONSTRUCTOR(GameData* data, const Ogre::Vector3& position, const Ogre::Quaternion& orientation, Faction* _participant, const hand& town, const hand& _handle, Layout* __isfurnitureOf, Building* _indoors);// protected RVA = 0x55C310
+    Building* _CONSTRUCTOR(GameData* data, const Ogre::Vector3& position, const Ogre::Quaternion& orientation, Faction* _participant, const hand& town, const hand& _handle, Layout* __isfurnitureOf, Building* _indoors);// protected RVA = 0x55C310
     void setToDefaultFactionDivision();// protected RVA = 0x55B9B0
     bool updateNavmesh; // 0x19C Member
     bool visible; // 0x19D Member
