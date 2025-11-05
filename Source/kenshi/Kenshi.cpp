@@ -57,39 +57,39 @@ public:
     }
 };
 
-StaticMap<std::string, Kenshi::BinaryVersion> HashToVersionMap = StaticMap<std::string, Kenshi::BinaryVersion>()
-    .Add("df4a5a7ef8a29deb24b70e7b7f4a222a", Kenshi::BinaryVersion(Kenshi::BinaryVersion::STEAM, "1.0.65"))
-    .Add("8a03c256f0da1555d9cceb939b41530a", Kenshi::BinaryVersion(Kenshi::BinaryVersion::STEAM, "1.0.68"))
-    .Add("213349bf76a0a758067f9ed0aef2ab01", Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.65"))
-    .Add("ac329dceced68d6eedb23bb83957fa93", Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.68"));
+StaticMap<std::string, KenshiLib::BinaryVersion> HashToVersionMap = StaticMap<std::string, KenshiLib::BinaryVersion>()
+    .Add("df4a5a7ef8a29deb24b70e7b7f4a222a", KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::STEAM, "1.0.65"))
+    .Add("8a03c256f0da1555d9cceb939b41530a", KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::STEAM, "1.0.68"))
+    .Add("213349bf76a0a758067f9ed0aef2ab01", KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::GOG, "1.0.65"))
+    .Add("ac329dceced68d6eedb23bb83957fa93", KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::GOG, "1.0.68"));
 
 // Search for 2000.000f in non-writable and one of those will be the correct value
 // CAMERA_FAR
-StaticMap<Kenshi::BinaryVersion, offset_t> MaxCameraDistanceOffset = StaticMap<Kenshi::BinaryVersion, offset_t>()
-    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::STEAM, "1.0.65"), 0x016FF770)
-    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::STEAM, "1.0.68"), 0x01700640)
-    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.65"), 0x016FE300)
-    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.68"), 0x016FF350);
+StaticMap<KenshiLib::BinaryVersion, offset_t> MaxCameraDistanceOffset = StaticMap<KenshiLib::BinaryVersion, offset_t>()
+    .Add(KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::STEAM, "1.0.65"), 0x016FF770)
+    .Add(KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::STEAM, "1.0.68"), 0x01700640)
+    .Add(KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::GOG, "1.0.65"), 0x016FE300)
+    .Add(KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::GOG, "1.0.68"), 0x016FF350);
 
 // CAMERA_CLOSE
-StaticMap<Kenshi::BinaryVersion, offset_t> MinCameraDistanceOffset = StaticMap<Kenshi::BinaryVersion, offset_t>()
-    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::STEAM, "1.0.65"), 0x0167EAD4)
-    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::STEAM, "1.0.68"), 0x0167FAD4)
-    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.65"), 0x0167DAD4)
-    .Add(Kenshi::BinaryVersion(Kenshi::BinaryVersion::GOG, "1.0.68"), 0x0167EAD4);
+StaticMap<KenshiLib::BinaryVersion, offset_t> MinCameraDistanceOffset = StaticMap<KenshiLib::BinaryVersion, offset_t>()
+    .Add(KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::STEAM, "1.0.65"), 0x0167EAD4)
+    .Add(KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::STEAM, "1.0.68"), 0x0167FAD4)
+    .Add(KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::GOG, "1.0.65"), 0x0167DAD4)
+    .Add(KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::GOG, "1.0.68"), 0x0167EAD4);
 
 std::string kenshiHash = GetEXEHash();
-Kenshi::BinaryVersion kenshiVersion = HashToVersionMap.count(kenshiHash) > 0 ? HashToVersionMap.at(kenshiHash) : Kenshi::BinaryVersion(Kenshi::BinaryVersion::UNKNOWN, "UNKNOWN");
+KenshiLib::BinaryVersion kenshiVersion = HashToVersionMap.count(kenshiHash) > 0 ? HashToVersionMap.at(kenshiHash) : KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::UNKNOWN, "UNKNOWN");
 
-void Kenshi::Init()
+void KenshiLib::Init()
 {
     InitRVAs();
 }
 // force override - used for hash mismatches, which can occur if the user has modified the executable
 // there are a few mods on Nexus that need this
-bool Kenshi::OverrideKenshiVersion(BinaryVersion newVersion)
+bool KenshiLib::OverrideKenshiVersion(BinaryVersion newVersion)
 {
-    StaticMap<std::string, Kenshi::BinaryVersion>::iterator entryIter = HashToVersionMap.begin();
+    StaticMap<std::string, KenshiLib::BinaryVersion>::iterator entryIter = HashToVersionMap.begin();
     while (entryIter != HashToVersionMap.end())
     {
         // if the new version is in our list of supported versions, accept it
@@ -104,22 +104,22 @@ bool Kenshi::OverrideKenshiVersion(BinaryVersion newVersion)
     return false;
 }
 
-Kenshi::BinaryVersion Kenshi::GetKenshiVersion()
+KenshiLib::BinaryVersion KenshiLib::GetKenshiVersion()
 {
     return kenshiVersion;
 }
 
-float& Kenshi::GetMaxCameraDistance()
+float& KenshiLib::GetMaxCameraDistance()
 {
-    Kenshi::BinaryVersion kenshiVersion = GetKenshiVersion();
+    KenshiLib::BinaryVersion kenshiVersion = GetKenshiVersion();
     offset_t maxCameraDistanceOffset = MaxCameraDistanceOffset.at(kenshiVersion);
     static RVAPtr<float> c_inst(maxCameraDistanceOffset);
     return *c_inst.GetPtr();
 }
 
-float& Kenshi::GetMinCameraDistance()
+float& KenshiLib::GetMinCameraDistance()
 {
-    Kenshi::BinaryVersion kenshiVersion = GetKenshiVersion();
+    KenshiLib::BinaryVersion kenshiVersion = GetKenshiVersion();
     offset_t minCameraDistanceOffset = MinCameraDistanceOffset.at(kenshiVersion);
     static RVAPtr<float> c_inst(minCameraDistanceOffset);
     return *c_inst.GetPtr();

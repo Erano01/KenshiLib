@@ -37,7 +37,7 @@ void InitRVAs()
     assert_release(FUNCTION_ERROR == 0);
 
     // binary RVA path
-    std::string RVAFilePath = "RE_Kenshi/RVAs/" + Kenshi::GetKenshiVersion().GetPlatformStr() + "_" + Kenshi::GetKenshiVersion().GetVersion() + ".br";
+    std::string RVAFilePath = "RE_Kenshi/RVAs/" + KenshiLib::GetKenshiVersion().GetPlatformStr() + "_" + KenshiLib::GetKenshiVersion().GetVersion() + ".br";
     std::ifstream rvaFile(RVAFilePath, std::ios::ate | std::ios::binary);
     if (!rvaFile.is_open())
         ErrorLog("Unable to open RVA file at " + RVAFilePath);

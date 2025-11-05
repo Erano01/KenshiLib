@@ -23,6 +23,6 @@ inline T GetRealFunction(T fun)
 	return (T)GetRealAddress(fun);
 }
 
-#ifdef KENSHILIB_EXPORT
+#ifdef KENSHILIB_INTERNAL
 void InitRVAs();
 #endif

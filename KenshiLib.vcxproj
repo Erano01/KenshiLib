@@ -70,7 +70,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;OGRE_DEBUG_MODE=OGRE_DEBUG_LEVEL_RELEASE;_CONSOLE;KENSHILIB_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;OGRE_DEBUG_MODE=OGRE_DEBUG_LEVEL_RELEASE;_CONSOLE;KENSHILIB_EXPORT;KENSHILIB_INTERNAL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
