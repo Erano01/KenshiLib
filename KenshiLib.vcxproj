@@ -140,6 +140,7 @@
     <ClInclude Include="Include\kenshi\Character.h" />
     <ClInclude Include="Include\kenshi\CharacterAnimal.h" />
     <ClInclude Include="Include\kenshi\CharacterHuman.h" />
+    <ClInclude Include="Include\kenshi\CharMovement.h" />
     <ClInclude Include="Include\kenshi\CharStats.h" />
     <ClInclude Include="Include\kenshi\Damages.h" />
     <ClInclude Include="Include\kenshi\Dialogue.h" />
