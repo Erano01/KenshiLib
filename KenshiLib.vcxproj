@@ -144,6 +144,7 @@
     <ClInclude Include="Include\kenshi\CharacterHuman.h" />
     <ClInclude Include="Include\kenshi\CharMovement.h" />
     <ClInclude Include="Include\kenshi\CharStats.h" />
+    <ClInclude Include="Include\kenshi\CombatTechniqueData.h" />
     <ClInclude Include="Include\kenshi\Damages.h" />
     <ClInclude Include="Include\kenshi\Dialogue.h" />
     <ClInclude Include="Include\kenshi\Enums.h" />
