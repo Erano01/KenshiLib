@@ -5,6 +5,9 @@
 
 #include <Release_Assert.h>
 
+#include <MinHook.h>
+#include <boost/atomic.hpp>
+
 /* Here's how all this black magic fuckery works
 * functions.asm declares an array of pointers to the game's functions
 * it also generates a function defintion for every function defined in a header we use, using the function's mangled symbol name
@@ -32,7 +35,7 @@ extern "C" const uint32_t FUNCTION_SIZE;
 extern "C" const uint32_t FUNCTION_ERROR;
 extern "C" const uint32_t FULL_BUFF_LENGTH;
 
-void InitRVAs()
+void KenshiLib::InitRVAs()
 {
     assert_release(FUNCTION_ERROR == 0);
 
@@ -54,10 +57,32 @@ void InitRVAs()
         function_pointers[i] = (uintptr_t)c_inst.GetPtr();
     }
     DebugLog("RVAs loaded");
+
+    // init MinHook
+    MH_Initialize();
+}
+
+static boost::atomic_uint64_t hookID(1);
+KenshiLib::HookStatus KenshiLib::AddHook(void* target, void* detour, void** original)
+{
+    size_t ID = hookID.fetch_add(1);
+    MH_STATUS status = MH_CreateHookEx(ID, target, detour, original);
+    if (status != MH_OK)
+    {
+        ErrorLog("Error creating hook: " + std::to_string((int64_t)status));
+        return FAIL;
+    }
+    status = MH_EnableHookEx(ID, target);
+    if (status != MH_OK)
+    {
+        ErrorLog("Error enabling hook: " + std::to_string((int64_t)status));
+        return FAIL;
+    }
+    return SUCCESS; 
 }
 
 // NOTE: doesn't work with virtual functions
-inline uintptr_t GetFunctionSlot(void* ptr)
+static inline uintptr_t GetFunctionSlot(void* ptr)
 {
 	uintptr_t functionsStart = (uintptr_t)&FUNC_BEGIN;
 	uintptr_t functionAddr = (uintptr_t)ptr;
@@ -65,40 +90,8 @@ inline uintptr_t GetFunctionSlot(void* ptr)
 	return (functionAddr - functionsStart) / FUNCTION_SIZE;
 }
 
-intptr_t GetRealAddress(void* fun)
+intptr_t KenshiLib::GetRealAddress(void* fun)
 {
 	assert_release((uintptr_t&)fun >= (uintptr_t)&FUNC_BEGIN && (uintptr_t&)fun <= (uintptr_t)&FUNC_END);
 	return function_pointers[GetFunctionSlot(fun)]; // the cast has to be to a ref to work with member functions in VC++
 }
-
-/*
-* 
-// usage: GetShimAddress(&Class::function)
-// returns the address of the JMP instruction corresponding to that function
-template<typename T>
-// NOTE: doesn't work with virtual functions
-intptr_t GetShimAddress(T fun)
-{
-	return (uintptr_t&)fun; // the cast has to be to a ref to work with member functions in VC++
-}
-
-template<typename T>
-// NOTE: doesn't work with virtual functions
-intptr_t GetFunctionSlotDebug(T fun)
-{
-	return GetFunctionSlot((void*&)fun); // the cast has to be to a ref to work with member functions in VC++
-}
-
-
-inline bool CheckFunctionTable()
-{
-	return FUNCTION_ERROR == 0;
-}
-
-template<typename T>
-intptr_t GetMemberPointer(T fun)
-{
-	void* pPtr = (void*&)fun; // the cast has to be to a ref to work with member functions in VC++
-	return (uintptr_t)pPtr;
-}
-*/
