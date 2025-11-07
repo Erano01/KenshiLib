@@ -40,6 +40,9 @@
     <Filter Include="Header Files\kenshi\util">
       <UniqueIdentifier>{06f5bdcb-92ea-409e-90f6-4a41bd849db2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\kenshi\functions">
+      <UniqueIdentifier>{648fb50b-cd2c-42db-959e-b005e6c4dd07}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\core\RVA.cpp">
@@ -2376,9 +2379,366 @@
     <None Include="Source\kenshi\globals.inc">
       <Filter>Source Files\kenshi</Filter>
     </None>
+    <None Include="Source\kenshi\functions\Character_AttachedArrowManager.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\Character_CarryMsg.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\Character_RagdollMsg.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\Character_WhoSeesMe.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\CharacterAnimal.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\CharacterHuman.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\CharMovement.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\CharStats.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\CombatMovementController.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\CombatTechniqueData.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\ContainerItem.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\ContextMenu.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\Crossbow.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\Damages.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\Dialogue.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\Dialogue_RepetitionCounter.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\Dialogue_RepetitionCounter_DialogState.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\DialogueSpeechBubble.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\Faction.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\Faction_BuildingSwaps.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\Faction_CharacteristicsData.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\FactionLeader.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\FactoryCallbackInterface.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\FlockingTools.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\FormationMover.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\GameData.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\GameData_ItemData.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\GameData_ObjectInstance.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\GameDataContainer.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\GameDataHeader.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\GameDataManager.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\GameLauncher.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\GameLauncher_TabChangelog.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\GameLauncher_TabMods.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\GameLauncher_TabVideo.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\GameLauncher_VideoDevice.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\GameLauncher_VideoRenderer.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\GameSaveState.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\GameWorld.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\GameWorld_SysMessage.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\Gear.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\GlobalConstants.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\GUIWindow.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\hand.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\InputHandler.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\InputHandler_Command.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\InstanceID.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\Inventory.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\Inventory_HasRoomCache.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\InventoryItemBase.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\InventorySection.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\Item.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\iVector2.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\LockedArmour.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\Logger.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\MedianFilter.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\MedianFilter2DVector.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\MedicalSystem.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\MedicalSystem_HealthPartStatus.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\ModInfo.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\MotionFilter.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\NxUserControllerHitReport.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\NxUserTriggerReport.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\NxVec3.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\OptionsHolder.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\Ownerships.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\physHit.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\PhysicalEntity.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\PhysicsActual.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\PhysicsActual_TriggerCallback.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\PhysicsCollection.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\PhysicsCollection_LightEnt.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\PhysicsCollection_RotatingEnt.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\PhysicsCollection_StaticEnt.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\PhysicsInterface.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\Platoon.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\PlayerInterface.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\PlayerInterface_AIOptions.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\RaceData.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\RaceLimiter.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\RaceLimiter_Limiter.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\rendHit.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\RobotLimbs.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\RootObject.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\RootObjectBase.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\RootObjectFactory.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\RootObjectFactory_CreatelistItem.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\SaveFileSystem.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\SaveFileSystem_FileMessage.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\SaveInfo.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\SaveManager.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\Scythe_PhysicsClass.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\SelectionBox.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\SimpleTimeStamper.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\SpeedGroup.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\static_functions.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\StringPair.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\Sword.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\ThreadClass.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\ThreadWannabe.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\TimeOfDay.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\TimerClass.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\TitleScreen.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\TradeCulture.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\TripleInt.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\UtilityT.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\Weapon.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\WeatherRegion.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\WeatherRegion_Listener.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\wraps_BaseLayout.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\YesNoMaybe.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\AbstractMovementBase.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\Armour.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\Bounty.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\BountyManager.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\Building.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\Building_ConstructionState.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\Building_ConstructionState_BuildMaterial.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Source\kenshi\functions\Character.inc">
+      <Filter>Source Files\kenshi\functions</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="Source\kenshi\functions.asm">
+    <MASM Include="Source\kenshi\symbols.asm">
       <Filter>Source Files\kenshi</Filter>
     </MASM>
   </ItemGroup>
