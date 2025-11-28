@@ -297,6 +297,7 @@
     <ClInclude Include="Include\kenshi\RootObjectFactory.h" />
     <ClInclude Include="Include\kenshi\SaveFileSystem.h" />
     <ClInclude Include="Include\kenshi\SaveManager.h" />
+    <ClInclude Include="Include\kenshi\SensoryData.h" />
     <ClInclude Include="Include\kenshi\Tasks.h" />
     <ClInclude Include="Include\kenshi\TitleScreen.h" />
     <ClInclude Include="Include\kenshi\TradeCulture.h" />
@@ -308,8 +309,10 @@
     <ClInclude Include="Include\kenshi\util\PerfTimer.h" />
     <ClInclude Include="Include\kenshi\util\StringPair.h" />
     <ClInclude Include="Include\kenshi\util\TimeOfDay.h" />
+    <ClInclude Include="Include\kenshi\util\TripleInt.h" />
     <ClInclude Include="Include\kenshi\util\UtilityT.h" />
     <ClInclude Include="Include\kenshi\util\YesNoMaybe.h" />
+    <ClInclude Include="Include\kenshi\WorldEventStateQuery.h" />
     <ClInclude Include="Include\mygui\MyGUI.h" />
     <ClInclude Include="Include\mygui\MyGUI_ActionController.h" />
     <ClInclude Include="Include\mygui\MyGUI_Align.h" />
