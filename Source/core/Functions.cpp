@@ -35,18 +35,32 @@ extern "C" const uint32_t FUNCTION_SIZE;
 extern "C" const uint32_t FUNCTION_ERROR;
 extern "C" const uint32_t FULL_BUFF_LENGTH;
 
-void KenshiLib::InitRVAs()
+bool KenshiLib::InitRVAs()
 {
     assert_release(FUNCTION_ERROR == 0);
+
+    if (KenshiLib::GetKenshiVersion().GetPlatform() == BinaryVersion::UNKNOWN)
+    {
+        ErrorLog("KenshiLib could not detect Kenshi version.");
+        return false;
+    }
 
     // binary RVA path
     std::string RVAFilePath = "RE_Kenshi/RVAs/" + KenshiLib::GetKenshiVersion().GetPlatformStr() + "_" + KenshiLib::GetKenshiVersion().GetVersion() + ".br";
     std::ifstream rvaFile(RVAFilePath, std::ios::ate | std::ios::binary);
     if (!rvaFile.is_open())
+    {
         ErrorLog("Unable to open RVA file at " + RVAFilePath);
-    assert_release(rvaFile.is_open());
+        return false;
+    }
+
     size_t end = rvaFile.tellg();
-    assert_release(end == (FULL_BUFF_LENGTH * sizeof(int)));
+    if (end != (FULL_BUFF_LENGTH * sizeof(int)))
+    {
+        ErrorLog("RVA file has wrong length!");
+        assert_release(end == (FULL_BUFF_LENGTH * sizeof(int)));
+        return false;
+    }
     rvaFile.seekg(0);
 
     for (int i = 0; i < FULL_BUFF_LENGTH; ++i)
@@ -60,6 +74,8 @@ void KenshiLib::InitRVAs()
 
     // init MinHook
     MH_Initialize();
+    
+    return true;
 }
 
 static boost::atomic_uint64_t hookID(1);

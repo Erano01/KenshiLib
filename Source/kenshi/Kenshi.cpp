@@ -81,9 +81,11 @@ StaticMap<KenshiLib::BinaryVersion, offset_t> MinCameraDistanceOffset = StaticMa
 std::string kenshiHash = GetEXEHash();
 KenshiLib::BinaryVersion kenshiVersion = HashToVersionMap.count(kenshiHash) > 0 ? HashToVersionMap.at(kenshiHash) : KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::UNKNOWN, "UNKNOWN");
 
-void KenshiLib::Init()
+bool KenshiLib::Init()
 {
-    InitRVAs();
+    // Version number: [update breaking backwards-compatibility (hopefully never)].[update on Nexus].[update on GitHub]
+    DebugLog("KenshiLib 0.0.1");
+    return InitRVAs();
 }
 // force override - used for hash mismatches, which can occur if the user has modified the executable
 // there are a few mods on Nexus that need this
