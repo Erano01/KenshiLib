@@ -243,9 +243,7 @@
     <ClCompile Include="Source\core\RVA.cpp" />
     <ClCompile Include="Source\core\Scanner.cpp" />
     <ClCompile Include="Source\Debug.cpp" />
-    <ClCompile Include="Source\kenshi\Inventory.cpp" />
     <ClCompile Include="Source\kenshi\Kenshi.cpp" />
-    <ClCompile Include="Source\kenshi\UI.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\core\Functions.h" />

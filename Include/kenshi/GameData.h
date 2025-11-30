@@ -10,6 +10,7 @@
 #include "util/lektor.h"
 #include "util/hand.h"
 #include "util/OgreUnordered.h"
+#include "util/TripleInt.h"
 
 class GameDataContainer;
 class GameDataReference;
