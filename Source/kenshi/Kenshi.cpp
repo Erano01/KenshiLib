@@ -59,24 +59,18 @@ public:
 
 StaticMap<std::string, KenshiLib::BinaryVersion> HashToVersionMap = StaticMap<std::string, KenshiLib::BinaryVersion>()
     .Add("df4a5a7ef8a29deb24b70e7b7f4a222a", KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::STEAM, "1.0.65"))
-    .Add("8a03c256f0da1555d9cceb939b41530a", KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::STEAM, "1.0.68"))
-    .Add("213349bf76a0a758067f9ed0aef2ab01", KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::GOG, "1.0.65"))
-    .Add("ac329dceced68d6eedb23bb83957fa93", KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::GOG, "1.0.68"));
+    .Add("213349bf76a0a758067f9ed0aef2ab01", KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::GOG, "1.0.65"));
 
 // Search for 2000.000f in non-writable and one of those will be the correct value
 // CAMERA_FAR
 StaticMap<KenshiLib::BinaryVersion, offset_t> MaxCameraDistanceOffset = StaticMap<KenshiLib::BinaryVersion, offset_t>()
     .Add(KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::STEAM, "1.0.65"), 0x016FF770)
-    .Add(KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::STEAM, "1.0.68"), 0x01700640)
-    .Add(KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::GOG, "1.0.65"), 0x016FE300)
-    .Add(KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::GOG, "1.0.68"), 0x016FF350);
+    .Add(KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::GOG, "1.0.65"), 0x016FE300);
 
 // CAMERA_CLOSE
 StaticMap<KenshiLib::BinaryVersion, offset_t> MinCameraDistanceOffset = StaticMap<KenshiLib::BinaryVersion, offset_t>()
     .Add(KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::STEAM, "1.0.65"), 0x0167EAD4)
-    .Add(KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::STEAM, "1.0.68"), 0x0167FAD4)
-    .Add(KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::GOG, "1.0.65"), 0x0167DAD4)
-    .Add(KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::GOG, "1.0.68"), 0x0167EAD4);
+    .Add(KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::GOG, "1.0.65"), 0x0167DAD4);
 
 std::string kenshiHash = GetEXEHash();
 KenshiLib::BinaryVersion kenshiVersion = HashToVersionMap.count(kenshiHash) > 0 ? HashToVersionMap.at(kenshiHash) : KenshiLib::BinaryVersion(KenshiLib::BinaryVersion::UNKNOWN, "UNKNOWN");
