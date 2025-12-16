@@ -7,15 +7,7 @@
 #include <string>
 #include <ogre/OgreMemoryAllocatorConfig.h>
 #include <ogre/OgreVector3.h>
-
-enum MoveSpeed
-{
-    WALK,
-    JOG,
-    RUN,
-    GROUPED,
-    NO_SPEED_CHANGE
-};
+#include "Enums.h"
 
 enum PlatoonCreationMessage
 {

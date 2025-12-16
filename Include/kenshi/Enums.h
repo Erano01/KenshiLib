@@ -887,3 +887,12 @@ enum SquadType
     SQ_RESIDENT,
     SQ_ROAMING
 };
+
+enum MoveSpeed
+{
+    WALK,
+    JOG,
+    RUN,
+    GROUPED,
+    NO_SPEED_CHANGE
+};

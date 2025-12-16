@@ -134,15 +134,6 @@ enum SquadMemberType
     SQUAD_SLAVE
 };
 
-enum MoveSpeed
-{
-    WALK,
-    JOG,
-    RUN,
-    GROUPED,
-    NO_SPEED_CHANGE
-};
-
 enum CharacterMessage
 {
     ATTACKING_MELEE

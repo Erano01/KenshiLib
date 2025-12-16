@@ -27,16 +27,6 @@ enum NxControllerAction
     NX_ACTION_PUSH
 };
 
-// TODO move?
-enum MoveSpeed
-{
-    WALK,
-    JOG,
-    RUN,
-    GROUPED,
-    NO_SPEED_CHANGE
-};
-
 // TODO move
 class physHit
 {
