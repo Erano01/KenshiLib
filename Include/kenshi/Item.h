@@ -243,10 +243,10 @@ public:
 	ogre_unordered_map<GameData*, RaceLimiter::Limiter>::type limits; // 0x8 Member
 	static RaceLimiter* getSingleton();// public RVA = 0x5938D0
 	void addLimit(GameData* dat);// public RVA = 0x761F40
-	virtual bool canEquip(GameData* item, RootObject* who);// public RVA = 0x75C510 vtable offset = 0x0
-	bool _NV_canEquip(GameData* item, RootObject* who);// public RVA = 0x75C510 vtable offset = 0x0
 	virtual bool canEquip(GameData* item, RaceData* race, bool isAnimal);// public RVA = 0x593780 vtable offset = 0x8
 	bool _NV_canEquip(GameData* item, RaceData* race, bool isAnimal);// public RVA = 0x593780 vtable offset = 0x8
+	virtual bool canEquip(GameData* item, RootObject* who);// public RVA = 0x75C510 vtable offset = 0x0
+	bool _NV_canEquip(GameData* item, RootObject* who);// public RVA = 0x75C510 vtable offset = 0x0
 	// no_addr void RaceLimiter(const class RaceLimiter & _a1);// public missing arg names
 	RaceLimiter();// public RVA = 0x592420
 	RaceLimiter* _CONSTRUCTOR();// public RVA = 0x592420

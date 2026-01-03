@@ -46,7 +46,7 @@ public:
     void _NV_periodicUpdate();// public RVA = 0x593B70 vtable offset = 0xE8
     virtual const Ogre::Aabb & getAABB() const;// public RVA = 0xD1F10 vtable offset = 0xF0
     const Ogre::Aabb & _NV_getAABB() const;// public RVA = 0xD1F10 vtable offset = 0xF0
-    virtual bool isPhysical() = 0;// public vtable offset = 0xF8
+    virtual bool isPhysical() const = 0;// public vtable offset = 0xF8
     virtual void setVisible(bool _a1) = 0;// public vtable offset = 0x100 missing arg names
     virtual bool getVisible() const;// public RVA = 0xD5290 vtable offset = 0x108
     bool _NV_getVisible() const;// public RVA = 0xD5290 vtable offset = 0x108
