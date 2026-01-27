@@ -278,22 +278,6 @@ public:
     // no_addr void * __vecDelDtor(unsigned int _a1);// public missing arg names
 };
 
-enum swordStateEnum
-{
-    CHOP_WEAPON,
-    BLOCK,
-    REACTION_BLOCK,
-    STARTUP_STATE,
-    DECISION,
-    CIRCLE_MENACINGLY,
-    WAIT_MENACINGLY,
-    HESITATE,
-    STUMBLE,
-    COMBAT_FINISHED,
-    TARGET_PATHFINDING_STARTUP,
-    TARGET_PATHFINDING
-};
-
 class CharMovement;
 
 class CombatMovementController
