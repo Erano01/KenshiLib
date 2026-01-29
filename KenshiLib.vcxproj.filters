@@ -2279,6 +2279,9 @@
     <ClInclude Include="Include\kenshi\CombatClass.h">
       <Filter>Header Files\kenshi</Filter>
     </ClInclude>
+    <ClInclude Include="Include\kenshi\ResourceLoader.h">
+      <Filter>Header Files\kenshi</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Library Include="Libraries\ogre\OgreMain_x64.lib">
@@ -2378,9 +2381,6 @@
     </None>
     <None Include="Include\ogre\OgreMovableObject.inl">
       <Filter>Header Files\ogre</Filter>
-    </None>
-    <None Include="Include\kenshi\util\iVector2.h">
-      <Filter>Header Files\kenshi</Filter>
     </None>
     <None Include="Source\kenshi\globals.inc">
       <Filter>Source Files\kenshi</Filter>
@@ -2741,6 +2741,9 @@
     </None>
     <None Include="Source\kenshi\functions\Character.inc">
       <Filter>Source Files\kenshi\functions</Filter>
+    </None>
+    <None Include="Include\kenshi\util\iVector2.h">
+      <Filter>Header Files\kenshi\util</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

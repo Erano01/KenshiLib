@@ -105,45 +105,51 @@ _RaceData_base EQU 2391*8
 _RaceLimiter_base EQU 2401*8
 _RaceLimiter_Limiter_base EQU 2407*8
 _rendHit_base EQU 2410*8
-_RobotLimbs_base EQU 2411*8
-_RootObject_base EQU 2422*8
-_RootObjectBase_base EQU 2470*8
-_RootObjectContainer_base EQU 2493*8
-_RootObjectContainer_SpecificItemLoadFirst_base EQU 2507*8
-_RootObjectFactory_base EQU 2511*8
-_RootObjectFactory_CreatelistItem_base EQU 2532*8
-_SaveFileSystem_base EQU 2533*8
-_SaveFileSystem_FileMessage_base EQU 2555*8
-_SaveInfo_base EQU 2558*8
-_SaveManager_base EQU 2562*8
-_Scythe_PhysicsClass_base EQU 2592*8
-_SeenSomeone_base EQU 2600*8
-_SelectionBox_base EQU 2604*8
-_SenseItr_base EQU 2613*8
-_SensoryData_base EQU 2619*8
-_SensoryData_SpottingPeopleMgr_base EQU 2665*8
-_SensoryData_SpottingPeopleMgr_Spot_base EQU 2673*8
-_SimpleTimeStamper_base EQU 2674*8
-_SpeedGroup_base EQU 2678*8
-_StringPair_base EQU 2683*8
-_Sword_base EQU 2689*8
-_ThreadClass_base EQU 2697*8
-_ThreadWannabe_base EQU 2709*8
-_TimeOfDay_base EQU 2715*8
-_TimerClass_base EQU 2743*8
-_TitleScreen_base EQU 2744*8
-_TradeCulture_base EQU 2759*8
-_TripleInt_base EQU 2768*8
-_UtilityT_base EQU 2774*8
-_VisibleObjectInfo_base EQU 2876*8
-_Weapon_base EQU 2879*8
-_WeatherRegion_base EQU 2893*8
-_WeatherRegion_Listener_base EQU 2909*8
-_WorldEventStateQuery_base EQU 2910*8
-_WorldEventStateQueryList_base EQU 2914*8
-_wraps_BaseLayout_base EQU 2919*8
-_YesNoMaybe_base EQU 2926*8
-_static_functions_base EQU 2937*8
+_ResourceLoader_base EQU 2411*8
+_ResourceLoader_MeshLoadData_base EQU 2437*8
+_ResourceLoader_ResourceLoadRequestMesh_base EQU 2440*8
+_ResourceLoader_ResourceLoadRequestTexture_base EQU 2443*8
+_ResourceLoader_TextureArrayLoadData_base EQU 2447*8
+_ResourceLoader_TextureLoadData_base EQU 2451*8
+_RobotLimbs_base EQU 2455*8
+_RootObject_base EQU 2466*8
+_RootObjectBase_base EQU 2514*8
+_RootObjectContainer_base EQU 2537*8
+_RootObjectContainer_SpecificItemLoadFirst_base EQU 2551*8
+_RootObjectFactory_base EQU 2555*8
+_RootObjectFactory_CreatelistItem_base EQU 2576*8
+_SaveFileSystem_base EQU 2577*8
+_SaveFileSystem_FileMessage_base EQU 2599*8
+_SaveInfo_base EQU 2602*8
+_SaveManager_base EQU 2606*8
+_Scythe_PhysicsClass_base EQU 2636*8
+_SeenSomeone_base EQU 2644*8
+_SelectionBox_base EQU 2648*8
+_SenseItr_base EQU 2657*8
+_SensoryData_base EQU 2663*8
+_SensoryData_SpottingPeopleMgr_base EQU 2709*8
+_SensoryData_SpottingPeopleMgr_Spot_base EQU 2717*8
+_SimpleTimeStamper_base EQU 2718*8
+_SpeedGroup_base EQU 2722*8
+_StringPair_base EQU 2727*8
+_Sword_base EQU 2733*8
+_ThreadClass_base EQU 2741*8
+_ThreadWannabe_base EQU 2753*8
+_TimeOfDay_base EQU 2759*8
+_TimerClass_base EQU 2787*8
+_TitleScreen_base EQU 2788*8
+_TradeCulture_base EQU 2803*8
+_TripleInt_base EQU 2812*8
+_UtilityT_base EQU 2818*8
+_VisibleObjectInfo_base EQU 2920*8
+_Weapon_base EQU 2923*8
+_WeatherRegion_base EQU 2937*8
+_WeatherRegion_Listener_base EQU 2953*8
+_WorldEventStateQuery_base EQU 2954*8
+_WorldEventStateQueryList_base EQU 2958*8
+_wraps_BaseLayout_base EQU 2963*8
+_YesNoMaybe_base EQU 2970*8
+_static_functions_base EQU 2981*8
 
 
 DUMMY_FUNCTION proc 
@@ -258,6 +264,12 @@ INCLUDE functions/RaceData.inc
 INCLUDE functions/RaceLimiter.inc
 INCLUDE functions/RaceLimiter_Limiter.inc
 INCLUDE functions/rendHit.inc
+INCLUDE functions/ResourceLoader.inc
+INCLUDE functions/ResourceLoader_MeshLoadData.inc
+INCLUDE functions/ResourceLoader_ResourceLoadRequestMesh.inc
+INCLUDE functions/ResourceLoader_ResourceLoadRequestTexture.inc
+INCLUDE functions/ResourceLoader_TextureArrayLoadData.inc
+INCLUDE functions/ResourceLoader_TextureLoadData.inc
 INCLUDE functions/RobotLimbs.inc
 INCLUDE functions/RootObject.inc
 INCLUDE functions/RootObjectBase.inc
@@ -303,7 +315,7 @@ FUNC_END endp
 
 .data
 PUBLIC function_pointers
-function_pointers QWORD 2942 DUP(0)
+function_pointers QWORD 2986 DUP(0)
 
 ; must be directly after function_pointers
 INCLUDE globals.inc
