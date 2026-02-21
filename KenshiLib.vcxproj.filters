@@ -2285,6 +2285,21 @@
     <ClInclude Include="Include\kenshi\util\UtilityT.h">
       <Filter>Header Files\kenshi\util</Filter>
     </ClInclude>
+    <ClInclude Include="Include\kenshi\FactionRelations.h">
+      <Filter>Header Files\kenshi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\FactionUniqueSquadManager.h">
+      <Filter>Header Files\kenshi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\Town.h">
+      <Filter>Header Files\kenshi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\util\TagsClass.h">
+      <Filter>Header Files\kenshi\util</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\FactionWarMgr.h">
+      <Filter>Header Files\kenshi</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Library Include="Libraries\ogre\OgreMain_x64.lib">

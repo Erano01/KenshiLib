@@ -14,6 +14,7 @@
 class GameData;
 class FactionUniqueSquadManager;
 class FactionRelations;
+// AIPlayer appears to be a dummy class? doesn't appear in the symbols. Possibly optimized out?
 class AIPlayer;
 class Platoon;
 class GameDataContainer;

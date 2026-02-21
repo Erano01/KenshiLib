@@ -268,6 +268,9 @@
     <ClInclude Include="Include\kenshi\Enums.h" />
     <ClInclude Include="Include\kenshi\Faction.h" />
     <ClInclude Include="Include\kenshi\FactionLeader.h" />
+    <ClInclude Include="Include\kenshi\FactionRelations.h" />
+    <ClInclude Include="Include\kenshi\FactionUniqueSquadManager.h" />
+    <ClInclude Include="Include\kenshi\FactionWarMgr.h" />
     <ClInclude Include="Include\kenshi\FitnessSelector.h" />
     <ClInclude Include="Include\kenshi\GameData.h" />
     <ClInclude Include="Include\kenshi\GameDataManager.h" />
@@ -301,6 +304,7 @@
     <ClInclude Include="Include\kenshi\SensoryData.h" />
     <ClInclude Include="Include\kenshi\Tasks.h" />
     <ClInclude Include="Include\kenshi\TitleScreen.h" />
+    <ClInclude Include="Include\kenshi\Town.h" />
     <ClInclude Include="Include\kenshi\TradeCulture.h" />
     <ClInclude Include="Include\kenshi\ThreadClass.h" />
     <ClInclude Include="Include\kenshi\util\Array2d.h" />
@@ -309,6 +313,7 @@
     <ClInclude Include="Include\kenshi\util\OgreUnordered.h" />
     <ClInclude Include="Include\kenshi\util\PerfTimer.h" />
     <ClInclude Include="Include\kenshi\util\StringPair.h" />
+    <ClInclude Include="Include\kenshi\util\TagsClass.h" />
     <ClInclude Include="Include\kenshi\util\TimeOfDay.h" />
     <ClInclude Include="Include\kenshi\util\TripleInt.h" />
     <ClInclude Include="Include\kenshi\util\UtilityT.h" />
