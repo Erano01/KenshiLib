@@ -2219,9 +2219,6 @@
     <ClInclude Include="Include\kenshi\GameLauncher.h">
       <Filter>Header Files\kenshi</Filter>
     </ClInclude>
-    <ClInclude Include="Include\kenshi\util\UtilityT.h">
-      <Filter>Header Files\kenshi</Filter>
-    </ClInclude>
     <ClInclude Include="Include\ogre\WIN32\OgreTimerImp.h">
       <Filter>Header Files\ogre</Filter>
     </ClInclude>
@@ -2281,6 +2278,12 @@
     </ClInclude>
     <ClInclude Include="Include\kenshi\ResourceLoader.h">
       <Filter>Header Files\kenshi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\SaveInfo.h">
+      <Filter>Header Files\kenshi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\util\UtilityT.h">
+      <Filter>Header Files\kenshi\util</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

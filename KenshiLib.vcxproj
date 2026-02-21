@@ -296,6 +296,7 @@
     <ClInclude Include="Include\kenshi\RootObjectBase.h" />
     <ClInclude Include="Include\kenshi\RootObjectFactory.h" />
     <ClInclude Include="Include\kenshi\SaveFileSystem.h" />
+    <ClInclude Include="Include\kenshi\SaveInfo.h" />
     <ClInclude Include="Include\kenshi\SaveManager.h" />
     <ClInclude Include="Include\kenshi\SensoryData.h" />
     <ClInclude Include="Include\kenshi\Tasks.h" />
