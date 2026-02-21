@@ -205,7 +205,7 @@ public:
     virtual Building::ConstructionState* getBuildState();// public RVA = 0xF6AD0 vtable offset = 0x228
     Building::ConstructionState* _NV_getBuildState();// public RVA = 0xF6AD0 vtable offset = 0x228
     Building::ConstructionState* getBuildState_ActualNonShared();// public RVA = 0x296420
-    virtual void select();// public RVA = 0x54FD20 vtable offset = 0x0
+    virtual void select() override;// public RVA = 0x54FD20 vtable offset = 0x0
     void _NV_select();// public RVA = 0x54FD20 vtable offset = 0x0
     BuildingDesignation designation; // 0xC4 Member
     BuildingDesignation getBuildingDesignation() const;// public RVA = 0x8C8910
@@ -275,10 +275,10 @@ public:
     // no_addr int getNumInternalItems();// public
     int getMountedBuildings(lektor<Building*>* out);// public RVA = 0x54B250
     void moveMountedBuildings();// public RVA = 0x54C090
-    virtual void setHandle(const hand& h);// public RVA = 0x556980 vtable offset = 0x0
+    virtual void setHandle(const hand& h) override;// public RVA = 0x556980 vtable offset = 0x0
     void _NV_setHandle(const hand& h);// public RVA = 0x556980 vtable offset = 0x0
     void reCheckInsideOutsideFortificationStatus();// public RVA = 0x555850
-    virtual void setInsideTownWalls(int code);// public RVA = 0x54DCD0 vtable offset = 0x0
+    virtual void setInsideTownWalls(int code) override;// public RVA = 0x54DCD0 vtable offset = 0x0
     void _NV_setInsideTownWalls(int code);// public RVA = 0x54DCD0 vtable offset = 0x0
     virtual void postCreationPathfinderSetupStuff();// public RVA = 0x555AB0 vtable offset = 0x2E8
     void _NV_postCreationPathfinderSetupStuff();// public RVA = 0x555AB0 vtable offset = 0x2E8
@@ -314,12 +314,12 @@ public:
     virtual BuildingClassType getBuildingClass() const;// public RVA = 0xF6B60 vtable offset = 0x358
     BuildingClassType _NV_getBuildingClass() const;// public RVA = 0xF6B60 vtable offset = 0x358
     InstanceID instanceID; // 0x100 Member
-    virtual bool needsSaving(const std::string& mod) const;// public RVA = 0x54F9A0 vtable offset = 0x0
+    virtual bool needsSaving(const std::string& mod) const override;// public RVA = 0x54F9A0 vtable offset = 0x0
     bool _NV_needsSaving(const std::string& mod) const;// public RVA = 0x54F9A0 vtable offset = 0x0
     void notifyChange();// public RVA = 0x7809A0
-    virtual InstanceID* getInstanceID();// public RVA = 0xF6B70 vtable offset = 0x0
+    virtual InstanceID* getInstanceID() override;// public RVA = 0xF6B70 vtable offset = 0x0
     InstanceID* _NV_getInstanceID();// public RVA = 0xF6B70 vtable offset = 0x0
-    virtual const std::string& getLayoutInstanceID();// public RVA = 0xF6B80 vtable offset = 0x0
+    virtual const std::string& getLayoutInstanceID() override;// public RVA = 0xF6B80 vtable offset = 0x0
     const std::string& _NV_getLayoutInstanceID();// public RVA = 0xF6B80 vtable offset = 0x0
     std::string layoutInstanceID; // 0x130 Member
     BuildingFunction specialFunction; // 0x158 Member
@@ -344,7 +344,7 @@ public:
     float _NV_calculateEfficiencyMult() const;// protected RVA = 0x2AD6B0 vtable offset = 0x368
     virtual float getSoundIntensity();// protected RVA = 0xF6B90 vtable offset = 0x370
     float _NV_getSoundIntensity();// protected RVA = 0xF6B90 vtable offset = 0x370
-    virtual void loadUnloadCheck();// protected RVA = 0x546AF0 vtable offset = 0x0
+    virtual void loadUnloadCheck() override;// protected RVA = 0x546AF0 vtable offset = 0x0
     void _NV_loadUnloadCheck();// protected RVA = 0x546AF0 vtable offset = 0x0
     int saveVersion; // 0x1B0 Member
     virtual ~Building();// protected RVA = 0x5625A0 vtable offset = 0x0
@@ -387,32 +387,32 @@ public:
     bool isFurnitureOrDoor() const;// public RVA = 0x296460
     bool getIsOutsideFurniture() const;// public RVA = 0x7809C0
     void setIsOutsideFurniture(bool value);// public RVA = 0x4EB9D0
-    virtual TownBase* getCurrentTownLocation();// public RVA = 0xF7070 vtable offset = 0x0
+    virtual TownBase* getCurrentTownLocation() override;// public RVA = 0xF7070 vtable offset = 0x0
     TownBase* _NV_getCurrentTownLocation();// public RVA = 0xF7070 vtable offset = 0x0
     Building* furnitureParentBuilding() const;// public RVA = 0xD5F60
     bool hasAnOpenDoor() const;// public RVA = 0x549220
     bool allowAnimals() const;// public RVA = 0x546D80
-    virtual void update();// public RVA = 0x561F20 vtable offset = 0x0
+    virtual void update() override;// public RVA = 0x561F20 vtable offset = 0x0
     void _NV_update();// public RVA = 0x561F20 vtable offset = 0x0
-    virtual void threadedUpdate();// public RVA = 0x54A990 vtable offset = 0x0
+    virtual void threadedUpdate() override;// public RVA = 0x54A990 vtable offset = 0x0
     void _NV_threadedUpdate();// public RVA = 0x54A990 vtable offset = 0x0
     virtual bool needsUpdate();// public RVA = 0x9F9720 vtable offset = 0x3E8
     bool _NV_needsUpdate();// public RVA = 0x9F9720 vtable offset = 0x3E8
-    virtual bool isPhysical() const;// public RVA = 0xF6BD0 vtable offset = 0x0
+    virtual bool isPhysical() const override;// public RVA = 0xF6BD0 vtable offset = 0x0
     bool _NV_isPhysical() const;// public RVA = 0xF6BD0 vtable offset = 0x0
     virtual void checkLoadedProperly();// public RVA = 0x5463F0 vtable offset = 0x3F0
     void _NV_checkLoadedProperly();// public RVA = 0x5463F0 vtable offset = 0x3F0
-    virtual GameSaveState serialise(GameDataContainer* container, GameData* refList, PosRotPair* offsetPosToSubtract);// public RVA = 0x551BA0 vtable offset = 0x0
+    virtual GameSaveState serialise(GameDataContainer* container, GameData* refList, PosRotPair* offsetPosToSubtract) override;// public RVA = 0x551BA0 vtable offset = 0x0
     GameSaveState _NV_serialise(GameDataContainer* container, GameData* refList, PosRotPair* offsetPosToSubtract);// public RVA = 0x551BA0 vtable offset = 0x0
-    virtual void loadFromSerialise(GameSaveState* savestate);// public RVA = 0x5523F0 vtable offset = 0x0
+    virtual void loadFromSerialise(GameSaveState* savestate) override;// public RVA = 0x5523F0 vtable offset = 0x0
     void _NV_loadFromSerialise(GameSaveState* savestate);// public RVA = 0x5523F0 vtable offset = 0x0
     virtual void loadFromSerialise_TheDoors(GameSaveState* savestate);// public RVA = 0x54BF30 vtable offset = 0x3F8
     void _NV_loadFromSerialise_TheDoors(GameSaveState* savestate);// public RVA = 0x54BF30 vtable offset = 0x3F8
-    virtual void getGUIData(DatapanelGUI* datapanel, int category);// public RVA = 0x301390 vtable offset = 0x0
+    virtual void getGUIData(DatapanelGUI* datapanel, int category) override;// public RVA = 0x301390 vtable offset = 0x0
     void _NV_getGUIData(DatapanelGUI* datapanel, int category);// public RVA = 0x301390 vtable offset = 0x0
-    virtual void setVisible(bool on);// public RVA = 0x5487F0 vtable offset = 0x0
+    virtual void setVisible(bool on) override;// public RVA = 0x5487F0 vtable offset = 0x0
     void _NV_setVisible(bool on);// public RVA = 0x5487F0 vtable offset = 0x0
-    virtual bool getVisible() const;// public RVA = 0x5469C0 vtable offset = 0x0
+    virtual bool getVisible() const override;// public RVA = 0x5469C0 vtable offset = 0x0
     bool _NV_getVisible() const;// public RVA = 0x5469C0 vtable offset = 0x0
     virtual DoorLock* getDoorLock();// public RVA = 0x297810 vtable offset = 0x400
     DoorLock* _NV_getDoorLock();// public RVA = 0x297810 vtable offset = 0x400
@@ -422,21 +422,21 @@ public:
     CursorType _NV_getMouseCursor();// public RVA = 0x57B4B0 vtable offset = 0x410
     virtual TaskType getDefaultTask();// public RVA = 0x57B4C0 vtable offset = 0x418
     TaskType _NV_getDefaultTask();// public RVA = 0x57B4C0 vtable offset = 0x418
-    virtual Inventory* getInventory() const;// public RVA = 0x2AD6C0 vtable offset = 0x0
+    virtual Inventory* getInventory() const override;// public RVA = 0x2AD6C0 vtable offset = 0x0
     Inventory* _NV_getInventory() const;// public RVA = 0x2AD6C0 vtable offset = 0x0
+    virtual const Ogre::Aabb& getAABB() const override;// public RVA = 0x546C00 vtable offset = 0x0
+    const Ogre::Aabb& _NV_getAABB() const;// public RVA = 0x546C00 vtable offset = 0x0
     virtual Ogre::Aabb getAABB(float scale) const;// public RVA = 0x546C10 vtable offset = 0x420
     Ogre::Aabb _NV_getAABB(float scale) const;// public RVA = 0x546C10 vtable offset = 0x420
-    virtual const Ogre::Aabb& getAABB() const;// public RVA = 0x546C00 vtable offset = 0x0
-    const Ogre::Aabb& _NV_getAABB() const;// public RVA = 0x546C00 vtable offset = 0x0
     void setAABB(const Ogre::Aabb& aabb);// public RVA = 0x546C70
     void _changeTown(Town* t);// public RVA = 0x9258B0
     hand _town; // 0x1D0 Member
     hand getTownHandle() const;// public RVA = 0xD9E70
     TownBase* getTown() const;// public RVA = 0xF6BE0
     Town* getRealTown() const;// public RVA = 0x296490
-    virtual bool createPhysical();// public RVA = 0x560260 vtable offset = 0x0
+    virtual bool createPhysical() override;// public RVA = 0x560260 vtable offset = 0x0
     bool _NV_createPhysical();// public RVA = 0x560260 vtable offset = 0x0
-    virtual void destroyPhysical();// public RVA = 0x562220 vtable offset = 0x0
+    virtual void destroyPhysical() override;// public RVA = 0x562220 vtable offset = 0x0
     void _NV_destroyPhysical();// public RVA = 0x562220 vtable offset = 0x0
     void destroyDoors();// public RVA = 0x5480B0
     void createTriggerHull();// public RVA = 0x5530F0
@@ -445,7 +445,7 @@ public:
     GroundType getGroundType(bool inside) const;// public RVA = 0x663EC0
     virtual bool isCeilingMounted();// public RVA = 0xF8170 vtable offset = 0x428
     bool _NV_isCeilingMounted();// public RVA = 0xF8170 vtable offset = 0x428
-    virtual const hand& isIndoors() const;// public RVA = 0x546DB0 vtable offset = 0x0
+    virtual const hand& isIndoors() const override;// public RVA = 0x546DB0 vtable offset = 0x0
     const hand& _NV_isIndoors() const;// public RVA = 0x546DB0 vtable offset = 0x0
     virtual const hand& isIndoors_notDestroyed() const;// public RVA = 0x546E60 vtable offset = 0x430
     const hand& _NV_isIndoors_notDestroyed() const;// public RVA = 0x546E60 vtable offset = 0x430
@@ -457,7 +457,7 @@ public:
     void buildingComplete_RestoreMaterial();// public RVA = 0x5582F0
     void loadInteriorPhysical(bool on);// public RVA = 0x57B6C0
     void loadInteriorGraphics(bool on);// public RVA = 0x7809D0
-    virtual void setFaction(Faction* p, ActivePlatoon* a);// public RVA = 0x5571D0 vtable offset = 0x0
+    virtual void setFaction(Faction* p, ActivePlatoon* a) override;// public RVA = 0x5571D0 vtable offset = 0x0
     void _NV_setFaction(Faction* p, ActivePlatoon* a);// public RVA = 0x5571D0 vtable offset = 0x0
     Ogre::Vector3 calculateLeftPost() const;// public RVA = 0x426F70
     void setupLevelData(Faction* f, GameData* squad, const std::string& interior, const std::string& exterior);// public RVA = 0x5519C0
@@ -465,7 +465,7 @@ public:
     float _NV_getLinkLength() const;// public RVA = 0xF8230 vtable offset = 0x440
     BuildingInterior* myInterior; // 0x1F0 Member
     Ogre::SceneNode* getRootNode() const;// public RVA = 0xDEDE0
-    virtual ZoneMap* getZoneMapLocation();// public RVA = 0x547240 vtable offset = 0x0
+    virtual ZoneMap* getZoneMapLocation() override;// public RVA = 0x547240 vtable offset = 0x0
     ZoneMap* _NV_getZoneMapLocation();// public RVA = 0x547240 vtable offset = 0x0
     virtual void clearTownBuildingsManagerPtr();// public RVA = 0x54A810 vtable offset = 0x448
     void _NV_clearTownBuildingsManagerPtr();// public RVA = 0x54A810 vtable offset = 0x448
@@ -512,7 +512,7 @@ public:
     void removeUsageNode(const std::string& nodeId);// public RVA = 0x54D250
     void clearUsageNodes();// public RVA = 0x54BD50
     // no_addr const class lektor<UsageNode *> & getUsageNodes();// public
-    virtual void notifyEffect(EffectType::Enum type, WeatherAffecting what, float strength);// public RVA = 0x546760 vtable offset = 0x0
+    virtual void notifyEffect(EffectType::Enum type, WeatherAffecting what, float strength) override;// public RVA = 0x546760 vtable offset = 0x0
     void _NV_notifyEffect(EffectType::Enum type, WeatherAffecting what, float strength);// public RVA = 0x546760 vtable offset = 0x0
     static DatapanelGUI* infoWindow; // RVA = 0x212CB70 Static Member
     static Ogre::SharedPtr<Ogre::Material> getBuildingPartMaterial(GameData* data, bool coloured, bool instanced, bool inside, const Ogre::Vector3& pos);// protected RVA = 0x57A1A0

@@ -37,11 +37,11 @@ public:
     unsigned int serial; // 0x18 Member
     std::string toString() const;// public RVA = 0x9B3FA0
     void fromString(const std::string& str);// public RVA = 0x9B7120
+    virtual bool operator==(bool a) const;// public RVA = 0xCD0C0 vtable offset = 0x0
+    bool _NV_operator_equal(bool a) const;// public RVA = 0xCD0C0 vtable offset = 0x0
     bool operator==(const RootObjectBase* a) const;// public RVA = 0x593CC0
     virtual bool operator==(const hand& a) const;// public RVA = 0xCD020 vtable offset = 0x8
     bool _NV_operator_equal(const hand& a) const;// public RVA = 0xCD020 vtable offset = 0x8
-    virtual bool operator==(bool a) const;// public RVA = 0xCD0C0 vtable offset = 0x0
-    bool _NV_operator_equal(bool a) const;// public RVA = 0xCD0C0 vtable offset = 0x0
     bool operator!=(const RootObjectBase* a) const;// public RVA = 0x593D60
     virtual bool operator!=(const hand& a) const;// public RVA = 0xCD070 vtable offset = 0x10
     bool _NV_operator_notequal(const hand& a) const;// public RVA = 0xCD070 vtable offset = 0x10
@@ -64,5 +64,5 @@ public:
     bool isValid() const;// public RVA = 0x25FB40
     bool canCastToRootObject() const;// public RVA = 0x333EF0
     bool squadMatch(const hand& h) const;// public RVA = 0x333020
-    static const hand NULL_HAND; // Static Member
+    static const hand NULL_HAND; // RVA = 0x1E375F8 Static Member
 };
