@@ -53,8 +53,8 @@ public:
         CAPTURED_US
     };
 
-    virtual void affectRelations(Faction* p, FactionRelations::FactionEvent e, float mult);// public RVA = 0x6B22E0 vtable offset = 0x28
-    void _NV_affectRelations(Faction* p, FactionRelations::FactionEvent e, float mult);// public RVA = 0x6B22E0 vtable offset = 0x28
+    virtual void affectRelations(Faction* p, FactionEvent e, float mult);// public RVA = 0x6B22E0 vtable offset = 0x28
+    void _NV_affectRelations(Faction* p, FactionEvent e, float mult);// public RVA = 0x6B22E0 vtable offset = 0x28
     virtual void affectRelations(Faction* p, float amount, float mult);// public RVA = 0x6B2460 vtable offset = 0x20
     void _NV_affectRelations(Faction* p, float amount, float mult);// public RVA = 0x6B2460 vtable offset = 0x20
     virtual void affectTrust(Faction* p, float amount, float mult);// public RVA = 0x6B1B20 vtable offset = 0x30
@@ -69,7 +69,7 @@ public:
     class RelationData
     {
     public:
-        // no_addr void RelationData(const class FactionRelations::RelationData & _a1);// public missing arg names
+        // no_addr void RelationData(const class RelationData & _a1);// public missing arg names
         RelationData(float rel, bool ally);// public RVA = 0x6B7FB0
         RelationData* _CONSTRUCTOR(float rel, bool ally);// public RVA = 0x6B7FB0
         RelationData();// public RVA = 0x6B7F70
@@ -90,19 +90,19 @@ public:
         std::map<std::string, int, std::less<std::string >, Ogre::STLAllocator<std::pair<std::string const, int>, Ogre::GeneralAllocPolicy > > stateVariables; // 0x18 Member
         ~RelationData();// public RVA = 0x6B7DB0
         void _DESTRUCTOR();// public RVA = 0x6B7DB0
-        FactionRelations::RelationData& operator=(const FactionRelations::RelationData& __that);// public RVA = 0x6B8290
+        RelationData& operator=(const RelationData& __that);// public RVA = 0x6B8290
         // no_addr void * __vecDelDtor(unsigned int _a1);// public missing arg names
     };
     float globalReputationTrust; // 0x14 Member
     float globalReputationForBadassery; // 0x18 Member
-    virtual FactionRelations::RelationData* getRelationData(Faction* p);// public RVA = 0x6B4220 vtable offset = 0x50
-    FactionRelations::RelationData* _NV_getRelationData(Faction* p);// public RVA = 0x6B4220 vtable offset = 0x50
+    virtual RelationData* getRelationData(Faction* p);// public RVA = 0x6B4220 vtable offset = 0x50
+    RelationData* _NV_getRelationData(Faction* p);// public RVA = 0x6B4220 vtable offset = 0x50
     void getGUIData(DatapanelGUI* panel, int category);// public RVA = 0x7F32C0
     void getRelationsData(ogre_unordered_map<Faction*, float>::type& data);// public RVA = 0x6B1DF0
     // no_addr void setStateVar(class Faction * _a1, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > & _a2, int _a3);// public missing arg names
     // no_addr int getStateVar(class Faction * _a1, const class std::basic_string<char,std::char_traits<char>,std::allocator<char> > & _a2);// public missing arg names
     bool checkStateCondition(DialogConditionEnum conditionName, ComparisonEnum compareBy, int val, Faction* yourFaction);// public RVA = 0x670DB0
-    ogre_unordered_map<Faction*, FactionRelations::RelationData>::type _factionRelations; // 0x20 Member
+    ogre_unordered_map<Faction*, RelationData>::type _factionRelations; // 0x20 Member
     float defaultFactionRelation; // 0x60 Member
     ~FactionRelations();// public RVA = 0x811AC0
     void _DESTRUCTOR();// public RVA = 0x811AC0
