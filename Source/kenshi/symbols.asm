@@ -3,169 +3,180 @@
 
 _AbstractMovementBase_base EQU 0*8
 _ActivePlatoon_base EQU 45*8
-_Armour_base EQU 93*8
-_Bounty_base EQU 106*8
-_BountyManager_base EQU 109*8
-_Building_base EQU 139*8
-_Building_ConstructionState_base EQU 326*8
-_Building_ConstructionState_BuildMaterial_base EQU 344*8
-_Character_base EQU 346*8
-_Character_AttachedArrowManager_base EQU 675*8
-_Character_CarryMsg_base EQU 681*8
-_Character_RagdollMsg_base EQU 681*8
-_Character_WhoSeesMe_base EQU 683*8
-_CharacterAnimal_base EQU 685*8
-_CharacterHuman_base EQU 714*8
-_CharMovement_base EQU 739*8
-_CharStats_base EQU 800*8
-_CombatClass_base EQU 925*8
-_CombatClass_AttackSlotManager_base EQU 994*8
-_CombatClass_AttackSlotManager_SlotData_base EQU 1004*8
-_CombatClass_EffectData_base EQU 1006*8
-_CombatMovementController_base EQU 1009*8
-_CombatTechniqueData_base EQU 1027*8
-_ContainerItem_base EQU 1031*8
-_ContextMenu_base EQU 1051*8
-_Crossbow_base EQU 1057*8
-_Damages_base EQU 1070*8
-_DataObjectContainer_base EQU 1076*8
-_DialogChoiceList_base EQU 1083*8
-_DialogDataManager_base EQU 1086*8
-_DialogLineData_base EQU 1092*8
-_Dialogue_base EQU 1122*8
-_Dialogue_RepetitionCounter_base EQU 1193*8
-_Dialogue_RepetitionCounter_DialogState_base EQU 1199*8
-_DialogueSpeechBubble_base EQU 1200*8
-_Faction_base EQU 1209*8
-_Faction_BuildingSwaps_base EQU 1276*8
-_Faction_CharacteristicsData_base EQU 1282*8
-_FactionLeader_base EQU 1282*8
-_FactionManager_base EQU 1287*8
-_FactionRelations_base EQU 1307*8
-_FactionRelations_RelationData_base EQU 1336*8
-_FactionUniqueSquadManager_base EQU 1342*8
-_FactionUniqueSquadManager_UniqueSpawnData_base EQU 1354*8
-_FactionWarMgr_base EQU 1357*8
-_FactionWarMgr_CampaignRequest_base EQU 1385*8
-_FactoryCallbackInterface_base EQU 1387*8
-_FlockingTools_base EQU 1388*8
-_FormationMover_base EQU 1398*8
-_GameData_base EQU 1404*8
-_GameData_ItemData_base EQU 1461*8
-_GameData_ObjectInstance_base EQU 1461*8
-_GameDataContainer_base EQU 1466*8
-_GameDataHeader_base EQU 1498*8
-_GameDataManager_base EQU 1503*8
-_GameDataValuePair_base EQU 1511*8
-_GameLauncher_base EQU 1513*8
-_GameLauncher_TabChangelog_base EQU 1529*8
-_GameLauncher_TabMods_base EQU 1537*8
-_GameLauncher_TabVideo_base EQU 1555*8
-_GameLauncher_VideoDevice_base EQU 1573*8
-_GameLauncher_VideoRenderer_base EQU 1577*8
-_GameplayOptions_base EQU 1592*8
-_GameSaveState_base EQU 1597*8
-_GameWorld_base EQU 1615*8
-_GameWorld_SysMessage_base EQU 1707*8
-_Gear_base EQU 1710*8
-_GlobalConstants_base EQU 1720*8
-_GUIWindow_base EQU 1721*8
-_hand_base EQU 1735*8
-_InputHandler_base EQU 1767*8
-_InputHandler_Command_base EQU 1793*8
-_InstanceID_base EQU 1797*8
-_Inventory_base EQU 1813*8
-_Inventory_HasRoomCache_base EQU 1888*8
-_InventoryItemBase_base EQU 1894*8
-_InventorySection_base EQU 1923*8
-_Item_base EQU 1970*8
-_iVector2_base EQU 2020*8
-_LockedArmour_base EQU 2028*8
-_Logger_base EQU 2036*8
-_MedianFilter_base EQU 2041*8
-_MedianFilter2DVector_base EQU 2047*8
-_MedicalSystem_base EQU 2051*8
-_MedicalSystem_HealthPartStatus_base EQU 2141*8
-_ModInfo_base EQU 2159*8
-_MotionFilter_base EQU 2164*8
-_NxUserControllerHitReport_base EQU 2168*8
-_NxUserTriggerReport_base EQU 2170*8
-_NxVec3_base EQU 2172*8
-_OptionsHolder_base EQU 2203*8
-_Ownerships_base EQU 2209*8
-_ParticlePool_base EQU 2235*8
-_ParticlePool_ParticleData_base EQU 2243*8
-_physHit_base EQU 2244*8
-_PhysicalEntity_base EQU 2254*8
-_PhysicsActual_base EQU 2256*8
-_PhysicsActual_TriggerCallback_base EQU 2277*8
-_PhysicsCollection_base EQU 2281*8
-_PhysicsCollection_LightEnt_base EQU 2291*8
-_PhysicsCollection_RotatingEnt_base EQU 2295*8
-_PhysicsCollection_StaticEnt_base EQU 2302*8
-_PhysicsInterface_base EQU 2307*8
-_Platoon_base EQU 2329*8
-_PlayerInterface_base EQU 2382*8
-_PlayerInterface_AIOptions_base EQU 2474*8
-_ProsperityManager_base EQU 2477*8
-_RaceData_base EQU 2486*8
-_RaceLimiter_base EQU 2496*8
-_RaceLimiter_Limiter_base EQU 2502*8
-_rendHit_base EQU 2505*8
-_ResourceLoader_base EQU 2506*8
-_ResourceLoader_MeshLoadData_base EQU 2532*8
-_ResourceLoader_ResourceLoadRequestMesh_base EQU 2535*8
-_ResourceLoader_ResourceLoadRequestTexture_base EQU 2538*8
-_ResourceLoader_TextureArrayLoadData_base EQU 2542*8
-_ResourceLoader_TextureLoadData_base EQU 2546*8
-_RobotLimbs_base EQU 2550*8
-_RootObject_base EQU 2561*8
-_RootObjectBase_base EQU 2609*8
-_RootObjectContainer_base EQU 2632*8
-_RootObjectContainer_SpecificItemLoadFirst_base EQU 2646*8
-_RootObjectFactory_base EQU 2650*8
-_RootObjectFactory_CreatelistItem_base EQU 2671*8
-_SaveFileSystem_base EQU 2672*8
-_SaveFileSystem_FileMessage_base EQU 2694*8
-_SaveInfo_base EQU 2697*8
-_SaveManager_base EQU 2701*8
-_Scythe_PhysicsClass_base EQU 2731*8
-_SeenSomeone_base EQU 2739*8
-_SelectionBox_base EQU 2743*8
-_SenseItr_base EQU 2752*8
-_SensoryData_base EQU 2758*8
-_SensoryData_SpottingPeopleMgr_base EQU 2804*8
-_SensoryData_SpottingPeopleMgr_Spot_base EQU 2812*8
-_Serialisable_base EQU 2813*8
-_SimpleTimeStamper_base EQU 2814*8
-_SpeedGroup_base EQU 2818*8
-_StringPair_base EQU 2823*8
-_Sword_base EQU 2829*8
-_ThreadClass_base EQU 2837*8
-_ThreadWannabe_base EQU 2849*8
-_TimeOfDay_base EQU 2855*8
-_TimerClass_base EQU 2883*8
-_TitleScreen_base EQU 2884*8
-_Town_base EQU 2899*8
-_Town_NestSpot_base EQU 2973*8
-_TownBase_base EQU 2976*8
-_TownBase_DelayedSpawnMsg_base EQU 3060*8
-_TownBase_ResidentData_base EQU 3062*8
-_TownBase_TownPositionCacher_base EQU 3066*8
-_TownBuildingsManager_base EQU 3069*8
-_TownBuildingsManager_BuildingInfo_base EQU 3091*8
-_TradeCulture_base EQU 3094*8
-_TripleInt_base EQU 3103*8
-_UtilityT_base EQU 3109*8
-_VisibleObjectInfo_base EQU 3211*8
-_Weapon_base EQU 3214*8
-_WeatherRegion_base EQU 3228*8
-_WeatherRegion_Listener_base EQU 3244*8
-_WorldEventStateQuery_base EQU 3245*8
-_WorldEventStateQueryList_base EQU 3249*8
-_wraps_BaseLayout_base EQU 3254*8
-_YesNoMaybe_base EQU 3261*8
-_static_functions_base EQU 3272*8
+_AppearanceAnimal_base EQU 93*8
+_AppearanceBase_base EQU 97*8
+_AppearanceHuman_base EQU 176*8
+_AppearanceManager_base EQU 194*8
+_AppearanceManager_AppearanceData_base EQU 252*8
+_AppearanceManager_DataCategory_base EQU 256*8
+_AppearanceManager_DataRange_base EQU 263*8
+_AppearanceManager_DataRangePose_base EQU 268*8
+_AppearanceManager_DataRangeVector_base EQU 273*8
+_AppearanceManager_Gender_base EQU 282*8
+_Armour_base EQU 289*8
+_Bounty_base EQU 302*8
+_BountyManager_base EQU 305*8
+_Building_base EQU 335*8
+_Building_ConstructionState_base EQU 522*8
+_Building_ConstructionState_BuildMaterial_base EQU 540*8
+_Character_base EQU 542*8
+_Character_AttachedArrowManager_base EQU 871*8
+_Character_CarryMsg_base EQU 877*8
+_Character_RagdollMsg_base EQU 877*8
+_Character_WhoSeesMe_base EQU 879*8
+_CharacterAnimal_base EQU 881*8
+_CharacterHuman_base EQU 910*8
+_CharMovement_base EQU 935*8
+_CharStats_base EQU 996*8
+_CombatClass_base EQU 1121*8
+_CombatClass_AttackSlotManager_base EQU 1190*8
+_CombatClass_AttackSlotManager_SlotData_base EQU 1200*8
+_CombatClass_EffectData_base EQU 1202*8
+_CombatMovementController_base EQU 1205*8
+_CombatTechniqueData_base EQU 1223*8
+_ContainerItem_base EQU 1227*8
+_ContextMenu_base EQU 1247*8
+_Crossbow_base EQU 1253*8
+_Damages_base EQU 1266*8
+_DataObjectContainer_base EQU 1272*8
+_DialogChoiceList_base EQU 1279*8
+_DialogDataManager_base EQU 1282*8
+_DialogLineData_base EQU 1288*8
+_Dialogue_base EQU 1318*8
+_Dialogue_RepetitionCounter_base EQU 1389*8
+_Dialogue_RepetitionCounter_DialogState_base EQU 1395*8
+_DialogueSpeechBubble_base EQU 1396*8
+_Faction_base EQU 1405*8
+_Faction_BuildingSwaps_base EQU 1472*8
+_Faction_CharacteristicsData_base EQU 1478*8
+_FactionLeader_base EQU 1478*8
+_FactionManager_base EQU 1483*8
+_FactionRelations_base EQU 1503*8
+_FactionRelations_RelationData_base EQU 1532*8
+_FactionUniqueSquadManager_base EQU 1538*8
+_FactionUniqueSquadManager_UniqueSpawnData_base EQU 1550*8
+_FactionWarMgr_base EQU 1553*8
+_FactionWarMgr_CampaignRequest_base EQU 1581*8
+_FactoryCallbackInterface_base EQU 1583*8
+_FlockingTools_base EQU 1584*8
+_FormationMover_base EQU 1594*8
+_GameData_base EQU 1600*8
+_GameData_ItemData_base EQU 1657*8
+_GameData_ObjectInstance_base EQU 1657*8
+_GameDataContainer_base EQU 1662*8
+_GameDataHeader_base EQU 1694*8
+_GameDataManager_base EQU 1699*8
+_GameDataValuePair_base EQU 1707*8
+_GameLauncher_base EQU 1709*8
+_GameLauncher_TabChangelog_base EQU 1725*8
+_GameLauncher_TabMods_base EQU 1733*8
+_GameLauncher_TabVideo_base EQU 1751*8
+_GameLauncher_VideoDevice_base EQU 1769*8
+_GameLauncher_VideoRenderer_base EQU 1773*8
+_GameplayOptions_base EQU 1788*8
+_GameSaveState_base EQU 1793*8
+_GameWorld_base EQU 1811*8
+_GameWorld_SysMessage_base EQU 1903*8
+_Gear_base EQU 1906*8
+_GlobalConstants_base EQU 1916*8
+_GUIWindow_base EQU 1917*8
+_hand_base EQU 1931*8
+_InputHandler_base EQU 1963*8
+_InputHandler_Command_base EQU 1989*8
+_InstanceID_base EQU 1993*8
+_Inventory_base EQU 2009*8
+_Inventory_HasRoomCache_base EQU 2084*8
+_InventoryItemBase_base EQU 2090*8
+_InventorySection_base EQU 2119*8
+_Item_base EQU 2166*8
+_iVector2_base EQU 2216*8
+_LockedArmour_base EQU 2224*8
+_Logger_base EQU 2232*8
+_MedianFilter_base EQU 2237*8
+_MedianFilter2DVector_base EQU 2243*8
+_MedicalSystem_base EQU 2247*8
+_MedicalSystem_HealthPartStatus_base EQU 2337*8
+_MeshDataLookup_base EQU 2355*8
+_ModInfo_base EQU 2358*8
+_MotionFilter_base EQU 2363*8
+_NxUserControllerHitReport_base EQU 2367*8
+_NxUserTriggerReport_base EQU 2369*8
+_NxVec3_base EQU 2371*8
+_OptionsHolder_base EQU 2402*8
+_Ownerships_base EQU 2408*8
+_ParticlePool_base EQU 2434*8
+_ParticlePool_ParticleData_base EQU 2442*8
+_physHit_base EQU 2443*8
+_PhysicalEntity_base EQU 2453*8
+_PhysicsActual_base EQU 2455*8
+_PhysicsActual_TriggerCallback_base EQU 2476*8
+_PhysicsCollection_base EQU 2480*8
+_PhysicsCollection_LightEnt_base EQU 2490*8
+_PhysicsCollection_RotatingEnt_base EQU 2494*8
+_PhysicsCollection_StaticEnt_base EQU 2501*8
+_PhysicsInterface_base EQU 2506*8
+_Platoon_base EQU 2528*8
+_PlayerInterface_base EQU 2581*8
+_PlayerInterface_AIOptions_base EQU 2673*8
+_ProsperityManager_base EQU 2676*8
+_RaceData_base EQU 2685*8
+_RaceLimiter_base EQU 2695*8
+_RaceLimiter_Limiter_base EQU 2701*8
+_rendHit_base EQU 2704*8
+_ResourceLoader_base EQU 2705*8
+_ResourceLoader_MeshLoadData_base EQU 2731*8
+_ResourceLoader_ResourceLoadRequestMesh_base EQU 2734*8
+_ResourceLoader_ResourceLoadRequestTexture_base EQU 2737*8
+_ResourceLoader_TextureArrayLoadData_base EQU 2741*8
+_ResourceLoader_TextureLoadData_base EQU 2745*8
+_RobotLimbs_base EQU 2749*8
+_RootObject_base EQU 2760*8
+_RootObjectBase_base EQU 2808*8
+_RootObjectContainer_base EQU 2831*8
+_RootObjectContainer_SpecificItemLoadFirst_base EQU 2845*8
+_RootObjectFactory_base EQU 2849*8
+_RootObjectFactory_CreatelistItem_base EQU 2870*8
+_SaveFileSystem_base EQU 2871*8
+_SaveFileSystem_FileMessage_base EQU 2893*8
+_SaveInfo_base EQU 2896*8
+_SaveManager_base EQU 2900*8
+_Scythe_PhysicsClass_base EQU 2930*8
+_SeenSomeone_base EQU 2938*8
+_SelectionBox_base EQU 2942*8
+_SenseItr_base EQU 2951*8
+_SensoryData_base EQU 2957*8
+_SensoryData_SpottingPeopleMgr_base EQU 3003*8
+_SensoryData_SpottingPeopleMgr_Spot_base EQU 3011*8
+_Serialisable_base EQU 3012*8
+_SimpleTimeStamper_base EQU 3013*8
+_SpeedGroup_base EQU 3017*8
+_StringPair_base EQU 3022*8
+_Sword_base EQU 3028*8
+_ThreadClass_base EQU 3036*8
+_ThreadWannabe_base EQU 3048*8
+_TimeOfDay_base EQU 3054*8
+_TimerClass_base EQU 3082*8
+_TitleScreen_base EQU 3083*8
+_Town_base EQU 3098*8
+_Town_NestSpot_base EQU 3172*8
+_TownBase_base EQU 3175*8
+_TownBase_DelayedSpawnMsg_base EQU 3259*8
+_TownBase_ResidentData_base EQU 3261*8
+_TownBase_TownPositionCacher_base EQU 3265*8
+_TownBuildingsManager_base EQU 3268*8
+_TownBuildingsManager_BuildingInfo_base EQU 3290*8
+_TradeCulture_base EQU 3293*8
+_TripleInt_base EQU 3302*8
+_UtilityT_base EQU 3308*8
+_VisibleObjectInfo_base EQU 3410*8
+_Weapon_base EQU 3413*8
+_WeatherRegion_base EQU 3427*8
+_WeatherRegion_Listener_base EQU 3443*8
+_WorldEventStateQuery_base EQU 3444*8
+_WorldEventStateQueryList_base EQU 3448*8
+_wraps_BaseLayout_base EQU 3453*8
+_YesNoMaybe_base EQU 3460*8
+_static_functions_base EQU 3471*8
 
 
 DUMMY_FUNCTION proc 
@@ -178,6 +189,16 @@ FUNC_BEGIN endp
 
 INCLUDE functions/AbstractMovementBase.inc
 INCLUDE functions/ActivePlatoon.inc
+INCLUDE functions/AppearanceAnimal.inc
+INCLUDE functions/AppearanceBase.inc
+INCLUDE functions/AppearanceHuman.inc
+INCLUDE functions/AppearanceManager.inc
+INCLUDE functions/AppearanceManager_AppearanceData.inc
+INCLUDE functions/AppearanceManager_DataCategory.inc
+INCLUDE functions/AppearanceManager_DataRange.inc
+INCLUDE functions/AppearanceManager_DataRangePose.inc
+INCLUDE functions/AppearanceManager_DataRangeVector.inc
+INCLUDE functions/AppearanceManager_Gender.inc
 INCLUDE functions/Armour.inc
 INCLUDE functions/Bounty.inc
 INCLUDE functions/BountyManager.inc
@@ -261,6 +282,7 @@ INCLUDE functions/MedianFilter.inc
 INCLUDE functions/MedianFilter2DVector.inc
 INCLUDE functions/MedicalSystem.inc
 INCLUDE functions/MedicalSystem_HealthPartStatus.inc
+INCLUDE functions/MeshDataLookup.inc
 INCLUDE functions/ModInfo.inc
 INCLUDE functions/MotionFilter.inc
 INCLUDE functions/NxUserControllerHitReport.inc
@@ -347,7 +369,7 @@ FUNC_END endp
 
 .data
 PUBLIC function_pointers
-function_pointers QWORD 3280 DUP(0)
+function_pointers QWORD 3479 DUP(0)
 
 ; must be directly after function_pointers
 INCLUDE globals.inc

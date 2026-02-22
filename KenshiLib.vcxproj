@@ -253,6 +253,8 @@
     <ClInclude Include="Include\core\Scanner.h" />
     <ClInclude Include="Include\Debug.h" />
     <ClInclude Include="Include\Defines.h" />
+    <ClInclude Include="Include\kenshi\Appearance.h" />
+    <ClInclude Include="Include\kenshi\AppearanceManager.h" />
     <ClInclude Include="Include\kenshi\Bounty.h" />
     <ClInclude Include="Include\kenshi\BountyManager.h" />
     <ClInclude Include="Include\kenshi\Building.h" />
