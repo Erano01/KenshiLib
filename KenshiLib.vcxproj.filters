@@ -43,6 +43,9 @@
     <Filter Include="Source Files\kenshi\functions">
       <UniqueIdentifier>{648fb50b-cd2c-42db-959e-b005e6c4dd07}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\kenshi\gui">
+      <UniqueIdentifier>{224f170a-7b0a-4f4d-875a-fb03a7d2a72a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\core\RVA.cpp">
@@ -2243,9 +2246,6 @@
     <ClInclude Include="Include\core\Functions.h">
       <Filter>Header Files\core</Filter>
     </ClInclude>
-    <ClInclude Include="Include\kenshi\TitleScreen.h">
-      <Filter>Header Files\kenshi</Filter>
-    </ClInclude>
     <ClInclude Include="Include\kenshi\Damages.h">
       <Filter>Header Files\kenshi</Filter>
     </ClInclude>
@@ -2305,6 +2305,90 @@
     </ClInclude>
     <ClInclude Include="Include\kenshi\AppearanceManager.h">
       <Filter>Header Files\kenshi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\GameplayOptions.h">
+      <Filter>Header Files\kenshi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\DataPanelLine.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\GUIWindow.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\NewGameOptionsWindow.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\OptionsWindow.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\TitleScreen.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\DatapanelGUI.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\ProspectingWindow.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\NewGameWindow.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\LoadingWindow.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\DialogueWindow.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\BuildModeWindow.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\LoadSaveWindow.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\CharacterStatsWindow.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\CharacterTradingWindow.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\CharacterEditWindow.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\LevelEditor.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\TransformWindow.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\InteriorModeButtonWindow.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\GameDataEditorWindow.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\mygui\common\baselayout\BaseLayout.h">
+      <Filter>Header Files\mygui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\mygui\common\baselayout\WrapsAttribute.h">
+      <Filter>Header Files\mygui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\mygui\common\baselayout\Attribute.h">
+      <Filter>Header Files\mygui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\MyGUI_Slider.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\MyGUI_MultiSlider.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\MyGUI_ListScrollBar.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\ToolTip.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\OpenSaveFileDialog.h">
+      <Filter>Header Files\kenshi\gui</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
