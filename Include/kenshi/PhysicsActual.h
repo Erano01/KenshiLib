@@ -285,7 +285,7 @@ public:
     NxVec3* _CONSTRUCTOR(float _x, float _y, float _z);// public RVA = 0x1A6D00
     NxVec3(float a);// public RVA = 0x7E7BA0
     NxVec3* _CONSTRUCTOR(float a);// public RVA = 0x7E7BA0
-    NxVec3() {};// public RVA = 0x1AA820
+    NxVec3();// public RVA = 0x1AA820
     NxVec3* _CONSTRUCTOR();// public RVA = 0x1AA820
     // no_addr const class NxVec3 & operator=(const struct _Nx3F32 & _a1);// public missing arg names
     const NxVec3& operator=(const NxVec3& v);// public RVA = 0x1AA830
