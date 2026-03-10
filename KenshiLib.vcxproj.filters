@@ -2390,6 +2390,21 @@
     <ClInclude Include="Include\kenshi\gui\OpenSaveFileDialog.h">
       <Filter>Header Files\kenshi\gui</Filter>
     </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\ForgottenGUI.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\ScreenLabel.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\InventoryGUI.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\TutorialGUI.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\MainBarGUI.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Library Include="Libraries\ogre\OgreMain_x64.lib">

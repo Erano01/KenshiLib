@@ -290,12 +290,15 @@
     <ClInclude Include="Include\kenshi\gui\DatapanelGUI.h" />
     <ClInclude Include="Include\kenshi\gui\DataPanelLine.h" />
     <ClInclude Include="Include\kenshi\gui\DialogueWindow.h" />
+    <ClInclude Include="Include\kenshi\gui\ForgottenGUI.h" />
     <ClInclude Include="Include\kenshi\gui\GameDataEditorWindow.h" />
     <ClInclude Include="Include\kenshi\gui\GUIWindow.h" />
     <ClInclude Include="Include\kenshi\gui\InteriorModeButtonWindow.h" />
+    <ClInclude Include="Include\kenshi\gui\InventoryGUI.h" />
     <ClInclude Include="Include\kenshi\gui\LevelEditor.h" />
     <ClInclude Include="Include\kenshi\gui\LoadingWindow.h" />
     <ClInclude Include="Include\kenshi\gui\LoadSaveWindow.h" />
+    <ClInclude Include="Include\kenshi\gui\MainBarGUI.h" />
     <ClInclude Include="Include\kenshi\gui\MyGUI_ListScrollBar.h" />
     <ClInclude Include="Include\kenshi\gui\MyGUI_MultiSlider.h" />
     <ClInclude Include="Include\kenshi\gui\MyGUI_Slider.h" />
@@ -304,9 +307,11 @@
     <ClInclude Include="Include\kenshi\gui\OpenSaveFileDialog.h" />
     <ClInclude Include="Include\kenshi\gui\OptionsWindow.h" />
     <ClInclude Include="Include\kenshi\gui\ProspectingWindow.h" />
+    <ClInclude Include="Include\kenshi\gui\ScreenLabel.h" />
     <ClInclude Include="Include\kenshi\gui\TitleScreen.h" />
     <ClInclude Include="Include\kenshi\gui\ToolTip.h" />
     <ClInclude Include="Include\kenshi\gui\TransformWindow.h" />
+    <ClInclude Include="Include\kenshi\gui\TutorialGUI.h" />
     <ClInclude Include="Include\kenshi\InstanceID.h" />
     <ClInclude Include="Include\kenshi\Inventory.h" />
     <ClInclude Include="Include\kenshi\Item.h" />
