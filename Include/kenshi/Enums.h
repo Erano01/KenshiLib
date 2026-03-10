@@ -912,3 +912,14 @@ enum swordStateEnum
     TARGET_PATHFINDING_STARTUP,
     TARGET_PATHFINDING
 };
+
+enum MiningResource
+{
+    NONE,
+    IRON,
+    STONE,
+    COPPER,
+    CARBON,
+    WATER,
+    GROUND
+};

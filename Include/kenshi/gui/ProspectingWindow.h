@@ -3,18 +3,7 @@
 #include <mygui/common/baselayout/BaseLayout.h>
 #include <mygui/MyGUI_RotatingSkin.h>
 #include <ogre/OgreVector3.h>
-
-// TODO move?
-enum MiningResource
-{
-    NONE,
-    IRON,
-    STONE,
-    COPPER,
-    CARBON,
-    WATER,
-    GROUND
-};
+#include <kenshi/Enums.h>
 
 class DatapanelGUI;
 class RealWorldEditableImage;
