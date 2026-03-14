@@ -261,6 +261,7 @@
     <ClInclude Include="Include\kenshi\Character.h" />
     <ClInclude Include="Include\kenshi\CharacterAnimal.h" />
     <ClInclude Include="Include\kenshi\CharacterHuman.h" />
+    <ClInclude Include="Include\kenshi\CharBody.h" />
     <ClInclude Include="Include\kenshi\CharMovement.h" />
     <ClInclude Include="Include\kenshi\CharStats.h" />
     <ClInclude Include="Include\kenshi\CombatClass.h" />
@@ -287,9 +288,12 @@
     <ClInclude Include="Include\kenshi\gui\CharacterEditWindow.h" />
     <ClInclude Include="Include\kenshi\gui\CharacterStatsWindow.h" />
     <ClInclude Include="Include\kenshi\gui\CharacterTradingWindow.h" />
+    <ClInclude Include="Include\kenshi\gui\ContextMenu.h" />
     <ClInclude Include="Include\kenshi\gui\DatapanelGUI.h" />
     <ClInclude Include="Include\kenshi\gui\DataPanelLine.h" />
     <ClInclude Include="Include\kenshi\gui\DialogueWindow.h" />
+    <ClInclude Include="Include\kenshi\gui\FactionsScreen.h" />
+    <ClInclude Include="Include\kenshi\gui\FogEditor.h" />
     <ClInclude Include="Include\kenshi\gui\ForgottenGUI.h" />
     <ClInclude Include="Include\kenshi\gui\GameDataEditorWindow.h" />
     <ClInclude Include="Include\kenshi\gui\GUIWindow.h" />
@@ -299,6 +303,9 @@
     <ClInclude Include="Include\kenshi\gui\LoadingWindow.h" />
     <ClInclude Include="Include\kenshi\gui\LoadSaveWindow.h" />
     <ClInclude Include="Include\kenshi\gui\MainBarGUI.h" />
+    <ClInclude Include="Include\kenshi\gui\ManagementScreen.h" />
+    <ClInclude Include="Include\kenshi\gui\MapScreen.h" />
+    <ClInclude Include="Include\kenshi\gui\MessageBoxManager.h" />
     <ClInclude Include="Include\kenshi\gui\MyGUI_ListScrollBar.h" />
     <ClInclude Include="Include\kenshi\gui\MyGUI_MultiSlider.h" />
     <ClInclude Include="Include\kenshi\gui\MyGUI_Slider.h" />
@@ -306,8 +313,12 @@
     <ClInclude Include="Include\kenshi\gui\NewGameWindow.h" />
     <ClInclude Include="Include\kenshi\gui\OpenSaveFileDialog.h" />
     <ClInclude Include="Include\kenshi\gui\OptionsWindow.h" />
+    <ClInclude Include="Include\kenshi\gui\OrdersPanel.h" />
+    <ClInclude Include="Include\kenshi\gui\PortraitManager.h" />
     <ClInclude Include="Include\kenshi\gui\ProspectingWindow.h" />
     <ClInclude Include="Include\kenshi\gui\ScreenLabel.h" />
+    <ClInclude Include="Include\kenshi\gui\SplashScreen.h" />
+    <ClInclude Include="Include\kenshi\gui\SquadManagementScreen.h" />
     <ClInclude Include="Include\kenshi\gui\TitleScreen.h" />
     <ClInclude Include="Include\kenshi\gui\ToolTip.h" />
     <ClInclude Include="Include\kenshi\gui\TransformWindow.h" />
@@ -334,7 +345,7 @@
     <ClInclude Include="Include\kenshi\SaveInfo.h" />
     <ClInclude Include="Include\kenshi\SaveManager.h" />
     <ClInclude Include="Include\kenshi\SensoryData.h" />
-    <ClInclude Include="Include\kenshi\Tasks.h" />
+    <ClInclude Include="Include\kenshi\Tasker.h" />
     <ClInclude Include="Include\kenshi\Town.h" />
     <ClInclude Include="Include\kenshi\TradeCulture.h" />
     <ClInclude Include="Include\kenshi\ThreadClass.h" />

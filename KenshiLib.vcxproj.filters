@@ -2042,9 +2042,6 @@
     <ClInclude Include="Include\stdafx.h">
       <Filter>Header Files\kenshi</Filter>
     </ClInclude>
-    <ClInclude Include="Include\kenshi\Tasks.h">
-      <Filter>Header Files\kenshi</Filter>
-    </ClInclude>
     <ClInclude Include="Include\core\RVA.h">
       <Filter>Header Files\core</Filter>
     </ClInclude>
@@ -2403,6 +2400,42 @@
       <Filter>Header Files\kenshi\gui</Filter>
     </ClInclude>
     <ClInclude Include="Include\kenshi\gui\MainBarGUI.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\FogEditor.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\OrdersPanel.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\Tasker.h">
+      <Filter>Header Files\kenshi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\CharBody.h">
+      <Filter>Header Files\kenshi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\SquadManagementScreen.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\ManagementScreen.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\PortraitManager.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\MapScreen.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\FactionsScreen.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\SplashScreen.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\ContextMenu.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\MessageBoxManager.h">
       <Filter>Header Files\kenshi\gui</Filter>
     </ClInclude>
   </ItemGroup>

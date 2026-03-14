@@ -953,3 +953,11 @@ enum CursorType
     LOOT_CURSOR_RED,
     KNOCKOUT_CURSOR
 };
+
+enum MapZoomLevel
+{
+    ZOOM_MIN,
+    ZOOM_MID,
+    ZOOM_MAX,
+    ZOOM_CHARACTERS
+};

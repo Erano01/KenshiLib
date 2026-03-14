@@ -34,16 +34,6 @@ enum TownType
 };
 
 class BasePopulationManager;
-
-// TODO move
-enum MapZoomLevel
-{
-    ZOOM_MIN,
-    ZOOM_MID,
-    ZOOM_MAX,
-    ZOOM_CHARACTERS
-};
-
 class ScreenLabel;
 class PhysicsHullT;
 
