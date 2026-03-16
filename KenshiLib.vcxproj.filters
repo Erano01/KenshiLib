@@ -46,6 +46,9 @@
     <Filter Include="Header Files\kenshi\gui">
       <UniqueIdentifier>{224f170a-7b0a-4f4d-875a-fb03a7d2a72a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\kenshi\building">
+      <UniqueIdentifier>{973aa79e-5ec3-454c-9477-613d27bd87a0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\core\RVA.cpp">
@@ -2012,9 +2015,6 @@
     <ClInclude Include="Include\ogre\debugbreak\debugbreak.h">
       <Filter>Header Files\ogre</Filter>
     </ClInclude>
-    <ClInclude Include="Include\kenshi\Building.h">
-      <Filter>Header Files\kenshi</Filter>
-    </ClInclude>
     <ClInclude Include="Include\kenshi\Character.h">
       <Filter>Header Files\kenshi</Filter>
     </ClInclude>
@@ -2437,6 +2437,54 @@
     </ClInclude>
     <ClInclude Include="Include\kenshi\gui\MessageBoxManager.h">
       <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\Building\TortureBuilding.h">
+      <Filter>Header Files\kenshi\building</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\Building\FarmBuilding.h">
+      <Filter>Header Files\kenshi\building</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\Building\ResearchBuilding.h">
+      <Filter>Header Files\kenshi\building</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\Building\TurretBuilding.h">
+      <Filter>Header Files\kenshi\building</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\Building\LightBuilding.h">
+      <Filter>Header Files\kenshi\building</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\Building\DoorStuff.h">
+      <Filter>Header Files\kenshi\building</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\Building\WallBuilding.h">
+      <Filter>Header Files\kenshi\building</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\Building\GatewayBuilding.h">
+      <Filter>Header Files\kenshi\building</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\Building\GeneratorBuilding.h">
+      <Filter>Header Files\kenshi\building</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\Building\ProductionBuilding.h">
+      <Filter>Header Files\kenshi\building</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\Building\StorageBuilding.h">
+      <Filter>Header Files\kenshi\building</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\Building\UseableStuff.h">
+      <Filter>Header Files\kenshi\building</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\Building\CraftingBuilding.h">
+      <Filter>Header Files\kenshi\building</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\Building\FurnaceBuilding.h">
+      <Filter>Header Files\kenshi\building</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\Building\RainCollectorBuilding.h">
+      <Filter>Header Files\kenshi\building</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\Building\Building.h">
+      <Filter>Header Files\kenshi\building</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

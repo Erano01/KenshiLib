@@ -1,6 +1,6 @@
 #pragma once
 
-#include "RootObject.h"
+#include <kenshi/RootObject.h>
 #include <string>
 #include <ogre/OgreMemoryAllocatorConfig.h>
 #include <ogre/OgreVector3.h>
