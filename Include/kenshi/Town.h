@@ -2,8 +2,11 @@
 
 #include "RootObject.h"
 #include <ogre/OgreVector3.h>
-#include "Building.h"
+#include "Building/Building.h"
 #include "util/TagsClass.h"
+#include "util/TimeOfDay.h"
+// TODO move FactoryCallbackInterface
+#include "PlayerInterface.h"
 
 enum TownAlarmState
 {
@@ -97,6 +100,7 @@ public:
 
 class TradeCulture;
 class DistantTown;
+class NestBatcher;
 
 class TownBase : public RootObject, public Ogre::GeneralAllocatedObject
 {
