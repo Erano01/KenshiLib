@@ -1,5 +1,7 @@
 #pragma once
 
+#include <ogre/OgreQuaternion.h>
+
 class Item;
 class GameWorld;
 class GlobalConstants;

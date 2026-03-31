@@ -273,6 +273,7 @@
     <ClInclude Include="Include\kenshi\Building\TurretBuilding.h" />
     <ClInclude Include="Include\kenshi\Building\UseableStuff.h" />
     <ClInclude Include="Include\kenshi\Building\WallBuilding.h" />
+    <ClInclude Include="Include\kenshi\CameraClass.h" />
     <ClInclude Include="Include\kenshi\Character.h" />
     <ClInclude Include="Include\kenshi\CharacterAnimal.h" />
     <ClInclude Include="Include\kenshi\CharacterHuman.h" />
@@ -290,6 +291,7 @@
     <ClInclude Include="Include\kenshi\FactionUniqueSquadManager.h" />
     <ClInclude Include="Include\kenshi\FactionWarMgr.h" />
     <ClInclude Include="Include\kenshi\FitnessSelector.h" />
+    <ClInclude Include="Include\kenshi\FoliageSystem.h" />
     <ClInclude Include="Include\kenshi\GameData.h" />
     <ClInclude Include="Include\kenshi\GameDataManager.h" />
     <ClInclude Include="Include\kenshi\GameplayOptions.h" />

@@ -38,3 +38,8 @@ jmp function_pointers[_static_functions_base+6*8]
 ?moveInstanceData@@YAXAEAVGameDataContainer@@0AEAVObjectInstance@GameData@@_NAEAVhand@@@Z proc EXPORT
 jmp function_pointers[_static_functions_base+7*8]
 ?moveInstanceData@@YAXAEAVGameDataContainer@@0AEAVObjectInstance@GameData@@_NAEAVhand@@@Z endp
+
+; static_functions::increaseStat(float &, float, float);
+?increaseStat@@YAXAEAMMM@Z proc EXPORT
+jmp function_pointers[_static_functions_base+8*8]
+?increaseStat@@YAXAEAMMM@Z endp
