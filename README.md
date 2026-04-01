@@ -6,7 +6,7 @@ KenshiLib is released under the GPLv3, please be aware that this generally means
 ## Developing RE_Kenshi/KenshiLib plugins
 Example KenshiLib plugins can be found [here](https://github.com/BFrizzleFoShizzle/KenshiLib_Examples/).
 
-The easiest way to set up standard plugin dependencies is to use the [KenshiLib_Examples dependencies](https://github.com/BFrizzleFoShizzle/KenshiLib_Examples_deps) repo.
+The easiest way to set up standard plugin dependencies is to use the [KenshiLib_Examples dependencies](https://github.com/BFrizzleFoShizzle/KenshiLib_Examples_deps) repo, which comes with all required KenshiLib includes + precompiled libs for KenshiLib/Ogre/Boost/Etc.
 
 The steps for setting up a new KenshiLib plugin:  
 Set the compiler toolchain to Visual Studio 2010.  
