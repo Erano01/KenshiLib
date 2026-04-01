@@ -19,6 +19,28 @@ public:
     GameData* g2; // 0x8 Member
 };
 
+class CraftingInventoryLayout : public BuildInventoryLayout
+{
+public:
+    // BuildInventoryLayout offset = 0x0, length = 0x440
+    // no_addr void CraftingInventoryLayout(const class CraftingInventoryLayout & _a1);// public missing arg names
+    CraftingInventoryLayout(const std::string& title, int ins, int outs);// public RVA = 0x157180
+    CraftingInventoryLayout* _CONSTRUCTOR(const std::string& title, int ins, int outs);// public RVA = 0x157180
+    virtual void setupSections(InventoryGUI* inventoryGUI, std::map<std::string, InventorySectionGUI*, std::less<std::string >, Ogre::STLAllocator<std::pair<std::string const, InventorySectionGUI*>, Ogre::GeneralAllocPolicy > >& sections, Inventory* inventory) override;// public RVA = 0x1523D0 vtable offset = 0x0
+    void _NV_setupSections(InventoryGUI* inventoryGUI, std::map<std::string, InventorySectionGUI*, std::less<std::string >, Ogre::STLAllocator<std::pair<std::string const, InventorySectionGUI*>, Ogre::GeneralAllocPolicy > >& sections, Inventory* inventory);// public RVA = 0x1523D0 vtable offset = 0x0
+    void refresh();// public RVA = 0x14DCA0
+    void setOutputType(itemType type);// public RVA = 0x14DC80
+    void setCraftingName(const std::string& name);// public RVA = 0x14E210
+    MyGUI::Button* getQueueButton() const;// public RVA = 0x14DC90
+    MyGUI::Button* queueBtn; // 0x440 Member
+    MyGUI::TextBox* craftingName; // 0x448 Member
+    itemType outputType; // 0x450 Member
+    virtual ~CraftingInventoryLayout();// public RVA = 0x161FD0 vtable offset = 0x0
+    void _DESTRUCTOR();// public RVA = 0x161FD0 vtable offset = 0x0
+    // no_addr class CraftingInventoryLayout & operator=(const class CraftingInventoryLayout & _a1);// public missing arg names
+    // virtual void * __vecDelDtor(unsigned int _a1) = 0;// public vtable offset = 0x0 missing arg names
+};
+
 class CraftingBuilding : public ProductionBuilding
 {
 public:

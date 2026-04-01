@@ -2,6 +2,59 @@
 
 #include "StorageBuilding.h"
 
+class BuildInventoryLayout : public InventoryLayout
+{
+public:
+    // InventoryLayout offset = 0x0, length = 0x3B8
+    // no_addr void BuildInventoryLayout(const class BuildInventoryLayout & _a1);// public missing arg names
+    BuildInventoryLayout(const std::string& title, int ins, int outs, bool hasQueue);// public RVA = 0x155FE0
+    BuildInventoryLayout* _CONSTRUCTOR(const std::string& title, int ins, int outs, bool hasQueue);// public RVA = 0x155FE0
+    virtual void setupSections(InventoryGUI* inventoryGUI, std::map<std::string, InventorySectionGUI*, std::less<std::string >, Ogre::STLAllocator<std::pair<std::string const, InventorySectionGUI*>, Ogre::GeneralAllocPolicy > >& sections, Inventory* inventory) override;// public RVA = 0x150D00 vtable offset = 0x0
+    void _NV_setupSections(InventoryGUI* inventoryGUI, std::map<std::string, InventorySectionGUI*, std::less<std::string >, Ogre::STLAllocator<std::pair<std::string const, InventorySectionGUI*>, Ogre::GeneralAllocPolicy > >& sections, Inventory* inventory);// public RVA = 0x150D00 vtable offset = 0x0
+    void setInput(int inputIndex, const std::string& name, const std::string& status);// public RVA = 0x14DA40
+    void setOutput(const std::string& name);// public RVA = 0x14DB50
+    void setInputProgress(int inputIdx, float progress);// public RVA = 0x14DBC0
+    void setInputEnabled(int inputIdx, bool value);// public RVA = 0x14E910
+    void setOutputProgress(float progress);// public RVA = 0x14DC40
+    void setInputItem(int inputIdx, Item* item, bool visible);// public RVA = 0x14DDB0
+    void setOutputItem(Item* item, bool visible);// public RVA = 0x14E040
+    MyGUI::TextBox* input1NameText; // 0x3B8 Member
+    MyGUI::TextBox* input2NameText; // 0x3C0 Member
+    MyGUI::TextBox* input1StatusText; // 0x3C8 Member
+    MyGUI::TextBox* input2StatusText; // 0x3D0 Member
+    MyGUI::ImageBox* input1ItemIcon; // 0x3D8 Member
+    MyGUI::ImageBox* input2ItemIcon; // 0x3E0 Member
+    MyGUI::TextBox* outputNameText; // 0x3E8 Member
+    MyGUI::ImageBox* outputItemIcon; // 0x3F0 Member
+    MyGUI::Widget* input1Panel; // 0x3F8 Member
+    MyGUI::Widget* input2Panel; // 0x400 Member
+    MyGUI::ProgressBar* input1Progress; // 0x408 Member
+    MyGUI::ProgressBar* input2Progress; // 0x410 Member
+    MyGUI::ProgressBar* outputProgress; // 0x418 Member
+    int inputs; // 0x420 Member
+    int outputs; // 0x424 Member
+    Item* input1Item; // 0x428 Member
+    Item* input2Item; // 0x430 Member
+    Item* outputItem; // 0x438 Member
+    virtual ~BuildInventoryLayout();// public RVA = 0x161FA0 vtable offset = 0x0
+    void _DESTRUCTOR();// public RVA = 0x161FA0 vtable offset = 0x0
+    // no_addr class BuildInventoryLayout & operator=(const class BuildInventoryLayout & _a1);// public missing arg names
+    // virtual void * __vecDelDtor(unsigned int _a1) = 0;// public vtable offset = 0x0 missing arg names
+};
+
+class ProductionInventoryLayout : public BuildInventoryLayout
+{
+public:
+    // BuildInventoryLayout offset = 0x0, length = 0x440
+    // no_addr void ProductionInventoryLayout(const class ProductionInventoryLayout & _a1);// public missing arg names
+    ProductionInventoryLayout(const std::string& title, int ins, int outs);// public RVA = 0x157060
+    ProductionInventoryLayout* _CONSTRUCTOR(const std::string& title, int ins, int outs);// public RVA = 0x157060
+    virtual ~ProductionInventoryLayout();// public RVA = 0x161FB0 vtable offset = 0x0
+    void _DESTRUCTOR();// public RVA = 0x161FB0 vtable offset = 0x0
+    // no_addr class ProductionInventoryLayout & operator=(const class ProductionInventoryLayout & _a1);// public missing arg names
+    // virtual void * __vecDelDtor(unsigned int _a1) = 0;// public vtable offset = 0x0 missing arg names
+};
+
 class ProductionBuilding : public StorageBuilding
 {
 public:

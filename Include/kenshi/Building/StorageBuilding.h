@@ -1,8 +1,28 @@
 #pragma once
 
 #include "UseableStuff.h"
+#include "../gui/InventoryGUI.h"
 
 class InventorySection;
+
+// TODO move?
+class BuildingContainerInventoryLayout : public GenericInventoryLayout
+{
+public:
+    // GenericInventoryLayout offset = 0x0, length = 0x3C0
+    // no_addr void BuildingContainerInventoryLayout(const class BuildingContainerInventoryLayout & _a1);// public missing arg names
+    BuildingContainerInventoryLayout();// public RVA = 0x155920
+    BuildingContainerInventoryLayout* _CONSTRUCTOR();// public RVA = 0x155920
+    virtual void setupSections(InventoryGUI* inventoryGUI, std::map<std::string, InventorySectionGUI*, std::less<std::string >, Ogre::STLAllocator<std::pair<std::string const, InventorySectionGUI*>, Ogre::GeneralAllocPolicy > >& sections, Inventory* inventory) override;// public RVA = 0x14FAE0 vtable offset = 0x0
+    void _NV_setupSections(InventoryGUI* inventoryGUI, std::map<std::string, InventorySectionGUI*, std::less<std::string >, Ogre::STLAllocator<std::pair<std::string const, InventorySectionGUI*>, Ogre::GeneralAllocPolicy > >& sections, Inventory* inventory);// public RVA = 0x14FAE0 vtable offset = 0x0
+    void setCapacity(int value, bool full);// public RVA = 0x14EA40
+    MyGUI::EditBox* capacityText; // 0x3C0 Member
+    virtual ~BuildingContainerInventoryLayout();// public RVA = 0x161F60 vtable offset = 0x0
+    void _DESTRUCTOR();// public RVA = 0x161F60 vtable offset = 0x0
+    // no_addr class BuildingContainerInventoryLayout & operator=(const class BuildingContainerInventoryLayout & _a1);// public missing arg names
+    // no_addr void __local_vftable_ctor_closure();// public
+    // virtual void * __vecDelDtor(unsigned int _a1) = 0;// public vtable offset = 0x0 missing arg names
+};
 
 class StorageBuilding : public UseableStuff
 {

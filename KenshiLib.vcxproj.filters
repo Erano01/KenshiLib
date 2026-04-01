@@ -2492,6 +2492,15 @@
     <ClInclude Include="Include\kenshi\CameraClass.h">
       <Filter>Header Files\kenshi</Filter>
     </ClInclude>
+    <ClInclude Include="Include\kenshi\ShopTrader.h">
+      <Filter>Header Files\kenshi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\ShopTraderInventory.h">
+      <Filter>Header Files\kenshi</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\kenshi\gui\InventoryTraderGUI.h">
+      <Filter>Header Files\kenshi\gui</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Library Include="Libraries\ogre\OgreMain_x64.lib">

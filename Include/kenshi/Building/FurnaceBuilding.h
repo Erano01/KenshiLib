@@ -1,6 +1,22 @@
 #pragma once
 
 #include "ProductionBuilding.h"
+#include "../gui/InventoryGUI.h"
+
+class FurnaceInventoryLayout : public BuildInventoryLayout
+{
+public:
+    // BuildInventoryLayout offset = 0x0, length = 0x440
+    // no_addr void FurnaceInventoryLayout(const class FurnaceInventoryLayout & _a1);// public missing arg names
+    FurnaceInventoryLayout(const std::string& title, int ins, int outs);// public RVA = 0x157090
+    FurnaceInventoryLayout* _CONSTRUCTOR(const std::string& title, int ins, int outs);// public RVA = 0x157090
+    virtual void setupSections(InventoryGUI* inventoryGUI, std::map<std::string, InventorySectionGUI*, std::less<std::string >, Ogre::STLAllocator<std::pair<std::string const, InventorySectionGUI*>, Ogre::GeneralAllocPolicy > >& sections, Inventory* inventory) override;// public RVA = 0x151910 vtable offset = 0x0
+    void _NV_setupSections(InventoryGUI* inventoryGUI, std::map<std::string, InventorySectionGUI*, std::less<std::string >, Ogre::STLAllocator<std::pair<std::string const, InventorySectionGUI*>, Ogre::GeneralAllocPolicy > >& sections, Inventory* inventory);// public RVA = 0x151910 vtable offset = 0x0
+    virtual ~FurnaceInventoryLayout();// public RVA = 0x161FC0 vtable offset = 0x0
+    void _DESTRUCTOR();// public RVA = 0x161FC0 vtable offset = 0x0
+    // no_addr class FurnaceInventoryLayout & operator=(const class FurnaceInventoryLayout & _a1);// public missing arg names
+    // virtual void * __vecDelDtor(unsigned int _a1) = 0;// public vtable offset = 0x0 missing arg names
+};
 
 class FurnaceBuilding : public ProductionBuilding
 {

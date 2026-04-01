@@ -2,6 +2,25 @@
 
 #include "Building.h"
 
+class GenericInventoryLayout : public InventoryLayout
+{
+public:
+    // InventoryLayout offset = 0x0, length = 0x3B8
+    // no_addr void GenericInventoryLayout(const class GenericInventoryLayout & _a1);// public missing arg names
+    GenericInventoryLayout(const std::string& layoutName);// protected RVA = 0x154F90
+    GenericInventoryLayout* _CONSTRUCTOR(const std::string& layoutName);// protected RVA = 0x154F90
+    GenericInventoryLayout();// protected RVA = 0x154D20
+    GenericInventoryLayout* _CONSTRUCTOR();// protected RVA = 0x154D20
+    virtual void setSize(int slotsW, int slotsH, bool hasArrange, bool hasType);// protected RVA = 0x14E410 vtable offset = 0x18
+    void _NV_setSize(int slotsW, int slotsH, bool hasArrange, bool hasType);// protected RVA = 0x14E410 vtable offset = 0x18
+    MyGUI::Widget* arrangeButton; // 0x3B8 Member
+    virtual ~GenericInventoryLayout();// public RVA = 0x161F30 vtable offset = 0x0
+    void _DESTRUCTOR();// public RVA = 0x161F30 vtable offset = 0x0
+    // no_addr class GenericInventoryLayout & operator=(const class GenericInventoryLayout & _a1);// public missing arg names
+    // no_addr void __local_vftable_ctor_closure();// public
+    // virtual void * __vecDelDtor(unsigned int _a1) = 0;// public vtable offset = 0x0 missing arg names
+};
+
 class UseableStuff : public Building
 {
 public:

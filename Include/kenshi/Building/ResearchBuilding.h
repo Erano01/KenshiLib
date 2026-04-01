@@ -2,6 +2,25 @@
 
 #include "UseableStuff.h"
 #include <mygui/MyGUI.h>
+#include "../gui/InventoryGUI.h"
+
+class ResearchBuildingInventoryLayout : public GenericInventoryLayout
+{
+public:
+    // GenericInventoryLayout offset = 0x0, length = 0x3C0
+    // no_addr void ResearchBuildingInventoryLayout(const class ResearchBuildingInventoryLayout & _a1);// public missing arg names
+    ResearchBuildingInventoryLayout();// public RVA = 0x155960
+    ResearchBuildingInventoryLayout* _CONSTRUCTOR();// public RVA = 0x155960
+    virtual void setupSections(InventoryGUI* inventoryGUI, std::map<std::string, InventorySectionGUI*, std::less<std::string >, Ogre::STLAllocator<std::pair<std::string const, InventorySectionGUI*>, Ogre::GeneralAllocPolicy > >& sections, Inventory* inventory) override;// public RVA = 0x14FFD0 vtable offset = 0x0
+    void _NV_setupSections(InventoryGUI* inventoryGUI, std::map<std::string, InventorySectionGUI*, std::less<std::string >, Ogre::STLAllocator<std::pair<std::string const, InventorySectionGUI*>, Ogre::GeneralAllocPolicy > >& sections, Inventory* inventory);// public RVA = 0x14FFD0 vtable offset = 0x0
+    MyGUI::Widget* getResearchButton() const;// public RVA = 0x14D9D0
+    MyGUI::Button* researchButton; // 0x3C0 Member
+    virtual ~ResearchBuildingInventoryLayout();// public RVA = 0x161F70 vtable offset = 0x0
+    void _DESTRUCTOR();// public RVA = 0x161F70 vtable offset = 0x0
+    // no_addr class ResearchBuildingInventoryLayout & operator=(const class ResearchBuildingInventoryLayout & _a1);// public missing arg names
+    // no_addr void __local_vftable_ctor_closure();// public
+    // virtual void * __vecDelDtor(unsigned int _a1) = 0;// public vtable offset = 0x0 missing arg names
+};
 
 class ResearchBuilding : public UseableStuff
 {

@@ -316,6 +316,7 @@
     <ClInclude Include="Include\kenshi\gui\GUIWindow.h" />
     <ClInclude Include="Include\kenshi\gui\InteriorModeButtonWindow.h" />
     <ClInclude Include="Include\kenshi\gui\InventoryGUI.h" />
+    <ClInclude Include="Include\kenshi\gui\InventoryTraderGUI.h" />
     <ClInclude Include="Include\kenshi\gui\LevelEditor.h" />
     <ClInclude Include="Include\kenshi\gui\LoadingWindow.h" />
     <ClInclude Include="Include\kenshi\gui\LoadSaveWindow.h" />
@@ -362,6 +363,8 @@
     <ClInclude Include="Include\kenshi\SaveInfo.h" />
     <ClInclude Include="Include\kenshi\SaveManager.h" />
     <ClInclude Include="Include\kenshi\SensoryData.h" />
+    <ClInclude Include="Include\kenshi\ShopTrader.h" />
+    <ClInclude Include="Include\kenshi\ShopTraderInventory.h" />
     <ClInclude Include="Include\kenshi\Tasker.h" />
     <ClInclude Include="Include\kenshi\Town.h" />
     <ClInclude Include="Include\kenshi\TradeCulture.h" />
