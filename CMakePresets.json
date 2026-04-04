@@ -1,0 +1,29 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 21,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "linux-mingw-release",
+      "displayName": "Linux MinGW Release",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/linux-mingw-release",
+      "toolchainFile": "${sourceDir}/cmake/toolchains/mingw-w64-x86_64.cmake",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "KENSHILIB_BUILD_SHARED": "ON",
+        "BOOST_INCLUDE_PATH": "$env{BOOST_INCLUDE_PATH}",
+        "MINHOOK_PATH": "$env{MINHOOK_PATH}"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "linux-mingw-release",
+      "configurePreset": "linux-mingw-release"
+    }
+  ]
+}

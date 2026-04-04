@@ -25,7 +25,7 @@ std::string GetEXEHash()
 {
     WCHAR path[MAX_PATH];
     GetModuleFileNameW(NULL, path, MAX_PATH);
-    std::ifstream file(std::wstring(path), std::ios::ate | std::ios::binary);
+    std::ifstream file(path, std::ios::ate | std::ios::binary);
     if (file.is_open())
     {
         size_t size = file.tellg();

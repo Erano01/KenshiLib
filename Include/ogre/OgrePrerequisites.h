@@ -369,6 +369,7 @@ settings have been made.
 */
 #include "OgreStdHeaders.h"
 #include "OgreMemoryAllocatorConfig.h"
+#include "OgreMemorySTLAllocator.h"
 
 
 namespace Ogre

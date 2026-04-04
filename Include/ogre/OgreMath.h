@@ -667,6 +667,14 @@ namespace Ogre
         static std::pair<bool, Real> intersects(
             const Ray& ray, const vector<Plane>::type& planeList, 
             bool normalIsOutside);
+        static std::pair<bool, Real> intersects(
+            const Ray& ray, const std::vector<Plane>& planeList,
+            bool normalIsOutside)
+        {
+            list<Plane>::type listPlane;
+            listPlane.insert(listPlane.end(), planeList.begin(), planeList.end());
+            return intersects(ray, listPlane, normalIsOutside);
+        }
         /** Ray / convex plane list intersection test. 
         @param ray The ray to test with
         @param planeList List of planes which form a convex volume

@@ -29,3 +29,32 @@ Requires Visual Studio 2019 or newer and the Visual C++ 2010 x64 compilers. Kens
 Also requires [boost 1.60.0](https://www.boost.org/releases/1.60.0/) and the `multihook` version of [MinHook](https://github.com/m417z/minhook/tree/multihook).
 
 Open the project and compile in RELEASE mode. DEBUG is currently broken.
+
+## CMake (Linux/Arch setup)
+
+This repository now includes CMake files so the project can be configured/built from Linux tooling (for example Arch Linux + MinGW-w64 cross toolchain) without depending on `.vcxproj` directly.
+
+Install required packages on Arch:
+
+```bash
+sudo pacman -S --needed cmake ninja mingw-w64-gcc git wget
+```
+
+Download project dependencies (Boost 1.60.0 + MinHook multihook):
+
+```bash
+./scripts/fetch_deps.sh
+```
+
+Configure and build:
+
+```bash
+BOOST_INCLUDE_PATH=$PWD/third_party/boost_1_60_0 cmake --preset linux-mingw-release
+
+BOOST_INCLUDE_PATH=$PWD/third_party/boost_1_60_0 cmake --build --preset linux-mingw-release -j
+```
+
+Notes:
+- This CMake path is intended to unblock Linux-based workflows and CI.
+- ABI compatibility with the original Kenshi binary is still constrained by the exposed C++ API surface.
+- The STL/Boost signature inventory is generated at `docs/ABI_STL_BOOST_AUDIT.md`.

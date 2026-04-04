@@ -10,6 +10,12 @@
 #include <intrin.h>
 #include <Shlwapi.h>
 
+#if !defined(_MSC_VER)
+#ifndef _ReturnAddress
+#define _ReturnAddress() __builtin_return_address(0)
+#endif
+#endif
+
 std::stringstream debugLog;
 std::ofstream debugFile("RE_Kenshi_log.txt");
 clock_t startTime = -1;

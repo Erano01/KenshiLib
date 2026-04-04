@@ -4,6 +4,11 @@ build/
 proj/
 .vscode/
 
+# Downloaded third-party dependencies
+third_party/boost_1_60_0/
+third_party/boost_1_60_0.tar.bz2
+third_party/minhook/
+
 # MacOS Cache
 .DS_Store
 

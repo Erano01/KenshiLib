@@ -1,7 +1,7 @@
 #pragma once
 
 #include <assert.h>
-#include <ogre/OgreMemorySTLAllocator.h>
+#include <ogre/OgrePrerequisites.h>
 #include <stdint.h>
 
 template <typename T>
