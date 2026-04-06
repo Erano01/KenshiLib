@@ -1,3 +1,8 @@
+# MOVED
+This repo has been moved to: https://github.com/BFrizzleFoShizzle/KenshiLib
+
+--------
+
 # KenshiLib
 KenshiLib is a library that reconstructs Kenshi's structures, exporting a version-independent API for accessing variables and calling and hooking methods.
 
